@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "PW1hilq0yNXhvIicY0D+HULwXdAnLmBbYc6SjyC4spGHa0kJ786qIHFhjO/aM1YhhGDeNucqlyArL0FUJ/4wCQ==",
+  "success": true,
+  "projectFilePath": "/Users/sadin/Work/Projects/a-programmer.github.io/projects/RabbitMQ/01/Sender/Sender.csproj",
+  "expectedPackageFiles": [
+    "/Users/sadin/.nuget/packages/rabbitmq.client/6.2.2/rabbitmq.client.6.2.2.nupkg.sha512",
+    "/Users/sadin/.nuget/packages/system.memory/4.5.4/system.memory.4.5.4.nupkg.sha512",
+    "/Users/sadin/.nuget/packages/system.threading.channels/4.7.1/system.threading.channels.4.7.1.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,15 @@
+/Users/sadin/Work/Projects/a-programmer.github.io/projects/OCP/obj/Debug/net5.0/OCP.csproj.AssemblyReference.cache
+/Users/sadin/Work/Projects/a-programmer.github.io/projects/OCP/obj/Debug/net5.0/OCP.GeneratedMSBuildEditorConfig.editorconfig
+/Users/sadin/Work/Projects/a-programmer.github.io/projects/OCP/obj/Debug/net5.0/OCP.AssemblyInfoInputs.cache
+/Users/sadin/Work/Projects/a-programmer.github.io/projects/OCP/obj/Debug/net5.0/OCP.AssemblyInfo.cs
+/Users/sadin/Work/Projects/a-programmer.github.io/projects/OCP/obj/Debug/net5.0/OCP.csproj.CoreCompileInputs.cache
+/Users/sadin/Work/Projects/a-programmer.github.io/projects/OCP/bin/Debug/net5.0/OCP.deps.json
+/Users/sadin/Work/Projects/a-programmer.github.io/projects/OCP/bin/Debug/net5.0/OCP.runtimeconfig.json
+/Users/sadin/Work/Projects/a-programmer.github.io/projects/OCP/bin/Debug/net5.0/OCP.runtimeconfig.dev.json
+/Users/sadin/Work/Projects/a-programmer.github.io/projects/OCP/bin/Debug/net5.0/OCP.dll
+/Users/sadin/Work/Projects/a-programmer.github.io/projects/OCP/bin/Debug/net5.0/ref/OCP.dll
+/Users/sadin/Work/Projects/a-programmer.github.io/projects/OCP/bin/Debug/net5.0/OCP.pdb
+/Users/sadin/Work/Projects/a-programmer.github.io/projects/OCP/obj/Debug/net5.0/OCP.dll
+/Users/sadin/Work/Projects/a-programmer.github.io/projects/OCP/obj/Debug/net5.0/ref/OCP.dll
+/Users/sadin/Work/Projects/a-programmer.github.io/projects/OCP/obj/Debug/net5.0/OCP.pdb
+/Users/sadin/Work/Projects/a-programmer.github.io/projects/OCP/obj/Debug/net5.0/OCP.genruntimeconfig.cache

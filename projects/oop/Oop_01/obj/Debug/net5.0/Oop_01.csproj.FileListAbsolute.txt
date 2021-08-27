@@ -1,0 +1,15 @@
+/Users/sadin/Work/Projects/a-programmer.github.io/projects/oop/Oop_01/obj/Debug/net5.0/Oop_01.csproj.AssemblyReference.cache
+/Users/sadin/Work/Projects/a-programmer.github.io/projects/oop/Oop_01/obj/Debug/net5.0/Oop_01.GeneratedMSBuildEditorConfig.editorconfig
+/Users/sadin/Work/Projects/a-programmer.github.io/projects/oop/Oop_01/obj/Debug/net5.0/Oop_01.AssemblyInfoInputs.cache
+/Users/sadin/Work/Projects/a-programmer.github.io/projects/oop/Oop_01/obj/Debug/net5.0/Oop_01.AssemblyInfo.cs
+/Users/sadin/Work/Projects/a-programmer.github.io/projects/oop/Oop_01/obj/Debug/net5.0/Oop_01.csproj.CoreCompileInputs.cache
+/Users/sadin/Work/Projects/a-programmer.github.io/projects/oop/Oop_01/bin/Debug/net5.0/Oop_01.deps.json
+/Users/sadin/Work/Projects/a-programmer.github.io/projects/oop/Oop_01/bin/Debug/net5.0/Oop_01.runtimeconfig.json
+/Users/sadin/Work/Projects/a-programmer.github.io/projects/oop/Oop_01/bin/Debug/net5.0/Oop_01.runtimeconfig.dev.json
+/Users/sadin/Work/Projects/a-programmer.github.io/projects/oop/Oop_01/bin/Debug/net5.0/Oop_01.dll
+/Users/sadin/Work/Projects/a-programmer.github.io/projects/oop/Oop_01/bin/Debug/net5.0/ref/Oop_01.dll
+/Users/sadin/Work/Projects/a-programmer.github.io/projects/oop/Oop_01/bin/Debug/net5.0/Oop_01.pdb
+/Users/sadin/Work/Projects/a-programmer.github.io/projects/oop/Oop_01/obj/Debug/net5.0/Oop_01.dll
+/Users/sadin/Work/Projects/a-programmer.github.io/projects/oop/Oop_01/obj/Debug/net5.0/ref/Oop_01.dll
+/Users/sadin/Work/Projects/a-programmer.github.io/projects/oop/Oop_01/obj/Debug/net5.0/Oop_01.pdb
+/Users/sadin/Work/Projects/a-programmer.github.io/projects/oop/Oop_01/obj/Debug/net5.0/Oop_01.genruntimeconfig.cache

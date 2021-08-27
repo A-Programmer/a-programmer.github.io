@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "JQl6IP/1lKocfmLIPZzASSOMCfAeD22arWzxuM2ImExx0gi4CzsdeKDWToD3i8ZSVqamhYw+XttkcxE99bA32g==",
+  "success": true,
+  "projectFilePath": "/Users/sadin/Work/Projects/a-programmer.github.io/projects/RabbitMQ/01/Receive/Receive.csproj",
+  "expectedPackageFiles": [
+    "/Users/sadin/.nuget/packages/rabbitmq.client/6.2.2/rabbitmq.client.6.2.2.nupkg.sha512",
+    "/Users/sadin/.nuget/packages/system.memory/4.5.4/system.memory.4.5.4.nupkg.sha512",
+    "/Users/sadin/.nuget/packages/system.threading.channels/4.7.1/system.threading.channels.4.7.1.nupkg.sha512"
+  ],
+  "logs": []
+}

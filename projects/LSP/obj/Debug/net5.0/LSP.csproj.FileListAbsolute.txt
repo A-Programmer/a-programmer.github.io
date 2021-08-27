@@ -1,0 +1,15 @@
+/Users/sadin/Work/Projects/a-programmer.github.io/projects/LSP/bin/Debug/net5.0/LSP.deps.json
+/Users/sadin/Work/Projects/a-programmer.github.io/projects/LSP/bin/Debug/net5.0/LSP.runtimeconfig.json
+/Users/sadin/Work/Projects/a-programmer.github.io/projects/LSP/bin/Debug/net5.0/LSP.runtimeconfig.dev.json
+/Users/sadin/Work/Projects/a-programmer.github.io/projects/LSP/bin/Debug/net5.0/LSP.dll
+/Users/sadin/Work/Projects/a-programmer.github.io/projects/LSP/bin/Debug/net5.0/ref/LSP.dll
+/Users/sadin/Work/Projects/a-programmer.github.io/projects/LSP/bin/Debug/net5.0/LSP.pdb
+/Users/sadin/Work/Projects/a-programmer.github.io/projects/LSP/obj/Debug/net5.0/LSP.csproj.AssemblyReference.cache
+/Users/sadin/Work/Projects/a-programmer.github.io/projects/LSP/obj/Debug/net5.0/LSP.GeneratedMSBuildEditorConfig.editorconfig
+/Users/sadin/Work/Projects/a-programmer.github.io/projects/LSP/obj/Debug/net5.0/LSP.AssemblyInfoInputs.cache
+/Users/sadin/Work/Projects/a-programmer.github.io/projects/LSP/obj/Debug/net5.0/LSP.AssemblyInfo.cs
+/Users/sadin/Work/Projects/a-programmer.github.io/projects/LSP/obj/Debug/net5.0/LSP.csproj.CoreCompileInputs.cache
+/Users/sadin/Work/Projects/a-programmer.github.io/projects/LSP/obj/Debug/net5.0/LSP.dll
+/Users/sadin/Work/Projects/a-programmer.github.io/projects/LSP/obj/Debug/net5.0/ref/LSP.dll
+/Users/sadin/Work/Projects/a-programmer.github.io/projects/LSP/obj/Debug/net5.0/LSP.pdb
+/Users/sadin/Work/Projects/a-programmer.github.io/projects/LSP/obj/Debug/net5.0/LSP.genruntimeconfig.cache

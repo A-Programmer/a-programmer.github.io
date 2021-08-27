@@ -1,0 +1,15 @@
+/Users/sadin/Work/Projects/a-programmer.github.io/projects/SRP/bin/Debug/net5.0/SRP.deps.json
+/Users/sadin/Work/Projects/a-programmer.github.io/projects/SRP/bin/Debug/net5.0/SRP.runtimeconfig.json
+/Users/sadin/Work/Projects/a-programmer.github.io/projects/SRP/bin/Debug/net5.0/SRP.runtimeconfig.dev.json
+/Users/sadin/Work/Projects/a-programmer.github.io/projects/SRP/bin/Debug/net5.0/SRP.dll
+/Users/sadin/Work/Projects/a-programmer.github.io/projects/SRP/bin/Debug/net5.0/ref/SRP.dll
+/Users/sadin/Work/Projects/a-programmer.github.io/projects/SRP/bin/Debug/net5.0/SRP.pdb
+/Users/sadin/Work/Projects/a-programmer.github.io/projects/SRP/obj/Debug/net5.0/SRP.csproj.AssemblyReference.cache
+/Users/sadin/Work/Projects/a-programmer.github.io/projects/SRP/obj/Debug/net5.0/SRP.GeneratedMSBuildEditorConfig.editorconfig
+/Users/sadin/Work/Projects/a-programmer.github.io/projects/SRP/obj/Debug/net5.0/SRP.AssemblyInfoInputs.cache
+/Users/sadin/Work/Projects/a-programmer.github.io/projects/SRP/obj/Debug/net5.0/SRP.AssemblyInfo.cs
+/Users/sadin/Work/Projects/a-programmer.github.io/projects/SRP/obj/Debug/net5.0/SRP.csproj.CoreCompileInputs.cache
+/Users/sadin/Work/Projects/a-programmer.github.io/projects/SRP/obj/Debug/net5.0/SRP.dll
+/Users/sadin/Work/Projects/a-programmer.github.io/projects/SRP/obj/Debug/net5.0/ref/SRP.dll
+/Users/sadin/Work/Projects/a-programmer.github.io/projects/SRP/obj/Debug/net5.0/SRP.pdb
+/Users/sadin/Work/Projects/a-programmer.github.io/projects/SRP/obj/Debug/net5.0/SRP.genruntimeconfig.cache

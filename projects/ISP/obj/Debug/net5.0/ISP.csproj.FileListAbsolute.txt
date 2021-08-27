@@ -1,0 +1,15 @@
+/Users/sadin/Work/Projects/a-programmer.github.io/projects/ISP/bin/Debug/net5.0/ISP.deps.json
+/Users/sadin/Work/Projects/a-programmer.github.io/projects/ISP/bin/Debug/net5.0/ISP.runtimeconfig.json
+/Users/sadin/Work/Projects/a-programmer.github.io/projects/ISP/bin/Debug/net5.0/ISP.runtimeconfig.dev.json
+/Users/sadin/Work/Projects/a-programmer.github.io/projects/ISP/bin/Debug/net5.0/ISP.dll
+/Users/sadin/Work/Projects/a-programmer.github.io/projects/ISP/bin/Debug/net5.0/ref/ISP.dll
+/Users/sadin/Work/Projects/a-programmer.github.io/projects/ISP/bin/Debug/net5.0/ISP.pdb
+/Users/sadin/Work/Projects/a-programmer.github.io/projects/ISP/obj/Debug/net5.0/ISP.csproj.AssemblyReference.cache
+/Users/sadin/Work/Projects/a-programmer.github.io/projects/ISP/obj/Debug/net5.0/ISP.GeneratedMSBuildEditorConfig.editorconfig
+/Users/sadin/Work/Projects/a-programmer.github.io/projects/ISP/obj/Debug/net5.0/ISP.AssemblyInfoInputs.cache
+/Users/sadin/Work/Projects/a-programmer.github.io/projects/ISP/obj/Debug/net5.0/ISP.AssemblyInfo.cs
+/Users/sadin/Work/Projects/a-programmer.github.io/projects/ISP/obj/Debug/net5.0/ISP.csproj.CoreCompileInputs.cache
+/Users/sadin/Work/Projects/a-programmer.github.io/projects/ISP/obj/Debug/net5.0/ISP.dll
+/Users/sadin/Work/Projects/a-programmer.github.io/projects/ISP/obj/Debug/net5.0/ref/ISP.dll
+/Users/sadin/Work/Projects/a-programmer.github.io/projects/ISP/obj/Debug/net5.0/ISP.pdb
+/Users/sadin/Work/Projects/a-programmer.github.io/projects/ISP/obj/Debug/net5.0/ISP.genruntimeconfig.cache

@@ -1,0 +1,17 @@
+/Users/sadin/Work/Projects/a-programmer.github.io/projects/RabbitMQ/01/Sender/obj/Debug/net5.0/Sender.csproj.AssemblyReference.cache
+/Users/sadin/Work/Projects/a-programmer.github.io/projects/RabbitMQ/01/Sender/obj/Debug/net5.0/Sender.GeneratedMSBuildEditorConfig.editorconfig
+/Users/sadin/Work/Projects/a-programmer.github.io/projects/RabbitMQ/01/Sender/obj/Debug/net5.0/Sender.AssemblyInfoInputs.cache
+/Users/sadin/Work/Projects/a-programmer.github.io/projects/RabbitMQ/01/Sender/obj/Debug/net5.0/Sender.AssemblyInfo.cs
+/Users/sadin/Work/Projects/a-programmer.github.io/projects/RabbitMQ/01/Sender/obj/Debug/net5.0/Sender.csproj.CoreCompileInputs.cache
+/Users/sadin/Work/Projects/a-programmer.github.io/projects/RabbitMQ/01/Sender/bin/Debug/net5.0/Sender.deps.json
+/Users/sadin/Work/Projects/a-programmer.github.io/projects/RabbitMQ/01/Sender/bin/Debug/net5.0/Sender.runtimeconfig.json
+/Users/sadin/Work/Projects/a-programmer.github.io/projects/RabbitMQ/01/Sender/bin/Debug/net5.0/Sender.runtimeconfig.dev.json
+/Users/sadin/Work/Projects/a-programmer.github.io/projects/RabbitMQ/01/Sender/bin/Debug/net5.0/Sender.dll
+/Users/sadin/Work/Projects/a-programmer.github.io/projects/RabbitMQ/01/Sender/bin/Debug/net5.0/ref/Sender.dll
+/Users/sadin/Work/Projects/a-programmer.github.io/projects/RabbitMQ/01/Sender/bin/Debug/net5.0/Sender.pdb
+/Users/sadin/Work/Projects/a-programmer.github.io/projects/RabbitMQ/01/Sender/bin/Debug/net5.0/RabbitMQ.Client.dll
+/Users/sadin/Work/Projects/a-programmer.github.io/projects/RabbitMQ/01/Sender/obj/Debug/net5.0/Sender.csproj.CopyComplete
+/Users/sadin/Work/Projects/a-programmer.github.io/projects/RabbitMQ/01/Sender/obj/Debug/net5.0/Sender.dll
+/Users/sadin/Work/Projects/a-programmer.github.io/projects/RabbitMQ/01/Sender/obj/Debug/net5.0/ref/Sender.dll
+/Users/sadin/Work/Projects/a-programmer.github.io/projects/RabbitMQ/01/Sender/obj/Debug/net5.0/Sender.pdb
+/Users/sadin/Work/Projects/a-programmer.github.io/projects/RabbitMQ/01/Sender/obj/Debug/net5.0/Sender.genruntimeconfig.cache
