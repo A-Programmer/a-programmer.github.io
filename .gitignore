@@ -20,3 +20,12 @@ package-lock.json
 
 # Misc
 assets/js/dist
+
+
+site/
+.sass-cache/
+jekyll-cache/
+.jekyll-metadata
+.bundle/
+vendor/
+**/.DS_Store
