@@ -21,6 +21,5 @@ You can follow my posts on [Linkedin](https://linkedin.com/in/MrSadin) with [#10
 
 I welcome collaborations, discussions, and interactions with fellow enthusiasts, professionals, and anyone interested in the fascinating world of software engineering. Feel free to reach out to me at [mrsadin@gmail.com](mailto:mrsadin@gmail.com). Let's embark on this exciting journey of learning and growth together!
 
-Happy coding!
-
+>Happy coding!
 {: .prompt-tip }

@@ -3,7 +3,7 @@ layout: post
 title: Hello World
 date: 2023-09-30 04:30 +0330
 description: My first post. In this post I am going to define the roadmap.
-img_path: /assets/posts/2023-09-30/
+img_path: /assets/posts/hello-world/
 image: 
     path: preview.jpeg
     alt: Hello World!
@@ -15,7 +15,7 @@ sitemap: true
 
 ## Introduction
 
-I am Kamran Sadin, a Software Engineer.
+I am Kamran Sadin, a Software Engineer .
 
 Finally, I decided to use Github Pages and Jekyll to run my blog.
 

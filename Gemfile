@@ -8,6 +8,8 @@ gem 'jekyll-admin', group: :jekyll_plugins
 
 gem 'jekyll-compose', group: [:jekyll_plugins]
 
+gem 'jemoji'
+
 group :test do
   gem "html-proofer", "~> 4.4"
 end
