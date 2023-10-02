@@ -1,5 +1,6 @@
 ---
 layout: post
+author: kamran
 title: Delegates Part 1 Plugin methods with Delegates
 description: In this post, I am going to explain the Delegates in C# in a very simple
   way with examples.
