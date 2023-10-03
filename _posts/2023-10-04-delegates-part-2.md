@@ -3,8 +3,9 @@ layout: post
 title: Delegates Part 2
 description: The second post of the Delegates series, I am here to explain delegates
   in a very simple way.
+img_path: "/assets/posts/delegates/"
 image:
-  path: elegates-2-Preview.jpeg
+  path: Delegates-2-Preview.jpeg
   alt: C# Delegates - Part 2
 category:
 - C#
@@ -19,17 +20,17 @@ tags:
 - c# developer roadmap
 - 1000daysofcsharp
 - day22
-date: 2023-10-04 10:00 +0330
+date: 2023-10-04 90:00 +0330
 ---
 ## Prerequisits
 
-You want to read the second part of Delegates, right?
-The first thing that you need is to read the [previous part (Part 1)](https://sadin.dev/posts/delegates-part-1-plugin-methods-with-delegates/)
+You want to read the second part of Delegates, right?  
+The first thing that you need is to read the [previous part (Part 1)](https://sadin.dev/posts/delegates-part-1-plugin-methods-with-delegates/).  
 The next thing is putting a smile please put a smile on your face then start to read the article.
 
 ## Target methods
 
-As you remember, we agreed that a delegate can point to a method, right? In simple words, it means that we can have a variable that can hold a method in it and then we can call that method by calling this variable.
+As you remember, we agreed that a delegate can point to a method, right? In simple words, it means that we can have a variable that can hold a method in it and then we can call that method by calling this variable.  
 We have local, static, and instance methods in C#, so the delegate can point to which of them? All! A delegate's target method can be a local, static, or instance method.
 
 ```csharp
@@ -64,7 +65,7 @@ Transformer transformer = Square;
 transformer += Cube;
 ```
 
-Invoking transformer will invoke both Square and Cube in the order in which they are added.  
+Invoking transformer will invoke both Square and Cube in the order in which they are added.    
 How about removing a method from a delegate? To remove a method from a delegate you can use - and -= operators.
 
 ```csharp
@@ -75,6 +76,7 @@ transformer -= Square;
 {: .prompt-tip }
 
 How about if we assign multiple methods with a nonvoid return type to a delegate? Which result will be returned? The caller receives the return value from the last method to be invoked. This doesn't mean that the other methods are not going to be called, they are called but the return values will be discarded.
+
 It doesn't make sense to have multicast delegate with multiple methods that return value unless some specific cases, so don't worry about this part, you won't need this much.
 
 Let's see an example:  
@@ -127,6 +129,7 @@ public static void Main(string[] args)
 ```
 
 It would be better if we could cover any type of numbers with one delegate, wouldn't it? I mean, currently, the delegate is only compatible with methods that return `int` and expect an `int` as a parameter, right? If you write the Cube method with a `double` return type and a `double` parameter, you have to create another delegate with a `double` return and parameter type, right?  
+
 Can you remember Generics in C# that I have published a post about them? We can have the same solution here.  
 
 The syntax of Generic Delegate Types is as follows:
@@ -160,6 +163,7 @@ Awesome, right?
 Now you know about the generic delegates and how to create one, by generic delegates you can create delegates with any input and output type. C# has built-in generic delegates, **Func** and **Action**.
 
 ### Func
+
 **Func** is a built-in delegate that that represents a method that takes one or more (up to 16) parameters and returns a value, the return type of `Func` can be any type.
 ```csharp
 Func<T1, T2, T3, ..., T16, TResult>
