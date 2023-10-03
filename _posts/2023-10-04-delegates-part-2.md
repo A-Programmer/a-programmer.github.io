@@ -1,8 +1,11 @@
 ---
 layout: post
 title: Delegates Part 2
-description: The second post of the Delegates series, I am here to explain delegates in a very simple way.
+description: The second post of the Delegates series, I am here to explain delegates
+  in a very simple way.
 image:
+  path: elegates-2-Preview.jpeg
+  alt: C# Delegates - Part 2
 category:
 - C#
 - C# Developer Roadmap
@@ -16,9 +19,13 @@ tags:
 - c# developer roadmap
 - 1000daysofcsharp
 - day22
+date: 2023-10-04 10:00 +0330
 ---
+## Prerequisits
 
-
+You want to read the second part of Delegates, right?
+The first thing that you need is to read the [previous part (Part 1)](https://sadin.dev/posts/delegates-part-1-plugin-methods-with-delegates/)
+The next thing is putting a smile please put a smile on your face then start to read the article.
 
 ## Target methods
 
@@ -119,7 +126,7 @@ public static void Main(string[] args)
 }
 ```
 
-It would be better if we could cover any type of numbers with one delegate, wouldn't it? I mean, currently, the delegate is only compatible with methods that return `int` and accpect an `int` as parameter, right? If you write the Cube method with a `double` return type and a `double` parameter, you have to create another delegate with a `double` return and parameter type, right?  
+It would be better if we could cover any type of numbers with one delegate, wouldn't it? I mean, currently, the delegate is only compatible with methods that return `int` and expect an `int` as a parameter, right? If you write the Cube method with a `double` return type and a `double` parameter, you have to create another delegate with a `double` return and parameter type, right?  
 Can you remember Generics in C# that I have published a post about them? We can have the same solution here.  
 
 The syntax of Generic Delegate Types is as follows:
@@ -206,9 +213,9 @@ Easy, right? That's what a `Func` is:
 {: .prompt-info }
 
 ### Action
-In some cases we don't need a return value, or we need a delegate that represents a void-returning method.
+In some cases, we don't need a return value, or we need a delegate that represents a void-returning method.
 In that case, we can use another predefined delegate called `Action`.
-**Action** is a predefined delegate type that represents a method with zero or more (up t 16) parameters that doesn't return any value.
+**Action** is a predefined delegate type that represents a method with zero or more (up to 16) parameters that doesn't return any value.
 
 ```csharp
 Action<int, int> ActionCalculator = (a, b) =>
@@ -297,6 +304,53 @@ Awesome, right?
 7. **Dependency Injection:**
    Specifying actions to be taken after resolving dependencies in a dependency injection container.
 
-**Well done**! Really, good job guys, you finished the second part of the delegates, **please put a smile on your face** :-).
 
-In the next post, I will wrap up the delegate introduction and I will share some tips about delegates.
+>A problem that you can solve with a delegate, can also be solved with an interface.
+{: .propmt-info }
+
+If you don't understand this, I suggest you read the article again, look for more examples, and compare delegates and interfaces. And at the end, try to implement previous examples with an interface.
+
+A delegate design might be a better choice than an interface design if one or more of these conditions are true:
+- The interface defines only a single method.
+- Multicast capability is needed.
+- The subscriber needs to implement the interface multiple times.
+
+## Delegate compatibility
+
+Delegate types are all incompatible with one another, even if their signature is the same:
+```csharp
+D1 d1 = Method1;
+D2 d2 = d1;  // compile time error
+
+void Method1() { }
+
+delegate void D1() { }
+delegate void D2() { }
+```
+
+>The following, however, is permitted:
+D2 d2 = new D2(d1);
+{: .prompt-info }
+
+## Delegates equality
+
+Delegate instances are considered equal if they have the same method targets:
+
+```csharp
+D d1 = Method1;
+D d2 = Method1;
+
+Console.WriteLine( d1 == d2);  // True
+
+void Method1() { }
+delegate void D() { }
+```
+
+Multicast delegates are considered equal if they reference the same methods in the same order.
+
+There are some other topics about delegates, like Parameter compatibility, return type compatibility, covariant, and contravariant that I won't go through, and you can search about them or ask Chat GPT for the answer with some examples.
+
+Now we are ready to understand the Events concepts. In the next post, I will talk about events and how knowing delegates helps us to learn about Events faster and easier.
+
+
+**Well done**! Good job guys, you finished the second part of the delegates, **please put a smile on your face** :-).
