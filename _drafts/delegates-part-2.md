@@ -9,9 +9,13 @@ category:
 tags:
 - csharp
 - delegate
+- multicast delegates
+- generic delegates
+- func
+- action
 - c# developer roadmap
 - 1000daysofcsharp
-- day21
+- day22
 ---
 
 
@@ -46,7 +50,7 @@ delegate int Transformer(int x);
 
 ## Multicasting
 
-One of the interesting parts of delegates is multicasting, a regular variable can hold the data, right? an `int` variable can hold only one number and if you try to assign another number, it will be replaced by the new number. In delegates, we can assign multiple methods to one delegate instance by using + and += operators.
+One of the interesting parts of delegates is multicasting, a regular variable can hold the data, right? an `int` variable can hold only one number; if you try to assign another number, it will be replaced by the new number. We can assign multiple methods to one delegate instance by using + and += operators in delegates.
 
 ```csharp
 Transformer transformer = Square;
@@ -63,7 +67,7 @@ transformer -= Square;
 >Delegates are immutable, so when you call -= or +=, you are creating a new delegate instance and assigning it to the existing variable.
 {: .prompt-tip }
 
-How about if we assign multiple methods with nonvoid return type to a delegate? Which result will be returned? The caller receives the return value from the last method to be invoked. This doesn't mean that the other methods are not going to be called, they are called but the return values will be discarded.
+How about if we assign multiple methods with a nonvoid return type to a delegate? Which result will be returned? The caller receives the return value from the last method to be invoked. This doesn't mean that the other methods are not going to be called, they are called but the return values will be discarded.
 It doesn't make sense to have multicast delegate with multiple methods that return value unless some specific cases, so don't worry about this part, you won't need this much.
 
 Let's see an example:  
@@ -96,7 +100,7 @@ On line 3 we create our delegate (contract or rule) and on lines 14, 15, and 16 
 
 ## Generic Delegate Types
 
-I want to make this topic more interesting, Let's continue with the Transformer example, we want to calculate the Square and Cube of the given number as following:
+I want to make this topic more interesting, Let's continue with the Transformer example, we want to calculate the Square and Cube of the given number as follows:
 
 ```csharp
 delegate int Transformer(int x);
@@ -115,10 +119,10 @@ public static void Main(string[] args)
 }
 ```
 
-It would be better if we could cover any type of numbers with one delegate, wouldn't it? I mean, currently, the delegate is only compatible with methods that return `int` and accpect an `int` as parameter, right? If you write the Cube method with `double` return type and `double` parameter, you have to create another delegate with `double` return and parameter type, right?  
-Can you remember Generics in C# that I have published a post about them? We can have same solution here.  
+It would be better if we could cover any type of numbers with one delegate, wouldn't it? I mean, currently, the delegate is only compatible with methods that return `int` and accpect an `int` as parameter, right? If you write the Cube method with a `double` return type and a `double` parameter, you have to create another delegate with a `double` return and parameter type, right?  
+Can you remember Generics in C# that I have published a post about them? We can have the same solution here.  
 
-The syntax of Generic Delegate Types is as the following:
+The syntax of Generic Delegate Types is as follows:
 
 ```csharp
 public delegate T MethodName<T>(T arg);
@@ -142,6 +146,157 @@ public static void Main(string[] args)
 }
 ```
 
-Awesome!
+Awesome, right?
 
-In the next post I will talk about two pre-defined and specific types of delegates called `Func` and `Action`.
+## Func and Action
+
+Now you know about the generic delegates and how to create one, by generic delegates you can create delegates with any input and output type. C# has built-in generic delegates, **Func** and **Action**.
+
+### Func
+**Func** is a built-in delegate that that represents a method that takes one or more (up to 16) parameters and returns a value, the return type of `Func` can be any type.
+```csharp
+Func<T1, T2, T3, ..., T16, TResult>
+```
+`T1` ... `T16` are parameters and `TResult` is the return value.  
+
+Let's see it in an example:
+
+```csharp
+class Calculator
+{
+    public int Add(int a, int b) => a + b;
+    public int Subtract(int a, int b) => a - b;
+    public int Multiply(int a, int b) => a * b;
+    public int Divide(int a, int b) => a / b;
+}
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        var FuncCalculator = new Calculator();
+
+        Func<int, int, int> add = FuncCalculator.Add;
+        Func<int, int, int> subtract = FuncCalculator.Subtract;
+        Func<int, int, int> multiply = FuncCalculator.Multiply;
+        Func<int, int, int> divide = FuncCalculator.Divide;
+
+        Console.WriteLine($"Addition result: {add(10, 5)}");
+        Console.WriteLine($"Subtraction result: {subtract(10, 5)}");
+        Console.WriteLine($"Multiplication result: {multiply(10, 5)}");
+        Console.WriteLine($"Division result: {divide(10, 5)}");
+    }
+}
+
+// Or
+
+Func<int, int, int> add = (a, b) => a + b;
+Func<int, int, int> subtract = (a, b) => a - b;
+Func<int, int, int> multiply = (a, b) => a * b;
+Func<int, int, int> divide = (a, b) => a / b;
+
+Console.WriteLine($"Addition result: {add(10, 5)}");
+Console.WriteLine($"Subtraction result: {subtract(10, 5)}");
+Console.WriteLine($"Multiplication result: {multiply(10, 5)}");
+Console.WriteLine($"Division result: {divide(10, 5)}");
+```
+
+Easy, right? That's what a `Func` is:
+>A predefined delegate that represents a method with zero or more (up to 16) input parameters and a return type.
+{: .prompt-info }
+
+### Action
+In some cases we don't need a return value, or we need a delegate that represents a void-returning method.
+In that case, we can use another predefined delegate called `Action`.
+**Action** is a predefined delegate type that represents a method with zero or more (up t 16) parameters that doesn't return any value.
+
+```csharp
+Action<int, int> ActionCalculator = (a, b) =>
+{
+    Console.WriteLine($"Addition result: {a + b}");
+    Console.WriteLine($"Subtraction result: {a - b}");
+    Console.WriteLine($"Multiplication result: {a * b}");
+    Console.WriteLine($"Division result: {a / b}");
+};
+
+ActionCalculator(10, 5);
+```
+
+As you can see, we defined an Action delegate that takes two integer parameters performs some arithmetic operations, and returns nothing.
+
+
+
+## Tips:
+
+1. Use Cases:
+   - Use Func when you want a method that computes a result based on input parameters.
+   - Use Action when you want a method to perform some action without returning any value.
+2. Lambda Expressions:
+   - Lambdas are often used with Func and Action to define methods inline without explicitly writing a named method.
+3. Delegate Composition:
+You can chain multiple Func or Action delegates together using the += operator, allowing for multiple operations in sequence.
+
+## Example of Delegate Composition
+
+```csharp
+Action<string> greetAction = message => Console.WriteLine("Greetings: " + message);
+Action<string> farewellAction = message => Console.WriteLine("Farewell: " + message);
+
+Action<string> combinedAction = greetAction + farewellAction;
+
+combinedAction("John");  // Prints both greetings and farewells for "John"
+```
+
+Awesome, right?
+
+## Use-Cases
+
+### Func:
+
+1. **Function Composition:**
+   Combining multiple functions to create a new function by chaining `Func` delegates.
+
+2. **LINQ (Language Integrated Query):**
+   Utilized in LINQ for projection or transformation operations on collections.
+
+3. **Callback Functions:**
+   Providing a callback function to be executed upon completion of an asynchronous operation.
+
+4. **Mapping:**
+   Converting one type of object to another type using a mapping function.
+
+5. **Error Handling:**
+   Defining functions to handle specific error cases or exceptions.
+
+6. **Lazy Evaluation:**
+   Lazily computing values only when needed, particularly useful for performance optimizations.
+
+7. **Configuration:**
+   Supplying functions to configure components or behaviors of a system.
+
+### Action:
+
+1. **Event Handling:**
+   Defining actions to be executed when an event is raised.
+
+2. **UI Interaction:**
+   Handling user interface events and defining actions to update UI elements.
+
+3. **Logging:**
+   Logging actions or functions that record events or information for debugging or auditing purposes.
+
+4. **Multithreading:**
+   Specifying actions to be executed in separate threads or asynchronously.
+
+5. **Clean-Up Operations:**
+   Defining actions for cleanup or disposal of resources after a specific task.
+
+6. **Callback Functions:**
+   Providing a callback action to be executed upon completion of an asynchronous operation.
+
+7. **Dependency Injection:**
+   Specifying actions to be taken after resolving dependencies in a dependency injection container.
+
+**Well done**! Really, good job guys, you finished the second part of the delegates, **please put a smile on your face** :-).
+
+In the next post, I will wrap up the delegate introduction and I will share some tips about delegates.
