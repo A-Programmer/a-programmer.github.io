@@ -20,13 +20,19 @@ tags:
 - c# developer roadmap
 - 1000daysofcsharp
 - day22
-date: 2023-10-04 90:00 +0330
+date: 2023-10-04 07:30 +0330
 ---
+
+
+- [**Delegates Part 1**](/posts/delegates-part-1-plugin-methods-with-delegates/)
+- [**Delegates Part 2**](/posts/delegates-part-2/)  
+
+
 ## Prerequisits
 
 You want to read the second part of Delegates, right?  
-The first thing that you need is to read the [previous part (Part 1)](https://sadin.dev/posts/delegates-part-1-plugin-methods-with-delegates/).  
-The next thing is putting a smile please put a smile on your face then start to read the article.
+- The first thing that you need is to read the [previous part (Part 1)](/posts/delegates-part-1-plugin-methods-with-delegates/).  
+- **The next thing is putting a smile please put a smile on your face then start to read the article**.
 
 ## Target methods
 
@@ -214,7 +220,7 @@ Console.WriteLine($"Division result: {divide(10, 5)}");
 
 Easy, right? That's what a `Func` is:
 >A predefined delegate that represents a method with zero or more (up to 16) input parameters and a return type.
-{: .prompt-info }
+{: .prompt-tip }
 
 ### Action
 In some cases, we don't need a return value, or we need a delegate that represents a void-returning method.
@@ -237,7 +243,7 @@ As you can see, we defined an Action delegate that takes two integer parameters 
 
 
 
-## Tips:
+## Tips
 
 1. Use Cases:
    - Use Func when you want a method that computes a result based on input parameters.

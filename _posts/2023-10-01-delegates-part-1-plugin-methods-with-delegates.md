@@ -22,6 +22,9 @@ tags:
 date: 2023-10-01 23:52 +0330
 ---
 
+[**Delegates Part 1**](/posts/delegates-part-1-plugin-methods-with-delegates/)
+[**Delegates Part 2**](/posts/delegates-part-2/)  
+
 **This post is just to get familiar with Delegates in C#, in the next posts I will talk about delegates in advance.**
 
 ## What is Delegate
@@ -152,5 +155,6 @@ class Program
 ```
 
 It's a bit confusing and needs more explanation, isn't it? That's why I am here! Let me explain it:
-Of course, we could create our operation methods like Add, Sum, Multi, Div, etc in the Calculator class, but then we were coupling to the Calculator class methods, which means, that every time we need to add/remove an operation, we should modify the Calculator class, right?
+Of course, we could create our operation methods like Add, Sum, Multi, Div, etc in the Calculator class, but then we were coupling to the Calculator class methods, which means, that every time we need to add/remove an operation, we should modify the Calculator class, right?  
 How about using plug-in method feature in our example? By using this feature, we really decoupled the Calculator class and the caller (Main method), we are defining the operation in the Main method and adding/assigning to the Calculator at runtime, by using this, we can add/remove method to/from the Calculator without modifying the Calculator class.  
+
