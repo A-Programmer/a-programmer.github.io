@@ -16,7 +16,7 @@ tags:
 - oop
 - c# developer roadmap
 - 1000daysofcsharp
-date: 2023-10-06 09:30 +0000
+date: 2023-10-06 06:30 +0000
 ---
 ## Abstract Class
 
