@@ -16,7 +16,7 @@ tags:
 - software design
 - c# developer roadmap
 - 1000daysofcsharp
-date: 2023-10-15 05:00 +0330
+date: 2023-10-15 06:00 0000
 ---
 
 In the realm of software development, crafting code that stands the test of time and remains flexible in the face of evolving requirements is an art. Enter the **SOLID principles**, a set of guiding lights that illuminate the path toward building **robust and maintainable applications**. Let's delve into these principles, accompanied by C# examples, and explore how they transform real-world projects.

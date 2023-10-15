@@ -6,7 +6,10 @@ img_path: "/assets/posts/solid/"
 image:
   path: SOLID-5.jpg
   alt: Interface Segregation Principle
-description: The Interface Segregation Principle advocates that clients should not be forced to depend on interfaces they do not use. In other words, a class should not be forced to implement methods it does not need. Instead of a monolithic interface, classes should have smaller, specific interfaces tailored to their requirements.
+description: The Interface Segregation Principle advocates that clients should not
+  be forced to depend on interfaces they do not use. In other words, a class should
+  not be forced to implement methods it does not need. Instead of a monolithic interface,
+  classes should have smaller, specific interfaces tailored to their requirements.
 category:
 - C#
 - SOLID
@@ -20,7 +23,6 @@ tags:
 - c# developer roadmap
 - 1000daysofcsharp
 ---
-
 In the realm of software design, fundamental principles serve as guiding lights for creating maintainable, flexible, and scalable codebases. One such crucial principle is the **Interface Segregation Principle (ISP)**. ISP is a vital component of the SOLID principles, initially introduced by Robert C. Martin. Understanding and applying the Interface Segregation Principle is fundamental to achieving modular and cohesive software systems.
 
 1. [Introduction](https://sadin.dev/posts/mastering-solid-principles-in-csharp-part-1/)

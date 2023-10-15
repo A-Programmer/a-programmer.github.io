@@ -6,7 +6,11 @@ img_path: "/assets/posts/solid/"
 image:
   path: SOLID-2.jpg
   alt: Single Responsibility Principle
-description: At its core, SRP advocates that a class should have a **single reason to change**, meaning it should only have one responsibility. Essentially, a class should encapsulate one aspect of the functionality within the software. By adhering to this principle, the design becomes more modular, maintainable, and easier to extend.
+description: At its core, SRP advocates that a class should have a **single reason
+  to change**, meaning it should only have one responsibility. Essentially, a class
+  should encapsulate one aspect of the functionality within the software. By adhering
+  to this principle, the design becomes more modular, maintainable, and easier to
+  extend.
 category:
 - C#
 - SOLID
@@ -20,7 +24,6 @@ tags:
 - c# developer roadmap
 - 1000daysofcsharp
 ---
-
 In the realm of software development, adhering to well-established design principles is paramount for creating maintainable, flexible, and scalable codebases. One such foundational principle is the **Single Responsibility Principle (SRP)**. SRP is one of the SOLID principles, initially introduced by Robert C. Martin, emphasizing a fundamental concept that profoundly influences software design.
 
 1. [Introduction](https://sadin.dev/posts/mastering-solid-principles-in-csharp-part-1/)

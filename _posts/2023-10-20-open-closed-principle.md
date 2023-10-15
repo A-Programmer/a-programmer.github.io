@@ -6,7 +6,11 @@ img_path: "/assets/posts/solid/"
 image:
   path: SOLID-3.jpg
   alt: Open Closed Principle
-description: The Open/Closed Principle emphasizes that software entities (classes, modules, functions, etc.) should be open for **extension but closed for modification**. In simpler terms, the behavior of a module can be extended without modifying its source code. This principle promotes the creation of a system that is both adaptable and sustainable over time.
+description: The Open/Closed Principle emphasizes that software entities (classes,
+  modules, functions, etc.) should be open for **extension but closed for modification**.
+  In simpler terms, the behavior of a module can be extended without modifying its
+  source code. This principle promotes the creation of a system that is both adaptable
+  and sustainable over time.
 category:
 - C#
 - SOLID
@@ -20,7 +24,6 @@ tags:
 - c# developer roadmap
 - 1000daysofcsharp
 ---
-
 In the realm of software design, certain principles serve as guiding lights for creating maintainable, flexible, and scalable codebases. One such foundational principle is the **Open/Closed Principle (OCP)**. OCP is a crucial component of the SOLID principles, initially introduced by Bertrand Meyer. Understanding and applying the Open/Closed Principle can significantly impact software design.
 
 1. [Introduction](https://sadin.dev/posts/mastering-solid-principles-in-csharp-part-1/)

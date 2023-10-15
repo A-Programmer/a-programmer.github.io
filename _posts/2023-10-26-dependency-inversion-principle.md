@@ -6,7 +6,11 @@ img_path: "/assets/posts/solid/"
 image:
   path: SOLID-6.jpg
   alt: Dependency Inversion Principle
-description: The Dependency Inversion Principle emphasizes that high-level modules should not depend on low-level modules; both should depend on abstractions. Additionally, abstractions should not depend on details; instead, details should depend on abstractions. This principle encourages the use of interfaces or abstract classes to decouple higher-level and lower-level modules.
+description: The Dependency Inversion Principle emphasizes that high-level modules
+  should not depend on low-level modules; both should depend on abstractions. Additionally,
+  abstractions should not depend on details; instead, details should depend on abstractions.
+  This principle encourages the use of interfaces or abstract classes to decouple
+  higher-level and lower-level modules.
 category:
 - C#
 - SOLID
@@ -20,7 +24,6 @@ tags:
 - c# developer roadmap
 - 1000daysofcsharp
 ---
-
 In the realm of software design, fundamental principles serve as guiding lights for creating maintainable, flexible, and scalable codebases. One such crucial principle is the **Dependency Inversion Principle (DIP)**. DIP is a fundamental component of the SOLID principles, initially introduced by Robert C. Martin. Understanding and applying the Dependency Inversion Principle is crucial for achieving decoupled and adaptable software systems.
 
 1. [Introduction](https://sadin.dev/posts/mastering-solid-principles-in-csharp-part-1/)

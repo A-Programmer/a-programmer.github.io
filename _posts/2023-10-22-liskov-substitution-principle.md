@@ -6,7 +6,11 @@ img_path: "/assets/posts/solid/"
 image:
   path: SOLID-4.jpg
   alt: Liskov Substitution Principle
-description: The Liskov Substitution Principle defines that objects of a derived class should be substitutable for objects of the base class without affecting the correctness of the program. In simpler terms, any instance of a base class should be replaceable with an instance of a derived class without altering the desired properties of the program.
+description: The Liskov Substitution Principle defines that objects of a derived class
+  should be substitutable for objects of the base class without affecting the correctness
+  of the program. In simpler terms, any instance of a base class should be replaceable
+  with an instance of a derived class without altering the desired properties of the
+  program.
 category:
 - C#
 - SOLID
@@ -20,7 +24,6 @@ tags:
 - c# developer roadmap
 - 1000daysofcsharp
 ---
-
 In the realm of software design, adhering to fundamental principles is essential for creating maintainable, flexible, and scalable codebases. One such crucial principle is the **Liskov Substitution Principle (LSP)**. LSP is a key element of the SOLID principles, initially introduced by Barbara Liskov. Understanding and applying the Liskov Substitution Principle is fundamental to achieving robust and extensible software systems.
 
 1. [Introduction](https://sadin.dev/posts/mastering-solid-principles-in-csharp-part-1/)
