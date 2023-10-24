@@ -26,11 +26,11 @@ tags:
 ---
 In the realm of software design, certain principles serve as guiding lights for creating maintainable, flexible, and scalable codebases. One such foundational principle is the **Open/Closed Principle (OCP)**. OCP is a crucial component of the SOLID principles, initially introduced by Bertrand Meyer. Understanding and applying the Open/Closed Principle can significantly impact software design.
 
-1. [Introduction](https://sadin.dev/posts/mastering-solid-principles-in-csharp-part-1/)
+1. [Introduction](https://sadin.dev/posts/mastering-solid-principles-in-csharp/)
 2. [Single Responsibility Principle](https://sadin.dev/posts/single-responsibility-principle/)
 3. [Open/Closed Principle](https://sadin.dev/posts/open-closed-principle/)
-4. Liskov Substitution Principle (Comming soon)
-5. Interface Segregation Principle (Comming soon)
+4. [Liskov Substitution Principle](https://sadin.dev/posts/liskov-substitution-principle/)
+5. [Interface Segregation Principle](https://sadin.dev/posts/interface-segregation-principle/)
 6. Dependency Inversion Principle (Comming soon)
 
 ## What is the Open/Closed Principle?
