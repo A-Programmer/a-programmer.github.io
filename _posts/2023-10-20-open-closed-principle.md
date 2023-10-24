@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Open Closed Principle
-date: 2023-10-10 05:00 +0330
+date: 2023-10-20 05:00 +0330
 img_path: "/assets/posts/solid/"
 image:
   path: SOLID-3.jpg
