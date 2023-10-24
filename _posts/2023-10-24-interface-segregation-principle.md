@@ -25,11 +25,11 @@ tags:
 ---
 In the realm of software design, fundamental principles serve as guiding lights for creating maintainable, flexible, and scalable codebases. One such crucial principle is the **Interface Segregation Principle (ISP)**. ISP is a vital component of the SOLID principles, initially introduced by Robert C. Martin. Understanding and applying the Interface Segregation Principle is fundamental to achieving modular and cohesive software systems.
 
-1. [Introduction](https://sadin.dev/posts/mastering-solid-principles-in-csharp-part-1/)
-2. [Single Responsibility Principle](https://sadin.dev/posts/single-responsibility-principle/)
-3. [Open/Closed Principle](https://sadin.dev/posts/open-closed-principle/)
-4. [Liskov Substitution Principle](https://sadin.dev/posts/liskov-substitution-principle/)
-5. [Interface Segregation Principle](https://sadin.dev/posts/interface-segregation-principle/)
+1. [Introduction](https://sadin.dev/posts/mastering-solid-principles-in-csharp/?)
+2. [Single Responsibility Principle](https://sadin.dev/posts/single-responsibility-principle/?)
+3. [Open/Closed Principle](https://sadin.dev/posts/open-closed-principle/?)
+4. [Liskov Substitution Principle](https://sadin.dev/posts/liskov-substitution-principle/?)
+5. [Interface Segregation Principle](https://sadin.dev/posts/interface-segregation-principle/?)
 6. Dependency Inversion Principle (Comming soon)
 
 ## What is the Interface Segregation Principle?
