@@ -84,6 +84,9 @@ SOLID is an acronym representing five essential design principles introduced by 
 4. **Interface Segregation Principle (ISP)**
    - Recommends that clients should not be forced to depend on interfaces they do not use. It promotes smaller, specific interfaces.
 
+5. **Dependency Inversion Principle (DIP)**
+   - States that high-level modules should not depend on low-level modules. Both should depend on abstractions. Additionally, it emphasizes that abstractions should not depend on details, but details should depend on abstractions.
+
 ## Importance and Benefits of SOLID Principles
 
 - **Modular Design:** SOLID principles promote a modular design, making it easier to organize and manage code components.
