@@ -118,5 +118,3 @@ The Interface Segregation Principle is a fundamental guideline in software desig
 - [LinkedIn](https://linkedin.com/in/MrSadin)
 - [Blog](https://sadin.dev)
 - [YouTube](https://youtube.com/c/EnKamran)
-- [Email](MrSadin@Gmail.Com)
-- [Mobile](+09 911 279 4171)

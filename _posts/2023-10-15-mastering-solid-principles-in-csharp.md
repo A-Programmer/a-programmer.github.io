@@ -105,5 +105,3 @@ By adhering to SOLID principles, developers are empowered to build software syst
 - [LinkedIn](https://linkedin.com/in/MrSadin)
 - [Blog](https://sadin.dev)
 - [YouTube](https://youtube.com/c/EnKamran)
-- [Email](MrSadin@Gmail.Com)
-- [Mobile](+09 911 279 4171)
