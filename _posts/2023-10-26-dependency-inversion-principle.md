@@ -31,6 +31,7 @@ In the realm of software design, fundamental principles serve as guiding lights 
 3. [Open/Closed Principle](https://sadin.dev/posts/open-closed-principle/?)
 4. [Liskov Substitution Principle](https://sadin.dev/posts/liskov-substitution-principle/?)
 5. [Interface Segregation Principle](https://sadin.dev/posts/interface-segregation-principle/?)
+6. [**Dependency Inversion Principle**](https://sadin.dev/posts/dependency-inversion-principle/?)
 
 ## What is the Dependency Inversion Principle?
 
@@ -154,3 +155,11 @@ In this example, the higher-level component depends on `ILogger`, an abstraction
 ## Summary
 
 The Dependency Inversion Principle is a fundamental guideline in software design, advocating for reduced coupling by relying on abstractions. Adhering to DIP enhances flexibility, testability, and maintainability. By understanding and implementing this principle, developers can create software systems that are decoupled, adaptable, and easily extendable over time.
+
+## You can follow me on the LinkedIn, YouTube, Telegram Group to discuss, and directly send me email.
+- [Telegram Group](https://t.me/sadinco_csharp)
+- [LinkedIn](https://linkedin.com/in/MrSadin)
+- [Blog](https://sadin.dev)
+- [YouTube](https://youtube.com/c/EnKamran)
+- [Email](MrSadin@Gmail.Com)
+- [Mobile](+09 911 279 4171)

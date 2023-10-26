@@ -27,11 +27,11 @@ tags:
 In the realm of software development, adhering to well-established design principles is paramount for creating maintainable, flexible, and scalable codebases. One such foundational principle is the **Single Responsibility Principle (SRP)**. SRP is one of the SOLID principles, initially introduced by Robert C. Martin, emphasizing a fundamental concept that profoundly influences software design.
 
 1. [Introduction](https://sadin.dev/posts/mastering-solid-principles-in-csharp/?)
-2. [Single Responsibility Principle](https://sadin.dev/posts/single-responsibility-principle/?)
+2. [**Single Responsibility Principle**](https://sadin.dev/posts/single-responsibility-principle/?)
 3. [Open/Closed Principle](https://sadin.dev/posts/open-closed-principle/?)
 4. [Liskov Substitution Principle](https://sadin.dev/posts/liskov-substitution-principle/?)
 5. [Interface Segregation Principle](https://sadin.dev/posts/interface-segregation-principle/?)
-6. Dependency Inversion Principle (Comming soon)
+6. [Dependency Inversion Principle](https://sadin.dev/posts/dependency-inversion-principle/?)
 
 ## What is the Single Responsibility Principle?
 
@@ -133,3 +133,12 @@ The `ShapeCalculator` class encompasses responsibilities for calculating areas o
 ## Summary
 
 The Single Responsibility Principle is a fundamental guideline in software design, advocating for a class to encapsulate a single responsibility. Adhering to SRP enhances code clarity, maintainability, and reusability, ultimately contributing to the development of scalable and robust software. By understanding and implementing this principle, developers can build more modular and maintainable codebases, paving the way for successful software projects.
+
+
+## You can follow me on the LinkedIn, YouTube, Telegram Group to discuss, and directly send me email.
+- [Telegram Group](https://t.me/sadinco_csharp)
+- [LinkedIn](https://linkedin.com/in/MrSadin)
+- [Blog](https://sadin.dev)
+- [YouTube](https://youtube.com/c/EnKamran)
+- [Email](MrSadin@Gmail.Com)
+- [Mobile](+09 911 279 4171)

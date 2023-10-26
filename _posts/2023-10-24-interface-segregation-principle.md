@@ -29,8 +29,8 @@ In the realm of software design, fundamental principles serve as guiding lights 
 2. [Single Responsibility Principle](https://sadin.dev/posts/single-responsibility-principle/?)
 3. [Open/Closed Principle](https://sadin.dev/posts/open-closed-principle/?)
 4. [Liskov Substitution Principle](https://sadin.dev/posts/liskov-substitution-principle/?)
-5. [Interface Segregation Principle](https://sadin.dev/posts/interface-segregation-principle/?)
-6. Dependency Inversion Principle (Comming soon)
+5. [**Interface Segregation Principle**](https://sadin.dev/posts/interface-segregation-principle/?)
+6. [Dependency Inversion Principle](https://sadin.dev/posts/dependency-inversion-principle/?)
 
 ## What is the Interface Segregation Principle?
 
@@ -110,3 +110,13 @@ In this example, a class representing a circle may be forced to implement resizi
 ## Summary
 
 The Interface Segregation Principle is a fundamental guideline in software design, advocating for specific and lean interfaces. Adhering to ISP enhances modularity, reduces dependencies, and eases maintenance. By understanding and implementing this principle, developers can create software systems that are cohesive, maintainable, and easily extensible over time.
+
+
+
+## You can follow me on the LinkedIn, YouTube, Telegram Group to discuss, and directly send me email.
+- [Telegram Group](https://t.me/sadinco_csharp)
+- [LinkedIn](https://linkedin.com/in/MrSadin)
+- [Blog](https://sadin.dev)
+- [YouTube](https://youtube.com/c/EnKamran)
+- [Email](MrSadin@Gmail.Com)
+- [Mobile](+09 911 279 4171)
