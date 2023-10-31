@@ -12,7 +12,6 @@ description: The Liskov Substitution Principle defines that objects of a derived
   with an instance of a derived class without altering the desired properties of the
   program.
 category:
-- C#
 - C# Developer Roadmap
 - SOLID
 tags:

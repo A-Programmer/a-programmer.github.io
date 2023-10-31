@@ -12,7 +12,6 @@ description: The Open/Closed Principle emphasizes that software entities (classe
   source code. This principle promotes the creation of a system that is both adaptable
   and sustainable over time.
 category:
-- C#
 - C# Developer Roadmap
 - SOLID
 tags:

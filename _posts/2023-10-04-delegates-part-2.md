@@ -8,8 +8,8 @@ image:
   path: Delegates-2-Preview.jpeg
   alt: C# Delegates - Part 2
 category:
-- C#
 - C# Developer Roadmap
+- Delegates
 tags:
 - csharp
 - delegate

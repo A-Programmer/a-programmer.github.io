@@ -12,7 +12,6 @@ description: At its core, SRP advocates that a class should have a **single reas
   to this principle, the design becomes more modular, maintainable, and easier to
   extend.
 category:
-- C#
 - C# Developer Roadmap
 - SOLID
 tags:

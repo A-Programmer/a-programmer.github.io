@@ -9,7 +9,6 @@ image:
   path: Events-1.jpg
   alt: A Guide to Event Handling in C#
 category:
-- C#
 - C# Developer Roadmap
 - Events & Event Handling
 tags:

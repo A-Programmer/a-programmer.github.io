@@ -7,8 +7,8 @@ image:
   path: preview.png
   alt: Abstract vs. Interface
 category:
-- C#
 - C# Developer Roadmap
+- OOP
 tags:
 - csharp
 - abstract

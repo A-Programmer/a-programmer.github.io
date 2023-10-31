@@ -12,7 +12,7 @@ description: The Dependency Inversion Principle emphasizes that high-level modul
   This principle encourages the use of interfaces or abstract classes to decouple
   higher-level and lower-level modules.
 category:
-- C#
+- C# Developer Roadmap
 - SOLID
 tags:
 - csharp
