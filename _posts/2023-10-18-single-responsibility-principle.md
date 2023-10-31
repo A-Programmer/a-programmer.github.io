@@ -13,6 +13,7 @@ description: At its core, SRP advocates that a class should have a **single reas
   extend.
 category:
 - C#
+- C# Developer Roadmap
 - SOLID
 tags:
 - csharp

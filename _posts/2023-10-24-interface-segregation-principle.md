@@ -12,6 +12,7 @@ description: The Interface Segregation Principle advocates that clients should n
   classes should have smaller, specific interfaces tailored to their requirements.
 category:
 - C#
+- C# Developer Roadmap
 - SOLID
 tags:
 - csharp
