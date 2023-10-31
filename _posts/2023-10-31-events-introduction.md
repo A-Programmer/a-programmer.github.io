@@ -202,7 +202,7 @@ public static class Program
 ```
 For practice, you can add another event for product name update.
 
-Now that you've got a taste of the basics, we'll move on to the next section, "Beginner's Guide," where we'll explore event handlers and delegates in more detail.
+Now that you've got a taste of the basics, we'll move on to the next post, "Beginner's Guide," where we'll explore event handlers and delegates in more detail.
 
 
 ### You can follow me on the LinkedIn, YouTube, Telegram Group to discuss, and directly send me email.
