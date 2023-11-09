@@ -1,11 +1,11 @@
 ---
 layout: post
-title: A Complete Guide to Conditionals in CSharp
+title: A Complete Guide to Conditionals in C#
 description: Conditionals in C# are essential for controlling the flow of your program, making decisions, and executing code based on specific conditions. This comprehensive guide will take you from the fundamentals of conditionals to more advanced techniques, ensuring you have a solid understanding of this crucial aspect of C# programming.
 img_path: "/assets/posts/basics/"
 image:
   path: conditionals.jpg
-  alt: A Comprehensive Guide to Variables in C#
+  alt: A Complete Guide to Conditionals in C#
 category:
 - C# Developer Roadmap
 - Basics
