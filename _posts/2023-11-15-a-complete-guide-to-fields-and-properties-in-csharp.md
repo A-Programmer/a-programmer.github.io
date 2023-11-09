@@ -1,10 +1,7 @@
 ---
 layout: post
 title: A Comprehensive Guide to Fields and Properties in C#
-description: Fields and properties are fundamental elements in C# that allow you to
-  define and access data within classes and structures. This comprehensive guide will
-  take you from the fundamentals of fields and properties to more advanced techniques,
-  ensuring you have a deep understanding of these critical concepts in C#.
+description: Fields and properties are fundamental elements in C# that allow you to define and access data within classes and structures. This comprehensive guide will take you from the fundamentals of fields and properties to more advanced techniques, ensuring you have a deep understanding of these critical concepts in C#.
 img_path: "/assets/posts/basics/"
 image:
   path: fields-properties.jpg
