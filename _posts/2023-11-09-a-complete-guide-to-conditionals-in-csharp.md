@@ -19,7 +19,7 @@ tags:
 date: 2023-11-09 06:30 +0000
 ---
 
-[**Download PDF Version**](https://sadin.dev/assets/posts/basics/a-complete-guide-to-conditionals.pdf)
+[**Download PDF Version**](https://sadin.dev/assets/posts/basics/A-Complete-Guide-to-Conditionals.pdf)
 
 Conditionals in C# are essential for controlling the flow of your program, making decisions, and executing code based on specific conditions. This comprehensive guide will take you from the fundamentals of conditionals to more advanced techniques, ensuring you have a solid understanding of this crucial aspect of C# programming.
 
