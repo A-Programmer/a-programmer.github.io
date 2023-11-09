@@ -1,11 +1,7 @@
 ---
 layout: post
 title: A Comprehensive Guide to Loops in C#
-description: Loops are a fundamental programming construct that allows you to repeat
-  a block of code multiple times. They are indispensable for automating repetitive
-  tasks, processing collections, and controlling program flow. In this comprehensive
-  guide, we will explore loops in C#, starting with the basics and progressing to
-  more advanced loop techniques.
+description: Loops are a fundamental programming construct that allows you to repeat a block of code multiple times. They are indispensable for automating repetitive tasks, processing collections, and controlling program flow. In this comprehensive guide, we will explore loops in C#, starting with the basics and progressing to more advanced loop techniques.
 img_path: "/assets/posts/basics/"
 image:
   path: loops.jpg
