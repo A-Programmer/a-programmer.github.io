@@ -19,7 +19,7 @@ tags:
 - step 1
 ---
 
-[**PDF Version of post**](../assets/posts/basics/A%20Complete%20Guid%20to%20Variables%20in%20CSharp.pdf)
+[**Download PDF Version**](https://sadin.dev/assets/posts/basics/A-Complete-Guid-to-Variables-in-CSharp.pdf)
 
 Variables are the backbone of any programming language, and C# is no exception. They allow you to store and manage data, enabling your programs to perform tasks and make decisions. In this comprehensive guide, we will explore the world of variables in C#, covering everything from their basic definition to best practices and naming conventions.
 
