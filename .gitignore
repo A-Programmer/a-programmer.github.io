@@ -29,3 +29,11 @@ jekyll-cache/
 .bundle/
 vendor/
 **/.DS_Store
+.vs/
+.code/
+.vscode/
+**/.vs/
+**/.code/
+**/.vscode/
+**/.idea/
+**/[Mm]igrations/
