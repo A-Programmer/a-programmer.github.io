@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>
+  Open Closed Principle · Kamran Sadin
+</title>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+
+
+
+
+<meta name="author" content="Kamran Sadin">
+<meta name="description" content="The Open/Closed Principle emphasizes that software entities (classes, modules, functions, etc.) should be open for **extension but closed for modification**. In simpler terms, the behavior of a module can be extended without modifying its source code. This principle promotes the creation of a system that is both adaptable and sustainable over time.">
+<meta name="keywords" content="blog,developer,c#,.net,dot net,software engineer,mentor">
+
+
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Open Closed Principle">
+  <meta name="twitter:description" content="The Open/Closed Principle emphasizes that software entities (classes, modules, functions, etc.) should be open for **extension but closed for modification**. In simpler terms, the behavior of a module can be extended without modifying its source code. This principle promotes the creation of a system that is both adaptable and sustainable over time.">
+
+<meta property="og:url" content="https://sadin.dev/posts/2023-10-20-open-closed-principle/">
+  <meta property="og:site_name" content="Kamran Sadin">
+  <meta property="og:title" content="Open Closed Principle">
+  <meta property="og:description" content="The Open/Closed Principle emphasizes that software entities (classes, modules, functions, etc.) should be open for **extension but closed for modification**. In simpler terms, the behavior of a module can be extended without modifying its source code. This principle promotes the creation of a system that is both adaptable and sustainable over time.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2023-10-20T00:00:00+00:00">
+    <meta property="article:modified_time" content="2023-10-20T00:00:00+00:00">
+    <meta property="article:tag" content="Csharp">
+    <meta property="article:tag" content="Solid">
+    <meta property="article:tag" content="Ocp">
+    <meta property="article:tag" content="Open Closed Principle">
+    <meta property="article:tag" content="Software Principles">
+    <meta property="article:tag" content="Software Design">
+
+
+
+
+<link rel="canonical" href="https://sadin.dev/posts/2023-10-20-open-closed-principle/">
+
+
+<link rel="preload" href="/fonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/fa-regular-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>
+
+
+  
+  
+  <link rel="stylesheet" href="/css/coder.min.b886fe0d9034709648f91f4ce178f51dd367d9350f82dd1132d54fd69bfca66f.css" integrity="sha256-uIb&#43;DZA0cJZI&#43;R9M4Xj1HdNn2TUPgt0RMtVP1pv8pm8=" crossorigin="anonymous" media="screen" />
+
+
+
+
+
+
+  
+    
+    
+    <link rel="stylesheet" href="/css/coder-dark.min.a00e6364bacbc8266ad1cc81230774a1397198f8cfb7bcba29b7d6fcb54ce57f.css" integrity="sha256-oA5jZLrLyCZq0cyBIwd0oTlxmPjPt7y6KbfW/LVM5X8=" crossorigin="anonymous" media="screen" />
+  
+
+
+
+ 
+
+
+
+
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg" sizes="any">
+<link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+
+
+
+
+
+</head>
+
+
+
+
+
+
+<body class="preload-transitions colorscheme-auto">
+  
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+  <main class="wrapper">
+    <nav class="navigation">
+  <section class="container">
+    
+    <a class="navigation-title" href="https://sadin.dev/">
+      Kamran Sadin
+    </a>
+    
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa-solid fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/about/">About</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/posts/">Blog</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/projects/">Projects</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/contact/">Contact me</a>
+            </li>
+          
+        
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+    <div class="content">
+      
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">
+            <a class="title-link" href="https://sadin.dev/posts/2023-10-20-open-closed-principle/">
+              Open Closed Principle
+            </a>
+          </h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fa-solid fa-calendar" aria-hidden="true"></i>
+              <time datetime="2023-10-20T00:00:00Z">
+                October 20, 2023
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fa-solid fa-clock" aria-hidden="true"></i>
+              3-minute read
+            </span>
+          </div>
+          
+          
+          <div class="tags">
+  <i class="fa-solid fa-tag" aria-hidden="true"></i>
+    <span class="tag">
+      <a href="/tags/csharp/">Csharp</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/tags/solid/">Solid</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/tags/ocp/">Ocp</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/tags/open-closed-principle/">Open Closed Principle</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/tags/software-principles/">Software Principles</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/tags/software-design/">Software Design</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/tags/c%23-developer-roadmap/">C# Developer Roadmap</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/tags/1000daysofcsharp/">1000daysofcsharp</a>
+    </span></div>
+
+        </div>
+      </header>
+
+      <div class="post-content">
+        
+        <p>In the realm of software design, certain principles serve as guiding lights for creating maintainable, flexible, and scalable codebases. One such foundational principle is the <strong>Open/Closed Principle (OCP)</strong>. OCP is a crucial component of the SOLID principles, initially introduced by Bertrand Meyer. Understanding and applying the Open/Closed Principle can significantly impact software design.</p>
+<ol>
+<li><a href="https://sadin.dev/posts/mastering-solid-principles-in-csharp/?"  class="external-link" target="_blank" rel="noopener">Introduction</a></li>
+<li><a href="https://sadin.dev/posts/single-responsibility-principle/?"  class="external-link" target="_blank" rel="noopener">Single Responsibility Principle</a></li>
+<li><a href="https://sadin.dev/posts/open-closed-principle/?"  class="external-link" target="_blank" rel="noopener"><strong>Open/Closed Principle</strong></a></li>
+<li><a href="https://sadin.dev/posts/liskov-substitution-principle/?"  class="external-link" target="_blank" rel="noopener">Liskov Substitution Principle</a></li>
+<li><a href="https://sadin.dev/posts/interface-segregation-principle/?"  class="external-link" target="_blank" rel="noopener">Interface Segregation Principle</a></li>
+<li><a href="https://sadin.dev/posts/dependency-inversion-principle/?"  class="external-link" target="_blank" rel="noopener">Dependency Inversion Principle</a></li>
+</ol>
+<h2 id="what-is-the-openclosed-principle">
+  What is the Open/Closed Principle?
+  <a class="heading-link" href="#what-is-the-openclosed-principle">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>The Open/Closed Principle emphasizes that software entities (classes, modules, functions, etc.) should be open for <strong>extension but closed for modification</strong>. In simpler terms, the behavior of a module can be extended without modifying its source code. This principle promotes the creation of a system that is both adaptable and sustainable over time.</p>
+<h2 id="how-does-ocp-help-us">
+  How Does OCP Help Us?
+  <a class="heading-link" href="#how-does-ocp-help-us">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>The Open/Closed Principle offers several benefits:</p>
+<h3 id="1-code-reusability">
+  1. <strong>Code Reusability:</strong>
+  <a class="heading-link" href="#1-code-reusability">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<ul>
+<li>By extending existing modules rather than modifying them, developers can reuse tried and tested code, reducing the likelihood of introducing new bugs.</li>
+</ul>
+<h3 id="2-minimized-risk">
+  2. <strong>Minimized Risk:</strong>
+  <a class="heading-link" href="#2-minimized-risk">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<ul>
+<li>Since existing, well-tested code remains untouched, the risk of introducing errors during modification is significantly reduced. New functionality is added through extensions, minimizing potential regressions.</li>
+</ul>
+<h3 id="3-maintainability">
+  3. <strong>Maintainability:</strong>
+  <a class="heading-link" href="#3-maintainability">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<ul>
+<li>Code that follows the Open/Closed Principle is easier to maintain. Changes and enhancements are isolated to new code, preserving the stability and integrity of the existing codebase.</li>
+</ul>
+<h2 id="consequences-of-not-using-ocp">
+  Consequences of Not Using OCP
+  <a class="heading-link" href="#consequences-of-not-using-ocp">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>If the Open/Closed Principle is ignored, several issues may arise:</p>
+<ul>
+<li>
+<p><strong>Frequent Modification:</strong></p>
+<ul>
+<li>Without adhering to OCP, every change in requirements may force modifications to existing code, leading to a perpetual cycle of updates and potential bugs.</li>
+</ul>
+</li>
+<li>
+<p><strong>Increased Risk:</strong></p>
+<ul>
+<li>Modifying existing code increases the risk of introducing bugs or unintentionally altering existing functionality, causing unforeseen consequences.</li>
+</ul>
+</li>
+<li>
+<p><strong>Complexity and Maintenance Challenges:</strong></p>
+<ul>
+<li>Codebases lacking adherence to OCP tend to become increasingly complex and difficult to maintain as more modifications are made.</li>
+</ul>
+</li>
+</ul>
+<h2 id="ocp-and-complex-software">
+  OCP and Complex Software
+  <a class="heading-link" href="#ocp-and-complex-software">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>In large, complex software systems, the Open/Closed Principle is crucial. As requirements evolve and new features are introduced, adhering to OCP ensures that the system remains extensible without risking the stability of existing features.</p>
+<h2 id="examples-of-ocp-in-action">
+  Examples of OCP in Action
+  <a class="heading-link" href="#examples-of-ocp-in-action">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>Let&rsquo;s illustrate OCP with three simple examples:</p>
+<h3 id="1-shape-calculation">
+  1. <strong>Shape Calculation:</strong>
+  <a class="heading-link" href="#1-shape-calculation">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl"><span class="kd">public</span> <span class="kd">abstract</span> <span class="k">class</span> <span class="nc">Shape</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="kd">abstract</span> <span class="kt">double</span> <span class="n">Area</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kd">public</span> <span class="k">class</span> <span class="nc">Circle</span> <span class="p">:</span> <span class="n">Shape</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">private</span> <span class="k">readonly</span> <span class="kt">double</span> <span class="n">radius</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="n">Circle</span><span class="p">(</span><span class="kt">double</span> <span class="n">radius</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">this</span><span class="p">.</span><span class="n">radius</span> <span class="p">=</span> <span class="n">radius</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="kd">override</span> <span class="kt">double</span> <span class="n">Area</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="n">Math</span><span class="p">.</span><span class="n">PI</span> <span class="p">*</span> <span class="n">radius</span> <span class="p">*</span> <span class="n">radius</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p>Here, the <code>Shape</code> class is open for extension, allowing the addition of new shapes like <code>Circle</code> without modifying the existing <code>Shape</code> class.</p>
+<h3 id="2-sort-algorithm">
+  2. <strong>Sort Algorithm:</strong>
+  <a class="heading-link" href="#2-sort-algorithm">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl"><span class="kd">public</span> <span class="k">class</span> <span class="nc">Sorter</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="k">void</span> <span class="n">Sort</span><span class="p">(</span><span class="kt">int</span><span class="p">[]</span> <span class="n">arr</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">// Sort array using a specific algorithm</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p>In this example, the <code>Sorter</code> class can be extended to support various sorting algorithms (e.g., merge sort, quicksort) without modifying the <code>Sorter</code> class itself.</p>
+<h3 id="3-notification-service">
+  3. <strong>Notification Service:</strong>
+  <a class="heading-link" href="#3-notification-service">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl"><span class="kd">public</span> <span class="k">interface</span> <span class="nc">INotificationService</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">void</span> <span class="n">SendNotification</span><span class="p">(</span><span class="kt">string</span> <span class="n">message</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p>Here, the <code>INotificationService</code> interface can be implemented by various notification methods (email, SMS, etc.) without modifying the interface itself.</p>
+<h2 id="summary">
+  Summary
+  <a class="heading-link" href="#summary">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>The Open/Closed Principle is a fundamental guideline in software design, advocating for software entities to be open for extension but closed for modification. Adhering to OCP enhances code reusability, minimizes risks, and improves maintainability. By understanding and implementing this principle, developers can create software systems that are adaptable, scalable, and easier to extend over time.</p>
+<h2 id="you-can-follow-me-on-the-linkedin-youtube-telegram-group-to-discuss-and-directly-send-me-email">
+  You can follow me on the LinkedIn, YouTube, Telegram Group to discuss, and directly send me email.
+  <a class="heading-link" href="#you-can-follow-me-on-the-linkedin-youtube-telegram-group-to-discuss-and-directly-send-me-email">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<ul>
+<li><a href="https://t.me/sadinco_csharp"  class="external-link" target="_blank" rel="noopener">Telegram Group</a></li>
+<li><a href="https://linkedin.com/in/MrSadin"  class="external-link" target="_blank" rel="noopener">LinkedIn</a></li>
+<li><a href="https://sadin.dev"  class="external-link" target="_blank" rel="noopener">Blog</a></li>
+<li><a href="https://youtube.com/c/EnKamran"  class="external-link" target="_blank" rel="noopener">YouTube</a></li>
+</ul>
+
+      </div>
+
+
+      <footer>
+        
+
+
+        <div id="disqus_thread"></div>
+<script>
+  window.disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "mrsadin" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+    
+    document.addEventListener('themeChanged', function (e) { 
+        if (document.readyState == 'complete') {
+          DISQUS.reset({ reload: true, config: disqus_config });
+        }
+    });
+</script>
+        
+        
+        
+        
+        
+        
+      </footer>
+    </article>
+
+    
+  </section>
+
+    </div>
+
+    <footer class="footer">
+  <section class="container">
+    ©
+    
+      2019 -
+    
+    2025
+     Kamran Sadin 
+    ·
+    
+    Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/" target="_blank" rel="noopener">Coder</a>.
+    
+  </section>
+</footer>
+
+  </main>
+
+  
+
+  
+  
+  <script src="/js/coder.min.6ae284be93d2d19dad1f02b0039508d9aab3180a12a06dcc71b0b0ef7825a317.js" integrity="sha256-auKEvpPS0Z2tHwKwA5UI2aqzGAoSoG3McbCw73gloxc="></script>
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-DQWLT4H0ND"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-DQWLT4H0ND');
+</script>
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</body>
+</html>

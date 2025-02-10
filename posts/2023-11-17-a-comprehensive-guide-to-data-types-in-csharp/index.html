@@ -1,0 +1,1111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>
+  A Comprehensive Guide to Data Types in C# · Kamran Sadin
+</title>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+
+
+
+
+<meta name="author" content="Kamran Sadin">
+<meta name="description" content="Data types in C# define the type of data that a variable can store. Understanding and using the correct data types are crucial for writing efficient and bug-free code. This guide will walk you through the basic and advanced data types in C#, providing examples to illustrate their usage.">
+<meta name="keywords" content="blog,developer,c#,.net,dot net,software engineer,mentor">
+
+
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="A Comprehensive Guide to Data Types in C#">
+  <meta name="twitter:description" content="Data types in C# define the type of data that a variable can store. Understanding and using the correct data types are crucial for writing efficient and bug-free code. This guide will walk you through the basic and advanced data types in C#, providing examples to illustrate their usage.">
+
+<meta property="og:url" content="https://sadin.dev/posts/2023-11-17-a-comprehensive-guide-to-data-types-in-csharp/">
+  <meta property="og:site_name" content="Kamran Sadin">
+  <meta property="og:title" content="A Comprehensive Guide to Data Types in C#">
+  <meta property="og:description" content="Data types in C# define the type of data that a variable can store. Understanding and using the correct data types are crucial for writing efficient and bug-free code. This guide will walk you through the basic and advanced data types in C#, providing examples to illustrate their usage.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2023-11-17T00:00:00+00:00">
+    <meta property="article:modified_time" content="2023-11-17T00:00:00+00:00">
+    <meta property="article:tag" content="Csharp">
+    <meta property="article:tag" content="Data Type">
+    <meta property="article:tag" content="Basic">
+    <meta property="article:tag" content="C# Developer Roadmap">
+    <meta property="article:tag" content="1000daysofcsharp">
+    <meta property="article:tag" content="Step 1">
+
+
+
+
+<link rel="canonical" href="https://sadin.dev/posts/2023-11-17-a-comprehensive-guide-to-data-types-in-csharp/">
+
+
+<link rel="preload" href="/fonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/fa-regular-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>
+
+
+  
+  
+  <link rel="stylesheet" href="/css/coder.min.b886fe0d9034709648f91f4ce178f51dd367d9350f82dd1132d54fd69bfca66f.css" integrity="sha256-uIb&#43;DZA0cJZI&#43;R9M4Xj1HdNn2TUPgt0RMtVP1pv8pm8=" crossorigin="anonymous" media="screen" />
+
+
+
+
+
+
+  
+    
+    
+    <link rel="stylesheet" href="/css/coder-dark.min.a00e6364bacbc8266ad1cc81230774a1397198f8cfb7bcba29b7d6fcb54ce57f.css" integrity="sha256-oA5jZLrLyCZq0cyBIwd0oTlxmPjPt7y6KbfW/LVM5X8=" crossorigin="anonymous" media="screen" />
+  
+
+
+
+ 
+
+
+
+
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg" sizes="any">
+<link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+
+
+
+
+
+</head>
+
+
+
+
+
+
+<body class="preload-transitions colorscheme-auto">
+  
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+  <main class="wrapper">
+    <nav class="navigation">
+  <section class="container">
+    
+    <a class="navigation-title" href="https://sadin.dev/">
+      Kamran Sadin
+    </a>
+    
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa-solid fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/about/">About</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/posts/">Blog</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/projects/">Projects</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/contact/">Contact me</a>
+            </li>
+          
+        
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+    <div class="content">
+      
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">
+            <a class="title-link" href="https://sadin.dev/posts/2023-11-17-a-comprehensive-guide-to-data-types-in-csharp/">
+              A Comprehensive Guide to Data Types in C#
+            </a>
+          </h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fa-solid fa-calendar" aria-hidden="true"></i>
+              <time datetime="2023-11-17T00:00:00Z">
+                November 17, 2023
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fa-solid fa-clock" aria-hidden="true"></i>
+              9-minute read
+            </span>
+          </div>
+          
+          
+          <div class="tags">
+  <i class="fa-solid fa-tag" aria-hidden="true"></i>
+    <span class="tag">
+      <a href="/tags/csharp/">Csharp</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/tags/data-type/">Data Type</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/tags/basic/">Basic</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/tags/c%23-developer-roadmap/">C# Developer Roadmap</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/tags/1000daysofcsharp/">1000daysofcsharp</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/tags/step-1/">Step 1</a>
+    </span></div>
+
+        </div>
+      </header>
+
+      <div class="post-content">
+        
+        <p><a href="https://sadin.dev/assets/posts/basics/a-comprehensive-guide-to-data-types-in-csharp.pdf"  class="external-link" target="_blank" rel="noopener"><strong>Download PDF Version</strong></a></p>
+<p>Data types in C# define the type of data that a variable can store. Understanding and using the correct data types are crucial for writing efficient and bug-free code. This guide will walk you through the basic and advanced data types in C#, providing examples to illustrate their usage.</p>
+<h2 id="table-of-contents">
+  Table of Contents:
+  <a class="heading-link" href="#table-of-contents">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<ol>
+<li>
+<p><strong>Introduction to Data Types in C#</strong></p>
+<ul>
+<li>What are Data Types?</li>
+<li>Importance of Choosing the Right Data Type</li>
+</ul>
+</li>
+<li>
+<p><strong>Basic Data Types</strong></p>
+<ul>
+<li><code>int</code> - Integer</li>
+<li><code>float</code> - Floating-Point</li>
+<li><code>double</code> - Double Precision Floating-Point</li>
+<li><code>char</code> - Character</li>
+<li><code>bool</code> - Boolean</li>
+</ul>
+</li>
+<li>
+<p><strong>Numeric Data Types</strong></p>
+<ul>
+<li><code>byte</code>, <code>sbyte</code></li>
+<li><code>short</code>, <code>ushort</code></li>
+<li><code>int</code>, <code>uint</code></li>
+<li><code>long</code>, <code>ulong</code></li>
+<li><code>float</code>, <code>double</code>, <code>decimal</code></li>
+</ul>
+</li>
+<li>
+<p><strong>String Data Type</strong></p>
+<ul>
+<li><code>string</code></li>
+</ul>
+</li>
+<li>
+<p><strong>Character Data Type</strong></p>
+<ul>
+<li><code>char</code></li>
+</ul>
+</li>
+<li>
+<p><strong>Boolean Data Type</strong></p>
+<ul>
+<li><code>bool</code></li>
+</ul>
+</li>
+<li>
+<p><strong>DateTime Data Type</strong></p>
+<ul>
+<li><code>DateTime</code></li>
+</ul>
+</li>
+<li>
+<p><strong>Arrays</strong></p>
+<ul>
+<li>Declaring and Initializing Arrays</li>
+<li>Accessing Array Elements</li>
+<li>Multidimensional Arrays</li>
+</ul>
+</li>
+<li>
+<p><strong>Enumerations (Enums)</strong></p>
+<ul>
+<li>Defining Enums</li>
+<li>Using Enums in Switch Statements</li>
+</ul>
+</li>
+<li>
+<p><strong>Nullable Types</strong></p>
+<ul>
+<li><code>Nullable&lt;T&gt;</code></li>
+<li><code>?</code> (Nullable Type Modifier)</li>
+</ul>
+</li>
+<li>
+<p><strong>User-Defined Types</strong></p>
+<ul>
+<li><code>struct</code> (Value Types)</li>
+<li><code>class</code> (Reference Types)</li>
+</ul>
+</li>
+<li>
+<p><strong>Dynamic Type</strong></p>
+<ul>
+<li><code>dynamic</code></li>
+</ul>
+</li>
+<li>
+<p><strong>Type Conversion</strong></p>
+<ul>
+<li>Implicit Conversion</li>
+<li>Explicit Conversion</li>
+<li>Type Conversion Methods</li>
+</ul>
+</li>
+<li>
+<p><strong>Conclusion</strong></p>
+<ul>
+<li>Best Practices for Choosing Data Types</li>
+<li>Applying Data Types in Real-World Projects</li>
+</ul>
+</li>
+<li>
+<p><strong>A Real Project Example</strong></p>
+</li>
+</ol>
+<h2 id="1-introduction-to-data-types-in-c">
+  1. Introduction to Data Types in C#
+  <a class="heading-link" href="#1-introduction-to-data-types-in-c">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<h3 id="what-are-data-types">
+  What are Data Types?
+  <a class="heading-link" href="#what-are-data-types">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>Data types specify the type of data that a variable can hold. C# is a statically-typed language, meaning the data type of a variable is known at compile time.</p>
+<h3 id="importance-of-choosing-the-right-data-type">
+  Importance of Choosing the Right Data Type
+  <a class="heading-link" href="#importance-of-choosing-the-right-data-type">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>Choosing the right data type is crucial for efficient memory usage, performance, and preventing data-related errors in your programs.</p>
+<h2 id="2-basic-data-types">
+  2. Basic Data Types
+  <a class="heading-link" href="#2-basic-data-types">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<h3 id="int---integer">
+  <code>int</code> - Integer
+  <a class="heading-link" href="#int---integer">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>The <code>int</code> data type is used to represent whole numbers.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl"><span class="kt">int</span> <span class="n">number</span> <span class="p">=</span> <span class="m">42</span><span class="p">;</span>
+</span></span></code></pre></div><h3 id="float---floating-point">
+  <code>float</code> - Floating-Point
+  <a class="heading-link" href="#float---floating-point">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>The <code>float</code> data type is used to represent single-precision floating-point numbers.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl"><span class="kt">float</span> <span class="n">pi</span> <span class="p">=</span> <span class="m">3.14f</span><span class="p">;</span>
+</span></span></code></pre></div><h3 id="double---double-precision-floating-point">
+  <code>double</code> - Double Precision Floating-Point
+  <a class="heading-link" href="#double---double-precision-floating-point">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>The <code>double</code> data type is used to represent double-precision floating-point numbers.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl"><span class="kt">double</span> <span class="n">distance</span> <span class="p">=</span> <span class="m">123.456</span><span class="p">;</span>
+</span></span></code></pre></div><h3 id="char---character">
+  <code>char</code> - Character
+  <a class="heading-link" href="#char---character">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>The <code>char</code> data type is used to represent a single character.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl"><span class="kt">char</span> <span class="n">grade</span> <span class="p">=</span> <span class="sc">&#39;A&#39;</span><span class="p">;</span>
+</span></span></code></pre></div><h3 id="bool---boolean">
+  <code>bool</code> - Boolean
+  <a class="heading-link" href="#bool---boolean">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>The <code>bool</code> data type is used to represent Boolean values (<code>true</code> or <code>false</code>).</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl"><span class="kt">bool</span> <span class="n">isTrue</span> <span class="p">=</span> <span class="kc">true</span><span class="p">;</span>
+</span></span></code></pre></div><h2 id="3-numeric-data-types">
+  3. Numeric Data Types
+  <a class="heading-link" href="#3-numeric-data-types">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>C# provides a range of numeric data types for integers and floating-point numbers.</p>
+<h3 id="byte-sbyte">
+  <code>byte</code>, <code>sbyte</code>
+  <a class="heading-link" href="#byte-sbyte">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl"><span class="kt">byte</span> <span class="n">positiveByte</span> <span class="p">=</span> <span class="m">255</span><span class="p">;</span>       <span class="c1">// 0 to 255</span>
+</span></span><span class="line"><span class="cl"><span class="kt">sbyte</span> <span class="n">signedByte</span> <span class="p">=</span> <span class="p">-</span><span class="m">128</span><span class="p">;</span>       <span class="c1">// -128 to 127</span>
+</span></span></code></pre></div><h3 id="short-ushort">
+  <code>short</code>, <code>ushort</code>
+  <a class="heading-link" href="#short-ushort">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl"><span class="kt">short</span> <span class="n">shortNumber</span> <span class="p">=</span> <span class="p">-</span><span class="m">32768</span><span class="p">;</span>    <span class="c1">// -32768 to 32767</span>
+</span></span><span class="line"><span class="cl"><span class="kt">ushort</span> <span class="n">unsignedShort</span> <span class="p">=</span> <span class="m">65535</span><span class="p">;</span>  <span class="c1">// 0 to 65535</span>
+</span></span></code></pre></div><h3 id="int-uint">
+  <code>int</code>, <code>uint</code>
+  <a class="heading-link" href="#int-uint">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl"><span class="kt">int</span> <span class="n">integer</span> <span class="p">=</span> <span class="p">-</span><span class="m">2147483648</span><span class="p">;</span>     <span class="c1">// -2147483648 to 2147483647</span>
+</span></span><span class="line"><span class="cl"><span class="kt">uint</span> <span class="n">unsignedInt</span> <span class="p">=</span> <span class="m">4294967295</span><span class="p">;</span> <span class="c1">// 0 to 4294967295</span>
+</span></span></code></pre></div><h3 id="long-ulong">
+  <code>long</code>, <code>ulong</code>
+  <a class="heading-link" href="#long-ulong">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl"><span class="kt">long</span> <span class="n">longNumber</span> <span class="p">=</span> <span class="p">-</span><span class="m">9223372036854775808</span><span class="p">;</span>     <span class="c1">// -9223372036854775808 to 9223372036854775807</span>
+</span></span><span class="line"><span class="cl"><span class="kt">ulong</span> <span class="n">unsignedLong</span> <span class="p">=</span> <span class="m">18446744073709551615</span><span class="p">;</span> <span class="c1">// 0 to 18446744073709551615</span>
+</span></span></code></pre></div><h3 id="float-double-decimal">
+  <code>float</code>, <code>double</code>, <code>decimal</code>
+  <a class="heading-link" href="#float-double-decimal">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl"><span class="kt">float</span> <span class="n">floatValue</span> <span class="p">=</span> <span class="m">3.14f</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="kt">double</span> <span class="n">doubleValue</span> <span class="p">=</span> <span class="m">3.141592653589793</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="kt">decimal</span> <span class="n">decimalValue</span> <span class="p">=</span> <span class="m">3.14</span><span class="n">m</span><span class="p">;</span>
+</span></span></code></pre></div><h2 id="4-string-data-type">
+  4. String Data Type
+  <a class="heading-link" href="#4-string-data-type">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<h3 id="string">
+  <code>string</code>
+  <a class="heading-link" href="#string">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>The <code>string</code> data type is used to represent a sequence of characters.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl"><span class="kt">string</span> <span class="n">greeting</span> <span class="p">=</span> <span class="s">&#34;Hello, World!&#34;</span><span class="p">;</span>
+</span></span></code></pre></div><h2 id="5-character-data-type">
+  5. Character Data Type
+  <a class="heading-link" href="#5-character-data-type">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<h3 id="char">
+  <code>char</code>
+  <a class="heading-link" href="#char">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>The <code>char</code> data type represents a single character.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl"><span class="kt">char</span> <span class="n">letter</span> <span class="p">=</span> <span class="sc">&#39;A&#39;</span><span class="p">;</span>
+</span></span></code></pre></div><h2 id="6-boolean-data-type">
+  6. Boolean Data Type
+  <a class="heading-link" href="#6-boolean-data-type">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<h3 id="bool">
+  <code>bool</code>
+  <a class="heading-link" href="#bool">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>The <code>bool</code> data type is used for Boolean values.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl"><span class="kt">bool</span> <span class="n">isTrue</span> <span class="p">=</span> <span class="kc">true</span><span class="p">;</span>
+</span></span></code></pre></div><h2 id="7-datetime-data-type">
+  7. DateTime Data Type
+  <a class="heading-link" href="#7-datetime-data-type">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<h3 id="datetime">
+  <code>DateTime</code>
+  <a class="heading-link" href="#datetime">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>The <code>DateTime</code> data type is used to represent dates and times.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl"><span class="n">DateTime</span> <span class="n">currentDateTime</span> <span class="p">=</span> <span class="n">DateTime</span><span class="p">.</span><span class="n">Now</span><span class="p">;</span>
+</span></span></code></pre></div><h2 id="8-arrays">
+  8. Arrays
+  <a class="heading-link" href="#8-arrays">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<h3 id="declaring-and-initializing-arrays">
+  Declaring and Initializing Arrays
+  <a class="heading-link" href="#declaring-and-initializing-arrays">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>Arrays are used to store collections of elements.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl"><span class="kt">int</span><span class="p">[]</span> <span class="n">numbers</span> <span class="p">=</span> <span class="p">{</span> <span class="m">1</span><span class="p">,</span> <span class="m">2</span><span class="p">,</span> <span class="m">3</span><span class="p">,</span> <span class="m">4</span><span class="p">,</span> <span class="m">5</span> <span class="p">};</span>
+</span></span></code></pre></div><h3 id="accessing-array-elements">
+  Accessing Array Elements
+  <a class="heading-link" href="#accessing-array-elements">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl"><span class="kt">int</span> <span class="n">thirdNumber</span> <span class="p">=</span> <span class="n">numbers</span><span class="p">[</span><span class="m">2</span><span class="p">];</span>
+</span></span></code></pre></div><h3 id="multidimensional-arrays">
+  Multidimensional Arrays
+  <a class="heading-link" href="#multidimensional-arrays">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl"><span class="kt">int</span><span class="p">[,]</span> <span class="n">matrix</span> <span class="p">=</span> <span class="p">{</span> <span class="p">{</span> <span class="m">1</span><span class="p">,</span> <span class="m">2</span> <span class="p">},</span> <span class="p">{</span> <span class="m">3</span><span class="p">,</span> <span class="m">4</span> <span class="p">}</span> <span class="p">};</span>
+</span></span></code></pre></div><h2 id="9-enumerations-enums">
+  9. Enumerations (Enums)
+  <a class="heading-link" href="#9-enumerations-enums">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<h3 id="defining-enums">
+  Defining Enums
+  <a class="heading-link" href="#defining-enums">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>Enums are used to create a named constant set of values.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl"><span class="kd">enum</span> <span class="n">Days</span> <span class="p">{</span> <span class="n">Sunday</span><span class="p">,</span> <span class="n">Monday</span><span class="p">,</span> <span class="n">Tuesday</span><span class="p">,</span> <span class="n">Wednesday</span><span class="p">,</span> <span class="n">Thursday</span><span class="p">,</span> <span class="n">Friday</span><span class="p">,</span> <span class="n">Saturday</span> <span class="p">};</span>
+</span></span></code></pre></div><h3 id="using-enums-in-switch-statements">
+  Using Enums in Switch Statements
+  <a class="heading-link" href="#using-enums-in-switch-statements">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl"><span class="n">Days</span> <span class="n">today</span> <span class="p">=</span> <span class="n">Days</span><span class="p">.</span><span class="n">Monday</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="k">switch</span> <span class="p">(</span><span class="n">today</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">case</span> <span class="n">Days</span><span class="p">.</span><span class="n">Sunday</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">// Do something on Sunday</span>
+</span></span><span class="line"><span class="cl">        <span class="k">break</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">case</span> <span class="n">Days</span><span class="p">.</span><span class="n">Monday</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">// Do something on Monday</span>
+</span></span><span class="line"><span class="cl">        <span class="k">break</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// ... other cases</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><h2 id="10-nullable-types">
+  10. Nullable Types
+  <a class="heading-link" href="#10-nullable-types">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<h3 id="nullablet">
+  <code>Nullable&lt;T&gt;</code>
+  <a class="heading-link" href="#nullablet">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>Nullable types allow variables to have a value of <code>null</code> in addition to their normal range of values.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl"><span class="kt">int?</span> <span class="n">nullableInt</span> <span class="p">=</span> <span class="kc">null</span><span class="p">;</span>
+</span></span></code></pre></div><h3 id="-nullable-type-modifier">
+  <code>?</code> (Nullable Type Modifier)
+  <a class="heading-link" href="#-nullable-type-modifier">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl"><span class="kt">int?</span> <span class="n">nullableInt</span> <span class="p">=</span> <span class="kc">null</span><span class="p">;</span>
+</span></span></code></pre></div><h2 id="11-user-defined-types">
+  11. User-Defined Types
+  <a class="heading-link" href="#11-user-defined-types">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<h3 id="struct-value-types">
+  <code>struct</code> (Value Types)
+  <a class="heading-link" href="#struct-value-types">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl"><span class="kd">public</span> <span class="k">struct</span> <span class="nc">Point</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="kt">int</span> <span class="n">X</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="kt">int</span> <span class="n">Y</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><h3 id="class-reference-types">
+  <code>class</code> (Reference Types)
+  <a class="heading-link" href="#class-reference-types">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl"><span class="kd">public</span> <span class="k">class</span> <span class="nc">Person</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="kt">string</span> <span class="n">Name</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="kt">int</span> <span class="n">Age</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><h2 id="12-dynamic-type">
+  12. Dynamic Type
+  <a class="heading-link" href="#12-dynamic-type">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<h3 id="dynamic">
+  <code>dynamic</code>
+  <a class="heading-link" href="#dynamic">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>The <code>dynamic</code> type allows you to store any type of data and defer type checking</p>
+<p>until runtime.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl"><span class="kt">dynamic</span> <span class="n">dynamicVariable</span> <span class="p">=</span> <span class="m">10</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="n">dynamicVariable</span> <span class="p">=</span> <span class="s">&#34;Hello, World!&#34;</span><span class="p">;</span>
+</span></span></code></pre></div><h2 id="13-type-conversion">
+  13. Type Conversion
+  <a class="heading-link" href="#13-type-conversion">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<h3 id="implicit-conversion">
+  Implicit Conversion
+  <a class="heading-link" href="#implicit-conversion">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl"><span class="kt">int</span> <span class="n">intValue</span> <span class="p">=</span> <span class="m">42</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="kt">double</span> <span class="n">doubleValue</span> <span class="p">=</span> <span class="n">intValue</span><span class="p">;</span> <span class="c1">// Implicit conversion</span>
+</span></span></code></pre></div><h3 id="explicit-conversion">
+  Explicit Conversion
+  <a class="heading-link" href="#explicit-conversion">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl"><span class="kt">double</span> <span class="n">doubleValue</span> <span class="p">=</span> <span class="m">3.14</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="n">intValue</span> <span class="p">=</span> <span class="p">(</span><span class="kt">int</span><span class="p">)</span><span class="n">doubleValue</span><span class="p">;</span> <span class="c1">// Explicit conversion</span>
+</span></span></code></pre></div><h3 id="type-conversion-methods">
+  Type Conversion Methods
+  <a class="heading-link" href="#type-conversion-methods">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl"><span class="kt">string</span> <span class="n">numberString</span> <span class="p">=</span> <span class="s">&#34;123&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="n">parsedNumber</span> <span class="p">=</span> <span class="kt">int</span><span class="p">.</span><span class="n">Parse</span><span class="p">(</span><span class="n">numberString</span><span class="p">);</span> <span class="c1">// Using Parse method</span>
+</span></span></code></pre></div><h2 id="14-conclusion">
+  14. Conclusion
+  <a class="heading-link" href="#14-conclusion">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<h3 id="best-practices-for-choosing-data-types">
+  Best Practices for Choosing Data Types
+  <a class="heading-link" href="#best-practices-for-choosing-data-types">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<h4 id="choose-the-smallest-data-type">
+  Choose the smallest data type:
+  <a class="heading-link" href="#choose-the-smallest-data-type">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h4>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl"><span class="c1">// Instead of using &#39;int&#39; when a smaller type is sufficient</span>
+</span></span><span class="line"><span class="cl"><span class="kt">short</span> <span class="n">smallNumber</span> <span class="p">=</span> <span class="m">123</span><span class="p">;</span>
+</span></span></code></pre></div><h4 id="use-int-for-integers-double-for-floating-point-and-string-for-text">
+  Use <code>int</code> for integers, <code>double</code> for floating-point, and <code>string</code> for text:
+  <a class="heading-link" href="#use-int-for-integers-double-for-floating-point-and-string-for-text">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h4>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl"><span class="c1">// Using &#39;int&#39; for integer values</span>
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="n">numberOfItems</span> <span class="p">=</span> <span class="m">42</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// Using &#39;double&#39; for floating-point numbers</span>
+</span></span><span class="line"><span class="cl"><span class="kt">double</span> <span class="n">totalPrice</span> <span class="p">=</span> <span class="m">99.99</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// Using &#39;string&#39; for text</span>
+</span></span><span class="line"><span class="cl"><span class="kt">string</span> <span class="n">productName</span> <span class="p">=</span> <span class="s">&#34;C# Guidebook&#34;</span><span class="p">;</span>
+</span></span></code></pre></div><h4 id="be-mindful-of-memory-usage-and-performance">
+  Be mindful of memory usage and performance:
+  <a class="heading-link" href="#be-mindful-of-memory-usage-and-performance">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h4>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl"><span class="c1">// Choosing the appropriate type for a collection</span>
+</span></span><span class="line"><span class="cl"><span class="n">List</span><span class="p">&lt;</span><span class="kt">int</span><span class="p">&gt;</span> <span class="n">numbers</span> <span class="p">=</span> <span class="k">new</span> <span class="n">List</span><span class="p">&lt;</span><span class="kt">int</span><span class="p">&gt;();</span> <span class="c1">// Good for storing a collection of integers</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// Avoiding unnecessary use of &#39;double&#39; when &#39;float&#39; is sufficient</span>
+</span></span><span class="line"><span class="cl"><span class="kt">float</span> <span class="n">temperature</span> <span class="p">=</span> <span class="m">23.5f</span><span class="p">;</span> <span class="c1">// Sufficient precision for temperature</span>
+</span></span></code></pre></div><h3 id="applying-data-types-in-real-world-projects">
+  Applying Data Types in Real-World Projects
+  <a class="heading-link" href="#applying-data-types-in-real-world-projects">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<h4 id="understand-the-requirements">
+  Understand the requirements:
+  <a class="heading-link" href="#understand-the-requirements">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h4>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl"><span class="c1">// Choosing &#39;enum&#39; for representing days of the week</span>
+</span></span><span class="line"><span class="cl"><span class="kd">public</span> <span class="kd">enum</span> <span class="n">Days</span> <span class="p">{</span> <span class="n">Sunday</span><span class="p">,</span> <span class="n">Monday</span><span class="p">,</span> <span class="n">Tuesday</span><span class="p">,</span> <span class="n">Wednesday</span><span class="p">,</span> <span class="n">Thursday</span><span class="p">,</span> <span class="n">Friday</span><span class="p">,</span> <span class="n">Saturday</span> <span class="p">};</span>
+</span></span><span class="line"><span class="cl"><span class="n">Days</span> <span class="n">today</span> <span class="p">=</span> <span class="n">Days</span><span class="p">.</span><span class="n">Monday</span><span class="p">;</span>
+</span></span></code></pre></div><h4 id="utilize-nullable-types">
+  Utilize nullable types:
+  <a class="heading-link" href="#utilize-nullable-types">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h4>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl"><span class="c1">// Using nullable types when a variable might be in an undefined state</span>
+</span></span><span class="line"><span class="cl"><span class="kt">int?</span> <span class="n">nullableValue</span> <span class="p">=</span> <span class="kc">null</span><span class="p">;</span>
+</span></span></code></pre></div><h4 id="choose-value-types-for-small-immutable-structures">
+  Choose value types for small, immutable structures:
+  <a class="heading-link" href="#choose-value-types-for-small-immutable-structures">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h4>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl"><span class="c1">// Using &#39;struct&#39; for a small, immutable point</span>
+</span></span><span class="line"><span class="cl"><span class="kd">public</span> <span class="k">struct</span> <span class="nc">Point</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="kt">int</span> <span class="n">X</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="kt">int</span> <span class="n">Y</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><h4 id="choose-reference-types-for-larger-mutable-structures">
+  Choose reference types for larger, mutable structures:
+  <a class="heading-link" href="#choose-reference-types-for-larger-mutable-structures">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h4>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl"><span class="c1">// Using &#39;class&#39; for a larger, mutable object</span>
+</span></span><span class="line"><span class="cl"><span class="kd">public</span> <span class="k">class</span> <span class="nc">Person</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="kt">string</span> <span class="n">Name</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="kt">int</span> <span class="n">Age</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><h2 id="story-building-a-library-management-system">
+  Story: Building a Library Management System
+  <a class="heading-link" href="#story-building-a-library-management-system">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>Let&rsquo;s see some usages of Data Types in a Library Management System project. This system will help manage and organize various aspects of a library, from book details to member information and more. It&rsquo;s important to note that while we&rsquo;ll touch upon the essential code snippets for different components, the full application code won&rsquo;t be provided. Instead, the focus is on illustrating the selection of appropriate data types and showcasing snippets relevant to each section of the Library Management System.<br>
+I tried to include Good and Bad practices in the examples.</p>
+<h3 id="1-basic-data-types">
+  1. Basic Data Types
+  <a class="heading-link" href="#1-basic-data-types">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl"><span class="c1">// Best practice: Using &#39;string&#39; for library names</span>
+</span></span><span class="line"><span class="cl"><span class="kt">string</span> <span class="n">libraryName</span> <span class="p">=</span> <span class="s">&#34;City Library&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// Bad practice: Using &#39;string&#39; for library names without considering potential memory overhead</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// Best practice: Using &#39;int&#39; for library IDs</span>
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="n">libraryId</span> <span class="p">=</span> <span class="m">1001</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// Bad practice: Using &#39;byte&#39; for library IDs, limiting the number of libraries in the system</span>
+</span></span><span class="line"><span class="cl"><span class="kt">byte</span> <span class="n">badLibraryId</span> <span class="p">=</span> <span class="m">255</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// Best practice: Using &#39;bool&#39; for library status</span>
+</span></span><span class="line"><span class="cl"><span class="kt">bool</span> <span class="n">isOpen</span> <span class="p">=</span> <span class="kc">true</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// Bad practice: Using &#39;bool&#39; for library status, limiting future expansion to more complex statuses</span>
+</span></span><span class="line"><span class="cl"><span class="kt">bool</span> <span class="n">badIsOpen</span> <span class="p">=</span> <span class="kc">false</span><span class="p">;</span>
+</span></span></code></pre></div><h3 id="2-numeric-data-types">
+  2. Numeric Data Types
+  <a class="heading-link" href="#2-numeric-data-types">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl"><span class="c1">// Best practice: Using &#39;decimal&#39; for budget values</span>
+</span></span><span class="line"><span class="cl"><span class="kt">decimal</span> <span class="n">libraryBudget</span> <span class="p">=</span> <span class="m">50000.50</span><span class="n">m</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// Bad practice: Using &#39;float&#39; for budget values, risking precision issues with monetary values</span>
+</span></span><span class="line"><span class="cl"><span class="kt">float</span> <span class="n">badLibraryBudget</span> <span class="p">=</span> <span class="m">50000.50f</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// Best practice: Using &#39;int&#39; for representing the number of books</span>
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="n">totalBooks</span> <span class="p">=</span> <span class="m">5000</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// Bad practice: Using &#39;short&#39; for the number of books, risking an insufficient range</span>
+</span></span><span class="line"><span class="cl"><span class="kt">short</span> <span class="n">badTotalBooks</span> <span class="p">=</span> <span class="m">5000</span><span class="p">;</span>
+</span></span></code></pre></div><h3 id="3-string-data-type">
+  3. String Data Type
+  <a class="heading-link" href="#3-string-data-type">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl"><span class="c1">// Best practice: Using &#39;string&#39; for librarian names</span>
+</span></span><span class="line"><span class="cl"><span class="kt">string</span> <span class="n">librarianName</span> <span class="p">=</span> <span class="s">&#34;Alice Johnson&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// Bad practice: Using &#39;char&#39; for librarian names, limiting name length to a single character</span>
+</span></span><span class="line"><span class="cl"><span class="kt">char</span> <span class="n">badLibrarianName</span> <span class="p">=</span> <span class="sc">&#39;A&#39;</span><span class="p">;</span>
+</span></span></code></pre></div><h3 id="4-character-data-type">
+  4. Character Data Type
+  <a class="heading-link" href="#4-character-data-type">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl"><span class="c1">// Best practice: Using &#39;char&#39; for library categories</span>
+</span></span><span class="line"><span class="cl"><span class="kt">char</span> <span class="n">libraryCategory</span> <span class="p">=</span> <span class="sc">&#39;P&#39;</span><span class="p">;</span> <span class="c1">// &#39;P&#39; for Public</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// Bad practice: Using &#39;bool&#39; for library categories, sacrificing readability and maintainability</span>
+</span></span><span class="line"><span class="cl"><span class="kt">bool</span> <span class="n">isPublic</span> <span class="p">=</span> <span class="kc">true</span><span class="p">;</span>
+</span></span></code></pre></div><h3 id="5-boolean-data-type">
+  5. Boolean Data Type
+  <a class="heading-link" href="#5-boolean-data-type">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl"><span class="c1">// Best practice: Using &#39;bool&#39; for member eligibility status</span>
+</span></span><span class="line"><span class="cl"><span class="kt">bool</span> <span class="n">isEligible</span> <span class="p">=</span> <span class="kc">false</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// Bad practice: Using &#39;int&#39; for member eligibility status, risking confusion and hard-to-read code</span>
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="n">badIsEligible</span> <span class="p">=</span> <span class="m">0</span><span class="p">;</span>
+</span></span></code></pre></div><h3 id="6-datetime-data-type">
+  6. DateTime Data Type
+  <a class="heading-link" href="#6-datetime-data-type">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl"><span class="c1">// Best practice: Using &#39;DateTime&#39; for membership start dates</span>
+</span></span><span class="line"><span class="cl"><span class="n">DateTime</span> <span class="n">membershipStartDate</span> <span class="p">=</span> <span class="n">DateTime</span><span class="p">.</span><span class="n">Now</span><span class="p">.</span><span class="n">AddMonths</span><span class="p">(-</span><span class="m">6</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// Bad practice: Using &#39;DateTime&#39; for membership start dates when only the date is relevant</span>
+</span></span><span class="line"><span class="cl"><span class="n">DateTime</span> <span class="n">badMembershipStartDate</span> <span class="p">=</span> <span class="n">DateTime</span><span class="p">.</span><span class="n">Now</span><span class="p">;</span>
+</span></span></code></pre></div><h3 id="7-arrays">
+  7. Arrays
+  <a class="heading-link" href="#7-arrays">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl"><span class="c1">// Best practice: Using arrays to store book IDs</span>
+</span></span><span class="line"><span class="cl"><span class="kt">int</span><span class="p">[]</span> <span class="n">bookIds</span> <span class="p">=</span> <span class="p">{</span> <span class="m">101</span><span class="p">,</span> <span class="m">102</span><span class="p">,</span> <span class="m">103</span><span class="p">,</span> <span class="m">104</span><span class="p">,</span> <span class="m">105</span> <span class="p">};</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// Bad practice: Declaring an array without initializing it, leading to potential runtime errors</span>
+</span></span><span class="line"><span class="cl"><span class="kt">int</span><span class="p">[]</span> <span class="n">badBookIds</span><span class="p">;</span>
+</span></span></code></pre></div><h3 id="8-enumerations-enums">
+  8. Enumerations (Enums)
+  <a class="heading-link" href="#8-enumerations-enums">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl"><span class="c1">// Best practice: Using &#39;enum&#39; for book genres</span>
+</span></span><span class="line"><span class="cl"><span class="kd">public</span> <span class="kd">enum</span> <span class="n">BookGenre</span> <span class="p">{</span> <span class="n">Fiction</span><span class="p">,</span> <span class="n">NonFiction</span><span class="p">,</span> <span class="n">Mystery</span><span class="p">,</span> <span class="n">ScienceFiction</span> <span class="p">};</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">BookGenre</span> <span class="n">genre</span> <span class="p">=</span> <span class="n">BookGenre</span><span class="p">.</span><span class="n">Fiction</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// Bad practice: Using &#39;int&#39; for book genres instead of enums, risking invalid values</span>
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="n">badGenre</span> <span class="p">=</span> <span class="m">1</span><span class="p">;</span>
+</span></span></code></pre></div><h3 id="9-nullable-types">
+  9. Nullable Types
+  <a class="heading-link" href="#9-nullable-types">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl"><span class="c1">// Best practice: Using nullable types for visitor ages</span>
+</span></span><span class="line"><span class="cl"><span class="kt">int?</span> <span class="n">visitorAge</span> <span class="p">=</span> <span class="kc">null</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// Bad practice: Using &#39;int&#39; for nullable visitor ages, making it unclear when a value is undefined</span>
+</span></span><span class="line"><span class="cl"><span class="kt">int?</span> <span class="n">badVisitorAge</span> <span class="p">=</span> <span class="m">0</span><span class="p">;</span>
+</span></span></code></pre></div><h3 id="10-user-defined-types">
+  10. User-Defined Types
+  <a class="heading-link" href="#10-user-defined-types">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl"><span class="c1">// Best practice: Using &#39;struct&#39; for representing a library branch</span>
+</span></span><span class="line"><span class="cl"><span class="kd">public</span> <span class="k">struct</span> <span class="nc">LibraryBranch</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="kt">int</span> <span class="n">Id</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="kt">string</span> <span class="n">Name</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="kt">decimal</span> <span class="n">Budget</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">LibraryBranch</span> <span class="n">myBranch</span> <span class="p">=</span> <span class="k">new</span> <span class="n">LibraryBranch</span> <span class="p">{</span> <span class="n">Id</span> <span class="p">=</span> <span class="m">1001</span><span class="p">,</span> <span class="n">Name</span> <span class="p">=</span> <span class="s">&#34;City Library&#34;</span><span class="p">,</span> <span class="n">Budget</span> <span class="p">=</span> <span class="m">50000.50</span><span class="n">m</span> <span class="p">};</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// Bad practice: Using &#39;class&#39; for representing a small, immutable structure, introducing unnecessary overhead</span>
+</span></span><span class="line"><span class="cl"><span class="kd">public</span> <span class="k">class</span> <span class="nc">BadBranch</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="kt">int</span> <span class="n">Id</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="kt">string</span> <span class="n">Name</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="kt">decimal</span> <span class="n">Budget</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">BadBranch</span> <span class="n">badMyBranch</span> <span class="p">=</span> <span class="k">new</span> <span class="n">BadBranch</span> <span class="p">{</span> <span class="n">Id</span> <span class="p">=</span> <span class="m">1002</span><span class="p">,</span> <span class="n">Name</span> <span class="p">=</span> <span class="s">&#34;Lib123&#34;</span><span class="p">,</span> <span class="n">Budget</span> <span class="p">=</span> <span class="m">40000.25</span><span class="n">m</span> <span class="p">};</span>
+</span></span></code></pre></div><h3 id="11-dynamic-type">
+  11. Dynamic Type
+  <a class="heading-link" href="#11-dynamic-type">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl"><span class="c1">// Best practice: Using &#39;dynamic&#39; for handling different data types</span>
+</span></span><span class="line"><span class="cl"><span class="kt">dynamic</span> <span class="n">dynamicVariable</span> <span class="p">=</span> <span class="m">10</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="n">dynamicVariable</span> <span class="p">=</span> <span class="s">&#34;Hello, World!&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// Bad practice: Overusing &#39;dynamic&#39; for all variables, sacrificing compile-time checks and readability</span>
+</span></span><span class="line"><span class="cl"><span class="kt">dynamic</span> <span class="n">badDynamicVariable</span> <span class="p">=</span> <span class="m">10</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="n">badDynamicVariable</span> <span class="p">=</span> <span class="s">&#34;Hello, World!&#34;</span><span class="p">;</span>
+</span></span></code></pre></div><h3 id="12-type-conversion">
+  12. Type Conversion
+  <a class="heading-link" href="#12-type-conversion">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl"><span class="c1">// Best practice: Implicitly converting &#39;double&#39; to &#39;int&#39; without handling potential data loss</span>
+</span></span><span class="line"><span class="cl"><span class="kt">double</span> <span class="n">doubleValue</span> <span class="p">=</span> <span class="m">3.14</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="n">intValue</span> <span class="p">=</span> <span class="p">(</span><span class="kt">int</span><span class="p">)</span><span class="n">doubleValue</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// Bad practice: Implicitly converting &#39;int&#39; to &#39;double&#39; without considering potential precision loss</span>
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="n">badIntValue</span> <span class="p">=</span> <span class="m">42</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="kt">double</span> <span class="n">badDoubleValue</span> <span class="p">=</span> <span class="n">badIntValue</span><span class="p">;</span>
+</span></span></code></pre></div><h3 id="you-can-follow-me-on-the-linkedin-youtube-telegram-group-to-discuss-and-directly-send-me-email">
+  You can follow me on the LinkedIn, YouTube, Telegram Group to discuss, and directly send me email.
+  <a class="heading-link" href="#you-can-follow-me-on-the-linkedin-youtube-telegram-group-to-discuss-and-directly-send-me-email">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<ul>
+<li><a href="https://t.me/sadinco_csharp"  class="external-link" target="_blank" rel="noopener">Telegram Group</a></li>
+<li><a href="https://linkedin.com/in/MrSadin"  class="external-link" target="_blank" rel="noopener">LinkedIn</a></li>
+<li><a href="https://sadin.dev"  class="external-link" target="_blank" rel="noopener">Blog</a></li>
+<li><a href="https://youtube.com/c/EnKamran"  class="external-link" target="_blank" rel="noopener">YouTube</a></li>
+</ul>
+
+      </div>
+
+
+      <footer>
+        
+
+
+        <div id="disqus_thread"></div>
+<script>
+  window.disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "mrsadin" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+    
+    document.addEventListener('themeChanged', function (e) { 
+        if (document.readyState == 'complete') {
+          DISQUS.reset({ reload: true, config: disqus_config });
+        }
+    });
+</script>
+        
+        
+        
+        
+        
+        
+      </footer>
+    </article>
+
+    
+  </section>
+
+    </div>
+
+    <footer class="footer">
+  <section class="container">
+    ©
+    
+      2019 -
+    
+    2025
+     Kamran Sadin 
+    ·
+    
+    Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/" target="_blank" rel="noopener">Coder</a>.
+    
+  </section>
+</footer>
+
+  </main>
+
+  
+
+  
+  
+  <script src="/js/coder.min.6ae284be93d2d19dad1f02b0039508d9aab3180a12a06dcc71b0b0ef7825a317.js" integrity="sha256-auKEvpPS0Z2tHwKwA5UI2aqzGAoSoG3McbCw73gloxc="></script>
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-DQWLT4H0ND"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-DQWLT4H0ND');
+</script>
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</body>
+</html>

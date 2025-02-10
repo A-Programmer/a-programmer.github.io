@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>
+  Liskov Substitution Principle · Kamran Sadin
+</title>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+
+
+
+
+<meta name="author" content="Kamran Sadin">
+<meta name="description" content="The Liskov Substitution Principle defines that objects of a derived class should be substitutable for objects of the base class without affecting the correctness of the program. In simpler terms, any instance of a base class should be replaceable with an instance of a derived class without altering the desired properties of the program.">
+<meta name="keywords" content="blog,developer,c#,.net,dot net,software engineer,mentor">
+
+
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Liskov Substitution Principle">
+  <meta name="twitter:description" content="The Liskov Substitution Principle defines that objects of a derived class should be substitutable for objects of the base class without affecting the correctness of the program. In simpler terms, any instance of a base class should be replaceable with an instance of a derived class without altering the desired properties of the program.">
+
+<meta property="og:url" content="https://sadin.dev/posts/2023-10-22-liskov-substitution-principle/">
+  <meta property="og:site_name" content="Kamran Sadin">
+  <meta property="og:title" content="Liskov Substitution Principle">
+  <meta property="og:description" content="The Liskov Substitution Principle defines that objects of a derived class should be substitutable for objects of the base class without affecting the correctness of the program. In simpler terms, any instance of a base class should be replaceable with an instance of a derived class without altering the desired properties of the program.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2023-10-22T00:00:00+00:00">
+    <meta property="article:modified_time" content="2023-10-22T00:00:00+00:00">
+    <meta property="article:tag" content="Csharp">
+    <meta property="article:tag" content="Solid">
+    <meta property="article:tag" content="Lsp">
+    <meta property="article:tag" content="Liskov Substitution Principle">
+    <meta property="article:tag" content="Software Principles">
+    <meta property="article:tag" content="Software Design">
+
+
+
+
+<link rel="canonical" href="https://sadin.dev/posts/2023-10-22-liskov-substitution-principle/">
+
+
+<link rel="preload" href="/fonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/fa-regular-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>
+
+
+  
+  
+  <link rel="stylesheet" href="/css/coder.min.b886fe0d9034709648f91f4ce178f51dd367d9350f82dd1132d54fd69bfca66f.css" integrity="sha256-uIb&#43;DZA0cJZI&#43;R9M4Xj1HdNn2TUPgt0RMtVP1pv8pm8=" crossorigin="anonymous" media="screen" />
+
+
+
+
+
+
+  
+    
+    
+    <link rel="stylesheet" href="/css/coder-dark.min.a00e6364bacbc8266ad1cc81230774a1397198f8cfb7bcba29b7d6fcb54ce57f.css" integrity="sha256-oA5jZLrLyCZq0cyBIwd0oTlxmPjPt7y6KbfW/LVM5X8=" crossorigin="anonymous" media="screen" />
+  
+
+
+
+ 
+
+
+
+
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg" sizes="any">
+<link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+
+
+
+
+
+</head>
+
+
+
+
+
+
+<body class="preload-transitions colorscheme-auto">
+  
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+  <main class="wrapper">
+    <nav class="navigation">
+  <section class="container">
+    
+    <a class="navigation-title" href="https://sadin.dev/">
+      Kamran Sadin
+    </a>
+    
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa-solid fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/about/">About</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/posts/">Blog</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/projects/">Projects</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/contact/">Contact me</a>
+            </li>
+          
+        
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+    <div class="content">
+      
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">
+            <a class="title-link" href="https://sadin.dev/posts/2023-10-22-liskov-substitution-principle/">
+              Liskov Substitution Principle
+            </a>
+          </h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fa-solid fa-calendar" aria-hidden="true"></i>
+              <time datetime="2023-10-22T00:00:00Z">
+                October 22, 2023
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fa-solid fa-clock" aria-hidden="true"></i>
+              4-minute read
+            </span>
+          </div>
+          
+          
+          <div class="tags">
+  <i class="fa-solid fa-tag" aria-hidden="true"></i>
+    <span class="tag">
+      <a href="/tags/csharp/">Csharp</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/tags/solid/">Solid</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/tags/lsp/">Lsp</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/tags/liskov-substitution-principle/">Liskov Substitution Principle</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/tags/software-principles/">Software Principles</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/tags/software-design/">Software Design</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/tags/c%23-developer-roadmap/">C# Developer Roadmap</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/tags/1000daysofcsharp/">1000daysofcsharp</a>
+    </span></div>
+
+        </div>
+      </header>
+
+      <div class="post-content">
+        
+        <p>In the realm of software design, adhering to fundamental principles is essential for creating maintainable, flexible, and scalable codebases. One such crucial principle is the <strong>Liskov Substitution Principle (LSP)</strong>. LSP is a key element of the SOLID principles, initially introduced by Barbara Liskov. Understanding and applying the Liskov Substitution Principle is fundamental to achieving robust and extensible software systems.</p>
+<ol>
+<li><a href="https://sadin.dev/posts/mastering-solid-principles-in-csharp/?"  class="external-link" target="_blank" rel="noopener">Introduction</a></li>
+<li><a href="https://sadin.dev/posts/single-responsibility-principle/?"  class="external-link" target="_blank" rel="noopener">Single Responsibility Principle</a></li>
+<li><a href="https://sadin.dev/posts/open-closed-principle/?"  class="external-link" target="_blank" rel="noopener">Open/Closed Principle</a></li>
+<li><a href="https://sadin.dev/posts/liskov-substitution-principle/?"  class="external-link" target="_blank" rel="noopener"><strong>Liskov Substitution Principle</strong></a></li>
+<li><a href="https://sadin.dev/posts/interface-segregation-principle/?"  class="external-link" target="_blank" rel="noopener">Interface Segregation Principle</a></li>
+<li><a href="https://sadin.dev/posts/dependency-inversion-principle/?"  class="external-link" target="_blank" rel="noopener">Dependency Inversion Principle</a></li>
+</ol>
+<h2 id="what-is-the-liskov-substitution-principle">
+  What is the Liskov Substitution Principle?
+  <a class="heading-link" href="#what-is-the-liskov-substitution-principle">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>The Liskov Substitution Principle defines that objects of a derived class should be substitutable for objects of the base class without affecting the correctness of the program. In simpler terms, any instance of a base class should be replaceable with an instance of a derived class without altering the desired properties of the program.</p>
+<h2 id="how-does-lsp-help-us">
+  How Does LSP Help Us?
+  <a class="heading-link" href="#how-does-lsp-help-us">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>The Liskov Substitution Principle offers several benefits:</p>
+<h3 id="1-behavioral-consistency">
+  1. <strong>Behavioral Consistency:</strong>
+  <a class="heading-link" href="#1-behavioral-consistency">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<ul>
+<li>By adhering to LSP, developers can trust that derived classes will behave consistently with the base class, reducing unexpected behavior and bugs.</li>
+</ul>
+<h3 id="2-enhanced-reusability">
+  2. <strong>Enhanced Reusability:</strong>
+  <a class="heading-link" href="#2-enhanced-reusability">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<ul>
+<li>LSP encourages the creation of classes that can be used interchangeably, promoting code reuse and preventing unnecessary duplication.</li>
+</ul>
+<h3 id="3-design-flexibility">
+  3. <strong>Design Flexibility:</strong>
+  <a class="heading-link" href="#3-design-flexibility">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<ul>
+<li>By adhering to the principle, the system&rsquo;s design becomes more flexible, allowing for easy addition of new derived classes or modifications to existing ones.</li>
+</ul>
+<h2 id="consequences-of-not-using-lsp">
+  Consequences of Not Using LSP
+  <a class="heading-link" href="#consequences-of-not-using-lsp">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>If the Liskov Substitution Principle is violated, several issues may arise:</p>
+<ul>
+<li>
+<p><strong>Unexpected Behavior:</strong></p>
+<ul>
+<li>Objects of derived classes may exhibit unexpected behavior, breaking the assumptions made in the base class and causing errors.</li>
+</ul>
+</li>
+<li>
+<p><strong>Complexity:</strong></p>
+<ul>
+<li>Violating LSP can introduce unnecessary complexity into the system, making it challenging to understand and maintain.</li>
+</ul>
+</li>
+<li>
+<p><strong>Code Delicacy:</strong></p>
+<ul>
+<li>Code that does not adhere to LSP tends to be more delicate and prone to errors, making it difficult to predict its behavior.</li>
+</ul>
+</li>
+</ul>
+<h2 id="lsp-and-complex-software">
+  LSP and Complex Software
+  <a class="heading-link" href="#lsp-and-complex-software">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>In large, complex software systems, adherence to the Liskov Substitution Principle is vital. As systems grow, ensuring that derived classes can seamlessly substitute their base classes without altering the program&rsquo;s correctness becomes crucial for maintaining a stable and predictable system.</p>
+<h2 id="examples-of-lsp-in-action">
+  Examples of LSP in Action
+  <a class="heading-link" href="#examples-of-lsp-in-action">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>Let&rsquo;s illustrate LSP with three simple examples:</p>
+<h3 id="1-rectangle-and-square">
+  1. <strong>Rectangle and Square:</strong>
+  <a class="heading-link" href="#1-rectangle-and-square">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl"><span class="kd">public</span> <span class="k">class</span> <span class="nc">Rectangle</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="k">virtual</span> <span class="kt">int</span> <span class="n">Width</span> <span class="p">{</span> <span class="k">get</span><span class="p">;</span> <span class="k">set</span><span class="p">;</span> <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="k">virtual</span> <span class="kt">int</span> <span class="n">Height</span> <span class="p">{</span> <span class="k">get</span><span class="p">;</span> <span class="k">set</span><span class="p">;</span> <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="kt">int</span> <span class="n">Area</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="n">Width</span> <span class="p">*</span> <span class="n">Height</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kd">public</span> <span class="k">class</span> <span class="nc">Square</span> <span class="p">:</span> <span class="n">Rectangle</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="kd">override</span> <span class="kt">int</span> <span class="n">Width</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">set</span> <span class="p">{</span> <span class="k">base</span><span class="p">.</span><span class="n">Width</span> <span class="p">=</span> <span class="k">base</span><span class="p">.</span><span class="n">Height</span> <span class="p">=</span> <span class="k">value</span><span class="p">;</span> <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="kd">override</span> <span class="kt">int</span> <span class="n">Height</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">set</span> <span class="p">{</span> <span class="k">base</span><span class="p">.</span><span class="n">Width</span> <span class="p">=</span> <span class="k">base</span><span class="p">.</span><span class="n">Height</span> <span class="p">=</span> <span class="k">value</span><span class="p">;</span> <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p>In this example, <code>Square</code> inherits from <code>Rectangle</code> but violates LSP since changing the width of a <code>Square</code> will also affect its height, breaking the expected behavior of a <code>Rectangle</code>.</p>
+<h3 id="2-bird-and-ostrich">
+  2. <strong>Bird and Ostrich:</strong>
+  <a class="heading-link" href="#2-bird-and-ostrich">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl"><span class="kd">public</span> <span class="k">class</span> <span class="nc">Bird</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="k">virtual</span> <span class="k">void</span> <span class="n">Fly</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">// Flying logic</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kd">public</span> <span class="k">class</span> <span class="nc">Ostrich</span> <span class="p">:</span> <span class="n">Bird</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="kd">override</span> <span class="k">void</span> <span class="n">Fly</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">throw</span> <span class="k">new</span> <span class="n">InvalidOperationException</span><span class="p">(</span><span class="s">&#34;Ostriches cannot fly.&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p>Here, <code>Ostrich</code> inherits from <code>Bird</code> but violates LSP by throwing an exception in its <code>Fly</code> method, which is unexpected behavior for a derived class of <code>Bird</code>.</p>
+<h3 id="3-stack">
+  3. <strong>Stack:</strong>
+  <a class="heading-link" href="#3-stack">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl"><span class="kd">public</span> <span class="k">class</span> <span class="nc">Stack</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">private</span> <span class="n">List</span><span class="p">&lt;</span><span class="kt">int</span><span class="p">&gt;</span> <span class="n">stack</span> <span class="p">=</span> <span class="k">new</span> <span class="n">List</span><span class="p">&lt;</span><span class="kt">int</span><span class="p">&gt;();</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="k">virtual</span> <span class="k">void</span> <span class="n">Push</span><span class="p">(</span><span class="kt">int</span> <span class="n">item</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="n">stack</span><span class="p">.</span><span class="n">Add</span><span class="p">(</span><span class="n">item</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="kt">int</span> <span class="n">Pop</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="p">(</span><span class="n">stack</span><span class="p">.</span><span class="n">Count</span> <span class="p">==</span> <span class="m">0</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="k">throw</span> <span class="k">new</span> <span class="n">InvalidOperationException</span><span class="p">(</span><span class="s">&#34;Stack is empty.&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="kt">var</span> <span class="n">lastIndex</span> <span class="p">=</span> <span class="n">stack</span><span class="p">.</span><span class="n">Count</span> <span class="p">-</span> <span class="m">1</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="kt">var</span> <span class="n">item</span> <span class="p">=</span> <span class="n">stack</span><span class="p">[</span><span class="n">lastIndex</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl">        <span class="n">stack</span><span class="p">.</span><span class="n">RemoveAt</span><span class="p">(</span><span class="n">lastIndex</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="n">item</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kd">public</span> <span class="k">class</span> <span class="nc">LimitedStack</span> <span class="p">:</span> <span class="n">Stack</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="kd">override</span> <span class="k">void</span> <span class="n">Push</span><span class="p">(</span><span class="kt">int</span> <span class="n">item</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="p">(</span><span class="n">stack</span><span class="p">.</span><span class="n">Count</span> <span class="p">&gt;=</span> <span class="m">10</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="k">throw</span> <span class="k">new</span> <span class="n">InvalidOperationException</span><span class="p">(</span><span class="s">&#34;Stack limit exceeded.&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="k">base</span><span class="p">.</span><span class="n">Push</span><span class="p">(</span><span class="n">item</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p>In this example, <code>LimitedStack</code> inherits from <code>Stack</code> but violates LSP by altering the behavior of the <code>Push</code> method, which contradicts the behavior of the base class.</p>
+<h2 id="summary">
+  Summary
+  <a class="heading-link" href="#summary">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>The Liskov Substitution Principle is a fundamental guideline in software design, ensuring that derived classes can substitute their base classes without altering the correctness of the program. Adhering to LSP enhances behavioral consistency, reusability, and design flexibility. By understanding and implementing this principle, developers can create software systems that are predictable, maintainable, and easily extendable over time.</p>
+<h2 id="you-can-follow-me-on-the-linkedin-youtube-telegram-group-to-discuss-and-directly-send-me-email">
+  You can follow me on the LinkedIn, YouTube, Telegram Group to discuss, and directly send me email.
+  <a class="heading-link" href="#you-can-follow-me-on-the-linkedin-youtube-telegram-group-to-discuss-and-directly-send-me-email">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<ul>
+<li><a href="https://t.me/sadinco_csharp"  class="external-link" target="_blank" rel="noopener">Telegram Group</a></li>
+<li><a href="https://linkedin.com/in/MrSadin"  class="external-link" target="_blank" rel="noopener">LinkedIn</a></li>
+<li><a href="https://sadin.dev"  class="external-link" target="_blank" rel="noopener">Blog</a></li>
+<li><a href="https://youtube.com/c/EnKamran"  class="external-link" target="_blank" rel="noopener">YouTube</a></li>
+</ul>
+
+      </div>
+
+
+      <footer>
+        
+
+
+        <div id="disqus_thread"></div>
+<script>
+  window.disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "mrsadin" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+    
+    document.addEventListener('themeChanged', function (e) { 
+        if (document.readyState == 'complete') {
+          DISQUS.reset({ reload: true, config: disqus_config });
+        }
+    });
+</script>
+        
+        
+        
+        
+        
+        
+      </footer>
+    </article>
+
+    
+  </section>
+
+    </div>
+
+    <footer class="footer">
+  <section class="container">
+    ©
+    
+      2019 -
+    
+    2025
+     Kamran Sadin 
+    ·
+    
+    Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/" target="_blank" rel="noopener">Coder</a>.
+    
+  </section>
+</footer>
+
+  </main>
+
+  
+
+  
+  
+  <script src="/js/coder.min.6ae284be93d2d19dad1f02b0039508d9aab3180a12a06dcc71b0b0ef7825a317.js" integrity="sha256-auKEvpPS0Z2tHwKwA5UI2aqzGAoSoG3McbCw73gloxc="></script>
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-DQWLT4H0ND"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-DQWLT4H0ND');
+</script>
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</body>
+</html>

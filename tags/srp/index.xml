@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Srp on Kamran Sadin</title>
+    <link>https://sadin.dev/tags/srp/</link>
+    <description>Recent content in Srp on Kamran Sadin</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 18 Oct 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://sadin.dev/tags/srp/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Single Responsibility Principle</title>
+      <link>https://sadin.dev/posts/2023-10-18-single-responsibility-principle/</link>
+      <pubDate>Wed, 18 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://sadin.dev/posts/2023-10-18-single-responsibility-principle/</guid>
+      <description>&lt;p&gt;In the realm of software development, adhering to well-established design principles is paramount for creating maintainable, flexible, and scalable codebases. One such foundational principle is the &lt;strong&gt;Single Responsibility Principle (SRP)&lt;/strong&gt;. SRP is one of the SOLID principles, initially introduced by Robert C. Martin, emphasizing a fundamental concept that profoundly influences software design.&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://sadin.dev/posts/mastering-solid-principles-in-csharp/?&#34; &gt;Introduction&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://sadin.dev/posts/single-responsibility-principle/?&#34; &gt;&lt;strong&gt;Single Responsibility Principle&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://sadin.dev/posts/open-closed-principle/?&#34; &gt;Open/Closed Principle&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://sadin.dev/posts/liskov-substitution-principle/?&#34; &gt;Liskov Substitution Principle&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://sadin.dev/posts/interface-segregation-principle/?&#34; &gt;Interface Segregation Principle&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://sadin.dev/posts/dependency-inversion-principle/?&#34; &gt;Dependency Inversion Principle&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;what-is-the-single-responsibility-principle&#34;&gt;&#xD;&#xA;  What is the Single Responsibility Principle?&#xD;&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#what-is-the-single-responsibility-principle&#34;&gt;&#xD;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xD;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xD;&#xA;  &lt;/a&gt;&#xD;&#xA;&lt;/h2&gt;&#xD;&#xA;&lt;p&gt;At its core, SRP advocates that a class should have a &lt;strong&gt;single reason to change&lt;/strong&gt;, meaning it should only have one responsibility. Essentially, a class should encapsulate one aspect of the functionality within the software. By adhering to this principle, the design becomes more modular, maintainable, and easier to extend.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

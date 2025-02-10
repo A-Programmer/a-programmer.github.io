@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Generic Delegates on Kamran Sadin</title>
+    <link>https://sadin.dev/tags/generic-delegates/</link>
+    <description>Recent content in Generic Delegates on Kamran Sadin</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 04 Oct 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://sadin.dev/tags/generic-delegates/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Delegates Part 2</title>
+      <link>https://sadin.dev/posts/2023-10-04-delegates-part-2/</link>
+      <pubDate>Wed, 04 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://sadin.dev/posts/2023-10-04-delegates-part-2/</guid>
+      <description>&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://sadin.dev/posts/delegates-part-1-plugin-methods-with-delegates/&#34; &gt;&lt;strong&gt;Delegates Part 1&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://sadin.dev/posts/delegates-part-2/&#34; &gt;&lt;strong&gt;Delegates Part 2&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;prerequisits&#34;&gt;&#xD;&#xA;  Prerequisits&#xD;&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#prerequisits&#34;&gt;&#xD;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xD;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xD;&#xA;  &lt;/a&gt;&#xD;&#xA;&lt;/h2&gt;&#xD;&#xA;&lt;p&gt;You want to read the second part of Delegates, right?&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;The first thing that you need is to read the &lt;a href=&#34;https://sadin.dev/posts/delegates-part-1-plugin-methods-with-delegates/&#34; &gt;previous part (Part 1)&lt;/a&gt;.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;The next thing is putting a smile please put a smile on your face then start to read the article&lt;/strong&gt;.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;target-methods&#34;&gt;&#xD;&#xA;  Target methods&#xD;&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#target-methods&#34;&gt;&#xD;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xD;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xD;&#xA;  &lt;/a&gt;&#xD;&#xA;&lt;/h2&gt;&#xD;&#xA;&lt;p&gt;As you remember, we agreed that a delegate can point to a method, right? In simple words, it means that we can have a variable that can hold a method in it and then we can call that method by calling this variable.&lt;br&gt;&#xA;We have local, static, and instance methods in C#, so the delegate can point to which of them? All! A delegate&amp;rsquo;s target method can be a local, static, or instance method.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

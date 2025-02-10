@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Dip on Kamran Sadin</title>
+    <link>https://sadin.dev/tags/dip/</link>
+    <description>Recent content in Dip on Kamran Sadin</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 26 Oct 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://sadin.dev/tags/dip/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Dependency Inversion Principle</title>
+      <link>https://sadin.dev/posts/2023-10-26-dependency-inversion-principle/</link>
+      <pubDate>Thu, 26 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://sadin.dev/posts/2023-10-26-dependency-inversion-principle/</guid>
+      <description>&lt;p&gt;In the realm of software design, fundamental principles serve as guiding lights for creating maintainable, flexible, and scalable codebases. One such crucial principle is the &lt;strong&gt;Dependency Inversion Principle (DIP)&lt;/strong&gt;. DIP is a fundamental component of the SOLID principles, initially introduced by Robert C. Martin. Understanding and applying the Dependency Inversion Principle is crucial for achieving decoupled and adaptable software systems.&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://sadin.dev/posts/mastering-solid-principles-in-csharp/?&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Introduction&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://sadin.dev/posts/single-responsibility-principle/?&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Single Responsibility Principle&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://sadin.dev/posts/open-closed-principle/?&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Open/Closed Principle&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://sadin.dev/posts/liskov-substitution-principle/?&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Liskov Substitution Principle&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://sadin.dev/posts/interface-segregation-principle/?&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Interface Segregation Principle&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://sadin.dev/posts/dependency-inversion-principle/?&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Dependency Inversion Principle&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;what-is-the-dependency-inversion-principle&#34;&gt;&#xD;&#xA;  What is the Dependency Inversion Principle?&#xD;&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#what-is-the-dependency-inversion-principle&#34;&gt;&#xD;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xD;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xD;&#xA;  &lt;/a&gt;&#xD;&#xA;&lt;/h2&gt;&#xD;&#xA;&lt;p&gt;The Dependency Inversion Principle emphasizes that high-level modules should not depend on low-level modules; both should depend on abstractions. Additionally, abstractions should not depend on details; instead, details should depend on abstractions. This principle encourages the use of interfaces or abstract classes to decouple higher-level and lower-level modules.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

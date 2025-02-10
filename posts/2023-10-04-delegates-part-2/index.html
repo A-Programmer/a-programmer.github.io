@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>
+  Delegates Part 2 · Kamran Sadin
+</title>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+
+
+
+
+<meta name="author" content="Kamran Sadin">
+<meta name="description" content="The second post of the Delegates series, I am here to explain delegates in a very simple way.">
+<meta name="keywords" content="blog,developer,c#,.net,dot net,software engineer,mentor">
+
+
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Delegates Part 2">
+  <meta name="twitter:description" content="The second post of the Delegates series, I am here to explain delegates in a very simple way.">
+
+<meta property="og:url" content="https://sadin.dev/posts/2023-10-04-delegates-part-2/">
+  <meta property="og:site_name" content="Kamran Sadin">
+  <meta property="og:title" content="Delegates Part 2">
+  <meta property="og:description" content="The second post of the Delegates series, I am here to explain delegates in a very simple way.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2023-10-04T00:00:00+00:00">
+    <meta property="article:modified_time" content="2023-10-04T00:00:00+00:00">
+    <meta property="article:tag" content="Csharp">
+    <meta property="article:tag" content="Delegate">
+    <meta property="article:tag" content="Multicast Delegates">
+    <meta property="article:tag" content="Generic Delegates">
+    <meta property="article:tag" content="Func">
+    <meta property="article:tag" content="Action">
+
+
+
+
+<link rel="canonical" href="https://sadin.dev/posts/2023-10-04-delegates-part-2/">
+
+
+<link rel="preload" href="/fonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/fa-regular-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>
+
+
+  
+  
+  <link rel="stylesheet" href="/css/coder.min.b886fe0d9034709648f91f4ce178f51dd367d9350f82dd1132d54fd69bfca66f.css" integrity="sha256-uIb&#43;DZA0cJZI&#43;R9M4Xj1HdNn2TUPgt0RMtVP1pv8pm8=" crossorigin="anonymous" media="screen" />
+
+
+
+
+
+
+  
+    
+    
+    <link rel="stylesheet" href="/css/coder-dark.min.a00e6364bacbc8266ad1cc81230774a1397198f8cfb7bcba29b7d6fcb54ce57f.css" integrity="sha256-oA5jZLrLyCZq0cyBIwd0oTlxmPjPt7y6KbfW/LVM5X8=" crossorigin="anonymous" media="screen" />
+  
+
+
+
+ 
+
+
+
+
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg" sizes="any">
+<link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+
+
+
+
+
+</head>
+
+
+
+
+
+
+<body class="preload-transitions colorscheme-auto">
+  
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+  <main class="wrapper">
+    <nav class="navigation">
+  <section class="container">
+    
+    <a class="navigation-title" href="https://sadin.dev/">
+      Kamran Sadin
+    </a>
+    
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa-solid fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/about/">About</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/posts/">Blog</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/projects/">Projects</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/contact/">Contact me</a>
+            </li>
+          
+        
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+    <div class="content">
+      
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">
+            <a class="title-link" href="https://sadin.dev/posts/2023-10-04-delegates-part-2/">
+              Delegates Part 2
+            </a>
+          </h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fa-solid fa-calendar" aria-hidden="true"></i>
+              <time datetime="2023-10-04T00:00:00Z">
+                October 4, 2023
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fa-solid fa-clock" aria-hidden="true"></i>
+              9-minute read
+            </span>
+          </div>
+          
+          
+          <div class="tags">
+  <i class="fa-solid fa-tag" aria-hidden="true"></i>
+    <span class="tag">
+      <a href="/tags/csharp/">Csharp</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/tags/delegate/">Delegate</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/tags/multicast-delegates/">Multicast Delegates</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/tags/generic-delegates/">Generic Delegates</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/tags/func/">Func</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/tags/action/">Action</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/tags/c%23-developer-roadmap/">C# Developer Roadmap</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/tags/1000daysofcsharp/">1000daysofcsharp</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/tags/day22/">Day22</a>
+    </span></div>
+
+        </div>
+      </header>
+
+      <div class="post-content">
+        
+        <ul>
+<li><a href="/posts/delegates-part-1-plugin-methods-with-delegates/" ><strong>Delegates Part 1</strong></a></li>
+<li><a href="/posts/delegates-part-2/" ><strong>Delegates Part 2</strong></a></li>
+</ul>
+<h2 id="prerequisits">
+  Prerequisits
+  <a class="heading-link" href="#prerequisits">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>You want to read the second part of Delegates, right?</p>
+<ul>
+<li>The first thing that you need is to read the <a href="/posts/delegates-part-1-plugin-methods-with-delegates/" >previous part (Part 1)</a>.</li>
+<li><strong>The next thing is putting a smile please put a smile on your face then start to read the article</strong>.</li>
+</ul>
+<h2 id="target-methods">
+  Target methods
+  <a class="heading-link" href="#target-methods">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>As you remember, we agreed that a delegate can point to a method, right? In simple words, it means that we can have a variable that can hold a method in it and then we can call that method by calling this variable.<br>
+We have local, static, and instance methods in C#, so the delegate can point to which of them? All! A delegate&rsquo;s target method can be a local, static, or instance method.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl"><span class="c1">// Static target method</span>
+</span></span><span class="line"><span class="cl"><span class="n">Transformer</span> <span class="n">transformer</span> <span class="p">=</span> <span class="n">Test</span><span class="p">.</span><span class="n">Square</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="n">transformer</span><span class="p">(</span><span class="m">10</span><span class="p">));</span> <span class="c1">// 100</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">Test</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">int</span> <span class="n">Square</span><span class="p">(</span><span class="kt">int</span> <span class="n">x</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="n">x</span> <span class="p">*</span> <span class="n">x</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="k">delegate</span> <span class="kt">int</span> <span class="n">Transformer</span><span class="p">(</span><span class="kt">int</span> <span class="n">x</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// Instance target method</span>
+</span></span><span class="line"><span class="cl"><span class="n">Test</span> <span class="n">test</span> <span class="p">=</span> <span class="k">new</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl"><span class="n">Transformer</span> <span class="n">transformer</span> <span class="p">=</span> <span class="n">test</span><span class="p">.</span><span class="n">Square</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="n">transformer</span><span class="p">(</span><span class="m">10</span><span class="p">));</span> <span class="c1">// 100</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">Test</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="kt">int</span> <span class="n">Square</span><span class="p">(</span><span class="kt">int</span> <span class="n">x</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="n">x</span> <span class="p">*</span> <span class="n">x</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="k">delegate</span> <span class="kt">int</span> <span class="n">Transformer</span><span class="p">(</span><span class="kt">int</span> <span class="n">x</span><span class="p">);</span>
+</span></span></code></pre></div><h2 id="multicasting">
+  Multicasting
+  <a class="heading-link" href="#multicasting">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>One of the interesting parts of delegates is multicasting, a regular variable can hold the data, right? an <code>int</code> variable can hold only one number; if you try to assign another number, it will be replaced by the new number. We can assign multiple methods to one delegate instance by using + and += operators in delegates.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl"><span class="n">Transformer</span> <span class="n">transformer</span> <span class="p">=</span> <span class="n">Square</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="n">transformer</span> <span class="p">+=</span> <span class="n">Cube</span><span class="p">;</span>
+</span></span></code></pre></div><p>Invoking transformer will invoke both Square and Cube in the order in which they are added. <br>
+How about removing a method from a delegate? To remove a method from a delegate you can use - and -= operators.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl"><span class="n">transformer</span> <span class="p">-=</span> <span class="n">Square</span><span class="p">;</span>
+</span></span></code></pre></div><blockquote>
+<p>Delegates are immutable, so when you call -= or +=, you are creating a new delegate instance and assigning it to the existing variable.
+{: .prompt-tip }</p></blockquote>
+<p>How about if we assign multiple methods with a nonvoid return type to a delegate? Which result will be returned? The caller receives the return value from the last method to be invoked. This doesn&rsquo;t mean that the other methods are not going to be called, they are called but the return values will be discarded.</p>
+<p>It doesn&rsquo;t make sense to have multicast delegate with multiple methods that return value unless some specific cases, so don&rsquo;t worry about this part, you won&rsquo;t need this much.</p>
+<p>Let&rsquo;s see an example:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">Program</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">delegate</span> <span class="k">void</span> <span class="n">Logger</span><span class="p">(</span><span class="kt">string</span> <span class="n">message</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">class</span> <span class="nc">LogUtilities</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="kd">public</span> <span class="kd">static</span> <span class="k">void</span> <span class="n">Log</span><span class="p">(</span><span class="n">Logger</span> <span class="n">logger</span><span class="p">,</span> <span class="kt">string</span> <span class="n">message</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="n">logger</span><span class="p">(</span><span class="n">message</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="kd">static</span> <span class="k">void</span> <span class="n">Main</span><span class="p">(</span><span class="kt">string</span><span class="p">[]</span> <span class="n">args</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="n">Logger</span> <span class="n">logger</span> <span class="p">=</span> <span class="n">ConsoleLogger</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="n">logger</span> <span class="p">+=</span> <span class="n">FileLogger</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="n">LogUtilities</span><span class="p">.</span><span class="n">Log</span><span class="p">(</span><span class="n">logger</span><span class="p">,</span> <span class="s">&#34;My Log Message&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="k">void</span> <span class="n">ConsoleLogger</span><span class="p">(</span><span class="kt">string</span> <span class="n">message</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="n">message</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="k">void</span> <span class="n">FileLogger</span><span class="p">(</span><span class="kt">string</span> <span class="n">message</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="n">System</span><span class="p">.</span><span class="n">IO</span><span class="p">.</span><span class="n">File</span><span class="p">.</span><span class="n">WriteAllText</span><span class="p">(</span><span class="s">&#34;Log.txt&#34;</span><span class="p">,</span> <span class="n">message</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p>On line 3 we create our delegate (contract or rule) and on lines 14, 15, and 16 we create a multicast delegate instance to call both ConsoleLogger and FileLogger methods. After running the application, you will see the <code>My Log Message</code> printed on the screen and a file created in your application root called <code>Log.txt</code> which contains <code>My Log Message</code>.</p>
+<h2 id="generic-delegate-types">
+  Generic Delegate Types
+  <a class="heading-link" href="#generic-delegate-types">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>I want to make this topic more interesting, Let&rsquo;s continue with the Transformer example, we want to calculate the Square and Cube of the given number as follows:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl"><span class="k">delegate</span> <span class="kt">int</span> <span class="n">Transformer</span><span class="p">(</span><span class="kt">int</span> <span class="n">x</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kd">public</span> <span class="kd">static</span> <span class="k">void</span> <span class="n">Main</span><span class="p">(</span><span class="kt">string</span><span class="p">[]</span> <span class="n">args</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">Transformer</span> <span class="n">transformer</span> <span class="p">=</span> <span class="n">Square</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="n">transformer</span><span class="p">(</span><span class="m">10</span><span class="p">));</span> <span class="c1">// 100</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="n">transformer</span> <span class="p">=</span> <span class="n">Cube</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="n">transformer</span><span class="p">(</span><span class="m">2</span><span class="p">));</span> <span class="c1">// 8</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="kd">static</span> <span class="kt">int</span> <span class="n">Square</span><span class="p">(</span><span class="kt">int</span> <span class="n">a</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="n">a</span> <span class="p">*</span> <span class="n">a</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">static</span> <span class="kt">int</span> <span class="n">Cube</span><span class="p">(</span><span class="kt">int</span> <span class="n">a</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="n">a</span> <span class="p">*</span> <span class="n">a</span> <span class="p">*</span> <span class="n">a</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p>It would be better if we could cover any type of numbers with one delegate, wouldn&rsquo;t it? I mean, currently, the delegate is only compatible with methods that return <code>int</code> and expect an <code>int</code> as a parameter, right? If you write the Cube method with a <code>double</code> return type and a <code>double</code> parameter, you have to create another delegate with a <code>double</code> return and parameter type, right?</p>
+<p>Can you remember Generics in C# that I have published a post about them? We can have the same solution here.</p>
+<p>The syntax of Generic Delegate Types is as follows:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl"><span class="kd">public</span> <span class="k">delegate</span> <span class="n">T</span> <span class="n">MethodName</span><span class="p">&lt;</span><span class="n">T</span><span class="p">&gt;(</span><span class="n">T</span> <span class="n">arg</span><span class="p">);</span>
+</span></span></code></pre></div><p>Now, let&rsquo;s update our Transformer delegate:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl"><span class="k">delegate</span> <span class="n">T</span> <span class="n">Transformer</span><span class="p">&lt;</span><span class="n">T</span><span class="p">&gt;(</span><span class="n">T</span> <span class="n">x</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kd">public</span> <span class="kd">static</span> <span class="k">void</span> <span class="n">Main</span><span class="p">(</span><span class="kt">string</span><span class="p">[]</span> <span class="n">args</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">Transformer</span><span class="p">&lt;</span><span class="kt">int</span><span class="p">&gt;</span> <span class="n">intTransformer</span> <span class="p">=</span> <span class="n">Square</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="n">intTransformer</span><span class="p">(</span><span class="m">10</span><span class="p">));</span> <span class="c1">// 100</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="n">Transformer</span><span class="p">&lt;</span><span class="kt">double</span><span class="p">&gt;</span> <span class="n">doubleTransformer</span> <span class="p">=</span> <span class="n">Cube</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="n">doubleTransformer</span><span class="p">(</span><span class="m">2.0</span><span class="p">));</span> <span class="c1">// 8</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="kd">static</span> <span class="kt">int</span> <span class="n">Square</span><span class="p">(</span><span class="kt">int</span> <span class="n">a</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="n">a</span> <span class="p">*</span> <span class="n">a</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">static</span> <span class="kt">double</span> <span class="n">Cube</span><span class="p">(</span><span class="kt">double</span> <span class="n">a</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="n">a</span> <span class="p">*</span> <span class="n">a</span> <span class="p">*</span> <span class="n">a</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p>Awesome, right?</p>
+<h2 id="func-and-action">
+  Func and Action
+  <a class="heading-link" href="#func-and-action">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>Now you know about the generic delegates and how to create one, by generic delegates you can create delegates with any input and output type. C# has built-in generic delegates, <strong>Func</strong> and <strong>Action</strong>.</p>
+<h3 id="func">
+  Func
+  <a class="heading-link" href="#func">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p><strong>Func</strong> is a built-in delegate that that represents a method that takes one or more (up to 16) parameters and returns a value, the return type of <code>Func</code> can be any type.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl"><span class="n">Func</span><span class="p">&lt;</span><span class="n">T1</span><span class="p">,</span> <span class="n">T2</span><span class="p">,</span> <span class="n">T3</span><span class="p">,</span> <span class="p">...,</span> <span class="n">T16</span><span class="p">,</span> <span class="n">TResult</span><span class="p">&gt;</span>
+</span></span></code></pre></div><p><code>T1</code> &hellip; <code>T16</code> are parameters and <code>TResult</code> is the return value.</p>
+<p>Let&rsquo;s see it in an example:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">Calculator</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="kt">int</span> <span class="n">Add</span><span class="p">(</span><span class="kt">int</span> <span class="n">a</span><span class="p">,</span> <span class="kt">int</span> <span class="n">b</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="n">a</span> <span class="p">+</span> <span class="n">b</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="kt">int</span> <span class="n">Subtract</span><span class="p">(</span><span class="kt">int</span> <span class="n">a</span><span class="p">,</span> <span class="kt">int</span> <span class="n">b</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="n">a</span> <span class="p">-</span> <span class="n">b</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="kt">int</span> <span class="n">Multiply</span><span class="p">(</span><span class="kt">int</span> <span class="n">a</span><span class="p">,</span> <span class="kt">int</span> <span class="n">b</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="n">a</span> <span class="p">*</span> <span class="n">b</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="kt">int</span> <span class="n">Divide</span><span class="p">(</span><span class="kt">int</span> <span class="n">a</span><span class="p">,</span> <span class="kt">int</span> <span class="n">b</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="n">a</span> <span class="p">/</span> <span class="n">b</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">Program</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">static</span> <span class="k">void</span> <span class="n">Main</span><span class="p">(</span><span class="kt">string</span><span class="p">[]</span> <span class="n">args</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="kt">var</span> <span class="n">FuncCalculator</span> <span class="p">=</span> <span class="k">new</span> <span class="n">Calculator</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="n">Func</span><span class="p">&lt;</span><span class="kt">int</span><span class="p">,</span> <span class="kt">int</span><span class="p">,</span> <span class="kt">int</span><span class="p">&gt;</span> <span class="k">add</span> <span class="p">=</span> <span class="n">FuncCalculator</span><span class="p">.</span><span class="n">Add</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="n">Func</span><span class="p">&lt;</span><span class="kt">int</span><span class="p">,</span> <span class="kt">int</span><span class="p">,</span> <span class="kt">int</span><span class="p">&gt;</span> <span class="n">subtract</span> <span class="p">=</span> <span class="n">FuncCalculator</span><span class="p">.</span><span class="n">Subtract</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="n">Func</span><span class="p">&lt;</span><span class="kt">int</span><span class="p">,</span> <span class="kt">int</span><span class="p">,</span> <span class="kt">int</span><span class="p">&gt;</span> <span class="n">multiply</span> <span class="p">=</span> <span class="n">FuncCalculator</span><span class="p">.</span><span class="n">Multiply</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="n">Func</span><span class="p">&lt;</span><span class="kt">int</span><span class="p">,</span> <span class="kt">int</span><span class="p">,</span> <span class="kt">int</span><span class="p">&gt;</span> <span class="n">divide</span> <span class="p">=</span> <span class="n">FuncCalculator</span><span class="p">.</span><span class="n">Divide</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">$&#34;Addition result: {add(10, 5)}&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">$&#34;Subtraction result: {subtract(10, 5)}&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">$&#34;Multiplication result: {multiply(10, 5)}&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">$&#34;Division result: {divide(10, 5)}&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// Or</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">Func</span><span class="p">&lt;</span><span class="kt">int</span><span class="p">,</span> <span class="kt">int</span><span class="p">,</span> <span class="kt">int</span><span class="p">&gt;</span> <span class="k">add</span> <span class="p">=</span> <span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="n">a</span> <span class="p">+</span> <span class="n">b</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="n">Func</span><span class="p">&lt;</span><span class="kt">int</span><span class="p">,</span> <span class="kt">int</span><span class="p">,</span> <span class="kt">int</span><span class="p">&gt;</span> <span class="n">subtract</span> <span class="p">=</span> <span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="n">a</span> <span class="p">-</span> <span class="n">b</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="n">Func</span><span class="p">&lt;</span><span class="kt">int</span><span class="p">,</span> <span class="kt">int</span><span class="p">,</span> <span class="kt">int</span><span class="p">&gt;</span> <span class="n">multiply</span> <span class="p">=</span> <span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="n">a</span> <span class="p">*</span> <span class="n">b</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="n">Func</span><span class="p">&lt;</span><span class="kt">int</span><span class="p">,</span> <span class="kt">int</span><span class="p">,</span> <span class="kt">int</span><span class="p">&gt;</span> <span class="n">divide</span> <span class="p">=</span> <span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="n">a</span> <span class="p">/</span> <span class="n">b</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">$&#34;Addition result: {add(10, 5)}&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">$&#34;Subtraction result: {subtract(10, 5)}&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">$&#34;Multiplication result: {multiply(10, 5)}&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">$&#34;Division result: {divide(10, 5)}&#34;</span><span class="p">);</span>
+</span></span></code></pre></div><p>Easy, right? That&rsquo;s what a <code>Func</code> is:</p>
+<blockquote>
+<p>A predefined delegate that represents a method with zero or more (up to 16) input parameters and a return type.
+{: .prompt-tip }</p></blockquote>
+<h3 id="action">
+  Action
+  <a class="heading-link" href="#action">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>In some cases, we don&rsquo;t need a return value, or we need a delegate that represents a void-returning method.
+In that case, we can use another predefined delegate called <code>Action</code>.
+<strong>Action</strong> is a predefined delegate type that represents a method with zero or more (up to 16) parameters that doesn&rsquo;t return any value.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl"><span class="n">Action</span><span class="p">&lt;</span><span class="kt">int</span><span class="p">,</span> <span class="kt">int</span><span class="p">&gt;</span> <span class="n">ActionCalculator</span> <span class="p">=</span> <span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span> <span class="p">=&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">$&#34;Addition result: {a + b}&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">$&#34;Subtraction result: {a - b}&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">$&#34;Multiplication result: {a * b}&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">$&#34;Division result: {a / b}&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">};</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">ActionCalculator</span><span class="p">(</span><span class="m">10</span><span class="p">,</span> <span class="m">5</span><span class="p">);</span>
+</span></span></code></pre></div><p>As you can see, we defined an Action delegate that takes two integer parameters performs some arithmetic operations, and returns nothing.</p>
+<h2 id="tips">
+  Tips
+  <a class="heading-link" href="#tips">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<ol>
+<li>Use Cases:
+<ul>
+<li>Use Func when you want a method that computes a result based on input parameters.</li>
+<li>Use Action when you want a method to perform some action without returning any value.</li>
+</ul>
+</li>
+<li>Lambda Expressions:
+<ul>
+<li>Lambdas are often used with Func and Action to define methods inline without explicitly writing a named method.</li>
+</ul>
+</li>
+<li>Delegate Composition:
+You can chain multiple Func or Action delegates together using the += operator, allowing for multiple operations in sequence.</li>
+</ol>
+<h2 id="example-of-delegate-composition">
+  Example of Delegate Composition
+  <a class="heading-link" href="#example-of-delegate-composition">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl"><span class="n">Action</span><span class="p">&lt;</span><span class="kt">string</span><span class="p">&gt;</span> <span class="n">greetAction</span> <span class="p">=</span> <span class="n">message</span> <span class="p">=&gt;</span> <span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&#34;Greetings: &#34;</span> <span class="p">+</span> <span class="n">message</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="n">Action</span><span class="p">&lt;</span><span class="kt">string</span><span class="p">&gt;</span> <span class="n">farewellAction</span> <span class="p">=</span> <span class="n">message</span> <span class="p">=&gt;</span> <span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&#34;Farewell: &#34;</span> <span class="p">+</span> <span class="n">message</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">Action</span><span class="p">&lt;</span><span class="kt">string</span><span class="p">&gt;</span> <span class="n">combinedAction</span> <span class="p">=</span> <span class="n">greetAction</span> <span class="p">+</span> <span class="n">farewellAction</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">combinedAction</span><span class="p">(</span><span class="s">&#34;John&#34;</span><span class="p">);</span>  <span class="c1">// Prints both greetings and farewells for &#34;John&#34;</span>
+</span></span></code></pre></div><p>Awesome, right?</p>
+<h2 id="use-cases">
+  Use-Cases
+  <a class="heading-link" href="#use-cases">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<h3 id="func-1">
+  Func:
+  <a class="heading-link" href="#func-1">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<ol>
+<li>
+<p><strong>Function Composition:</strong>
+Combining multiple functions to create a new function by chaining <code>Func</code> delegates.</p>
+</li>
+<li>
+<p><strong>LINQ (Language Integrated Query):</strong>
+Utilized in LINQ for projection or transformation operations on collections.</p>
+</li>
+<li>
+<p><strong>Callback Functions:</strong>
+Providing a callback function to be executed upon completion of an asynchronous operation.</p>
+</li>
+<li>
+<p><strong>Mapping:</strong>
+Converting one type of object to another type using a mapping function.</p>
+</li>
+<li>
+<p><strong>Error Handling:</strong>
+Defining functions to handle specific error cases or exceptions.</p>
+</li>
+<li>
+<p><strong>Lazy Evaluation:</strong>
+Lazily computing values only when needed, particularly useful for performance optimizations.</p>
+</li>
+<li>
+<p><strong>Configuration:</strong>
+Supplying functions to configure components or behaviors of a system.</p>
+</li>
+</ol>
+<h3 id="action-1">
+  Action:
+  <a class="heading-link" href="#action-1">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<ol>
+<li>
+<p><strong>Event Handling:</strong>
+Defining actions to be executed when an event is raised.</p>
+</li>
+<li>
+<p><strong>UI Interaction:</strong>
+Handling user interface events and defining actions to update UI elements.</p>
+</li>
+<li>
+<p><strong>Logging:</strong>
+Logging actions or functions that record events or information for debugging or auditing purposes.</p>
+</li>
+<li>
+<p><strong>Multithreading:</strong>
+Specifying actions to be executed in separate threads or asynchronously.</p>
+</li>
+<li>
+<p><strong>Clean-Up Operations:</strong>
+Defining actions for cleanup or disposal of resources after a specific task.</p>
+</li>
+<li>
+<p><strong>Callback Functions:</strong>
+Providing a callback action to be executed upon completion of an asynchronous operation.</p>
+</li>
+<li>
+<p><strong>Dependency Injection:</strong>
+Specifying actions to be taken after resolving dependencies in a dependency injection container.</p>
+</li>
+</ol>
+<blockquote>
+<p>A problem that you can solve with a delegate, can also be solved with an interface.
+{: .propmt-info }</p></blockquote>
+<p>If you don&rsquo;t understand this, I suggest you read the article again, look for more examples, and compare delegates and interfaces. And at the end, try to implement previous examples with an interface.</p>
+<p>A delegate design might be a better choice than an interface design if one or more of these conditions are true:</p>
+<ul>
+<li>The interface defines only a single method.</li>
+<li>Multicast capability is needed.</li>
+<li>The subscriber needs to implement the interface multiple times.</li>
+</ul>
+<h2 id="delegate-compatibility">
+  Delegate compatibility
+  <a class="heading-link" href="#delegate-compatibility">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>Delegate types are all incompatible with one another, even if their signature is the same:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl"><span class="n">D1</span> <span class="n">d1</span> <span class="p">=</span> <span class="n">Method1</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="n">D2</span> <span class="n">d2</span> <span class="p">=</span> <span class="n">d1</span><span class="p">;</span>  <span class="c1">// compile time error</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">void</span> <span class="n">Method1</span><span class="p">()</span> <span class="p">{</span> <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">delegate</span> <span class="k">void</span> <span class="n">D1</span><span class="p">()</span> <span class="p">{</span> <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="k">delegate</span> <span class="k">void</span> <span class="n">D2</span><span class="p">()</span> <span class="p">{</span> <span class="p">}</span>
+</span></span></code></pre></div><blockquote>
+<p>The following, however, is permitted:
+D2 d2 = new D2(d1);
+{: .prompt-info }</p></blockquote>
+<h2 id="delegates-equality">
+  Delegates equality
+  <a class="heading-link" href="#delegates-equality">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>Delegate instances are considered equal if they have the same method targets:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl"><span class="n">D</span> <span class="n">d1</span> <span class="p">=</span> <span class="n">Method1</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="n">D</span> <span class="n">d2</span> <span class="p">=</span> <span class="n">Method1</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span> <span class="n">d1</span> <span class="p">==</span> <span class="n">d2</span><span class="p">);</span>  <span class="c1">// True</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">void</span> <span class="n">Method1</span><span class="p">()</span> <span class="p">{</span> <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="k">delegate</span> <span class="k">void</span> <span class="n">D</span><span class="p">()</span> <span class="p">{</span> <span class="p">}</span>
+</span></span></code></pre></div><p>Multicast delegates are considered equal if they reference the same methods in the same order.</p>
+<p>There are some other topics about delegates, like Parameter compatibility, return type compatibility, covariant, and contravariant that I won&rsquo;t go through, and you can search about them or ask Chat GPT for the answer with some examples.</p>
+<p>Now we are ready to understand the Events concepts. In the next post, I will talk about events and how knowing delegates helps us to learn about Events faster and easier.</p>
+<p><strong>Well done</strong>! Good job guys, you finished the second part of the delegates, <strong>please put a smile on your face</strong> :-).</p>
+
+      </div>
+
+
+      <footer>
+        
+
+
+        <div id="disqus_thread"></div>
+<script>
+  window.disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "mrsadin" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+    
+    document.addEventListener('themeChanged', function (e) { 
+        if (document.readyState == 'complete') {
+          DISQUS.reset({ reload: true, config: disqus_config });
+        }
+    });
+</script>
+        
+        
+        
+        
+        
+        
+      </footer>
+    </article>
+
+    
+  </section>
+
+    </div>
+
+    <footer class="footer">
+  <section class="container">
+    ©
+    
+      2019 -
+    
+    2025
+     Kamran Sadin 
+    ·
+    
+    Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/" target="_blank" rel="noopener">Coder</a>.
+    
+  </section>
+</footer>
+
+  </main>
+
+  
+
+  
+  
+  <script src="/js/coder.min.6ae284be93d2d19dad1f02b0039508d9aab3180a12a06dcc71b0b0ef7825a317.js" integrity="sha256-auKEvpPS0Z2tHwKwA5UI2aqzGAoSoG3McbCw73gloxc="></script>
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-DQWLT4H0ND"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-DQWLT4H0ND');
+</script>
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</body>
+</html>

@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>
+  Abstract and Interface in C# · Kamran Sadin
+</title>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+
+
+
+
+<meta name="author" content="Kamran Sadin">
+<meta name="description" content="
+  Abstract Class
+  
+    
+    Link to heading
+  
+
+
+  Definition
+  
+    
+    Link to heading
+  
+
+An abstract class in C# is a class marked with the abstract keyword that may contain abstract and non-abstract members (methods, properties, events, etc.).
+An abstract class provides a common structure and behavior for derived classes and allows for partial implementation by providing some method implementations while requiring derived classes to implement others.
+An abstract class is like an uncompleted class that can be developed in the future and it is like an interface with a wide vision. An abstract class can have abstract methods like interfaces that should be implemented in the derived class, furthermore, you can have non-abstract methods that do not have to be implemented in a derived class, and abstract methods can be abstract in subclasses if a subclass is defined as abstract. An abstract class can not be instantiated. A derived class can implement or override an abstract class. Also, an abstract class can have constructors and this is a major difference between an abstract class and an interface.
+Let me summarize, the abstract class is more powerful than the interface in that you have the ability to decide if you want to let the user decide to use the original methods in the abstract class or override them or even you can have abstract methods that the user can decide how to implement them.">
+<meta name="keywords" content="blog,developer,c#,.net,dot net,software engineer,mentor">
+
+
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Abstract and Interface in C#">
+  <meta name="twitter:description" content="Abstract ClassLink to headingDefinitionLink to headingAn abstract class in C# is a class marked with the abstract keyword that may contain abstract and non-abstract members (methods, properties, events, etc.).
+An abstract class provides a common structure and behavior for derived classes and allows for partial implementation by providing some method implementations while requiring derived classes to implement others.
+An abstract class is like an uncompleted class that can be developed in the future and it is like an interface with a wide vision. An abstract class can have abstract methods like interfaces that should be implemented in the derived class, furthermore, you can have non-abstract methods that do not have to be implemented in a derived class, and abstract methods can be abstract in subclasses if a subclass is defined as abstract. An abstract class can not be instantiated. A derived class can implement or override an abstract class. Also, an abstract class can have constructors and this is a major difference between an abstract class and an interface. Let me summarize, the abstract class is more powerful than the interface in that you have the ability to decide if you want to let the user decide to use the original methods in the abstract class or override them or even you can have abstract methods that the user can decide how to implement them.">
+
+<meta property="og:url" content="https://sadin.dev/posts/2023-10-06-abstract-and-interface/">
+  <meta property="og:site_name" content="Kamran Sadin">
+  <meta property="og:title" content="Abstract and Interface in C#">
+  <meta property="og:description" content="Abstract ClassLink to headingDefinitionLink to headingAn abstract class in C# is a class marked with the abstract keyword that may contain abstract and non-abstract members (methods, properties, events, etc.).
+An abstract class provides a common structure and behavior for derived classes and allows for partial implementation by providing some method implementations while requiring derived classes to implement others.
+An abstract class is like an uncompleted class that can be developed in the future and it is like an interface with a wide vision. An abstract class can have abstract methods like interfaces that should be implemented in the derived class, furthermore, you can have non-abstract methods that do not have to be implemented in a derived class, and abstract methods can be abstract in subclasses if a subclass is defined as abstract. An abstract class can not be instantiated. A derived class can implement or override an abstract class. Also, an abstract class can have constructors and this is a major difference between an abstract class and an interface. Let me summarize, the abstract class is more powerful than the interface in that you have the ability to decide if you want to let the user decide to use the original methods in the abstract class or override them or even you can have abstract methods that the user can decide how to implement them.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2023-10-06T00:00:00+00:00">
+    <meta property="article:modified_time" content="2023-10-06T00:00:00+00:00">
+    <meta property="article:tag" content="Csharp">
+    <meta property="article:tag" content="Abstract">
+    <meta property="article:tag" content="Interface">
+    <meta property="article:tag" content="Inheritance">
+    <meta property="article:tag" content="Oop">
+    <meta property="article:tag" content="C# Developer Roadmap">
+
+
+
+
+<link rel="canonical" href="https://sadin.dev/posts/2023-10-06-abstract-and-interface/">
+
+
+<link rel="preload" href="/fonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/fa-regular-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>
+
+
+  
+  
+  <link rel="stylesheet" href="/css/coder.min.b886fe0d9034709648f91f4ce178f51dd367d9350f82dd1132d54fd69bfca66f.css" integrity="sha256-uIb&#43;DZA0cJZI&#43;R9M4Xj1HdNn2TUPgt0RMtVP1pv8pm8=" crossorigin="anonymous" media="screen" />
+
+
+
+
+
+
+  
+    
+    
+    <link rel="stylesheet" href="/css/coder-dark.min.a00e6364bacbc8266ad1cc81230774a1397198f8cfb7bcba29b7d6fcb54ce57f.css" integrity="sha256-oA5jZLrLyCZq0cyBIwd0oTlxmPjPt7y6KbfW/LVM5X8=" crossorigin="anonymous" media="screen" />
+  
+
+
+
+ 
+
+
+
+
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg" sizes="any">
+<link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+
+
+
+
+
+</head>
+
+
+
+
+
+
+<body class="preload-transitions colorscheme-auto">
+  
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+  <main class="wrapper">
+    <nav class="navigation">
+  <section class="container">
+    
+    <a class="navigation-title" href="https://sadin.dev/">
+      Kamran Sadin
+    </a>
+    
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa-solid fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/about/">About</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/posts/">Blog</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/projects/">Projects</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/contact/">Contact me</a>
+            </li>
+          
+        
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+    <div class="content">
+      
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">
+            <a class="title-link" href="https://sadin.dev/posts/2023-10-06-abstract-and-interface/">
+              Abstract and Interface in C#
+            </a>
+          </h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fa-solid fa-calendar" aria-hidden="true"></i>
+              <time datetime="2023-10-06T00:00:00Z">
+                October 6, 2023
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fa-solid fa-clock" aria-hidden="true"></i>
+              5-minute read
+            </span>
+          </div>
+          
+          
+          <div class="tags">
+  <i class="fa-solid fa-tag" aria-hidden="true"></i>
+    <span class="tag">
+      <a href="/tags/csharp/">Csharp</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/tags/abstract/">Abstract</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/tags/interface/">Interface</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/tags/inheritance/">Inheritance</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/tags/oop/">Oop</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/tags/c%23-developer-roadmap/">C# Developer Roadmap</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/tags/1000daysofcsharp/">1000daysofcsharp</a>
+    </span></div>
+
+        </div>
+      </header>
+
+      <div class="post-content">
+        
+        <h2 id="abstract-class">
+  Abstract Class
+  <a class="heading-link" href="#abstract-class">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<h3 id="definition">
+  Definition
+  <a class="heading-link" href="#definition">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>An abstract class in C# is a class marked with the abstract keyword that may contain abstract and non-abstract members (methods, properties, events, etc.).<br>
+An abstract class provides a common structure and behavior for derived classes and allows for partial implementation by providing some method implementations while requiring derived classes to implement others.<br>
+An abstract class is like an uncompleted class that can be developed in the future and it is like an interface with a wide vision. An abstract class can have abstract methods like interfaces that should be implemented in the derived class, furthermore, you can have non-abstract methods that do not have to be implemented in a derived class, and abstract methods can be abstract in subclasses if a subclass is defined as abstract. An abstract class can not be instantiated. A derived class can implement or override an abstract class. Also, an abstract class can have constructors and this is a major difference between an abstract class and an interface.
+Let me summarize, the abstract class is more powerful than the interface in that you have the ability to decide if you want to let the user decide to use the original methods in the abstract class or override them or even you can have abstract methods that the user can decide how to implement them.</p>
+<p>We usually use abstract classes when we want to define a base class with common behavior for a group of related classes or when we want to enforce specific methods to be implemented by derived classes.</p>
+<h3 id="example">
+  Example
+  <a class="heading-link" href="#example">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>Let&rsquo;s see an example of an abstract class and its usage:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl"><span class="kd">abstract</span> <span class="k">class</span> <span class="nc">Shape</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="kd">abstract</span> <span class="k">void</span> <span class="n">Draw</span><span class="p">();</span> 
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="k">void</span> <span class="n">Move</span><span class="p">(</span><span class="kt">int</span> <span class="n">newX</span><span class="p">,</span> <span class="kt">int</span> <span class="n">newY</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">// Some code</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">Circle</span> <span class="p">:</span> <span class="n">Shape</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="kd">override</span> <span class="k">void</span> <span class="n">Draw</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">// Implementation for drawing a Circle</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">Square</span> <span class="p">:</span> <span class="n">Shape</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="kd">override</span> <span class="k">void</span> <span class="n">Draw</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">// Implementation for drawing a Square</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><h3 id="when-to-use">
+  When to use
+  <a class="heading-link" href="#when-to-use">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<ol>
+<li>When in a project you face many changes in the future because with editing abstract class all implementations change.</li>
+<li>When you need fields or constructors you need to use abstract classes.</li>
+<li>When you don&rsquo;t want to implement all methods in the derived class.</li>
+</ol>
+<h2 id="interfaces">
+  Interfaces
+  <a class="heading-link" href="#interfaces">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<h3 id="definition-1">
+  Definition
+  <a class="heading-link" href="#definition-1">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>An interface is a contract and like a framework for classes that derived classes should implement all the methods,
+An interface is basically a contract that doesn&rsquo;t have any implementation. An interface can only method declarations and wherever needs you can implement them depending on your needs in derived classes. In the interface, you can not have constructors and fields, and can not be instantiated. And don&rsquo;t forget method declared in an interface must be implemented by the class that is inherited from the interface or let me say The class that implements and interface should implement all its members.
+You can inherit from more than one interface, also with the interface you gain more flexibility and reusability in your codes and code can be more maintainable.</p>
+<blockquote>
+<p>By using the interface you can use behavior from multiple sources in one class.
+{: .prompt-info }</p></blockquote>
+<h3 id="example-1">
+  Example
+  <a class="heading-link" href="#example-1">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>Let&rsquo;s implement our example with the interface:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl"><span class="k">interface</span> <span class="nc">IDrawable</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">void</span> <span class="n">Draw</span><span class="p">();</span>  <span class="c1">// Method signature without implementation</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">Circle</span> <span class="p">:</span> <span class="n">IDrawable</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="k">void</span> <span class="n">Draw</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">// Implementation for drawing a Circle</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">Square</span> <span class="p">:</span> <span class="n">IDrawable</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="k">void</span> <span class="n">Draw</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">// Implementation for drawing a Square</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><h3 id="when-to-use-1">
+  When to use
+  <a class="heading-link" href="#when-to-use-1">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<ol>
+<li>When you need to use multiple inheritances you should use interface because in abstract class you can not.</li>
+<li>When you need all methods in the base class to be implemented by a derived class.</li>
+<li>Remember an interface is a contract that you should implement all methods in the derived class and it is like a framework.</li>
+</ol>
+<h3 id="implicit-and-explicit-interface-implementations">
+  Implicit and explicit interface implementations:
+  <a class="heading-link" href="#implicit-and-explicit-interface-implementations">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>Interfaces can be implemented implicitly or explicitly, Let&rsquo;s play with codes, consider you have an interface called <code>INotification</code>:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl"><span class="kd">public</span> <span class="k">interface</span> <span class="nc">INotification</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">void</span> <span class="n">Notify</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p>Right? this is a notification system that sends email or SMS to the user, now you have a class called <code>EmailNotification</code> that implements the <code>INotification</code> interface:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl"><span class="kd">public</span> <span class="k">class</span> <span class="nc">EmailNotification</span> <span class="p">:</span> <span class="n">INotification</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="k">void</span> <span class="n">Notify</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">//Codes to send email</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p>Nice, in this class you implemented <code>Notify</code> method that sends an email to the user, Now you want to use this class. The first way is to create an instance of <code>EmailNotification</code> class explicitly and then call <code>Notify()</code> method like this:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl"><span class="n">INotification</span> <span class="n">notificationSystem</span> <span class="p">=</span> <span class="k">new</span> <span class="n">EmailNotification</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl"><span class="n">notificationSystem</span><span class="p">.</span><span class="n">Notify</span><span class="p">();</span>
+</span></span></code></pre></div><p>It works fine, Awesome!<br>
+The other way is to implement <code>INotification</code> interface implicitly:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl"><span class="kd">public</span> <span class="k">class</span> <span class="nc">EmailNotification</span> <span class="p">:</span> <span class="n">INotification</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">void</span> <span class="n">INotification</span><span class="p">.</span><span class="n">Notify</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">//Codes</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p>Now you can invoice <code>Notify()</code> method the same way using a reference to the <code>INotification</code> interface. The difference between the two approaches is that when you implement the interface explicitly in your class, you can invoke the method of your interface using a reference to the interface <code>only</code>. Therefore you can not do it with this code snippet:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl"><span class="n">EmailNotification</span> <span class="n">emailNotification</span> <span class="p">=</span> <span class="k">new</span> <span class="n">EmailNotification</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl"><span class="n">emailNotification</span><span class="p">.</span><span class="n">Notify</span><span class="p">();</span>
+</span></span></code></pre></div><h2 id="abstract-vs-interface">
+  Abstract vs. Interface
+  <a class="heading-link" href="#abstract-vs-interface">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<table>
+  <thead>
+      <tr>
+          <th></th>
+          <th>Abstract Class</th>
+          <th>Interface</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Method Implementations</td>
+          <td>Can have method implementations.</td>
+          <td>Contains only method signatures.</td>
+      </tr>
+      <tr>
+          <td>Members</td>
+          <td>Can have abstract and non-abstract members.</td>
+          <td>Contains method signatures, properties, events, etc.</td>
+      </tr>
+      <tr>
+          <td>Inheritance</td>
+          <td>Supports single inheritance.</td>
+          <td>Supports multiple inheritance.</td>
+      </tr>
+      <tr>
+          <td>Instantiation</td>
+          <td>Cannot be instantiated directly.</td>
+          <td>Cannot be instantiated directly; a class must implement it.</td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="usage-examples">
+  Usage examples
+  <a class="heading-link" href="#usage-examples">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<h3 id="abstract-classes-usage">
+  Abstract classes usage
+  <a class="heading-link" href="#abstract-classes-usage">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>In a game development scenario, you might have an abstract class GameObject that defines common properties and methods for all game objects (e.g., position, rotation, update behavior). Derived classes like Player and Enemy can extend this abstract class to define specific behaviors.</p>
+<h3 id="interfaces-usage">
+  Interfaces usage
+  <a class="heading-link" href="#interfaces-usage">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>Consider a banking application where different classes like SavingsAccount and CheckingAccount need to have audit functionality. You can define an IAuditable interface with methods like LogTransaction and GenerateAuditReport. Both account classes can implement this interface to provide auditing functionality.</p>
+
+      </div>
+
+
+      <footer>
+        
+
+
+        <div id="disqus_thread"></div>
+<script>
+  window.disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "mrsadin" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+    
+    document.addEventListener('themeChanged', function (e) { 
+        if (document.readyState == 'complete') {
+          DISQUS.reset({ reload: true, config: disqus_config });
+        }
+    });
+</script>
+        
+        
+        
+        
+        
+        
+      </footer>
+    </article>
+
+    
+  </section>
+
+    </div>
+
+    <footer class="footer">
+  <section class="container">
+    ©
+    
+      2019 -
+    
+    2025
+     Kamran Sadin 
+    ·
+    
+    Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/" target="_blank" rel="noopener">Coder</a>.
+    
+  </section>
+</footer>
+
+  </main>
+
+  
+
+  
+  
+  <script src="/js/coder.min.6ae284be93d2d19dad1f02b0039508d9aab3180a12a06dcc71b0b0ef7825a317.js" integrity="sha256-auKEvpPS0Z2tHwKwA5UI2aqzGAoSoG3McbCw73gloxc="></script>
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-DQWLT4H0ND"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-DQWLT4H0ND');
+</script>
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</body>
+</html>

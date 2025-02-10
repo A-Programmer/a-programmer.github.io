@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>
+  Single Responsibility Principle · Kamran Sadin
+</title>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+
+
+
+
+<meta name="author" content="Kamran Sadin">
+<meta name="description" content="At its core, SRP advocates that a class should have a **single reason to change**, meaning it should only have one responsibility. Essentially, a class should encapsulate one aspect of the functionality within the software. By adhering to this principle, the design becomes more modular, maintainable, and easier to extend.">
+<meta name="keywords" content="blog,developer,c#,.net,dot net,software engineer,mentor">
+
+
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Single Responsibility Principle">
+  <meta name="twitter:description" content="At its core, SRP advocates that a class should have a **single reason to change**, meaning it should only have one responsibility. Essentially, a class should encapsulate one aspect of the functionality within the software. By adhering to this principle, the design becomes more modular, maintainable, and easier to extend.">
+
+<meta property="og:url" content="https://sadin.dev/posts/2023-10-18-single-responsibility-principle/">
+  <meta property="og:site_name" content="Kamran Sadin">
+  <meta property="og:title" content="Single Responsibility Principle">
+  <meta property="og:description" content="At its core, SRP advocates that a class should have a **single reason to change**, meaning it should only have one responsibility. Essentially, a class should encapsulate one aspect of the functionality within the software. By adhering to this principle, the design becomes more modular, maintainable, and easier to extend.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2023-10-18T00:00:00+00:00">
+    <meta property="article:modified_time" content="2023-10-18T00:00:00+00:00">
+    <meta property="article:tag" content="Csharp">
+    <meta property="article:tag" content="Solid">
+    <meta property="article:tag" content="Srp">
+    <meta property="article:tag" content="Single Responsibility Principle">
+    <meta property="article:tag" content="Software Principles">
+    <meta property="article:tag" content="Software Design">
+
+
+
+
+<link rel="canonical" href="https://sadin.dev/posts/2023-10-18-single-responsibility-principle/">
+
+
+<link rel="preload" href="/fonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/fa-regular-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>
+
+
+  
+  
+  <link rel="stylesheet" href="/css/coder.min.b886fe0d9034709648f91f4ce178f51dd367d9350f82dd1132d54fd69bfca66f.css" integrity="sha256-uIb&#43;DZA0cJZI&#43;R9M4Xj1HdNn2TUPgt0RMtVP1pv8pm8=" crossorigin="anonymous" media="screen" />
+
+
+
+
+
+
+  
+    
+    
+    <link rel="stylesheet" href="/css/coder-dark.min.a00e6364bacbc8266ad1cc81230774a1397198f8cfb7bcba29b7d6fcb54ce57f.css" integrity="sha256-oA5jZLrLyCZq0cyBIwd0oTlxmPjPt7y6KbfW/LVM5X8=" crossorigin="anonymous" media="screen" />
+  
+
+
+
+ 
+
+
+
+
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg" sizes="any">
+<link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+
+
+
+
+
+</head>
+
+
+
+
+
+
+<body class="preload-transitions colorscheme-auto">
+  
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+  <main class="wrapper">
+    <nav class="navigation">
+  <section class="container">
+    
+    <a class="navigation-title" href="https://sadin.dev/">
+      Kamran Sadin
+    </a>
+    
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa-solid fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/about/">About</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/posts/">Blog</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/projects/">Projects</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/contact/">Contact me</a>
+            </li>
+          
+        
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+    <div class="content">
+      
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">
+            <a class="title-link" href="https://sadin.dev/posts/2023-10-18-single-responsibility-principle/">
+              Single Responsibility Principle
+            </a>
+          </h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fa-solid fa-calendar" aria-hidden="true"></i>
+              <time datetime="2023-10-18T00:00:00Z">
+                October 18, 2023
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fa-solid fa-clock" aria-hidden="true"></i>
+              4-minute read
+            </span>
+          </div>
+          
+          
+          <div class="tags">
+  <i class="fa-solid fa-tag" aria-hidden="true"></i>
+    <span class="tag">
+      <a href="/tags/csharp/">Csharp</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/tags/solid/">Solid</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/tags/srp/">Srp</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/tags/single-responsibility-principle/">Single Responsibility Principle</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/tags/software-principles/">Software Principles</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/tags/software-design/">Software Design</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/tags/c%23-developer-roadmap/">C# Developer Roadmap</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/tags/1000daysofcsharp/">1000daysofcsharp</a>
+    </span></div>
+
+        </div>
+      </header>
+
+      <div class="post-content">
+        
+        <p>In the realm of software development, adhering to well-established design principles is paramount for creating maintainable, flexible, and scalable codebases. One such foundational principle is the <strong>Single Responsibility Principle (SRP)</strong>. SRP is one of the SOLID principles, initially introduced by Robert C. Martin, emphasizing a fundamental concept that profoundly influences software design.</p>
+<ol>
+<li><a href="/posts/mastering-solid-principles-in-csharp/?" >Introduction</a></li>
+<li><a href="/posts/single-responsibility-principle/?" ><strong>Single Responsibility Principle</strong></a></li>
+<li><a href="/posts/open-closed-principle/?" >Open/Closed Principle</a></li>
+<li><a href="/posts/liskov-substitution-principle/?" >Liskov Substitution Principle</a></li>
+<li><a href="/posts/interface-segregation-principle/?" >Interface Segregation Principle</a></li>
+<li><a href="/posts/dependency-inversion-principle/?" >Dependency Inversion Principle</a></li>
+</ol>
+<h2 id="what-is-the-single-responsibility-principle">
+  What is the Single Responsibility Principle?
+  <a class="heading-link" href="#what-is-the-single-responsibility-principle">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>At its core, SRP advocates that a class should have a <strong>single reason to change</strong>, meaning it should only have one responsibility. Essentially, a class should encapsulate one aspect of the functionality within the software. By adhering to this principle, the design becomes more modular, maintainable, and easier to extend.</p>
+<h2 id="how-does-srp-help-us">
+  How Does SRP Help Us?
+  <a class="heading-link" href="#how-does-srp-help-us">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>The Single Responsibility Principle offers several benefits:</p>
+<h3 id="1-clarity-and-maintainability">
+  1. <strong>Clarity and Maintainability:</strong>
+  <a class="heading-link" href="#1-clarity-and-maintainability">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<ul>
+<li>By assigning a single responsibility to each class, the code becomes more readable and clear. When modifications or updates are needed, developers know exactly where to look, making maintenance a breeze.</li>
+</ul>
+<h3 id="2-reusability">
+  2. <strong>Reusability:</strong>
+  <a class="heading-link" href="#2-reusability">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<ul>
+<li>A class with a single responsibility is inherently more reusable. It can be utilized in various parts of the application without introducing unexpected behavior or side effects.</li>
+</ul>
+<h3 id="3-easier-debugging">
+  3. <strong>Easier Debugging:</strong>
+  <a class="heading-link" href="#3-easier-debugging">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<ul>
+<li>Debugging is simplified when each class focuses on a specific responsibility. Issues are isolated to that particular class, reducing the complexity of finding and fixing bugs.</li>
+</ul>
+<h2 id="consequences-of-not-using-srp">
+  Consequences of Not Using SRP
+  <a class="heading-link" href="#consequences-of-not-using-srp">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>If SRP is not followed, several issues may arise:</p>
+<ul>
+<li>
+<p><strong>Highly Coupled Code:</strong></p>
+<ul>
+<li>When a class takes on multiple responsibilities, it becomes tightly coupled to various parts of the system. This can lead to a domino effect where a small change in one part of the code triggers a series of modifications throughout the application.</li>
+</ul>
+</li>
+<li>
+<p><strong>Difficulty in Maintenance:</strong></p>
+<ul>
+<li>With multiple responsibilities, any change may inadvertently affect other functionalities within the class. This makes maintenance challenging and increases the risk of introducing bugs.</li>
+</ul>
+</li>
+<li>
+<p><strong>Reduced Readability:</strong></p>
+<ul>
+<li>A class with multiple responsibilities can be difficult to understand. It&rsquo;s challenging to grasp the class&rsquo;s purpose and functionality at a glance, impeding comprehension and future modifications.</li>
+</ul>
+</li>
+</ul>
+<h2 id="srp-and-complex-software">
+  SRP and Complex Software
+  <a class="heading-link" href="#srp-and-complex-software">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>In the realm of big and complex software systems, adhering to SRP is crucial. These systems often consist of numerous interconnected components. Following SRP ensures that each component is focused on a specific responsibility, allowing for easier development, debugging, and scaling.</p>
+<h2 id="examples-of-srp-in-action">
+  Examples of SRP in Action
+  <a class="heading-link" href="#examples-of-srp-in-action">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>Let&rsquo;s illustrate SRP with three simple examples:</p>
+<h3 id="1-user-class">
+  1. <strong>User Class:</strong>
+  <a class="heading-link" href="#1-user-class">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl"><span class="kd">public</span> <span class="k">class</span> <span class="nc">User</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="kt">string</span> <span class="n">Name</span> <span class="p">{</span> <span class="k">get</span><span class="p">;</span> <span class="k">set</span><span class="p">;</span> <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="k">void</span> <span class="n">SaveToDatabase</span><span class="p">(</span><span class="n">User</span> <span class="n">user</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">// Save to database logic</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="k">void</span> <span class="n">SendEmail</span><span class="p">(</span><span class="n">User</span> <span class="n">user</span><span class="p">,</span> <span class="kt">string</span> <span class="n">message</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">// Email sending logic</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p>In this example, the <code>User</code> class handles both user data management and email functionality. Applying SRP would involve splitting these responsibilities into separate classes.</p>
+<h3 id="2-filereader-class">
+  2. <strong>FileReader Class:</strong>
+  <a class="heading-link" href="#2-filereader-class">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl"><span class="kd">public</span> <span class="k">class</span> <span class="nc">FileReader</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="kt">string</span> <span class="n">ReadFile</span><span class="p">(</span><span class="kt">string</span> <span class="n">filePath</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">// File reading logic</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="k">void</span> <span class="n">ProcessData</span><span class="p">(</span><span class="kt">string</span> <span class="n">data</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">// Data processing logic</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p>Here, the <code>FileReader</code> class is responsible for both reading a file and processing the data. SRP suggests separating these into distinct classes.</p>
+<h3 id="3-shape-calculator-class">
+  3. <strong>Shape Calculator Class:</strong>
+  <a class="heading-link" href="#3-shape-calculator-class">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl"><span class="kd">public</span> <span class="k">class</span> <span class="nc">ShapeCalculator</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="kt">double</span> <span class="n">CalculateCircleArea</span><span class="p">(</span><span class="kt">double</span> <span class="n">radius</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">// Circle area calculation logic</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="kt">double</span> <span class="n">CalculateRectangleArea</span><span class="p">(</span><span class="kt">double</span> <span class="n">length</span><span class="p">,</span> <span class="kt">double</span> <span class="n">width</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">// Rectangle area calculation logic</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p>The <code>ShapeCalculator</code> class encompasses responsibilities for calculating areas of different shapes. Applying SRP would involve creating separate classes for each shape calculation.</p>
+<h2 id="summary">
+  Summary
+  <a class="heading-link" href="#summary">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>The Single Responsibility Principle is a fundamental guideline in software design, advocating for a class to encapsulate a single responsibility. Adhering to SRP enhances code clarity, maintainability, and reusability, ultimately contributing to the development of scalable and robust software. By understanding and implementing this principle, developers can build more modular and maintainable codebases, paving the way for successful software projects.</p>
+<h2 id="you-can-follow-me-on-the-linkedin-youtube-telegram-group-to-discuss-and-directly-send-me-email">
+  You can follow me on the LinkedIn, YouTube, Telegram Group to discuss, and directly send me email.
+  <a class="heading-link" href="#you-can-follow-me-on-the-linkedin-youtube-telegram-group-to-discuss-and-directly-send-me-email">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<ul>
+<li><a href="https://t.me/sadinco_csharp"  class="external-link" target="_blank" rel="noopener">Telegram Group</a></li>
+<li><a href="https://linkedin.com/in/MrSadin"  class="external-link" target="_blank" rel="noopener">LinkedIn</a></li>
+<li><a href="https://sadin.dev"  class="external-link" target="_blank" rel="noopener">Blog</a></li>
+<li><a href="https://youtube.com/c/EnKamran"  class="external-link" target="_blank" rel="noopener">YouTube</a></li>
+</ul>
+
+      </div>
+
+
+      <footer>
+        
+
+
+        <div id="disqus_thread"></div>
+<script>
+  window.disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "mrsadin" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+    
+    document.addEventListener('themeChanged', function (e) { 
+        if (document.readyState == 'complete') {
+          DISQUS.reset({ reload: true, config: disqus_config });
+        }
+    });
+</script>
+        
+        
+        
+        
+        
+        
+      </footer>
+    </article>
+
+    
+  </section>
+
+    </div>
+
+    <footer class="footer">
+  <section class="container">
+    ©
+    
+      2019 -
+    
+    2025
+     Kamran Sadin 
+    ·
+    
+    Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/" target="_blank" rel="noopener">Coder</a>.
+    
+  </section>
+</footer>
+
+  </main>
+
+  
+
+  
+  
+  <script src="/js/coder.min.6ae284be93d2d19dad1f02b0039508d9aab3180a12a06dcc71b0b0ef7825a317.js" integrity="sha256-auKEvpPS0Z2tHwKwA5UI2aqzGAoSoG3McbCw73gloxc="></script>
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-DQWLT4H0ND"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-DQWLT4H0ND');
+</script>
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</body>
+</html>

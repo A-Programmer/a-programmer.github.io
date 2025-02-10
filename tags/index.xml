@@ -6,6 +6,315 @@
     <description>Recent content in Tags on Kamran Sadin</description>
     <generator>Hugo</generator>
     <language>en</language>
+    <lastBuildDate>Fri, 17 Nov 2023 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://sadin.dev/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>1000daysofcsharp</title>
+      <link>https://sadin.dev/tags/1000daysofcsharp/</link>
+      <pubDate>Fri, 17 Nov 2023 00:00:00 +0000</pubDate>
+      <guid>https://sadin.dev/tags/1000daysofcsharp/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Basic</title>
+      <link>https://sadin.dev/tags/basic/</link>
+      <pubDate>Fri, 17 Nov 2023 00:00:00 +0000</pubDate>
+      <guid>https://sadin.dev/tags/basic/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>C# Developer Roadmap</title>
+      <link>https://sadin.dev/tags/c%23-developer-roadmap/</link>
+      <pubDate>Fri, 17 Nov 2023 00:00:00 +0000</pubDate>
+      <guid>https://sadin.dev/tags/c%23-developer-roadmap/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Csharp</title>
+      <link>https://sadin.dev/tags/csharp/</link>
+      <pubDate>Fri, 17 Nov 2023 00:00:00 +0000</pubDate>
+      <guid>https://sadin.dev/tags/csharp/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Data Type</title>
+      <link>https://sadin.dev/tags/data-type/</link>
+      <pubDate>Fri, 17 Nov 2023 00:00:00 +0000</pubDate>
+      <guid>https://sadin.dev/tags/data-type/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Step 1</title>
+      <link>https://sadin.dev/tags/step-1/</link>
+      <pubDate>Fri, 17 Nov 2023 00:00:00 +0000</pubDate>
+      <guid>https://sadin.dev/tags/step-1/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Fields</title>
+      <link>https://sadin.dev/tags/fields/</link>
+      <pubDate>Wed, 15 Nov 2023 00:00:00 +0000</pubDate>
+      <guid>https://sadin.dev/tags/fields/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Fields and Properties</title>
+      <link>https://sadin.dev/tags/fields-and-properties/</link>
+      <pubDate>Wed, 15 Nov 2023 00:00:00 +0000</pubDate>
+      <guid>https://sadin.dev/tags/fields-and-properties/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Properties</title>
+      <link>https://sadin.dev/tags/properties/</link>
+      <pubDate>Wed, 15 Nov 2023 00:00:00 +0000</pubDate>
+      <guid>https://sadin.dev/tags/properties/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Loops</title>
+      <link>https://sadin.dev/tags/loops/</link>
+      <pubDate>Mon, 13 Nov 2023 00:00:00 +0000</pubDate>
+      <guid>https://sadin.dev/tags/loops/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Conditionals</title>
+      <link>https://sadin.dev/tags/conditionals/</link>
+      <pubDate>Thu, 09 Nov 2023 00:00:00 +0000</pubDate>
+      <guid>https://sadin.dev/tags/conditionals/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Variable</title>
+      <link>https://sadin.dev/tags/variable/</link>
+      <pubDate>Tue, 07 Nov 2023 00:00:00 +0000</pubDate>
+      <guid>https://sadin.dev/tags/variable/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Advanced</title>
+      <link>https://sadin.dev/tags/advanced/</link>
+      <pubDate>Fri, 03 Nov 2023 00:00:00 +0000</pubDate>
+      <guid>https://sadin.dev/tags/advanced/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Delegates</title>
+      <link>https://sadin.dev/tags/delegates/</link>
+      <pubDate>Fri, 03 Nov 2023 00:00:00 +0000</pubDate>
+      <guid>https://sadin.dev/tags/delegates/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Eventhandler</title>
+      <link>https://sadin.dev/tags/eventhandler/</link>
+      <pubDate>Fri, 03 Nov 2023 00:00:00 +0000</pubDate>
+      <guid>https://sadin.dev/tags/eventhandler/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Events</title>
+      <link>https://sadin.dev/tags/events/</link>
+      <pubDate>Fri, 03 Nov 2023 00:00:00 +0000</pubDate>
+      <guid>https://sadin.dev/tags/events/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Dependency Inversion Principle</title>
+      <link>https://sadin.dev/tags/dependency-inversion-principle/</link>
+      <pubDate>Thu, 26 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://sadin.dev/tags/dependency-inversion-principle/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Dip</title>
+      <link>https://sadin.dev/tags/dip/</link>
+      <pubDate>Thu, 26 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://sadin.dev/tags/dip/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Software Design</title>
+      <link>https://sadin.dev/tags/software-design/</link>
+      <pubDate>Thu, 26 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://sadin.dev/tags/software-design/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Software Principles</title>
+      <link>https://sadin.dev/tags/software-principles/</link>
+      <pubDate>Thu, 26 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://sadin.dev/tags/software-principles/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Solid</title>
+      <link>https://sadin.dev/tags/solid/</link>
+      <pubDate>Thu, 26 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://sadin.dev/tags/solid/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Interface Segregation Principle</title>
+      <link>https://sadin.dev/tags/interface-segregation-principle/</link>
+      <pubDate>Tue, 24 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://sadin.dev/tags/interface-segregation-principle/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Isp</title>
+      <link>https://sadin.dev/tags/isp/</link>
+      <pubDate>Tue, 24 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://sadin.dev/tags/isp/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Liskov Substitution Principle</title>
+      <link>https://sadin.dev/tags/liskov-substitution-principle/</link>
+      <pubDate>Sun, 22 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://sadin.dev/tags/liskov-substitution-principle/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Lsp</title>
+      <link>https://sadin.dev/tags/lsp/</link>
+      <pubDate>Sun, 22 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://sadin.dev/tags/lsp/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Ocp</title>
+      <link>https://sadin.dev/tags/ocp/</link>
+      <pubDate>Fri, 20 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://sadin.dev/tags/ocp/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Open Closed Principle</title>
+      <link>https://sadin.dev/tags/open-closed-principle/</link>
+      <pubDate>Fri, 20 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://sadin.dev/tags/open-closed-principle/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Single Responsibility Principle</title>
+      <link>https://sadin.dev/tags/single-responsibility-principle/</link>
+      <pubDate>Wed, 18 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://sadin.dev/tags/single-responsibility-principle/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Srp</title>
+      <link>https://sadin.dev/tags/srp/</link>
+      <pubDate>Wed, 18 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://sadin.dev/tags/srp/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Abstract</title>
+      <link>https://sadin.dev/tags/abstract/</link>
+      <pubDate>Fri, 06 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://sadin.dev/tags/abstract/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Inheritance</title>
+      <link>https://sadin.dev/tags/inheritance/</link>
+      <pubDate>Fri, 06 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://sadin.dev/tags/inheritance/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Interface</title>
+      <link>https://sadin.dev/tags/interface/</link>
+      <pubDate>Fri, 06 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://sadin.dev/tags/interface/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Oop</title>
+      <link>https://sadin.dev/tags/oop/</link>
+      <pubDate>Fri, 06 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://sadin.dev/tags/oop/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Action</title>
+      <link>https://sadin.dev/tags/action/</link>
+      <pubDate>Wed, 04 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://sadin.dev/tags/action/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Day22</title>
+      <link>https://sadin.dev/tags/day22/</link>
+      <pubDate>Wed, 04 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://sadin.dev/tags/day22/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Delegate</title>
+      <link>https://sadin.dev/tags/delegate/</link>
+      <pubDate>Wed, 04 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://sadin.dev/tags/delegate/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Func</title>
+      <link>https://sadin.dev/tags/func/</link>
+      <pubDate>Wed, 04 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://sadin.dev/tags/func/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Generic Delegates</title>
+      <link>https://sadin.dev/tags/generic-delegates/</link>
+      <pubDate>Wed, 04 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://sadin.dev/tags/generic-delegates/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Multicast Delegates</title>
+      <link>https://sadin.dev/tags/multicast-delegates/</link>
+      <pubDate>Wed, 04 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://sadin.dev/tags/multicast-delegates/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Day21</title>
+      <link>https://sadin.dev/tags/day21/</link>
+      <pubDate>Sun, 01 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://sadin.dev/tags/day21/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Plug-in Methods</title>
+      <link>https://sadin.dev/tags/plug-in-methods/</link>
+      <pubDate>Sun, 01 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://sadin.dev/tags/plug-in-methods/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>What Is Delegate</title>
+      <link>https://sadin.dev/tags/what-is-delegate/</link>
+      <pubDate>Sun, 01 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>https://sadin.dev/tags/what-is-delegate/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Hello-World</title>
+      <link>https://sadin.dev/tags/hello-world/</link>
+      <pubDate>Sat, 30 Sep 2023 00:00:00 +0000</pubDate>
+      <guid>https://sadin.dev/tags/hello-world/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Roadmap</title>
+      <link>https://sadin.dev/tags/roadmap/</link>
+      <pubDate>Sat, 30 Sep 2023 00:00:00 +0000</pubDate>
+      <guid>https://sadin.dev/tags/roadmap/</guid>
+      <description></description>
+    </item>
   </channel>
 </rss>

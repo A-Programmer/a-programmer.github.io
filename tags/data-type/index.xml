@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Data Type on Kamran Sadin</title>
+    <link>https://sadin.dev/tags/data-type/</link>
+    <description>Recent content in Data Type on Kamran Sadin</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 17 Nov 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://sadin.dev/tags/data-type/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>A Comprehensive Guide to Data Types in C#</title>
+      <link>https://sadin.dev/posts/2023-11-17-a-comprehensive-guide-to-data-types-in-csharp/</link>
+      <pubDate>Fri, 17 Nov 2023 00:00:00 +0000</pubDate>
+      <guid>https://sadin.dev/posts/2023-11-17-a-comprehensive-guide-to-data-types-in-csharp/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://sadin.dev/assets/posts/basics/a-comprehensive-guide-to-data-types-in-csharp.pdf&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Download PDF Version&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;Data types in C# define the type of data that a variable can store. Understanding and using the correct data types are crucial for writing efficient and bug-free code. This guide will walk you through the basic and advanced data types in C#, providing examples to illustrate their usage.&lt;/p&gt;&#xA;&lt;h2 id=&#34;table-of-contents&#34;&gt;&#xD;&#xA;  Table of Contents:&#xD;&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#table-of-contents&#34;&gt;&#xD;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xD;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xD;&#xA;  &lt;/a&gt;&#xD;&#xA;&lt;/h2&gt;&#xD;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;Introduction to Data Types in C#&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;What are Data Types?&lt;/li&gt;&#xA;&lt;li&gt;Importance of Choosing the Right Data Type&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;Basic Data Types&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
