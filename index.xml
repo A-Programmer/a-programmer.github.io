@@ -6,8 +6,29 @@
     <description>Recent content on Kamran Sadin</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 17 Nov 2023 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 10 Feb 2025 19:39:31 +0330</lastBuildDate>
     <atom:link href="https://sadin.dev/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Mentorship</title>
+      <link>https://sadin.dev/pages/mentorship/</link>
+      <pubDate>Mon, 10 Feb 2025 19:39:31 +0330</pubDate>
+      <guid>https://sadin.dev/pages/mentorship/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Projects</title>
+      <link>https://sadin.dev/pages/projects/</link>
+      <pubDate>Mon, 10 Feb 2025 19:39:22 +0330</pubDate>
+      <guid>https://sadin.dev/pages/projects/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Contact</title>
+      <link>https://sadin.dev/pages/contact/</link>
+      <pubDate>Mon, 10 Feb 2025 19:39:14 +0330</pubDate>
+      <guid>https://sadin.dev/pages/contact/</guid>
+      <description></description>
+    </item>
     <item>
       <title>A Comprehensive Guide to Data Types in C#</title>
       <link>https://sadin.dev/posts/2023-11-17-a-comprehensive-guide-to-data-types-in-csharp/</link>
@@ -133,6 +154,13 @@
       <pubDate>Sat, 30 Sep 2023 00:00:00 +0000</pubDate>
       <guid>https://sadin.dev/posts/2023-09-30-hello-world/</guid>
       <description>&lt;h2 id=&#34;introduction&#34;&gt;&#xD;&#xA;  Introduction&#xD;&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#introduction&#34;&gt;&#xD;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xD;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xD;&#xA;  &lt;/a&gt;&#xD;&#xA;&lt;/h2&gt;&#xD;&#xA;&lt;p&gt;I am Kamran Sadin, a Software Engineer .&lt;/p&gt;&#xA;&lt;p&gt;Finally, I decided to use Github Pages and Jekyll to run my blog.&lt;/p&gt;&#xA;&lt;p&gt;In this blog, I am going to share my knowledge as a Software Engineer, my main purpose is to share C# Developer Roadmap content but I will also create other content.&lt;/p&gt;&#xA;&lt;p&gt;For the C# Developer roadmap, you can follow &lt;a href=&#34;https://www.linkedin.com/search/results/all/?keywords=%23100DaysOfCSharp&amp;amp;origin=GLOBAL_SEARCH_HEADER&amp;amp;sid=S%2C1&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;#100DaysOfCSharp&lt;/a&gt; on &lt;a href=&#34;https://www.linkedin.com/in/MrSadin&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;LinkedIn&lt;/a&gt; or the &lt;code&gt;CSharp&lt;/code&gt; category on my blog.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>About Me</title>
+      <link>https://sadin.dev/pages/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://sadin.dev/pages/about/</guid>
+      <description>&lt;h2 id=&#34;senior-net-developer&#34;&gt;&#xD;&#xA;  Senior .NET Developer&#xD;&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#senior-net-developer&#34;&gt;&#xD;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xD;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xD;&#xA;  &lt;/a&gt;&#xD;&#xA;&lt;/h2&gt;&#xD;&#xA;&lt;p&gt;📍 Tehran, Iran&lt;br&gt;&#xA;📧 &lt;a href=&#34;mailto:mrsadin@gmail.com&#34; &gt;mrsadin@gmail.com&lt;/a&gt;&lt;br&gt;&#xA;📱 &lt;a href=&#34;tel:&amp;#43;989112794171&#34; &gt;+98 911 279 4171&lt;/a&gt;&lt;br&gt;&#xA;🔗 &lt;a href=&#34;https://www.linkedin.com/in/MrSadin&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;LinkedIn&lt;/a&gt; | &lt;a href=&#34;https://sadin.dev&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Website&lt;/a&gt; | &lt;a href=&#34;https://youtube.com/c/EnKamran&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Youtube&lt;/a&gt;&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;I am a passionate &lt;strong&gt;Senior .NET Developer&lt;/strong&gt; with extensive experience in designing and developing scalable, high-performance applications. With a strong background in &lt;strong&gt;Clean Architecture, CQRS, DDD&lt;/strong&gt;, and cloud-based solutions, I have successfully led multiple teams and projects. My expertise in &lt;strong&gt;Azure DevOps, Docker, and Microservices&lt;/strong&gt; allows me to build robust and efficient applications tailored to business needs.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

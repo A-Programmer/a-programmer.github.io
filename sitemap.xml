@@ -2,6 +2,21 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://sadin.dev/</loc>
+    <lastmod>2025-02-10T19:39:31+03:30</lastmod>
+  </url><url>
+    <loc>https://sadin.dev/pages/mentorship/</loc>
+    <lastmod>2025-02-10T19:39:31+03:30</lastmod>
+  </url><url>
+    <loc>https://sadin.dev/pages/</loc>
+    <lastmod>2025-02-10T19:39:31+03:30</lastmod>
+  </url><url>
+    <loc>https://sadin.dev/pages/projects/</loc>
+    <lastmod>2025-02-10T19:39:22+03:30</lastmod>
+  </url><url>
+    <loc>https://sadin.dev/pages/contact/</loc>
+    <lastmod>2025-02-10T19:39:14+03:30</lastmod>
+  </url><url>
     <loc>https://sadin.dev/tags/1000daysofcsharp/</loc>
     <lastmod>2023-11-17T00:00:00+00:00</lastmod>
   </url><url>
@@ -18,9 +33,6 @@
     <lastmod>2023-11-17T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://sadin.dev/tags/data-type/</loc>
-    <lastmod>2023-11-17T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://sadin.dev/</loc>
     <lastmod>2023-11-17T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://sadin.dev/posts/</loc>
@@ -196,6 +208,8 @@
   </url><url>
     <loc>https://sadin.dev/tags/roadmap/</loc>
     <lastmod>2023-09-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://sadin.dev/pages/about/</loc>
   </url><url>
     <loc>https://sadin.dev/authors/</loc>
   </url><url>
