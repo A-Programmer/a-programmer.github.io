@@ -6,6 +6,28 @@
     <description>Recent content in Categories on Kamran Sadin</description>
     <generator>Hugo</generator>
     <language>en</language>
+    <lastBuildDate>Sun, 09 Mar 2025 07:30:27 +0330</lastBuildDate>
     <atom:link href="https://sadin.dev/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>.NET</title>
+      <link>https://sadin.dev/categories/.net/</link>
+      <pubDate>Sun, 09 Mar 2025 07:30:27 +0330</pubDate>
+      <guid>https://sadin.dev/categories/.net/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>C#</title>
+      <link>https://sadin.dev/categories/c%23/</link>
+      <pubDate>Sun, 09 Mar 2025 07:30:27 +0330</pubDate>
+      <guid>https://sadin.dev/categories/c%23/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Event Sourcing</title>
+      <link>https://sadin.dev/categories/event-sourcing/</link>
+      <pubDate>Sun, 09 Mar 2025 07:30:27 +0330</pubDate>
+      <guid>https://sadin.dev/categories/event-sourcing/</guid>
+      <description></description>
+    </item>
   </channel>
 </rss>

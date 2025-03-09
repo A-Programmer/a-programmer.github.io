@@ -2,20 +2,59 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://sadin.dev/</loc>
-    <lastmod>2025-02-10T19:39:31+03:30</lastmod>
+    <loc>https://sadin.dev/tags/.net/</loc>
+    <lastmod>2025-03-09T07:30:27+03:30</lastmod>
   </url><url>
-    <loc>https://sadin.dev/pages/mentorship/</loc>
-    <lastmod>2025-02-10T19:39:31+03:30</lastmod>
+    <loc>https://sadin.dev/categories/.net/</loc>
+    <lastmod>2025-03-09T07:30:27+03:30</lastmod>
+  </url><url>
+    <loc>https://sadin.dev/authors/</loc>
+    <lastmod>2025-03-09T07:30:27+03:30</lastmod>
+  </url><url>
+    <loc>https://sadin.dev/tags/c%23/</loc>
+    <lastmod>2025-03-09T07:30:27+03:30</lastmod>
+  </url><url>
+    <loc>https://sadin.dev/categories/c%23/</loc>
+    <lastmod>2025-03-09T07:30:27+03:30</lastmod>
+  </url><url>
+    <loc>https://sadin.dev/categories/</loc>
+    <lastmod>2025-03-09T07:30:27+03:30</lastmod>
+  </url><url>
+    <loc>https://sadin.dev/tags/edd/</loc>
+    <lastmod>2025-03-09T07:30:27+03:30</lastmod>
+  </url><url>
+    <loc>https://sadin.dev/tags/event-sourcing/</loc>
+    <lastmod>2025-03-09T07:30:27+03:30</lastmod>
+  </url><url>
+    <loc>https://sadin.dev/series/event-sourcing/</loc>
+    <lastmod>2025-03-09T07:30:27+03:30</lastmod>
+  </url><url>
+    <loc>https://sadin.dev/categories/event-sourcing/</loc>
+    <lastmod>2025-03-09T07:30:27+03:30</lastmod>
+  </url><url>
+    <loc>https://sadin.dev/posts/event-sourcing-getting-started/</loc>
+    <lastmod>2025-03-09T07:30:27+03:30</lastmod>
+  </url><url>
+    <loc>https://sadin.dev/</loc>
+    <lastmod>2025-03-09T07:30:27+03:30</lastmod>
+  </url><url>
+    <loc>https://sadin.dev/tags/kamran-sadin/</loc>
+    <lastmod>2025-03-09T07:30:27+03:30</lastmod>
+  </url><url>
+    <loc>https://sadin.dev/authors/kamran-sadin/</loc>
+    <lastmod>2025-03-09T07:30:27+03:30</lastmod>
+  </url><url>
+    <loc>https://sadin.dev/posts/</loc>
+    <lastmod>2025-03-09T07:30:27+03:30</lastmod>
+  </url><url>
+    <loc>https://sadin.dev/series/</loc>
+    <lastmod>2025-03-09T07:30:27+03:30</lastmod>
+  </url><url>
+    <loc>https://sadin.dev/tags/</loc>
+    <lastmod>2025-03-09T07:30:27+03:30</lastmod>
   </url><url>
     <loc>https://sadin.dev/pages/</loc>
     <lastmod>2025-02-10T19:39:31+03:30</lastmod>
-  </url><url>
-    <loc>https://sadin.dev/pages/projects/</loc>
-    <lastmod>2025-02-10T19:39:22+03:30</lastmod>
-  </url><url>
-    <loc>https://sadin.dev/pages/contact/</loc>
-    <lastmod>2025-02-10T19:39:14+03:30</lastmod>
   </url><url>
     <loc>https://sadin.dev/tags/1000daysofcsharp/</loc>
     <lastmod>2023-11-17T00:00:00+00:00</lastmod>
@@ -35,13 +74,7 @@
     <loc>https://sadin.dev/tags/data-type/</loc>
     <lastmod>2023-11-17T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://sadin.dev/posts/</loc>
-    <lastmod>2023-11-17T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://sadin.dev/tags/step-1/</loc>
-    <lastmod>2023-11-17T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://sadin.dev/tags/</loc>
     <lastmod>2023-11-17T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://sadin.dev/posts/2023-11-15-a-complete-guide-to-fields-and-properties-in-csharp/</loc>
@@ -210,11 +243,5 @@
     <lastmod>2023-09-30T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://sadin.dev/pages/about/</loc>
-  </url><url>
-    <loc>https://sadin.dev/authors/</loc>
-  </url><url>
-    <loc>https://sadin.dev/categories/</loc>
-  </url><url>
-    <loc>https://sadin.dev/series/</loc>
   </url>
 </urlset>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>C# on Kamran Sadin</title>
+    <link>https://sadin.dev/categories/c%23/</link>
+    <description>Recent content in C# on Kamran Sadin</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 09 Mar 2025 07:30:27 +0330</lastBuildDate>
+    <atom:link href="https://sadin.dev/categories/c%23/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Event Sourcing: Turning Your App into a Time Machine</title>
+      <link>https://sadin.dev/posts/event-sourcing-getting-started/</link>
+      <pubDate>Sun, 09 Mar 2025 07:30:27 +0330</pubDate>
+      <guid>https://sadin.dev/posts/event-sourcing-getting-started/</guid>
+      <description>&lt;p&gt;Hey everyone! Kamran here, and today, let&amp;rsquo;s dive deeper into Event Sourcing, especially how we manage snapshots and materialized views. If you&amp;rsquo;ve ever felt like your database only tells you the &amp;ldquo;now&amp;rdquo; and not the &amp;ldquo;how,&amp;rdquo; you&amp;rsquo;re going to love this.&lt;/p&gt;&#xA;&lt;p&gt;Imagine your application&amp;rsquo;s memory as a time machine. Instead of just saving the final result, what if you recorded every single change, every action, as an &amp;ldquo;event&amp;rdquo;? That&amp;rsquo;s event sourcing in a nutshell.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

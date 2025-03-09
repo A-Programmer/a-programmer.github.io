@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>
+  Event Sourcing: Turning Your App into a Time Machine · Kamran Sadin
+</title>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+
+
+
+
+<meta name="author" content="Kamran Sadin">
+<meta name="description" content="Hey everyone! Kamran here, and today, let&#39;s dive deeper into Event Sourcing, especially how we manage snapshots and materialized views. ">
+<meta name="keywords" content="blog,developer,c#,.net,dot net,software engineer,mentor">
+
+
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Event Sourcing: Turning Your App into a Time Machine">
+  <meta name="twitter:description" content="Hey everyone! Kamran here, and today, let&#39;s dive deeper into Event Sourcing, especially how we manage snapshots and materialized views.">
+
+<meta property="og:url" content="https://sadin.dev/posts/event-sourcing-getting-started/">
+  <meta property="og:site_name" content="Kamran Sadin">
+  <meta property="og:title" content="Event Sourcing: Turning Your App into a Time Machine">
+  <meta property="og:description" content="Hey everyone! Kamran here, and today, let&#39;s dive deeper into Event Sourcing, especially how we manage snapshots and materialized views.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-03-09T07:30:27+03:30">
+    <meta property="article:modified_time" content="2025-03-09T07:30:27+03:30">
+    <meta property="article:tag" content="Event Sourcing">
+    <meta property="article:tag" content="EDD">
+    <meta property="article:tag" content="C#">
+    <meta property="article:tag" content=".NET">
+    <meta property="article:tag" content="Kamran Sadin">
+
+
+
+
+<link rel="canonical" href="https://sadin.dev/posts/event-sourcing-getting-started/">
+
+
+<link rel="preload" href="/fonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/fa-regular-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>
+
+
+  
+  
+  <link rel="stylesheet" href="/css/coder.min.b886fe0d9034709648f91f4ce178f51dd367d9350f82dd1132d54fd69bfca66f.css" integrity="sha256-uIb&#43;DZA0cJZI&#43;R9M4Xj1HdNn2TUPgt0RMtVP1pv8pm8=" crossorigin="anonymous" media="screen" />
+
+
+
+
+
+
+  
+    
+    
+    <link rel="stylesheet" href="/css/coder-dark.min.a00e6364bacbc8266ad1cc81230774a1397198f8cfb7bcba29b7d6fcb54ce57f.css" integrity="sha256-oA5jZLrLyCZq0cyBIwd0oTlxmPjPt7y6KbfW/LVM5X8=" crossorigin="anonymous" media="screen" />
+  
+
+
+
+ 
+
+
+
+
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg" sizes="any">
+<link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+
+
+
+
+
+</head>
+
+
+
+
+
+
+<body class="preload-transitions colorscheme-dark">
+  
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+  <main class="wrapper">
+    <nav class="navigation">
+  <section class="container">
+    
+    <a class="navigation-title" href="https://sadin.dev/">
+      Kamran Sadin
+    </a>
+    
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa-solid fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/pages/about/">About</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/pages/mentorship/">Mentorship</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/posts/">Blog</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/pages/projects/">Projects</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/pages/contact/">Contact me</a>
+            </li>
+          
+        
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+    <div class="content">
+      
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">
+            <a class="title-link" href="https://sadin.dev/posts/event-sourcing-getting-started/">
+              Event Sourcing: Turning Your App into a Time Machine
+            </a>
+          </h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fa-solid fa-calendar" aria-hidden="true"></i>
+              <time datetime="2025-03-09T07:30:27&#43;03:30">
+                March 9, 2025
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fa-solid fa-clock" aria-hidden="true"></i>
+              7-minute read
+            </span>
+          </div>
+          <div class="authors">
+  <i class="fa-solid fa-user" aria-hidden="true"></i>
+    <a href="/authors/kamran-sadin/">Kamran Sadin</a></div>
+
+          <div class="categories">
+  <i class="fa-solid fa-folder" aria-hidden="true"></i>
+    <a href="/categories/event-sourcing/">Event Sourcing</a>
+      <span class="separator">•</span>
+    <a href="/categories/c%23/">C#</a>
+      <span class="separator">•</span>
+    <a href="/categories/.net/">.NET</a></div>
+
+          <div class="tags">
+  <i class="fa-solid fa-tag" aria-hidden="true"></i>
+    <span class="tag">
+      <a href="/tags/event-sourcing/">Event Sourcing</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/tags/edd/">EDD</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/tags/c%23/">C#</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/tags/.net/">.NET</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/tags/kamran-sadin/">Kamran Sadin</a>
+    </span></div>
+
+        </div>
+      </header>
+
+      <div class="post-content">
+        
+        <p>Hey everyone! Kamran here, and today, let&rsquo;s dive deeper into Event Sourcing, especially how we manage snapshots and materialized views. If you&rsquo;ve ever felt like your database only tells you the &ldquo;now&rdquo; and not the &ldquo;how,&rdquo; you&rsquo;re going to love this.</p>
+<p>Imagine your application&rsquo;s memory as a time machine. Instead of just saving the final result, what if you recorded every single change, every action, as an &ldquo;event&rdquo;? That&rsquo;s event sourcing in a nutshell.</p>
+<h2 id="whats-the-big-deal">
+  What&rsquo;s the Big Deal?
+  <a class="heading-link" href="#whats-the-big-deal">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>Think of a traditional database. You update a record, and the old data is gone. Poof! With event sourcing, every update is a new event, like &ldquo;Product Added to Cart,&rdquo; &ldquo;Order Shipped,&rdquo; or &ldquo;Price Changed.&rdquo; You keep a full, immutable history.</p>
+<p><strong>Why is this awesome?</strong></p>
+<ul>
+<li><strong>Perfect Audit Trail:</strong> Need to know exactly how a product&rsquo;s price changed over time? Easy. Event sourcing gives you a complete, detailed audit trail. This is gold for compliance, debugging, and understanding your business processes.</li>
+<li><strong>Time Travel Debugging:</strong> Ever wish you could rewind your application to see what happened? With event sourcing, you can. You can replay events to reconstruct any past state.</li>
+<li><strong>CQRS BFFs:</strong> Event sourcing and CQRS (Command Query Responsibility Segregation) go together like peanut butter and jelly. CQRS separates your &ldquo;write&rdquo; (command) and &ldquo;read&rdquo; (query) operations. Event sourcing fits perfectly into the &ldquo;write&rdquo; side, generating those immutable events.</li>
+</ul>
+<h2 id="the-how-to-hydration-vs-replay">
+  The How-To: Hydration vs. Replay
+  <a class="heading-link" href="#the-how-to-hydration-vs-replay">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>Okay, so you have all these events. How do you get the current state? That&rsquo;s where <strong>hydration</strong> comes in. It&rsquo;s like rebuilding your current state on demand by replaying the necessary events.</p>
+<p>But what about <strong>replay</strong>? That&rsquo;s when you regenerate the <em>entire</em> system state, usually for debugging or migrating data.</p>
+<p><strong>Example:</strong></p>
+<p>Let&rsquo;s say we have an e-commerce system:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl"><span class="c1">// Event: ProductAddedToCart</span>
+</span></span><span class="line"><span class="cl"><span class="kd">public</span> <span class="k">class</span> <span class="nc">ProductAddedToCart</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="n">Guid</span> <span class="n">ProductId</span> <span class="p">{</span> <span class="k">get</span><span class="p">;</span> <span class="k">set</span><span class="p">;</span> <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="kt">int</span> <span class="n">Quantity</span> <span class="p">{</span> <span class="k">get</span><span class="p">;</span> <span class="k">set</span><span class="p">;</span> <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// Event: OrderShipped</span>
+</span></span><span class="line"><span class="cl"><span class="kd">public</span> <span class="k">class</span> <span class="nc">OrderShipped</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="n">Guid</span> <span class="n">OrderId</span> <span class="p">{</span> <span class="k">get</span><span class="p">;</span> <span class="k">set</span><span class="p">;</span> <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// Hydrating the cart state</span>
+</span></span><span class="line"><span class="cl"><span class="kd">public</span> <span class="k">class</span> <span class="nc">ShoppingCart</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="n">Dictionary</span><span class="p">&lt;</span><span class="n">Guid</span><span class="p">,</span> <span class="kt">int</span><span class="p">&gt;</span> <span class="n">Items</span> <span class="p">{</span> <span class="k">get</span><span class="p">;</span> <span class="k">set</span><span class="p">;</span> <span class="p">}</span> <span class="p">=</span> <span class="k">new</span> <span class="n">Dictionary</span><span class="p">&lt;</span><span class="n">Guid</span><span class="p">,</span> <span class="kt">int</span><span class="p">&gt;();</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="k">void</span> <span class="n">Apply</span><span class="p">(</span><span class="n">ProductAddedToCart</span> <span class="n">@event</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="p">(</span><span class="n">Items</span><span class="p">.</span><span class="n">ContainsKey</span><span class="p">(</span><span class="n">@event</span><span class="p">.</span><span class="n">ProductId</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">        <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="n">Items</span><span class="p">[</span><span class="n">@event</span><span class="p">.</span><span class="n">ProductId</span><span class="p">]</span> <span class="p">+=</span> <span class="n">@event</span><span class="p">.</span><span class="n">Quantity</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="k">else</span>
+</span></span><span class="line"><span class="cl">        <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="n">Items</span><span class="p">[</span><span class="n">@event</span><span class="p">.</span><span class="n">ProductId</span><span class="p">]</span> <span class="p">=</span> <span class="n">@event</span><span class="p">.</span><span class="n">Quantity</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1">// ... other apply methods for each event</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><h2 id="speeding-things-up-snapshots-and-materialized-views">
+  Speeding Things Up: Snapshots and Materialized Views
+  <a class="heading-link" href="#speeding-things-up-snapshots-and-materialized-views">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>Replaying tons of events can be slow. That&rsquo;s why we use snapshots and materialized views.</p>
+<h2 id="snapshots-your-state-checkpoints">
+  Snapshots: Your State Checkpoints
+  <a class="heading-link" href="#snapshots-your-state-checkpoints">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<h3 id="what-is-a-snapshot">
+  What is a snapshot?
+  <a class="heading-link" href="#what-is-a-snapshot">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>A snapshot is a saved state of an aggregate (like our <code>ShoppingCart</code>) at a specific point in time. It&rsquo;s like taking a picture of the current state, so you don&rsquo;t have to replay every single event every time.</p>
+<h3 id="where-do-we-store-snapshots">
+  Where do we store snapshots?
+  <a class="heading-link" href="#where-do-we-store-snapshots">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>Snapshots can be stored in various ways:</p>
+<ul>
+<li><strong>Separate Table:</strong> You can create a dedicated table in your database to store snapshots. Each row would contain the aggregate ID, the snapshot data (often serialized), and a version or timestamp.</li>
+<li><strong>Files:</strong> For simpler applications, you could serialize snapshots to files (e.g., JSON or binary) and store them in a file system or cloud storage.</li>
+<li><strong>NoSQL Database:</strong> NoSQL databases like Redis or MongoDB are also excellent for storing snapshots due to their flexibility and performance.</li>
+</ul>
+<h3 id="example-conceptual">
+  Example (Conceptual):
+  <a class="heading-link" href="#example-conceptual">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl"><span class="c1">// Snapshot class</span>
+</span></span><span class="line"><span class="cl"><span class="kd">public</span> <span class="k">class</span> <span class="nc">ShoppingCartSnapshot</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="n">Guid</span> <span class="n">CartId</span> <span class="p">{</span> <span class="k">get</span><span class="p">;</span> <span class="k">set</span><span class="p">;</span> <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="n">Dictionary</span><span class="p">&lt;</span><span class="n">Guid</span><span class="p">,</span> <span class="kt">int</span><span class="p">&gt;</span> <span class="n">Items</span> <span class="p">{</span> <span class="k">get</span><span class="p">;</span> <span class="k">set</span><span class="p">;</span> <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="kt">int</span> <span class="n">Version</span> <span class="p">{</span> <span class="k">get</span><span class="p">;</span> <span class="k">set</span><span class="p">;</span> <span class="p">}</span> <span class="c1">// Or a timestamp</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// Saving a snapshot</span>
+</span></span><span class="line"><span class="cl"><span class="k">void</span> <span class="n">SaveSnapshot</span><span class="p">(</span><span class="n">ShoppingCart</span> <span class="n">cart</span><span class="p">,</span> <span class="kt">int</span> <span class="n">version</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">var</span> <span class="n">snapshot</span> <span class="p">=</span> <span class="k">new</span> <span class="n">ShoppingCartSnapshot</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="n">CartId</span> <span class="p">=</span> <span class="n">cart</span><span class="p">.</span><span class="n">CartId</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="n">Items</span> <span class="p">=</span> <span class="n">cart</span><span class="p">.</span><span class="n">Items</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="n">Version</span> <span class="p">=</span> <span class="n">version</span>
+</span></span><span class="line"><span class="cl">    <span class="p">};</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// Store snapshot in database/file/etc.</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// Loading a snapshot</span>
+</span></span><span class="line"><span class="cl"><span class="n">ShoppingCart</span> <span class="n">LoadSnapshot</span><span class="p">(</span><span class="n">Guid</span> <span class="n">cartId</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// Retrieve snapshot from database/file/etc.</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// ...</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">var</span> <span class="n">snapshot</span> <span class="p">=</span> <span class="n">RetrieveSnapshot</span><span class="p">(</span><span class="n">cartId</span><span class="p">);</span> <span class="c1">// Assuming a function to get the snapshot</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">var</span> <span class="n">cart</span> <span class="p">=</span> <span class="k">new</span> <span class="n">ShoppingCart</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">    <span class="n">cart</span><span class="p">.</span><span class="n">Items</span> <span class="p">=</span> <span class="n">snapshot</span><span class="p">.</span><span class="n">Items</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">cart</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kd">public</span> <span class="n">ShoppingCartSnapshot</span> <span class="n">RetrieveSnapshot</span><span class="p">(</span><span class="n">Guid</span> <span class="n">cartId</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl"> <span class="c1">//Implementation needed for the specific persistence strategy</span>
+</span></span><span class="line"><span class="cl">   <span class="k">return</span> <span class="k">new</span> <span class="n">ShoppingCartSnapshot</span><span class="p">();</span> <span class="c1">// Dummy code</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><h2 id="materialized-views-real-time-read-models">
+  Materialized Views: Real-Time Read Models
+  <a class="heading-link" href="#materialized-views-real-time-read-models">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<h3 id="what-are-materialized-views">
+  What are materialized views?
+  <a class="heading-link" href="#what-are-materialized-views">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>Materialized views are pre-calculated read models that are updated in real-time as events come in. They&rsquo;re perfect for fast queries and reporting.</p>
+<h3 id="how-do-we-implement-materialized-views">
+  How do we implement materialized views?
+  <a class="heading-link" href="#how-do-we-implement-materialized-views">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<ul>
+<li><strong>Event Listeners:</strong> Create event listeners that subscribe to relevant events.</li>
+<li><strong>Read Model Updates:</strong> When an event occurs, the listener updates the corresponding read model in the materialized view.</li>
+<li><strong>Storage:</strong> Store the materialized views in a database optimized for read operations.</li>
+</ul>
+<h3 id="example-conceptual-1">
+  Example (Conceptual):
+  <a class="heading-link" href="#example-conceptual-1">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>Let&rsquo;s create a materialized view to show the total number of items in all shopping carts.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl"><span class="c1">// Materialized view</span>
+</span></span><span class="line"><span class="cl"><span class="kd">public</span> <span class="k">class</span> <span class="nc">ShoppingCartItemCountView</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="kt">int</span> <span class="n">TotalItems</span> <span class="p">{</span> <span class="k">get</span><span class="p">;</span> <span class="k">set</span><span class="p">;</span> <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// Event listener</span>
+</span></span><span class="line"><span class="cl"><span class="kd">public</span> <span class="k">class</span> <span class="nc">ShoppingCartEventListener</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">private</span> <span class="k">readonly</span> <span class="n">ShoppingCartItemCountView</span> <span class="n">_view</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="n">ShoppingCartEventListener</span><span class="p">(</span><span class="n">ShoppingCartItemCountView</span> <span class="n">view</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="n">_view</span> <span class="p">=</span> <span class="n">view</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="k">void</span> <span class="n">Handle</span><span class="p">(</span><span class="n">ProductAddedToCart</span> <span class="n">@event</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">// Update the materialized view</span>
+</span></span><span class="line"><span class="cl">        <span class="n">_view</span><span class="p">.</span><span class="n">TotalItems</span> <span class="p">+=</span> <span class="n">@event</span><span class="p">.</span><span class="n">Quantity</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">// Save the updated view (Implementation depends on the storage mechanism)</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><h2 id="implementation-details">
+  Implementation details
+  <a class="heading-link" href="#implementation-details">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>You can use message queues like RabbitMQ or Kafka to propagate events to your event listeners.</p>
+<p>Databases like postgres can create actual materialized views that automatically update.</p>
+<p>For simple implementations you can just update a table in your database.</p>
+<h2 id="cqrs-and-event-sourcing-a-perfect-match">
+  CQRS and Event Sourcing: A Perfect Match
+  <a class="heading-link" href="#cqrs-and-event-sourcing-a-perfect-match">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>With CQRS, commands generate events, and queries use read models. Event sourcing provides the event store, and materialized views become your read models.</p>
+<h2 id="real-world-example">
+  Real-world Example:
+  <a class="heading-link" href="#real-world-example">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>In an e-commerce system, a &ldquo;Place Order&rdquo; command generates an &ldquo;OrderPlaced&rdquo; event. A separate read model (materialized view) then updates the order status displayed to the user.</p>
+<h2 id="event-propagation-keeping-things-real-time">
+  Event Propagation: Keeping Things Real-Time
+  <a class="heading-link" href="#event-propagation-keeping-things-real-time">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>In an event-sourced system, it&rsquo;s crucial that changes propagate throughout the system promptly. This ensures that all components, especially read models and other services, stay up-to-date. This is where event propagation comes in.</p>
+<h3 id="what-is-event-propagation">
+  What is Event Propagation?
+  <a class="heading-link" href="#what-is-event-propagation">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>Event propagation involves distributing events to various components of the system as soon as they occur. This allows different parts of the application to react in real-time.</p>
+<h3 id="how-does-it-work">
+  How Does It Work?
+  <a class="heading-link" href="#how-does-it-work">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<ol>
+<li><strong>Event Generation:</strong> When a command is executed, it generates an event.</li>
+<li><strong>Event Store:</strong> The event is persisted in the event store.</li>
+<li><strong>Event Bus/Message Broker:</strong> The event is published to an event bus or message broker (e.g., RabbitMQ, Kafka, Azure Service Bus).</li>
+<li><strong>Event Listeners:</strong> Various components subscribe to the event bus and listen for relevant events.</li>
+<li><strong>Event Handling:</strong> When an event is received, the listener processes it and updates its local state or triggers other actions.</li>
+</ol>
+<h3 id="example-real-time-order-status-updates">
+  Example: Real-Time Order Status Updates
+  <a class="heading-link" href="#example-real-time-order-status-updates">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>Let&rsquo;s illustrate this with an example from our e-commerce system. Suppose a customer places an order, and we want to update the order status in real-time for the customer&rsquo;s view.</p>
+<ol>
+<li><strong>Command Execution:</strong> The &ldquo;Place Order&rdquo; command is executed.</li>
+<li><strong>Event Generation:</strong> The &ldquo;OrderPlaced&rdquo; event is generated.</li>
+<li><strong>Event Store:</strong> The &ldquo;OrderPlaced&rdquo; event is stored in the event store.</li>
+<li><strong>Event Bus:</strong> The event is published to a message broker (e.g., Kafka).</li>
+<li><strong>Order Status Listener:</strong> A component responsible for updating the order status listens for &ldquo;OrderPlaced&rdquo; events.</li>
+<li><strong>Read Model Update:</strong> Upon receiving the event, the listener updates the &ldquo;Order Status&rdquo; read model (materialized view) in the database.</li>
+<li><strong>User Interface Update:</strong> The user interface, which is subscribed to changes in the &ldquo;Order Status&rdquo; read model, automatically updates the displayed order status in real-time.</li>
+</ol>
+<h3 id="code-example-conceptual">
+  Code Example (Conceptual):
+  <a class="heading-link" href="#code-example-conceptual">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl"><span class="c1">// Event: OrderPlaced</span>
+</span></span><span class="line"><span class="cl"><span class="kd">public</span> <span class="k">class</span> <span class="nc">OrderPlaced</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="n">Guid</span> <span class="n">OrderId</span> <span class="p">{</span> <span class="k">get</span><span class="p">;</span> <span class="k">set</span><span class="p">;</span> <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="n">Guid</span> <span class="n">CustomerId</span> <span class="p">{</span> <span class="k">get</span><span class="p">;</span> <span class="k">set</span><span class="p">;</span> <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// ... other order details</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// Event Listener</span>
+</span></span><span class="line"><span class="cl"><span class="kd">public</span> <span class="k">class</span> <span class="nc">OrderStatusListener</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">//...implementation needed</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><h3 id="you-can-follow-me-on-the-linkedin-youtube-telegram-group-to-discuss-and-directly-send-me-email">
+  You can follow me on the LinkedIn, YouTube, Telegram Group to discuss, and directly send me email.
+  <a class="heading-link" href="#you-can-follow-me-on-the-linkedin-youtube-telegram-group-to-discuss-and-directly-send-me-email">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<ul>
+<li><a href="https://t.me/sadinco_csharp"  class="external-link" target="_blank" rel="noopener">Telegram Group</a></li>
+<li><a href="https://linkedin.com/in/MrSadin"  class="external-link" target="_blank" rel="noopener">LinkedIn</a></li>
+<li><a href="https://sadin.dev"  class="external-link" target="_blank" rel="noopener">Blog</a></li>
+<li><a href="https://youtube.com/c/EnKamran"  class="external-link" target="_blank" rel="noopener">YouTube</a></li>
+</ul>
+
+      </div>
+
+
+      <footer>
+        
+
+<section class="see-also">
+  
+    
+    
+    
+  
+</section>
+
+
+        <div id="disqus_thread"></div>
+<script>
+  window.disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "a-programmer" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+    
+    document.addEventListener('themeChanged', function (e) { 
+        if (document.readyState == 'complete') {
+          DISQUS.reset({ reload: true, config: disqus_config });
+        }
+    });
+</script>
+        
+        
+        
+        
+        
+        
+      </footer>
+    </article>
+
+    
+  </section>
+
+    </div>
+
+    <footer class="footer">
+  <section class="container">
+    ©
+    
+      2019 -
+    
+    2025
+     Kamran Sadin 
+    ·
+    
+  </section>
+</footer>
+
+  </main>
+
+  
+
+  
+  
+  <script src="/js/coder.min.6ae284be93d2d19dad1f02b0039508d9aab3180a12a06dcc71b0b0ef7825a317.js" integrity="sha256-auKEvpPS0Z2tHwKwA5UI2aqzGAoSoG3McbCw73gloxc="></script>
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-DQWLT4H0ND"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-DQWLT4H0ND');
+</script>
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</body>
+</html>
