@@ -6,12 +6,19 @@
     <description>Recent content in Series on Kamran Sadin</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 09 Mar 2025 07:30:27 +0330</lastBuildDate>
+    <lastBuildDate>Mon, 10 Mar 2025 17:18:38 +0330</lastBuildDate>
     <atom:link href="https://sadin.dev/series/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>C-Sharp-in-a-Nutshell</title>
+      <link>https://sadin.dev/series/c-sharp-in-a-nutshell/</link>
+      <pubDate>Mon, 10 Mar 2025 17:18:38 +0330</pubDate>
+      <guid>https://sadin.dev/series/c-sharp-in-a-nutshell/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Event Sourcing</title>
       <link>https://sadin.dev/series/event-sourcing/</link>
-      <pubDate>Sun, 09 Mar 2025 07:30:27 +0330</pubDate>
+      <pubDate>Mon, 03 Mar 2025 07:30:27 +0330</pubDate>
       <guid>https://sadin.dev/series/event-sourcing/</guid>
       <description></description>
     </item>
