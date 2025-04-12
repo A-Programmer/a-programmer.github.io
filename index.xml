@@ -6,15 +6,8 @@
     <description>Recent content on Kamran Sadin</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 12 Apr 2025 08:37:01 +0330</lastBuildDate>
+    <lastBuildDate>Mon, 10 Mar 2025 17:18:38 +0330</lastBuildDate>
     <atom:link href="https://sadin.dev/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Learn C# from Scratch: A Complete Course for Absolute Beginners</title>
-      <link>https://sadin.dev/posts/csharp-for-absolute-beginners/</link>
-      <pubDate>Sat, 12 Apr 2025 08:37:01 +0330</pubDate>
-      <guid>https://sadin.dev/posts/csharp-for-absolute-beginners/</guid>
-      <description>&lt;h1 id=&#34;learn-c-from-scratch-a-hands-on-course-for-absolute-beginners&#34;&gt;&#xD;&#xA;  Learn C# from Scratch: A Hands-On Course for Absolute Beginners&#xD;&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#learn-c-from-scratch-a-hands-on-course-for-absolute-beginners&#34;&gt;&#xD;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xD;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xD;&#xA;  &lt;/a&gt;&#xD;&#xA;&lt;/h1&gt;&#xD;&#xA;&lt;p&gt;Ready to start your coding journey? If you’ve never programmed before, this C# course is tailor-made for you. Over about six weeks, with 2-3 sessions per week (1-2 hours each), you’ll transform from a total beginner to someone who can write simple, functional programs in C#. C# is a powerful, beginner-friendly language used in games, apps, and more. With plenty of examples and step-by-step guidance, this course will make coding fun and approachable. Let’s dive in!&lt;/p&gt;</description>
-    </item>
     <item>
       <title>Introduction to C#</title>
       <link>https://sadin.dev/posts/introduction-to-c-sharp/</link>
@@ -28,27 +21,6 @@
       <pubDate>Mon, 03 Mar 2025 07:30:27 +0330</pubDate>
       <guid>https://sadin.dev/posts/event-sourcing-getting-started/</guid>
       <description>&lt;p&gt;Hey everyone! Kamran here, and today, let&amp;rsquo;s dive deeper into Event Sourcing, especially how we manage snapshots and materialized views. If you&amp;rsquo;ve ever felt like your database only tells you the &amp;ldquo;now&amp;rdquo; and not the &amp;ldquo;how,&amp;rdquo; you&amp;rsquo;re going to love this.&lt;/p&gt;&#xA;&lt;p&gt;Imagine your application&amp;rsquo;s memory as a time machine. Instead of just saving the final result, what if you recorded every single change, every action, as an &amp;ldquo;event&amp;rdquo;? That&amp;rsquo;s event sourcing in a nutshell.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Mentorship</title>
-      <link>https://sadin.dev/pages/mentorship/</link>
-      <pubDate>Mon, 10 Feb 2025 19:39:31 +0330</pubDate>
-      <guid>https://sadin.dev/pages/mentorship/</guid>
-      <description>&lt;h1 id=&#34;how-it-works-your-journey-with-sadindev&#34;&gt;&#xD;&#xA;  How It Works: Your Journey with Sadin.Dev&#xD;&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#how-it-works-your-journey-with-sadindev&#34;&gt;&#xD;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xD;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xD;&#xA;  &lt;/a&gt;&#xD;&#xA;&lt;/h1&gt;&#xD;&#xA;&lt;p&gt;Securing a software engineering job with a relocation package and visa sponsorship is a life-changing opportunity—and we’re here to guide you through it. At Sadin.Dev, we’ve perfected a step-by-step process to prepare you for success, backed by our &lt;strong&gt;100% success rate in 2024&lt;/strong&gt;. Here’s how we turn your career goals into reality:&lt;/p&gt;&#xA;&lt;h2 id=&#34;step-1-free-consultation&#34;&gt;&#xD;&#xA;  Step 1: Free Consultation&#xD;&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#step-1-free-consultation&#34;&gt;&#xD;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xD;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xD;&#xA;  &lt;/a&gt;&#xD;&#xA;&lt;/h2&gt;&#xD;&#xA;&lt;p&gt;Your journey starts with a free consultation. In this one-on-one meeting, our expert mentors assess your technical skills, personality, current career stage, specific requirements, and areas for improvement. We listen to your goals—whether it’s landing a job abroad or mastering a new technology—and use this insight to lay the foundation for your personalized plan.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Projects</title>
-      <link>https://sadin.dev/pages/projects/</link>
-      <pubDate>Mon, 10 Feb 2025 19:39:22 +0330</pubDate>
-      <guid>https://sadin.dev/pages/projects/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Contact</title>
-      <link>https://sadin.dev/pages/contact/</link>
-      <pubDate>Mon, 10 Feb 2025 19:39:14 +0330</pubDate>
-      <guid>https://sadin.dev/pages/contact/</guid>
-      <description></description>
     </item>
     <item>
       <title>A Comprehensive Guide to Data Types in C#</title>

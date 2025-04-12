@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<head>
   <title>
   Abstract and Interface in C# · Kamran Sadin
 </title>
@@ -37,22 +37,14 @@ Let me summarize, the abstract class is more powerful than the interface in that
 
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Abstract and Interface in C#">
-  <meta name="twitter:description" content="Abstract Class
-Link to heading
-Definition
-Link to heading
-An abstract class in C# is a clashttps://sadin.dev/ract keyword that may contain abstract and non-abstract members (methods, properties, events, etc.).
+  <meta name="twitter:description" content="Abstract ClassLink to headingDefinitionLink to headingAn abstract class in C# is a class marked with the abstract keyword that may contain abstract and non-abstract members (methods, properties, events, etc.).
 An abstract class provides a common structure and behavior for derived classes and allows for partial implementation by providing some method implementations while requiring derived classes to implement others.
 An abstract class is like an uncompleted class that can be developed in the future and it is like an interface with a wide vision. An abstract class can have abstract methods like interfaces that should be implemented in the derived class, furthermore, you can have non-abstract methods that do not have to be implemented in a derived class, and abstract methods can be abstract in subclasses if a subclass is defined as abstract. An abstract class can not be instantiated. A derived class can implement or override an abstract class. Also, an abstract class can have constructors and this is a major difference between an abstract class and an interface. Let me summarize, the abstract class is more powerful than the interface in that you have the ability to decide if you want to let the user decide to use the original methods in the abstract class or override them or even you can have abstract methods that the user can decide how to implement them.">
 
-<meta property="og:url" content="http://localhost:1313/posts/2023-10-06-abstract-and-interface/">
+<meta property="og:url" content="https://sadin.dev/posts/2023-10-06-abstract-and-interface/">
   <meta property="og:site_name" content="Kamran Sadin">
   <meta property="og:title" content="Abstract and Interface in C#">
-  <meta property="og:description" content="Abstract Class
-Link to heading
-Definition
-Link to heading
-An abstract class in C# is a class marked with the abstract keyword that may contain abstract and non-abstract members (methods, properties, events, etc.).
+  <meta property="og:description" content="Abstract ClassLink to headingDefinitionLink to headingAn abstract class in C# is a class marked with the abstract keyword that may contain abstract and non-abstract members (methods, properties, events, etc.).
 An abstract class provides a common structure and behavior for derived classes and allows for partial implementation by providing some method implementations while requiring derived classes to implement others.
 An abstract class is like an uncompleted class that can be developed in the future and it is like an interface with a wide vision. An abstract class can have abstract methods like interfaces that should be implemented in the derived class, furthermore, you can have non-abstract methods that do not have to be implemented in a derived class, and abstract methods can be abstract in subclasses if a subclass is defined as abstract. An abstract class can not be instantiated. A derived class can implement or override an abstract class. Also, an abstract class can have constructors and this is a major difference between an abstract class and an interface. Let me summarize, the abstract class is more powerful than the interface in that you have the ability to decide if you want to let the user decide to use the original methods in the abstract class or override them or even you can have abstract methods that the user can decide how to implement them.">
   <meta property="og:locale" content="en">
@@ -62,7 +54,7 @@ An abstract class is like an uncompleted class that can be developed in the futu
     <meta property="article:modified_time" content="2023-10-06T00:00:00+00:00">
     <meta property="article:tag" content="CSharp">
     <meta property="article:tag" content="Abstract">
-    <meta property="article:https://sadin.dev/e">
+    <meta property="article:tag" content="Interface">
     <meta property="article:tag" content="Inheritance">
     <meta property="article:tag" content="Oop">
     <meta property="article:tag" content="C# Developer Roadmap">
@@ -70,7 +62,7 @@ An abstract class is like an uncompleted class that can be developed in the futu
 
 
 
-<link rel="canonical" href="http://localhost:1313/posts/2023-10-06-abstract-and-interface/">
+<link rel="canonical" href="https://sadin.dev/posts/2023-10-06-abstract-and-interface/">
 
 
 <link rel="preload" href="/fonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
@@ -80,7 +72,7 @@ An abstract class is like an uncompleted class that can be developed in the futu
 
   
   
-  <link rel="stylesheet" href="/css/coder.css" media="screen">
+  <link rel="stylesheet" href="/css/coder.min.b886fe0d9034709648f91f4ce178f51dd367d9350f82dd1132d54fd69bfca66f.css" integrity="sha256-uIb&#43;DZA0cJZI&#43;R9M4Xj1HdNn2TUPgt0RMtVP1pv8pm8=" crossorigin="anonymous" media="screen" />
 
 
 
@@ -90,7 +82,7 @@ An abstract class is like an uncompleted class that can be developed in the futu
   
     
     
-    <link rel="stylesheet" href="/css/coder-dark.css" media="screen">
+    <link rel="stylesheet" href="/css/coder-dark.min.a00e6364bacbc8266ad1cc81230774a1397198f8cfb7bcba29b7d6fcb54ce57f.css" integrity="sha256-oA5jZLrLyCZq0cyBIwd0oTlxmPjPt7y6KbfW/LVM5X8=" crossorigin="anonymous" media="screen" />
   
 
 
@@ -130,7 +122,7 @@ An abstract class is like an uncompleted class that can be developed in the futu
 <div class="float-container">
     <a id="dark-mode-toggle" class="colorscheme-toggle">
         <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
-    </a>https://sadin.dev/
+    </a>
 </div>
 
 
@@ -138,7 +130,7 @@ An abstract class is like an uncompleted class that can be developed in the futu
     <nav class="navigation">
   <section class="container">
     
-    <a class="navigation-title" href="http://localhost:1313/">
+    <a class="navigation-title" href="https://sadin.dev/">
       Kamran Sadin
     </a>
     
@@ -177,7 +169,7 @@ An abstract class is like an uncompleted class that can be developed in the futu
   </section>
 </nav>
 
-https://sadin.dev/
+
     <div class="content">
       
   <section class="container post">
@@ -185,7 +177,7 @@ https://sadin.dev/
       <header>
         <div class="post-title">
           <h1 class="title">
-            <a class="title-link" href="http://localhost:1313/posts/2023-10-06-abstract-and-interface/">
+            <a class="title-link" href="https://sadin.dev/posts/2023-10-06-abstract-and-interface/">
               Abstract and Interface in C#
             </a>
           </h1>
@@ -525,7 +517,7 @@ The other way is to implement <code>INotification</code> interface implicitly:</
 
   
   
-  <script src="/js/coder.js"></script>
+  <script src="/js/coder.min.6ae284be93d2d19dad1f02b0039508d9aab3180a12a06dcc71b0b0ef7825a317.js" integrity="sha256-auKEvpPS0Z2tHwKwA5UI2aqzGAoSoG3McbCw73gloxc="></script>
   
 
   

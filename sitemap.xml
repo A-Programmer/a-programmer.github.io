@@ -2,58 +2,46 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://sadin.dev/tags/.net/</loc>
-    <lastmod>2025-04-12T08:37:01+03:30</lastmod>
-  </url><url>
-    <loc>https://sadin.dev/authors/</loc>
-    <lastmod>2025-04-12T08:37:01+03:30</lastmod>
-  </url><url>
-    <loc>https://sadin.dev/tags/beginners/</loc>
-    <lastmod>2025-04-12T08:37:01+03:30</lastmod>
-  </url><url>
-    <loc>https://sadin.dev/series/c-sharp-path/</loc>
-    <lastmod>2025-04-12T08:37:01+03:30</lastmod>
-  </url><url>
-    <loc>https://sadin.dev/tags/c%23/</loc>
-    <lastmod>2025-04-12T08:37:01+03:30</lastmod>
-  </url><url>
-    <loc>https://sadin.dev/categories/</loc>
-    <lastmod>2025-04-12T08:37:01+03:30</lastmod>
-  </url><url>
-    <loc>https://sadin.dev/tags/csharp/</loc>
-    <lastmod>2025-04-12T08:37:01+03:30</lastmod>
-  </url><url>
-    <loc>https://sadin.dev/categories/csharp/</loc>
-    <lastmod>2025-04-12T08:37:01+03:30</lastmod>
-  </url><url>
-    <loc>https://sadin.dev/tags/from_scratch/</loc>
-    <lastmod>2025-04-12T08:37:01+03:30</lastmod>
-  </url><url>
     <loc>https://sadin.dev/</loc>
-    <lastmod>2025-04-12T08:37:01+03:30</lastmod>
-  </url><url>
-    <loc>https://sadin.dev/authors/kamran-sadin/</loc>
-    <lastmod>2025-04-12T08:37:01+03:30</lastmod>
-  </url><url>
-    <loc>https://sadin.dev/posts/csharp-for-absolute-beginners/</loc>
     <lastmod>2025-04-12T08:37:01+03:30</lastmod>
   </url><url>
     <loc>https://sadin.dev/posts/</loc>
     <lastmod>2025-04-12T08:37:01+03:30</lastmod>
   </url><url>
-    <loc>https://sadin.dev/series/</loc>
-    <lastmod>2025-04-12T08:37:01+03:30</lastmod>
+    <loc>https://sadin.dev/tags/.net/</loc>
+    <lastmod>2025-03-10T17:18:38+03:30</lastmod>
   </url><url>
-    <loc>https://sadin.dev/tags/</loc>
-    <lastmod>2025-04-12T08:37:01+03:30</lastmod>
+    <loc>https://sadin.dev/authors/</loc>
+    <lastmod>2025-03-10T17:18:38+03:30</lastmod>
   </url><url>
     <loc>https://sadin.dev/series/c-sharp-in-a-nutshell/</loc>
+    <lastmod>2025-03-10T17:18:38+03:30</lastmod>
+  </url><url>
+    <loc>https://sadin.dev/tags/c%23/</loc>
+    <lastmod>2025-03-10T17:18:38+03:30</lastmod>
+  </url><url>
+    <loc>https://sadin.dev/categories/</loc>
+    <lastmod>2025-03-10T17:18:38+03:30</lastmod>
+  </url><url>
+    <loc>https://sadin.dev/tags/csharp/</loc>
+    <lastmod>2025-03-10T17:18:38+03:30</lastmod>
+  </url><url>
+    <loc>https://sadin.dev/categories/csharp/</loc>
     <lastmod>2025-03-10T17:18:38+03:30</lastmod>
   </url><url>
     <loc>https://sadin.dev/tags/introduction/</loc>
     <lastmod>2025-03-10T17:18:38+03:30</lastmod>
   </url><url>
     <loc>https://sadin.dev/posts/introduction-to-c-sharp/</loc>
+    <lastmod>2025-03-10T17:18:38+03:30</lastmod>
+  </url><url>
+    <loc>https://sadin.dev/authors/kamran-sadin/</loc>
+    <lastmod>2025-03-10T17:18:38+03:30</lastmod>
+  </url><url>
+    <loc>https://sadin.dev/series/</loc>
+    <lastmod>2025-03-10T17:18:38+03:30</lastmod>
+  </url><url>
+    <loc>https://sadin.dev/tags/</loc>
     <lastmod>2025-03-10T17:18:38+03:30</lastmod>
   </url><url>
     <loc>https://sadin.dev/categories/.net/</loc>
@@ -80,17 +68,8 @@
     <loc>https://sadin.dev/tags/kamran-sadin/</loc>
     <lastmod>2025-03-03T07:30:27+03:30</lastmod>
   </url><url>
-    <loc>https://sadin.dev/pages/mentorship/</loc>
-    <lastmod>2025-02-10T19:39:31+03:30</lastmod>
-  </url><url>
     <loc>https://sadin.dev/pages/</loc>
     <lastmod>2025-02-10T19:39:31+03:30</lastmod>
-  </url><url>
-    <loc>https://sadin.dev/pages/projects/</loc>
-    <lastmod>2025-02-10T19:39:22+03:30</lastmod>
-  </url><url>
-    <loc>https://sadin.dev/pages/contact/</loc>
-    <lastmod>2025-02-10T19:39:14+03:30</lastmod>
   </url><url>
     <loc>https://sadin.dev/tags/1000daysofcsharp/</loc>
     <lastmod>2023-11-17T00:00:00+00:00</lastmod>
