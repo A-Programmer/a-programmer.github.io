@@ -1,0 +1,909 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <title>
+  Learn C# from Scratch: A Complete Course for Absolute Beginners · Kamran Sadin
+</title>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+
+
+
+
+<meta name="author" content="Kamran Sadin">
+<meta name="description" content="Ready to start your coding journey? If you’ve never programmed before, this C# course is tailor-made for you.">
+<meta name="keywords" content="blog,developer,c#,.net,dot net,software engineer,mentor">
+
+
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Learn C# from Scratch: A Complete Course for Absolute Beginners">
+  <meta name="twitter:description" content="Ready to start your coding journey? If you’ve never programmed before, this C# course is tailor-made for you.">
+
+<meta property="og:url" content="http://localhost:1313/posts/csharp-for-absolute-beginners/">
+  <meta property="og:site_name" content="Kamran Sadin">
+  <meta property="og:title" content="Learn C# from Scratch: A Complete Course for Absolute Beginners">
+  <meta property="og:description" content="Ready to start your coding journey? If you’ve never programmed before, this C# course is tailor-made for you.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-04-12T08:37:01+03:30">
+    <meta property="article:modified_time" content="2025-04-12T08:37:01+03:30">
+    <meta property="article:tag" content="CSharp">
+    <meta property="article:tag" content="C#">
+    <meta property="article:tag" content=".NET">
+    <meta property="article:tag" content="Beginners">
+    <meta property="article:tag" content="From_Scratch">
+
+
+
+
+<link rel="canonical" href="http://localhost:1313/posts/csharp-for-absolute-beginners/">
+
+
+<link rel="preload" href="/fonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/fa-regular-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>
+
+
+  
+  
+  <link rel="stylesheet" href="/css/coder.css" media="screen">
+
+
+
+
+
+
+  
+    
+    
+    <link rel="stylesheet" href="/css/coder-dark.css" media="screen">
+  
+
+
+
+ 
+
+
+
+
+<link rel="icon" type="image/svg+xml" href="/images/favicon.svg" sizes="any">
+<link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+
+
+
+
+
+</head>
+
+
+
+
+
+
+<body class="preload-transitions colorscheme-dark">
+  
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+  <main class="wrapper">
+    <nav class="navigation">
+  <section class="container">
+    
+    <a class="navigation-title" href="http://localhost:1313/">
+      Kamran Sadin
+    </a>
+    
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa-solid fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/pages/about/">About</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/pages/mentorship/">Mentorship</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/posts/">Blog</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/pages/projects/">Projects</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/pages/contact/">Contact me</a>
+            </li>
+          
+        
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+    <div class="content">
+      
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">
+            <a class="title-link" href="http://localhost:1313/posts/csharp-for-absolute-beginners/">
+              Learn C# from Scratch: A Complete Course for Absolute Beginners
+            </a>
+          </h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fa-solid fa-calendar" aria-hidden="true"></i>
+              <time datetime="2025-04-12T08:37:01&#43;03:30">
+                April 12, 2025
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fa-solid fa-clock" aria-hidden="true"></i>
+              12-minute read
+            </span>
+          </div>
+          <div class="authors">
+  <i class="fa-solid fa-user" aria-hidden="true"></i>
+    <a href="/authors/kamran-sadin/">Kamran Sadin</a></div>
+
+          <div class="categories">
+  <i class="fa-solid fa-folder" aria-hidden="true"></i>
+    <a href="/categories/csharp/">CSharp</a></div>
+
+          <div class="tags">
+  <i class="fa-solid fa-tag" aria-hidden="true"></i>
+    <span class="tag">
+      <a href="/tags/csharp/">CSharp</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/tags/c%23/">C#</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/tags/.net/">.NET</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/tags/beginners/">Beginners</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/tags/from_scratch/">From_Scratch</a>
+    </span></div>
+
+        </div>
+      </header>
+
+      <div class="post-content">
+        
+        <h1 id="learn-c-from-scratch-a-hands-on-course-for-absolute-beginners">
+  Learn C# from Scratch: A Hands-On Course for Absolute Beginners
+  <a class="heading-link" href="#learn-c-from-scratch-a-hands-on-course-for-absolute-beginners">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h1>
+<p>Ready to start your coding journey? If you’ve never programmed before, this C# course is tailor-made for you. Over about six weeks, with 2-3 sessions per week (1-2 hours each), you’ll transform from a total beginner to someone who can write simple, functional programs in C#. C# is a powerful, beginner-friendly language used in games, apps, and more. With plenty of examples and step-by-step guidance, this course will make coding fun and approachable. Let’s dive in!</p>
+<h2 id="module-1-your-first-steps-with-c">
+  Module 1: Your First Steps with C#
+  <a class="heading-link" href="#module-1-your-first-steps-with-c">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p><strong>What’s the Goal?</strong> Understand what programming is, set up your coding tools, and write your first C# program.<br>
+<strong>How Long?</strong> 2 sessions</p>
+<h3 id="session-1-what-is-programming-and-why-c">
+  Session 1: What Is Programming, and Why C#?
+  <a class="heading-link" href="#session-1-what-is-programming-and-why-c">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>Programming is like giving your computer a set of instructions to follow, like a recipe for your favorite dish. C# (pronounced “see sharp”) is a language that lets you write those instructions clearly. It’s versatile—think building games with Unity or creating apps for Windows—and it’s great for beginners because it’s structured and forgiving.</p>
+<p>In this session, you’ll meet Visual Studio Community, a free program where you’ll write and run your code. Think of it as your coding kitchen, with tools to make programming easier.</p>
+<p><strong>What You’ll Do:</strong></p>
+<ul>
+<li>Download Visual Studio Community from Microsoft’s website (it’s free!).</li>
+<li>Open it and explore the interface. You’ll see:
+<ul>
+<li>The <strong>code editor</strong>, where you type your instructions.</li>
+<li>The <strong>solution explorer</strong>, which organizes your projects.</li>
+<li>The <strong>run button</strong> (a green triangle) to test your programs.</li>
+</ul>
+</li>
+</ul>
+<p><strong>By the End:</strong> You’ll understand what programming and C# are and have Visual Studio ready to go.</p>
+<h3 id="session-2-your-first-c-programhello-world">
+  Session 2: Your First C# Program—“Hello, World!”
+  <a class="heading-link" href="#session-2-your-first-c-programhello-world">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>Time to write code! Every programmer starts with a “Hello, World!” program that prints a message to the screen. You’ll learn the basics of a C# program’s structure and some simple rules, like ending lines with semicolons (<code>;</code>) and grouping code with curly braces (<code>{}</code>).</p>
+<p>Here’s what a C# program looks like:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl"><span class="k">using</span> <span class="nn">System</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">Program</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">static</span> <span class="k">void</span> <span class="n">Main</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&#34;Hello, World!&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p>Let’s break it down:</p>
+<ul>
+<li><code>using System;</code> brings in tools like <code>Console.WriteLine</code> for printing.</li>
+<li><code>class Program</code> is like a container for your code.</li>
+<li><code>static void Main()</code> is where your program starts running.</li>
+<li><code>Console.WriteLine(&quot;Hello, World!&quot;);</code> tells the computer to display “Hello, World!”.</li>
+</ul>
+<p><strong>What You’ll Do:</strong></p>
+<ul>
+<li>Create a new <strong>Console App</strong> project in Visual Studio.</li>
+<li>Type the code above and press the run button to see “Hello, World!” appear.</li>
+<li>Change the message to something personal, like:</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl"><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&#34;Hi, I’m learning C#!&#34;</span><span class="p">);</span>
+</span></span></code></pre></div><p><strong>By the End:</strong> You’ll have written and run your first program, feeling like a coder already!</p>
+<h2 id="module-2-storing-and-using-data">
+  Module 2: Storing and Using Data
+  <a class="heading-link" href="#module-2-storing-and-using-data">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p><strong>What’s the Goal?</strong> Learn how to store information (like numbers and text) and do things with it.<br>
+<strong>How Long?</strong> 3 sessions</p>
+<h3 id="session-3-variablesyour-data-boxes">
+  Session 3: Variables—Your Data Boxes
+  <a class="heading-link" href="#session-3-variablesyour-data-boxes">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>Imagine variables as labeled containers for storing information, like a jar labeled “Cookies” holding a number of treats. In C#, you create a variable by saying what type of data it holds and giving it a name. Here are the main types we’ll use:</p>
+<ul>
+<li><code>int</code> for whole numbers (e.g., 5, -10).</li>
+<li><code>double</code> for decimals (e.g., 3.14).</li>
+<li><code>string</code> for text (e.g., “Hello”).</li>
+<li><code>bool</code> for true/false values.</li>
+</ul>
+<p>Here’s an example:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl"><span class="kt">int</span> <span class="n">age</span> <span class="p">=</span> <span class="m">25</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="kt">string</span> <span class="n">name</span> <span class="p">=</span> <span class="s">&#34;Emma&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="kt">double</span> <span class="n">height</span> <span class="p">=</span> <span class="m">5.6</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="kt">bool</span> <span class="n">isStudent</span> <span class="p">=</span> <span class="kc">true</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="n">name</span><span class="p">);</span> <span class="c1">// Prints: Emma</span>
+</span></span><span class="line"><span class="cl"><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="n">age</span><span class="p">);</span>  <span class="c1">// Prints: 25</span>
+</span></span></code></pre></div><p>You <em>declare</em> a variable with its type and name (<code>int age;</code>), then <em>assign</em> a value using <code>=</code> (<code>age = 25;</code>). You can do both at once, as shown above.</p>
+<p><strong>What You’ll Do:</strong></p>
+<ul>
+<li>Write a program to declare variables like this:</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl"><span class="kt">string</span> <span class="n">favoriteColor</span> <span class="p">=</span> <span class="s">&#34;Blue&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="n">numberOfPets</span> <span class="p">=</span> <span class="m">2</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&#34;My favorite color is &#34;</span> <span class="p">+</span> <span class="n">favoriteColor</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&#34;I have &#34;</span> <span class="p">+</span> <span class="n">numberOfPets</span> <span class="p">+</span> <span class="s">&#34; pets.&#34;</span><span class="p">);</span>
+</span></span></code></pre></div><ul>
+<li>Change the values and run it again to see different outputs.</li>
+</ul>
+<p><strong>By the End:</strong> You’ll know how to store and display data using variables.</p>
+<h3 id="session-4-doing-math-with-numbers">
+  Session 4: Doing Math with Numbers
+  <a class="heading-link" href="#session-4-doing-math-with-numbers">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>Programs often need to calculate things, like adding scores or splitting a bill. C# uses operators for math:</p>
+<ul>
+<li><code>+</code> (add), <code>-</code> (subtract), <code>*</code> (multiply), <code>/</code> (divide), <code>%</code> (remainder).</li>
+<li>Example: <code>10 % 3</code> gives 1, because 10 divided by 3 leaves a remainder of 1.</li>
+</ul>
+<p>Here’s a program that does some math:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl"><span class="kt">int</span> <span class="n">apples</span> <span class="p">=</span> <span class="m">5</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="n">oranges</span> <span class="p">=</span> <span class="m">3</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="n">totalFruit</span> <span class="p">=</span> <span class="n">apples</span> <span class="p">+</span> <span class="n">oranges</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="kt">double</span> <span class="n">pricePerApple</span> <span class="p">=</span> <span class="m">0.5</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="kt">double</span> <span class="n">totalCost</span> <span class="p">=</span> <span class="n">apples</span> <span class="p">*</span> <span class="n">pricePerApple</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&#34;Total fruit: &#34;</span> <span class="p">+</span> <span class="n">totalFruit</span><span class="p">);</span> <span class="c1">// Prints: Total fruit: 8</span>
+</span></span><span class="line"><span class="cl"><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&#34;Total cost: $&#34;</span> <span class="p">+</span> <span class="n">totalCost</span><span class="p">);</span> <span class="c1">// Prints: Total cost: $2.5</span>
+</span></span></code></pre></div><p>Math follows PEMDAS (Parentheses, Exponents, Multiplication/Division, Addition/Subtraction), so <code>2 + 3 * 4</code> equals 14, not 20, because multiplication comes first.</p>
+<p><strong>What You’ll Do:</strong></p>
+<ul>
+<li>Create a program to calculate the area of a rectangle:</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl"><span class="kt">int</span> <span class="n">length</span> <span class="p">=</span> <span class="m">10</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="n">width</span> <span class="p">=</span> <span class="m">4</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="n">area</span> <span class="p">=</span> <span class="n">length</span> <span class="p">*</span> <span class="n">width</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&#34;The area is &#34;</span> <span class="p">+</span> <span class="n">area</span> <span class="p">+</span> <span class="s">&#34; square units.&#34;</span><span class="p">);</span>
+</span></span></code></pre></div><ul>
+<li>Try dividing numbers to see how <code>int</code> (whole numbers) differs from <code>double</code> (decimals):</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl"><span class="kt">int</span> <span class="n">a</span> <span class="p">=</span> <span class="m">7</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="n">b</span> <span class="p">=</span> <span class="m">2</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="n">a</span> <span class="p">/</span> <span class="n">b</span><span class="p">);</span> <span class="c1">// Prints: 3 (drops the decimal)</span>
+</span></span><span class="line"><span class="cl"><span class="kt">double</span> <span class="n">c</span> <span class="p">=</span> <span class="m">7.0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="kt">double</span> <span class="n">d</span> <span class="p">=</span> <span class="m">2.0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="n">c</span> <span class="p">/</span> <span class="n">d</span><span class="p">);</span> <span class="c1">// Prints: 3.5</span>
+</span></span></code></pre></div><p><strong>By the End:</strong> You’ll be comfortable doing math and understanding number types.</p>
+<h3 id="session-5-text-and-chatting-with-users">
+  Session 5: Text and Chatting with Users
+  <a class="heading-link" href="#session-5-text-and-chatting-with-users">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>Text is everywhere in programs—think names, messages, or labels. A <code>string</code> holds text, and you can combine strings using <code>+</code> (concatenation). Even better, you can ask users for input with <code>Console.ReadLine()</code>, which waits for them to type something.</p>
+<p>Here’s an example:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl"><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&#34;What’s your name?&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="kt">string</span> <span class="n">userName</span> <span class="p">=</span> <span class="n">Console</span><span class="p">.</span><span class="n">ReadLine</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl"><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&#34;Nice to meet you, &#34;</span> <span class="p">+</span> <span class="n">userName</span> <span class="p">+</span> <span class="s">&#34;!&#34;</span><span class="p">);</span>
+</span></span></code></pre></div><p>If you want to work with numbers from user input, you’ll need to convert the input (which is a <code>string</code>) to a number using <code>int.Parse()</code>:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl"><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&#34;How old are you?&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="kt">string</span> <span class="n">input</span> <span class="p">=</span> <span class="n">Console</span><span class="p">.</span><span class="n">ReadLine</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="n">age</span> <span class="p">=</span> <span class="kt">int</span><span class="p">.</span><span class="n">Parse</span><span class="p">(</span><span class="n">input</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&#34;In 5 years, you’ll be &#34;</span> <span class="p">+</span> <span class="p">(</span><span class="n">age</span> <span class="p">+</span> <span class="m">5</span><span class="p">)</span> <span class="p">+</span> <span class="s">&#34;!&#34;</span><span class="p">);</span>
+</span></span></code></pre></div><p><strong>What You’ll Do:</strong></p>
+<ul>
+<li>Write a program to greet a user and tell them something fun:</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl"><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&#34;Enter your favorite animal:&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="kt">string</span> <span class="n">animal</span> <span class="p">=</span> <span class="n">Console</span><span class="p">.</span><span class="n">ReadLine</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl"><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&#34;Cool! I bet a &#34;</span> <span class="p">+</span> <span class="n">animal</span> <span class="p">+</span> <span class="s">&#34; would make a great pet!&#34;</span><span class="p">);</span>
+</span></span></code></pre></div><ul>
+<li>Create a program that calculates a user’s birth year:</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl"><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&#34;How old are you?&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="n">age</span> <span class="p">=</span> <span class="kt">int</span><span class="p">.</span><span class="n">Parse</span><span class="p">(</span><span class="n">Console</span><span class="p">.</span><span class="n">ReadLine</span><span class="p">());</span>
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="n">currentYear</span> <span class="p">=</span> <span class="m">2025</span><span class="p">;</span> <span class="c1">// Update if needed</span>
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="n">birthYear</span> <span class="p">=</span> <span class="n">currentYear</span> <span class="p">-</span> <span class="n">age</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&#34;You were probably born around &#34;</span> <span class="p">+</span> <span class="n">birthYear</span> <span class="p">+</span> <span class="s">&#34;.&#34;</span><span class="p">);</span>
+</span></span></code></pre></div><p><strong>By the End:</strong> You’ll know how to handle text, combine it with other data, and interact with users.</p>
+<h2 id="module-3-teaching-your-program-to-think">
+  Module 3: Teaching Your Program to Think
+  <a class="heading-link" href="#module-3-teaching-your-program-to-think">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p><strong>What’s the Goal?</strong> Make your programs decide what to do and repeat tasks automatically.<br>
+<strong>How Long?</strong> 3 sessions</p>
+<h3 id="session-6-decisions-with-if-statements">
+  Session 6: Decisions with <code>if</code> Statements
+  <a class="heading-link" href="#session-6-decisions-with-if-statements">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>Programs need to make choices, like deciding if a user is allowed to log in. You’ll use <code>if</code> statements to check conditions. Conditions are questions that are either <code>true</code> or <code>false</code>, built with comparison operators:</p>
+<ul>
+<li><code>==</code> (equals), <code>!=</code> (not equals), <code>&lt;</code> (less than), <code>&gt;</code> (greater than), <code>&lt;=</code>, <code>&gt;=</code>.</li>
+</ul>
+<p>Here’s an example:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl"><span class="kt">int</span> <span class="n">score</span> <span class="p">=</span> <span class="m">85</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="p">(</span><span class="n">score</span> <span class="p">&gt;=</span> <span class="m">90</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&#34;You got an A!&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">score</span> <span class="p">&gt;=</span> <span class="m">80</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&#34;You got a B!&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="k">else</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&#34;Keep studying!&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p>This code checks <code>score</code> and prints a message based on its value. The curly braces <code>{}</code> group the code that runs if a condition is true.</p>
+<p><strong>What You’ll Do:</strong></p>
+<ul>
+<li>Write a program to check a number’s sign:</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl"><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&#34;Enter a number:&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="n">number</span> <span class="p">=</span> <span class="kt">int</span><span class="p">.</span><span class="n">Parse</span><span class="p">(</span><span class="n">Console</span><span class="p">.</span><span class="n">ReadLine</span><span class="p">());</span>
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="p">(</span><span class="n">number</span> <span class="p">&gt;</span> <span class="m">0</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&#34;Positive!&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">number</span> <span class="p">&lt;</span> <span class="m">0</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&#34;Negative!&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="k">else</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&#34;Zero!&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><ul>
+<li>Create a voting eligibility checker:</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl"><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&#34;Enter your age:&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="n">age</span> <span class="p">=</span> <span class="kt">int</span><span class="p">.</span><span class="n">Parse</span><span class="p">(</span><span class="n">Console</span><span class="p">.</span><span class="n">ReadLine</span><span class="p">());</span>
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="p">(</span><span class="n">age</span> <span class="p">&gt;=</span> <span class="m">18</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&#34;You can vote!&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="k">else</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&#34;Not old enough yet.&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p><strong>By the End:</strong> You’ll be able to make your programs choose what to do based on conditions.</p>
+<h3 id="session-7-loopsrepeating-made-easy">
+  Session 7: Loops—Repeating Made Easy
+  <a class="heading-link" href="#session-7-loopsrepeating-made-easy">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>Loops let your program repeat tasks without you rewriting code. A <code>for</code> loop is great when you know how many times to repeat, like counting from 1 to 10. A <code>while</code> loop runs as long as a condition is true, like asking for input until it’s valid.</p>
+<p>Here’s a <code>for</code> loop:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl"><span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="p">=</span> <span class="m">1</span><span class="p">;</span> <span class="n">i</span> <span class="p">&lt;=</span> <span class="m">10</span><span class="p">;</span> <span class="n">i</span><span class="p">++)</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="n">i</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p>This prints 1 to 10. The loop:</p>
+<ul>
+<li>Starts <code>i</code> at 1.</li>
+<li>Checks if <code>i &lt;= 10</code>.</li>
+<li>Runs the code inside <code>{}</code>.</li>
+<li>Adds 1 to <code>i</code> (<code>i++</code>) and repeats.</li>
+</ul>
+<p>A <code>while</code> loop looks like this:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl"><span class="kt">int</span> <span class="n">number</span> <span class="p">=</span> <span class="m">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="k">while</span> <span class="p">(</span><span class="n">number</span> <span class="p">&lt;=</span> <span class="m">5</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&#34;Number is &#34;</span> <span class="p">+</span> <span class="n">number</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="n">number</span><span class="p">++;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p><strong>What You’ll Do:</strong></p>
+<ul>
+<li>Write a program to print “Coding is fun!” five times:</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl"><span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="p">=</span> <span class="m">1</span><span class="p">;</span> <span class="n">i</span> <span class="p">&lt;=</span> <span class="m">5</span><span class="p">;</span> <span class="n">i</span><span class="p">++)</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&#34;Coding is fun!&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><ul>
+<li>Use a <code>while</code> loop to keep asking for a positive number:</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl"><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&#34;Enter a positive number:&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="n">num</span> <span class="p">=</span> <span class="kt">int</span><span class="p">.</span><span class="n">Parse</span><span class="p">(</span><span class="n">Console</span><span class="p">.</span><span class="n">ReadLine</span><span class="p">());</span>
+</span></span><span class="line"><span class="cl"><span class="k">while</span> <span class="p">(</span><span class="n">num</span> <span class="p">&lt;=</span> <span class="m">0</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&#34;Please enter a positive number:&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="n">num</span> <span class="p">=</span> <span class="kt">int</span><span class="p">.</span><span class="n">Parse</span><span class="p">(</span><span class="n">Console</span><span class="p">.</span><span class="n">ReadLine</span><span class="p">());</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&#34;Thanks! You entered &#34;</span> <span class="p">+</span> <span class="n">num</span><span class="p">);</span>
+</span></span></code></pre></div><p><strong>By the End:</strong> You’ll know how to make your programs repeat tasks effortlessly.</p>
+<h3 id="session-8-smarter-programs-with-loops-and-logic">
+  Session 8: Smarter Programs with Loops and Logic
+  <a class="heading-link" href="#session-8-smarter-programs-with-loops-and-logic">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>Now, combine decisions and loops to build more interesting programs. You can put <code>if</code> statements inside loops or use <code>break</code> to stop a loop early and <code>continue</code> to skip a step.</p>
+<p>Here’s an example that prints only odd numbers:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl"><span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="p">=</span> <span class="m">1</span><span class="p">;</span> <span class="n">i</span> <span class="p">&lt;=</span> <span class="m">10</span><span class="p">;</span> <span class="n">i</span><span class="p">++)</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="p">(</span><span class="n">i</span> <span class="p">%</span> <span class="m">2</span> <span class="p">==</span> <span class="m">0</span><span class="p">)</span> <span class="c1">// If i is even</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">continue</span><span class="p">;</span> <span class="c1">// Skip to next iteration</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="n">i</span><span class="p">);</span> <span class="c1">// Prints 1, 3, 5, 7, 9</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p><strong>What You’ll Do:</strong></p>
+<ul>
+<li>Write a program to print multiples of 3 from 1 to 15:</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl"><span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="p">=</span> <span class="m">1</span><span class="p">;</span> <span class="n">i</span> <span class="p">&lt;=</span> <span class="m">15</span><span class="p">;</span> <span class="n">i</span><span class="p">++)</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="p">(</span><span class="n">i</span> <span class="p">%</span> <span class="m">3</span> <span class="p">==</span> <span class="m">0</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="n">i</span><span class="p">);</span> <span class="c1">// Prints 3, 6, 9, 12, 15</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><ul>
+<li>Create a number-guessing game:</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl"><span class="kt">int</span> <span class="n">secret</span> <span class="p">=</span> <span class="m">7</span><span class="p">;</span> <span class="c1">// Could be random later</span>
+</span></span><span class="line"><span class="cl"><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&#34;Guess a number between 1 and 10:&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="n">guess</span> <span class="p">=</span> <span class="kt">int</span><span class="p">.</span><span class="n">Parse</span><span class="p">(</span><span class="n">Console</span><span class="p">.</span><span class="n">ReadLine</span><span class="p">());</span>
+</span></span><span class="line"><span class="cl"><span class="k">while</span> <span class="p">(</span><span class="n">guess</span> <span class="p">!=</span> <span class="n">secret</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&#34;Wrong! Try again:&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="n">guess</span> <span class="p">=</span> <span class="kt">int</span><span class="p">.</span><span class="n">Parse</span><span class="p">(</span><span class="n">Console</span><span class="p">.</span><span class="n">ReadLine</span><span class="p">());</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&#34;You got it!&#34;</span><span class="p">);</span>
+</span></span></code></pre></div><p><strong>By the End:</strong> You’ll be building programs that think and repeat in clever ways.</p>
+<h2 id="module-4-writing-reusable-code">
+  Module 4: Writing Reusable Code
+  <a class="heading-link" href="#module-4-writing-reusable-code">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p><strong>What’s the Goal?</strong> Organize your code into reusable pieces called methods.<br>
+<strong>How Long?</strong> 2 sessions</p>
+<h3 id="session-9-introducing-methods">
+  Session 9: Introducing Methods
+  <a class="heading-link" href="#session-9-introducing-methods">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>Methods are like recipes you can use over and over. Instead of rewriting code, you define a method once and <em>call</em> it whenever you need it. A method looks like this:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl"><span class="kd">static</span> <span class="k">void</span> <span class="n">SayHello</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&#34;Hello, coder!&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p>You call it in your <code>Main</code> method:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl"><span class="kd">static</span> <span class="k">void</span> <span class="n">Main</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">SayHello</span><span class="p">();</span> <span class="c1">// Prints: Hello, coder!</span>
+</span></span><span class="line"><span class="cl">    <span class="n">SayHello</span><span class="p">();</span> <span class="c1">// Prints it again!</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p><strong>What You’ll Do:</strong></p>
+<ul>
+<li>Create a method to print a welcome message:</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl"><span class="kd">static</span> <span class="k">void</span> <span class="n">Welcome</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&#34;Welcome to my program!&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kd">static</span> <span class="k">void</span> <span class="n">Main</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">Welcome</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">    <span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&#34;Let’s code!&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="n">Welcome</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><ul>
+<li>Write a method with a parameter to make it flexible:</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl"><span class="kd">static</span> <span class="k">void</span> <span class="n">Greet</span><span class="p">(</span><span class="kt">string</span> <span class="n">name</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&#34;Hi, &#34;</span> <span class="p">+</span> <span class="n">name</span> <span class="p">+</span> <span class="s">&#34;!&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kd">static</span> <span class="k">void</span> <span class="n">Main</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">Greet</span><span class="p">(</span><span class="s">&#34;Alex&#34;</span><span class="p">);</span> <span class="c1">// Prints: Hi, Alex!</span>
+</span></span><span class="line"><span class="cl">    <span class="n">Greet</span><span class="p">(</span><span class="s">&#34;Zoe&#34;</span><span class="p">);</span>  <span class="c1">// Prints: Hi, Zoe!</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p><strong>By the End:</strong> You’ll know how to create and use methods to keep your code tidy.</p>
+<h3 id="session-10-methods-that-do-more">
+  Session 10: Methods That Do More
+  <a class="heading-link" href="#session-10-methods-that-do-more">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>Methods can take inputs (parameters) and give back results (return values). For example:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl"><span class="kd">static</span> <span class="kt">int</span> <span class="n">Square</span><span class="p">(</span><span class="kt">int</span> <span class="n">number</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">number</span> <span class="p">*</span> <span class="n">number</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kd">static</span> <span class="k">void</span> <span class="n">Main</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">result</span> <span class="p">=</span> <span class="n">Square</span><span class="p">(</span><span class="m">4</span><span class="p">);</span> <span class="c1">// 4 * 4 = 16</span>
+</span></span><span class="line"><span class="cl">    <span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&#34;Square is &#34;</span> <span class="p">+</span> <span class="n">result</span><span class="p">);</span> <span class="c1">// Prints: Square is 16</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p>The <code>return</code> statement sends a value back, and <code>int</code> (instead of <code>void</code>) says what type it returns.</p>
+<p><strong>What You’ll Do:</strong></p>
+<ul>
+<li>Write a method to add numbers:</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl"><span class="kd">static</span> <span class="kt">int</span> <span class="n">Add</span><span class="p">(</span><span class="kt">int</span> <span class="n">a</span><span class="p">,</span> <span class="kt">int</span> <span class="n">b</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">a</span> <span class="p">+</span> <span class="n">b</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kd">static</span> <span class="k">void</span> <span class="n">Main</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">sum</span> <span class="p">=</span> <span class="n">Add</span><span class="p">(</span><span class="m">10</span><span class="p">,</span> <span class="m">5</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&#34;Sum: &#34;</span> <span class="p">+</span> <span class="n">sum</span><span class="p">);</span> <span class="c1">// Prints: Sum: 15</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><ul>
+<li>Create a method to check if a number is positive:</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl"><span class="kd">static</span> <span class="kt">bool</span> <span class="n">IsPositive</span><span class="p">(</span><span class="kt">int</span> <span class="n">number</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">number</span> <span class="p">&gt;</span> <span class="m">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kd">static</span> <span class="k">void</span> <span class="n">Main</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">num</span> <span class="p">=</span> <span class="m">8</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="p">(</span><span class="n">IsPositive</span><span class="p">(</span><span class="n">num</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="n">num</span> <span class="p">+</span> <span class="s">&#34; is positive!&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p><strong>By the End:</strong> You’ll be writing methods that process data and make your programs powerful.</p>
+<h2 id="module-5-building-something-real">
+  Module 5: Building Something Real
+  <a class="heading-link" href="#module-5-building-something-real">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p><strong>What’s the Goal?</strong> Use everything you’ve learned to create a working program.<br>
+<strong>How Long?</strong> 1-2 sessions</p>
+<h3 id="session-11-your-capstone-project">
+  Session 11: Your Capstone Project
+  <a class="heading-link" href="#session-11-your-capstone-project">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>It’s time to shine! You’ll build a small project, like a number-guessing game, combining variables, input, decisions, loops, and methods. Here’s a sample game:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl"><span class="kd">static</span> <span class="k">void</span> <span class="n">Main</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">Random</span> <span class="n">rand</span> <span class="p">=</span> <span class="k">new</span> <span class="n">Random</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">secret</span> <span class="p">=</span> <span class="n">rand</span><span class="p">.</span><span class="n">Next</span><span class="p">(</span><span class="m">1</span><span class="p">,</span> <span class="m">11</span><span class="p">);</span> <span class="c1">// Random number 1-10</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">guess</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&#34;Guess the number (1-10):&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl">    <span class="k">do</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="n">guess</span> <span class="p">=</span> <span class="kt">int</span><span class="p">.</span><span class="n">Parse</span><span class="p">(</span><span class="n">Console</span><span class="p">.</span><span class="n">ReadLine</span><span class="p">());</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="p">(</span><span class="n">guess</span> <span class="p">&lt;</span> <span class="n">secret</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&#34;Too low! Try again:&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">guess</span> <span class="p">&gt;</span> <span class="n">secret</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&#34;Too high! Try again:&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span> <span class="k">while</span> <span class="p">(</span><span class="n">guess</span> <span class="p">!=</span> <span class="n">secret</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl">    <span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&#34;You guessed it!&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p>This uses a <code>Random</code> object for the secret number and a <code>do-while</code> loop to keep guessing.</p>
+<p><strong>What You’ll Do:</strong></p>
+<ul>
+<li>Plan your project (e.g., a guessing game or a simple calculator).</li>
+<li>Code it step-by-step, testing as you go.</li>
+<li>Debug any issues (like if the program crashes on bad input).</li>
+</ul>
+<p><strong>By the End:</strong> You’ll have a program you built from scratch—something to show off!</p>
+<h3 id="session-12-optional-polishing-and-planning-ahead">
+  Session 12 (Optional): Polishing and Planning Ahead
+  <a class="heading-link" href="#session-12-optional-polishing-and-planning-ahead">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>Let’s make your project even better and think about what’s next. You’ll learn to catch errors with <code>try-catch</code>:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl"><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&#34;Enter a number:&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="k">try</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">num</span> <span class="p">=</span> <span class="kt">int</span><span class="p">.</span><span class="n">Parse</span><span class="p">(</span><span class="n">Console</span><span class="p">.</span><span class="n">ReadLine</span><span class="p">());</span>
+</span></span><span class="line"><span class="cl">    <span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&#34;You entered &#34;</span> <span class="p">+</span> <span class="n">num</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="k">catch</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&#34;That’s not a number!&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p>You’ll also get tips on using Visual Studio’s debugger to find bugs by stepping through code.</p>
+<p><strong>What You’ll Do:</strong></p>
+<ul>
+<li>Add a feature to your project, like tracking the number of guesses:</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-csharp" data-lang="csharp"><span class="line"><span class="cl"><span class="kt">int</span> <span class="n">tries</span> <span class="p">=</span> <span class="m">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="k">do</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">tries</span><span class="p">++;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">guess</span> <span class="p">=</span> <span class="kt">int</span><span class="p">.</span><span class="n">Parse</span><span class="p">(</span><span class="n">Console</span><span class="p">.</span><span class="n">ReadLine</span><span class="p">());</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// Rest of guessing logic</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span> <span class="k">while</span> <span class="p">(</span><span class="n">guess</span> <span class="p">!=</span> <span class="n">secret</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&#34;You won in &#34;</span> <span class="p">+</span> <span class="n">tries</span> <span class="p">+</span> <span class="s">&#34; tries!&#34;</span><span class="p">);</span>
+</span></span></code></pre></div><ul>
+<li>Explore next steps, like learning arrays (lists of data) or object-oriented programming.</li>
+</ul>
+<p><strong>By the End:</strong> Your project will feel professional, and you’ll be excited to keep coding.</p>
+<h2 id="wrapping-up-the-course">
+  Wrapping Up the Course
+  <a class="heading-link" href="#wrapping-up-the-course">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>You’ll submit your capstone project—a real program you created! There’s no tough grading; we celebrate your effort. You might even get a “Completion of C# Basics” certificate to mark your achievement.</p>
+<h3 id="tips-for-instructors">
+  Tips for Instructors
+  <a class="heading-link" href="#tips-for-instructors">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<ul>
+<li><strong>Go Slow if Needed:</strong> Some learners may take longer to grasp loops or methods—give them time.</li>
+<li><strong>Code, Code, Code:</strong> Every session needs hands-on practice, even if it’s just tweaking examples.</li>
+<li><strong>Embrace Mistakes:</strong> Errors are learning opportunities—show how to fix them.</li>
+<li><strong>Handy Helper:</strong> Share a syntax cheat sheet (e.g., <code>if</code>, <code>for</code>, method examples) for quick reference.</li>
+</ul>
+<hr>
+<h4 id="this-course-is-your-gateway-to-coding-with-c-with-variables-loops-decisions-and-methods-under-your-belt-youre-ready-to-tackle-bigger-challenges-grab-visual-studio-try-the-examples-and-start-buildingyour-coding-adventure-awaits">
+  This course is your gateway to coding with C#. With variables, loops, decisions, and methods under your belt, you’re ready to tackle bigger challenges. Grab Visual Studio, try the examples, and start building—your coding adventure awaits!
+  <a class="heading-link" href="#this-course-is-your-gateway-to-coding-with-c-with-variables-loops-decisions-and-methods-under-your-belt-youre-ready-to-tackle-bigger-challenges-grab-visual-studio-try-the-examples-and-start-buildingyour-coding-adventure-awaits">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h4>
+<hr>
+<h3 id="you-can-follow-me-on-the-linkedin-youtube-telegram-group-to-discuss-and-directly-send-me-email">
+  You can follow me on the LinkedIn, YouTube, Telegram Group to discuss, and directly send me email.
+  <a class="heading-link" href="#you-can-follow-me-on-the-linkedin-youtube-telegram-group-to-discuss-and-directly-send-me-email">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<ul>
+<li><a href="https://t.me/sadinco_csharp"  class="external-link" target="_blank" rel="noopener">Telegram Group</a></li>
+<li><a href="https://linkedin.com/in/MrSadin"  class="external-link" target="_blank" rel="noopener">LinkedIn</a></li>
+<li><a href="https://sadin.dev"  class="external-link" target="_blank" rel="noopener">Blog</a></li>
+<li><a href="https://youtube.com/c/EnKamran"  class="external-link" target="_blank" rel="noopener">YouTube</a></li>
+</ul>
+
+      </div>
+
+
+      <footer>
+        
+
+<section class="see-also">
+  
+    
+    
+    
+  
+</section>
+
+
+        <div id="disqus_thread"></div>
+<script>
+  window.disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "a-programmer" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+    
+    document.addEventListener('themeChanged', function (e) { 
+        if (document.readyState == 'complete') {
+          DISQUS.reset({ reload: true, config: disqus_config });
+        }
+    });
+</script>
+        
+        
+        
+        
+        
+        
+      </footer>
+    </article>
+
+    
+  </section>
+
+    </div>
+
+    <footer class="footer">
+  <section class="container">
+    ©
+    
+      2019 -
+    
+    2025
+     Kamran Sadin 
+    ·
+    
+  </section>
+</footer>
+
+  </main>
+
+  
+
+  
+  
+  <script src="/js/coder.js"></script>
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-DQWLT4H0ND"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-DQWLT4H0ND');
+</script>
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</body>
+</html>

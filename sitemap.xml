@@ -2,6 +2,12 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://sadin.dev/</loc>
+    <lastmod>2025-04-12T08:37:01+03:30</lastmod>
+  </url><url>
+    <loc>https://sadin.dev/posts/</loc>
+    <lastmod>2025-04-12T08:37:01+03:30</lastmod>
+  </url><url>
     <loc>https://sadin.dev/tags/.net/</loc>
     <lastmod>2025-03-10T17:18:38+03:30</lastmod>
   </url><url>
@@ -29,13 +35,7 @@
     <loc>https://sadin.dev/posts/introduction-to-c-sharp/</loc>
     <lastmod>2025-03-10T17:18:38+03:30</lastmod>
   </url><url>
-    <loc>https://sadin.dev/</loc>
-    <lastmod>2025-03-10T17:18:38+03:30</lastmod>
-  </url><url>
     <loc>https://sadin.dev/authors/kamran-sadin/</loc>
-    <lastmod>2025-03-10T17:18:38+03:30</lastmod>
-  </url><url>
-    <loc>https://sadin.dev/posts/</loc>
     <lastmod>2025-03-10T17:18:38+03:30</lastmod>
   </url><url>
     <loc>https://sadin.dev/series/</loc>
