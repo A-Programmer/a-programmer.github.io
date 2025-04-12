@@ -2,360 +2,374 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Kamran Sadin</title>
-    <link>https://sadin.dev/tags/</link>
+    <link>http://localhost:1313/tags/</link>
     <description>Recent content in Tags on Kamran Sadin</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 10 Mar 2025 17:18:38 +0330</lastBuildDate>
-    <atom:link href="https://sadin.dev/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 12 Apr 2025 08:37:01 +0330</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>.NET</title>
-      <link>https://sadin.dev/tags/.net/</link>
-      <pubDate>Mon, 10 Mar 2025 17:18:38 +0330</pubDate>
-      <guid>https://sadin.dev/tags/.net/</guid>
+      <link>http://localhost:1313/tags/.net/</link>
+      <pubDate>Sat, 12 Apr 2025 08:37:01 +0330</pubDate>
+      <guid>http://localhost:1313/tags/.net/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Beginners</title>
+      <link>http://localhost:1313/tags/beginners/</link>
+      <pubDate>Sat, 12 Apr 2025 08:37:01 +0330</pubDate>
+      <guid>http://localhost:1313/tags/beginners/</guid>
       <description></description>
     </item>
     <item>
       <title>C#</title>
-      <link>https://sadin.dev/tags/c%23/</link>
-      <pubDate>Mon, 10 Mar 2025 17:18:38 +0330</pubDate>
-      <guid>https://sadin.dev/tags/c%23/</guid>
+      <link>http://localhost:1313/tags/c%23/</link>
+      <pubDate>Sat, 12 Apr 2025 08:37:01 +0330</pubDate>
+      <guid>http://localhost:1313/tags/c%23/</guid>
       <description></description>
     </item>
     <item>
       <title>CSharp</title>
-      <link>https://sadin.dev/tags/csharp/</link>
-      <pubDate>Mon, 10 Mar 2025 17:18:38 +0330</pubDate>
-      <guid>https://sadin.dev/tags/csharp/</guid>
+      <link>http://localhost:1313/tags/csharp/</link>
+      <pubDate>Sat, 12 Apr 2025 08:37:01 +0330</pubDate>
+      <guid>http://localhost:1313/tags/csharp/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>From_Scratch</title>
+      <link>http://localhost:1313/tags/from_scratch/</link>
+      <pubDate>Sat, 12 Apr 2025 08:37:01 +0330</pubDate>
+      <guid>http://localhost:1313/tags/from_scratch/</guid>
       <description></description>
     </item>
     <item>
       <title>Introduction</title>
-      <link>https://sadin.dev/tags/introduction/</link>
+      <link>http://localhost:1313/tags/introduction/</link>
       <pubDate>Mon, 10 Mar 2025 17:18:38 +0330</pubDate>
-      <guid>https://sadin.dev/tags/introduction/</guid>
+      <guid>http://localhost:1313/tags/introduction/</guid>
       <description></description>
     </item>
     <item>
       <title>EDD</title>
-      <link>https://sadin.dev/tags/edd/</link>
+      <link>http://localhost:1313/tags/edd/</link>
       <pubDate>Mon, 03 Mar 2025 07:30:27 +0330</pubDate>
-      <guid>https://sadin.dev/tags/edd/</guid>
+      <guid>http://localhost:1313/tags/edd/</guid>
       <description></description>
     </item>
     <item>
       <title>Event Sourcing</title>
-      <link>https://sadin.dev/tags/event-sourcing/</link>
+      <link>http://localhost:1313/tags/event-sourcing/</link>
       <pubDate>Mon, 03 Mar 2025 07:30:27 +0330</pubDate>
-      <guid>https://sadin.dev/tags/event-sourcing/</guid>
+      <guid>http://localhost:1313/tags/event-sourcing/</guid>
       <description></description>
     </item>
     <item>
       <title>Kamran Sadin</title>
-      <link>https://sadin.dev/tags/kamran-sadin/</link>
+      <link>http://localhost:1313/tags/kamran-sadin/</link>
       <pubDate>Mon, 03 Mar 2025 07:30:27 +0330</pubDate>
-      <guid>https://sadin.dev/tags/kamran-sadin/</guid>
+      <guid>http://localhost:1313/tags/kamran-sadin/</guid>
       <description></description>
     </item>
     <item>
       <title>1000daysofcsharp</title>
-      <link>https://sadin.dev/tags/1000daysofcsharp/</link>
+      <link>http://localhost:1313/tags/1000daysofcsharp/</link>
       <pubDate>Fri, 17 Nov 2023 00:00:00 +0000</pubDate>
-      <guid>https://sadin.dev/tags/1000daysofcsharp/</guid>
+      <guid>http://localhost:1313/tags/1000daysofcsharp/</guid>
       <description></description>
     </item>
     <item>
       <title>Basic</title>
-      <link>https://sadin.dev/tags/basic/</link>
+      <link>http://localhost:1313/tags/basic/</link>
       <pubDate>Fri, 17 Nov 2023 00:00:00 +0000</pubDate>
-      <guid>https://sadin.dev/tags/basic/</guid>
+      <guid>http://localhost:1313/tags/basic/</guid>
       <description></description>
     </item>
     <item>
       <title>C# Developer Roadmap</title>
-      <link>https://sadin.dev/tags/c%23-developer-roadmap/</link>
+      <link>http://localhost:1313/tags/c%23-developer-roadmap/</link>
       <pubDate>Fri, 17 Nov 2023 00:00:00 +0000</pubDate>
-      <guid>https://sadin.dev/tags/c%23-developer-roadmap/</guid>
+      <guid>http://localhost:1313/tags/c%23-developer-roadmap/</guid>
       <description></description>
     </item>
     <item>
       <title>Data Type</title>
-      <link>https://sadin.dev/tags/data-type/</link>
+      <link>http://localhost:1313/tags/data-type/</link>
       <pubDate>Fri, 17 Nov 2023 00:00:00 +0000</pubDate>
-      <guid>https://sadin.dev/tags/data-type/</guid>
+      <guid>http://localhost:1313/tags/data-type/</guid>
       <description></description>
     </item>
     <item>
       <title>Step 1</title>
-      <link>https://sadin.dev/tags/step-1/</link>
+      <link>http://localhost:1313/tags/step-1/</link>
       <pubDate>Fri, 17 Nov 2023 00:00:00 +0000</pubDate>
-      <guid>https://sadin.dev/tags/step-1/</guid>
+      <guid>http://localhost:1313/tags/step-1/</guid>
       <description></description>
     </item>
     <item>
       <title>Fields</title>
-      <link>https://sadin.dev/tags/fields/</link>
+      <link>http://localhost:1313/tags/fields/</link>
       <pubDate>Wed, 15 Nov 2023 00:00:00 +0000</pubDate>
-      <guid>https://sadin.dev/tags/fields/</guid>
+      <guid>http://localhost:1313/tags/fields/</guid>
       <description></description>
     </item>
     <item>
       <title>Fields and Properties</title>
-      <link>https://sadin.dev/tags/fields-and-properties/</link>
+      <link>http://localhost:1313/tags/fields-and-properties/</link>
       <pubDate>Wed, 15 Nov 2023 00:00:00 +0000</pubDate>
-      <guid>https://sadin.dev/tags/fields-and-properties/</guid>
+      <guid>http://localhost:1313/tags/fields-and-properties/</guid>
       <description></description>
     </item>
     <item>
       <title>Properties</title>
-      <link>https://sadin.dev/tags/properties/</link>
+      <link>http://localhost:1313/tags/properties/</link>
       <pubDate>Wed, 15 Nov 2023 00:00:00 +0000</pubDate>
-      <guid>https://sadin.dev/tags/properties/</guid>
+      <guid>http://localhost:1313/tags/properties/</guid>
       <description></description>
     </item>
     <item>
       <title>Loops</title>
-      <link>https://sadin.dev/tags/loops/</link>
+      <link>http://localhost:1313/tags/loops/</link>
       <pubDate>Mon, 13 Nov 2023 00:00:00 +0000</pubDate>
-      <guid>https://sadin.dev/tags/loops/</guid>
+      <guid>http://localhost:1313/tags/loops/</guid>
       <description></description>
     </item>
     <item>
       <title>Conditionals</title>
-      <link>https://sadin.dev/tags/conditionals/</link>
+      <link>http://localhost:1313/tags/conditionals/</link>
       <pubDate>Thu, 09 Nov 2023 00:00:00 +0000</pubDate>
-      <guid>https://sadin.dev/tags/conditionals/</guid>
+      <guid>http://localhost:1313/tags/conditionals/</guid>
       <description></description>
     </item>
     <item>
       <title>Variable</title>
-      <link>https://sadin.dev/tags/variable/</link>
+      <link>http://localhost:1313/tags/variable/</link>
       <pubDate>Tue, 07 Nov 2023 00:00:00 +0000</pubDate>
-      <guid>https://sadin.dev/tags/variable/</guid>
+      <guid>http://localhost:1313/tags/variable/</guid>
       <description></description>
     </item>
     <item>
       <title>Advanced</title>
-      <link>https://sadin.dev/tags/advanced/</link>
+      <link>http://localhost:1313/tags/advanced/</link>
       <pubDate>Fri, 03 Nov 2023 00:00:00 +0000</pubDate>
-      <guid>https://sadin.dev/tags/advanced/</guid>
+      <guid>http://localhost:1313/tags/advanced/</guid>
       <description></description>
     </item>
     <item>
       <title>Delegates</title>
-      <link>https://sadin.dev/tags/delegates/</link>
+      <link>http://localhost:1313/tags/delegates/</link>
       <pubDate>Fri, 03 Nov 2023 00:00:00 +0000</pubDate>
-      <guid>https://sadin.dev/tags/delegates/</guid>
+      <guid>http://localhost:1313/tags/delegates/</guid>
       <description></description>
     </item>
     <item>
       <title>Eventhandler</title>
-      <link>https://sadin.dev/tags/eventhandler/</link>
+      <link>http://localhost:1313/tags/eventhandler/</link>
       <pubDate>Fri, 03 Nov 2023 00:00:00 +0000</pubDate>
-      <guid>https://sadin.dev/tags/eventhandler/</guid>
+      <guid>http://localhost:1313/tags/eventhandler/</guid>
       <description></description>
     </item>
     <item>
       <title>Events</title>
-      <link>https://sadin.dev/tags/events/</link>
+      <link>http://localhost:1313/tags/events/</link>
       <pubDate>Fri, 03 Nov 2023 00:00:00 +0000</pubDate>
-      <guid>https://sadin.dev/tags/events/</guid>
+      <guid>http://localhost:1313/tags/events/</guid>
       <description></description>
     </item>
     <item>
       <title>Dependency Inversion Principle</title>
-      <link>https://sadin.dev/tags/dependency-inversion-principle/</link>
+      <link>http://localhost:1313/tags/dependency-inversion-principle/</link>
       <pubDate>Thu, 26 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>https://sadin.dev/tags/dependency-inversion-principle/</guid>
+      <guid>http://localhost:1313/tags/dependency-inversion-principle/</guid>
       <description></description>
     </item>
     <item>
       <title>Dip</title>
-      <link>https://sadin.dev/tags/dip/</link>
+      <link>http://localhost:1313/tags/dip/</link>
       <pubDate>Thu, 26 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>https://sadin.dev/tags/dip/</guid>
+      <guid>http://localhost:1313/tags/dip/</guid>
       <description></description>
     </item>
     <item>
       <title>Software Design</title>
-      <link>https://sadin.dev/tags/software-design/</link>
+      <link>http://localhost:1313/tags/software-design/</link>
       <pubDate>Thu, 26 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>https://sadin.dev/tags/software-design/</guid>
+      <guid>http://localhost:1313/tags/software-design/</guid>
       <description></description>
     </item>
     <item>
       <title>Software Principles</title>
-      <link>https://sadin.dev/tags/software-principles/</link>
+      <link>http://localhost:1313/tags/software-principles/</link>
       <pubDate>Thu, 26 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>https://sadin.dev/tags/software-principles/</guid>
+      <guid>http://localhost:1313/tags/software-principles/</guid>
       <description></description>
     </item>
     <item>
       <title>Solid</title>
-      <link>https://sadin.dev/tags/solid/</link>
+      <link>http://localhost:1313/tags/solid/</link>
       <pubDate>Thu, 26 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>https://sadin.dev/tags/solid/</guid>
+      <guid>http://localhost:1313/tags/solid/</guid>
       <description></description>
     </item>
     <item>
       <title>Interface Segregation Principle</title>
-      <link>https://sadin.dev/tags/interface-segregation-principle/</link>
+      <link>http://localhost:1313/tags/interface-segregation-principle/</link>
       <pubDate>Tue, 24 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>https://sadin.dev/tags/interface-segregation-principle/</guid>
+      <guid>http://localhost:1313/tags/interface-segregation-principle/</guid>
       <description></description>
     </item>
     <item>
       <title>Isp</title>
-      <link>https://sadin.dev/tags/isp/</link>
+      <link>http://localhost:1313/tags/isp/</link>
       <pubDate>Tue, 24 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>https://sadin.dev/tags/isp/</guid>
+      <guid>http://localhost:1313/tags/isp/</guid>
       <description></description>
     </item>
     <item>
       <title>Liskov Substitution Principle</title>
-      <link>https://sadin.dev/tags/liskov-substitution-principle/</link>
+      <link>http://localhost:1313/tags/liskov-substitution-principle/</link>
       <pubDate>Sun, 22 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>https://sadin.dev/tags/liskov-substitution-principle/</guid>
+      <guid>http://localhost:1313/tags/liskov-substitution-principle/</guid>
       <description></description>
     </item>
     <item>
       <title>Lsp</title>
-      <link>https://sadin.dev/tags/lsp/</link>
+      <link>http://localhost:1313/tags/lsp/</link>
       <pubDate>Sun, 22 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>https://sadin.dev/tags/lsp/</guid>
+      <guid>http://localhost:1313/tags/lsp/</guid>
       <description></description>
     </item>
     <item>
       <title>Ocp</title>
-      <link>https://sadin.dev/tags/ocp/</link>
+      <link>http://localhost:1313/tags/ocp/</link>
       <pubDate>Fri, 20 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>https://sadin.dev/tags/ocp/</guid>
+      <guid>http://localhost:1313/tags/ocp/</guid>
       <description></description>
     </item>
     <item>
       <title>Open Closed Principle</title>
-      <link>https://sadin.dev/tags/open-closed-principle/</link>
+      <link>http://localhost:1313/tags/open-closed-principle/</link>
       <pubDate>Fri, 20 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>https://sadin.dev/tags/open-closed-principle/</guid>
+      <guid>http://localhost:1313/tags/open-closed-principle/</guid>
       <description></description>
     </item>
     <item>
       <title>Single Responsibility Principle</title>
-      <link>https://sadin.dev/tags/single-responsibility-principle/</link>
+      <link>http://localhost:1313/tags/single-responsibility-principle/</link>
       <pubDate>Wed, 18 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>https://sadin.dev/tags/single-responsibility-principle/</guid>
+      <guid>http://localhost:1313/tags/single-responsibility-principle/</guid>
       <description></description>
     </item>
     <item>
       <title>Srp</title>
-      <link>https://sadin.dev/tags/srp/</link>
+      <link>http://localhost:1313/tags/srp/</link>
       <pubDate>Wed, 18 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>https://sadin.dev/tags/srp/</guid>
+      <guid>http://localhost:1313/tags/srp/</guid>
       <description></description>
     </item>
     <item>
       <title>Abstract</title>
-      <link>https://sadin.dev/tags/abstract/</link>
+      <link>http://localhost:1313/tags/abstract/</link>
       <pubDate>Fri, 06 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>https://sadin.dev/tags/abstract/</guid>
+      <guid>http://localhost:1313/tags/abstract/</guid>
       <description></description>
     </item>
     <item>
       <title>Inheritance</title>
-      <link>https://sadin.dev/tags/inheritance/</link>
+      <link>http://localhost:1313/tags/inheritance/</link>
       <pubDate>Fri, 06 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>https://sadin.dev/tags/inheritance/</guid>
+      <guid>http://localhost:1313/tags/inheritance/</guid>
       <description></description>
     </item>
     <item>
       <title>Interface</title>
-      <link>https://sadin.dev/tags/interface/</link>
+      <link>http://localhost:1313/tags/interface/</link>
       <pubDate>Fri, 06 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>https://sadin.dev/tags/interface/</guid>
+      <guid>http://localhost:1313/tags/interface/</guid>
       <description></description>
     </item>
     <item>
       <title>Oop</title>
-      <link>https://sadin.dev/tags/oop/</link>
+      <link>http://localhost:1313/tags/oop/</link>
       <pubDate>Fri, 06 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>https://sadin.dev/tags/oop/</guid>
+      <guid>http://localhost:1313/tags/oop/</guid>
       <description></description>
     </item>
     <item>
       <title>Action</title>
-      <link>https://sadin.dev/tags/action/</link>
+      <link>http://localhost:1313/tags/action/</link>
       <pubDate>Wed, 04 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>https://sadin.dev/tags/action/</guid>
+      <guid>http://localhost:1313/tags/action/</guid>
       <description></description>
     </item>
     <item>
       <title>Day22</title>
-      <link>https://sadin.dev/tags/day22/</link>
+      <link>http://localhost:1313/tags/day22/</link>
       <pubDate>Wed, 04 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>https://sadin.dev/tags/day22/</guid>
+      <guid>http://localhost:1313/tags/day22/</guid>
       <description></description>
     </item>
     <item>
       <title>Delegate</title>
-      <link>https://sadin.dev/tags/delegate/</link>
+      <link>http://localhost:1313/tags/delegate/</link>
       <pubDate>Wed, 04 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>https://sadin.dev/tags/delegate/</guid>
+      <guid>http://localhost:1313/tags/delegate/</guid>
       <description></description>
     </item>
     <item>
       <title>Func</title>
-      <link>https://sadin.dev/tags/func/</link>
+      <link>http://localhost:1313/tags/func/</link>
       <pubDate>Wed, 04 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>https://sadin.dev/tags/func/</guid>
+      <guid>http://localhost:1313/tags/func/</guid>
       <description></description>
     </item>
     <item>
       <title>Generic Delegates</title>
-      <link>https://sadin.dev/tags/generic-delegates/</link>
+      <link>http://localhost:1313/tags/generic-delegates/</link>
       <pubDate>Wed, 04 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>https://sadin.dev/tags/generic-delegates/</guid>
+      <guid>http://localhost:1313/tags/generic-delegates/</guid>
       <description></description>
     </item>
     <item>
       <title>Multicast Delegates</title>
-      <link>https://sadin.dev/tags/multicast-delegates/</link>
+      <link>http://localhost:1313/tags/multicast-delegates/</link>
       <pubDate>Wed, 04 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>https://sadin.dev/tags/multicast-delegates/</guid>
+      <guid>http://localhost:1313/tags/multicast-delegates/</guid>
       <description></description>
     </item>
     <item>
       <title>Day21</title>
-      <link>https://sadin.dev/tags/day21/</link>
+      <link>http://localhost:1313/tags/day21/</link>
       <pubDate>Sun, 01 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>https://sadin.dev/tags/day21/</guid>
+      <guid>http://localhost:1313/tags/day21/</guid>
       <description></description>
     </item>
     <item>
       <title>Plug-in Methods</title>
-      <link>https://sadin.dev/tags/plug-in-methods/</link>
+      <link>http://localhost:1313/tags/plug-in-methods/</link>
       <pubDate>Sun, 01 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>https://sadin.dev/tags/plug-in-methods/</guid>
+      <guid>http://localhost:1313/tags/plug-in-methods/</guid>
       <description></description>
     </item>
     <item>
       <title>What Is Delegate</title>
-      <link>https://sadin.dev/tags/what-is-delegate/</link>
+      <link>http://localhost:1313/tags/what-is-delegate/</link>
       <pubDate>Sun, 01 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>https://sadin.dev/tags/what-is-delegate/</guid>
+      <guid>http://localhost:1313/tags/what-is-delegate/</guid>
       <description></description>
     </item>
     <item>
       <title>Hello-World</title>
-      <link>https://sadin.dev/tags/hello-world/</link>
+      <link>http://localhost:1313/tags/hello-world/</link>
       <pubDate>Sat, 30 Sep 2023 00:00:00 +0000</pubDate>
-      <guid>https://sadin.dev/tags/hello-world/</guid>
+      <guid>http://localhost:1313/tags/hello-world/</guid>
       <description></description>
     </item>
     <item>
       <title>Roadmap</title>
-      <link>https://sadin.dev/tags/roadmap/</link>
+      <link>http://localhost:1313/tags/roadmap/</link>
       <pubDate>Sat, 30 Sep 2023 00:00:00 +0000</pubDate>
-      <guid>https://sadin.dev/tags/roadmap/</guid>
+      <guid>http://localhost:1313/tags/roadmap/</guid>
       <description></description>
     </item>
   </channel>

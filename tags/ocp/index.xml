@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Ocp on Kamran Sadin</title>
-    <link>https://sadin.dev/tags/ocp/</link>
+    <link>http://localhost:1313/tags/ocp/</link>
     <description>Recent content in Ocp on Kamran Sadin</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Fri, 20 Oct 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://sadin.dev/tags/ocp/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/ocp/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Open Closed Principle</title>
-      <link>https://sadin.dev/posts/2023-10-20-open-closed-principle/</link>
+      <link>http://localhost:1313/posts/2023-10-20-open-closed-principle/</link>
       <pubDate>Fri, 20 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>https://sadin.dev/posts/2023-10-20-open-closed-principle/</guid>
+      <guid>http://localhost:1313/posts/2023-10-20-open-closed-principle/</guid>
       <description>&lt;p&gt;In the realm of software design, certain principles serve as guiding lights for creating maintainable, flexible, and scalable codebases. One such foundational principle is the &lt;strong&gt;Open/Closed Principle (OCP)&lt;/strong&gt;. OCP is a crucial component of the SOLID principles, initially introduced by Bertrand Meyer. Understanding and applying the Open/Closed Principle can significantly impact software design.&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://sadin.dev/posts/mastering-solid-principles-in-csharp/?&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Introduction&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://sadin.dev/posts/single-responsibility-principle/?&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Single Responsibility Principle&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://sadin.dev/posts/open-closed-principle/?&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Open/Closed Principle&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://sadin.dev/posts/liskov-substitution-principle/?&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Liskov Substitution Principle&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://sadin.dev/posts/interface-segregation-principle/?&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Interface Segregation Principle&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://sadin.dev/posts/dependency-inversion-principle/?&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Dependency Inversion Principle&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;what-is-the-openclosed-principle&#34;&gt;&#xD;&#xA;  What is the Open/Closed Principle?&#xD;&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#what-is-the-openclosed-principle&#34;&gt;&#xD;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xD;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xD;&#xA;  &lt;/a&gt;&#xD;&#xA;&lt;/h2&gt;&#xD;&#xA;&lt;p&gt;The Open/Closed Principle emphasizes that software entities (classes, modules, functions, etc.) should be open for &lt;strong&gt;extension but closed for modification&lt;/strong&gt;. In simpler terms, the behavior of a module can be extended without modifying its source code. This principle promotes the creation of a system that is both adaptable and sustainable over time.&lt;/p&gt;</description>
     </item>
   </channel>

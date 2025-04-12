@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Oop on Kamran Sadin</title>
-    <link>https://sadin.dev/tags/oop/</link>
+    <link>http://localhost:1313/tags/oop/</link>
     <description>Recent content in Oop on Kamran Sadin</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Fri, 06 Oct 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://sadin.dev/tags/oop/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/oop/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Abstract and Interface in C#</title>
-      <link>https://sadin.dev/posts/2023-10-06-abstract-and-interface/</link>
+      <link>http://localhost:1313/posts/2023-10-06-abstract-and-interface/</link>
       <pubDate>Fri, 06 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>https://sadin.dev/posts/2023-10-06-abstract-and-interface/</guid>
+      <guid>http://localhost:1313/posts/2023-10-06-abstract-and-interface/</guid>
       <description>&lt;h2 id=&#34;abstract-class&#34;&gt;&#xD;&#xA;  Abstract Class&#xD;&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#abstract-class&#34;&gt;&#xD;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xD;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xD;&#xA;  &lt;/a&gt;&#xD;&#xA;&lt;/h2&gt;&#xD;&#xA;&lt;h3 id=&#34;definition&#34;&gt;&#xD;&#xA;  Definition&#xD;&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#definition&#34;&gt;&#xD;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xD;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xD;&#xA;  &lt;/a&gt;&#xD;&#xA;&lt;/h3&gt;&#xD;&#xA;&lt;p&gt;An abstract class in C# is a class marked with the abstract keyword that may contain abstract and non-abstract members (methods, properties, events, etc.).&lt;br&gt;&#xA;An abstract class provides a common structure and behavior for derived classes and allows for partial implementation by providing some method implementations while requiring derived classes to implement others.&lt;br&gt;&#xA;An abstract class is like an uncompleted class that can be developed in the future and it is like an interface with a wide vision. An abstract class can have abstract methods like interfaces that should be implemented in the derived class, furthermore, you can have non-abstract methods that do not have to be implemented in a derived class, and abstract methods can be abstract in subclasses if a subclass is defined as abstract. An abstract class can not be instantiated. A derived class can implement or override an abstract class. Also, an abstract class can have constructors and this is a major difference between an abstract class and an interface.&#xA;Let me summarize, the abstract class is more powerful than the interface in that you have the ability to decide if you want to let the user decide to use the original methods in the abstract class or override them or even you can have abstract methods that the user can decide how to implement them.&lt;/p&gt;</description>
     </item>
   </channel>

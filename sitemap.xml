@@ -2,258 +2,279 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://sadin.dev/</loc>
+    <loc>http://localhost:1313/tags/.net/</loc>
     <lastmod>2025-04-12T08:37:01+03:30</lastmod>
   </url><url>
-    <loc>https://sadin.dev/posts/</loc>
+    <loc>http://localhost:1313/authors/</loc>
     <lastmod>2025-04-12T08:37:01+03:30</lastmod>
   </url><url>
-    <loc>https://sadin.dev/tags/.net/</loc>
+    <loc>http://localhost:1313/tags/beginners/</loc>
+    <lastmod>2025-04-12T08:37:01+03:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/series/c-sharp-path/</loc>
+    <lastmod>2025-04-12T08:37:01+03:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/c%23/</loc>
+    <lastmod>2025-04-12T08:37:01+03:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/</loc>
+    <lastmod>2025-04-12T08:37:01+03:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/csharp/</loc>
+    <lastmod>2025-04-12T08:37:01+03:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/csharp/</loc>
+    <lastmod>2025-04-12T08:37:01+03:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/from_scratch/</loc>
+    <lastmod>2025-04-12T08:37:01+03:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2025-04-12T08:37:01+03:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/authors/kamran-sadin/</loc>
+    <lastmod>2025-04-12T08:37:01+03:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/csharp-for-absolute-beginners/</loc>
+    <lastmod>2025-04-12T08:37:01+03:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/</loc>
+    <lastmod>2025-04-12T08:37:01+03:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/series/</loc>
+    <lastmod>2025-04-12T08:37:01+03:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2025-04-12T08:37:01+03:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/series/c-sharp-in-a-nutshell/</loc>
     <lastmod>2025-03-10T17:18:38+03:30</lastmod>
   </url><url>
-    <loc>https://sadin.dev/authors/</loc>
+    <loc>http://localhost:1313/tags/introduction/</loc>
     <lastmod>2025-03-10T17:18:38+03:30</lastmod>
   </url><url>
-    <loc>https://sadin.dev/series/c-sharp-in-a-nutshell/</loc>
+    <loc>http://localhost:1313/posts/introduction-to-c-sharp/</loc>
     <lastmod>2025-03-10T17:18:38+03:30</lastmod>
   </url><url>
-    <loc>https://sadin.dev/tags/c%23/</loc>
-    <lastmod>2025-03-10T17:18:38+03:30</lastmod>
-  </url><url>
-    <loc>https://sadin.dev/categories/</loc>
-    <lastmod>2025-03-10T17:18:38+03:30</lastmod>
-  </url><url>
-    <loc>https://sadin.dev/tags/csharp/</loc>
-    <lastmod>2025-03-10T17:18:38+03:30</lastmod>
-  </url><url>
-    <loc>https://sadin.dev/categories/csharp/</loc>
-    <lastmod>2025-03-10T17:18:38+03:30</lastmod>
-  </url><url>
-    <loc>https://sadin.dev/tags/introduction/</loc>
-    <lastmod>2025-03-10T17:18:38+03:30</lastmod>
-  </url><url>
-    <loc>https://sadin.dev/posts/introduction-to-c-sharp/</loc>
-    <lastmod>2025-03-10T17:18:38+03:30</lastmod>
-  </url><url>
-    <loc>https://sadin.dev/authors/kamran-sadin/</loc>
-    <lastmod>2025-03-10T17:18:38+03:30</lastmod>
-  </url><url>
-    <loc>https://sadin.dev/series/</loc>
-    <lastmod>2025-03-10T17:18:38+03:30</lastmod>
-  </url><url>
-    <loc>https://sadin.dev/tags/</loc>
-    <lastmod>2025-03-10T17:18:38+03:30</lastmod>
-  </url><url>
-    <loc>https://sadin.dev/categories/.net/</loc>
+    <loc>http://localhost:1313/categories/.net/</loc>
     <lastmod>2025-03-03T07:30:27+03:30</lastmod>
   </url><url>
-    <loc>https://sadin.dev/categories/c%23/</loc>
+    <loc>http://localhost:1313/categories/c%23/</loc>
     <lastmod>2025-03-03T07:30:27+03:30</lastmod>
   </url><url>
-    <loc>https://sadin.dev/tags/edd/</loc>
+    <loc>http://localhost:1313/tags/edd/</loc>
     <lastmod>2025-03-03T07:30:27+03:30</lastmod>
   </url><url>
-    <loc>https://sadin.dev/tags/event-sourcing/</loc>
+    <loc>http://localhost:1313/tags/event-sourcing/</loc>
     <lastmod>2025-03-03T07:30:27+03:30</lastmod>
   </url><url>
-    <loc>https://sadin.dev/series/event-sourcing/</loc>
+    <loc>http://localhost:1313/series/event-sourcing/</loc>
     <lastmod>2025-03-03T07:30:27+03:30</lastmod>
   </url><url>
-    <loc>https://sadin.dev/categories/event-sourcing/</loc>
+    <loc>http://localhost:1313/categories/event-sourcing/</loc>
     <lastmod>2025-03-03T07:30:27+03:30</lastmod>
   </url><url>
-    <loc>https://sadin.dev/posts/event-sourcing-getting-started/</loc>
+    <loc>http://localhost:1313/posts/event-sourcing-getting-started/</loc>
     <lastmod>2025-03-03T07:30:27+03:30</lastmod>
   </url><url>
-    <loc>https://sadin.dev/tags/kamran-sadin/</loc>
+    <loc>http://localhost:1313/tags/kamran-sadin/</loc>
     <lastmod>2025-03-03T07:30:27+03:30</lastmod>
   </url><url>
-    <loc>https://sadin.dev/pages/</loc>
+    <loc>http://localhost:1313/pages/mentorship/</loc>
     <lastmod>2025-02-10T19:39:31+03:30</lastmod>
   </url><url>
-    <loc>https://sadin.dev/tags/1000daysofcsharp/</loc>
+    <loc>http://localhost:1313/pages/</loc>
+    <lastmod>2025-02-10T19:39:31+03:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/pages/projects/</loc>
+    <lastmod>2025-02-10T19:39:22+03:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/pages/contact/</loc>
+    <lastmod>2025-02-10T19:39:14+03:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/1000daysofcsharp/</loc>
     <lastmod>2023-11-17T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://sadin.dev/posts/2023-11-17-a-comprehensive-guide-to-data-types-in-csharp/</loc>
+    <loc>http://localhost:1313/posts/2023-11-17-a-comprehensive-guide-to-data-types-in-csharp/</loc>
     <lastmod>2023-11-17T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://sadin.dev/tags/basic/</loc>
+    <loc>http://localhost:1313/tags/basic/</loc>
     <lastmod>2023-11-17T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://sadin.dev/tags/c%23-developer-roadmap/</loc>
+    <loc>http://localhost:1313/tags/c%23-developer-roadmap/</loc>
     <lastmod>2023-11-17T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://sadin.dev/tags/data-type/</loc>
+    <loc>http://localhost:1313/tags/data-type/</loc>
     <lastmod>2023-11-17T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://sadin.dev/tags/step-1/</loc>
+    <loc>http://localhost:1313/tags/step-1/</loc>
     <lastmod>2023-11-17T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://sadin.dev/posts/2023-11-15-a-complete-guide-to-fields-and-properties-in-csharp/</loc>
+    <loc>http://localhost:1313/posts/2023-11-15-a-complete-guide-to-fields-and-properties-in-csharp/</loc>
     <lastmod>2023-11-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://sadin.dev/tags/fields/</loc>
+    <loc>http://localhost:1313/tags/fields/</loc>
     <lastmod>2023-11-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://sadin.dev/tags/fields-and-properties/</loc>
+    <loc>http://localhost:1313/tags/fields-and-properties/</loc>
     <lastmod>2023-11-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://sadin.dev/tags/properties/</loc>
+    <loc>http://localhost:1313/tags/properties/</loc>
     <lastmod>2023-11-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://sadin.dev/posts/2023-11-13-a-complete-guide-to-loops-in-csharp/</loc>
+    <loc>http://localhost:1313/posts/2023-11-13-a-complete-guide-to-loops-in-csharp/</loc>
     <lastmod>2023-11-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://sadin.dev/tags/loops/</loc>
+    <loc>http://localhost:1313/tags/loops/</loc>
     <lastmod>2023-11-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://sadin.dev/posts/2023-11-09-a-complete-guide-to-conditionals-in-csharp/</loc>
+    <loc>http://localhost:1313/posts/2023-11-09-a-complete-guide-to-conditionals-in-csharp/</loc>
     <lastmod>2023-11-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://sadin.dev/tags/conditionals/</loc>
+    <loc>http://localhost:1313/tags/conditionals/</loc>
     <lastmod>2023-11-09T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://sadin.dev/posts/2023-11-07-variables-in-csharp/</loc>
+    <loc>http://localhost:1313/posts/2023-11-07-variables-in-csharp/</loc>
     <lastmod>2023-11-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://sadin.dev/tags/variable/</loc>
+    <loc>http://localhost:1313/tags/variable/</loc>
     <lastmod>2023-11-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://sadin.dev/tags/advanced/</loc>
+    <loc>http://localhost:1313/tags/advanced/</loc>
     <lastmod>2023-11-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://sadin.dev/posts/2023-11-03-advanced-usages-of-events/</loc>
+    <loc>http://localhost:1313/posts/2023-11-03-advanced-usages-of-events/</loc>
     <lastmod>2023-11-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://sadin.dev/tags/delegates/</loc>
+    <loc>http://localhost:1313/tags/delegates/</loc>
     <lastmod>2023-11-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://sadin.dev/tags/eventhandler/</loc>
+    <loc>http://localhost:1313/tags/eventhandler/</loc>
     <lastmod>2023-11-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://sadin.dev/tags/events/</loc>
+    <loc>http://localhost:1313/tags/events/</loc>
     <lastmod>2023-11-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://sadin.dev/posts/2023-11-01-eventhandlers-and-delegates/</loc>
+    <loc>http://localhost:1313/posts/2023-11-01-eventhandlers-and-delegates/</loc>
     <lastmod>2023-11-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://sadin.dev/posts/2023-10-31-events-introduction/</loc>
+    <loc>http://localhost:1313/posts/2023-10-31-events-introduction/</loc>
     <lastmod>2023-10-31T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://sadin.dev/tags/dependency-inversion-principle/</loc>
+    <loc>http://localhost:1313/tags/dependency-inversion-principle/</loc>
     <lastmod>2023-10-26T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://sadin.dev/posts/2023-10-26-dependency-inversion-principle/</loc>
+    <loc>http://localhost:1313/posts/2023-10-26-dependency-inversion-principle/</loc>
     <lastmod>2023-10-26T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://sadin.dev/tags/dip/</loc>
+    <loc>http://localhost:1313/tags/dip/</loc>
     <lastmod>2023-10-26T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://sadin.dev/tags/software-design/</loc>
+    <loc>http://localhost:1313/tags/software-design/</loc>
     <lastmod>2023-10-26T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://sadin.dev/tags/software-principles/</loc>
+    <loc>http://localhost:1313/tags/software-principles/</loc>
     <lastmod>2023-10-26T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://sadin.dev/tags/solid/</loc>
+    <loc>http://localhost:1313/tags/solid/</loc>
     <lastmod>2023-10-26T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://sadin.dev/tags/interface-segregation-principle/</loc>
+    <loc>http://localhost:1313/tags/interface-segregation-principle/</loc>
     <lastmod>2023-10-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://sadin.dev/posts/2023-10-24-interface-segregation-principle/</loc>
+    <loc>http://localhost:1313/posts/2023-10-24-interface-segregation-principle/</loc>
     <lastmod>2023-10-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://sadin.dev/tags/isp/</loc>
+    <loc>http://localhost:1313/tags/isp/</loc>
     <lastmod>2023-10-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://sadin.dev/tags/liskov-substitution-principle/</loc>
+    <loc>http://localhost:1313/tags/liskov-substitution-principle/</loc>
     <lastmod>2023-10-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://sadin.dev/posts/2023-10-22-liskov-substitution-principle/</loc>
+    <loc>http://localhost:1313/posts/2023-10-22-liskov-substitution-principle/</loc>
     <lastmod>2023-10-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://sadin.dev/tags/lsp/</loc>
+    <loc>http://localhost:1313/tags/lsp/</loc>
     <lastmod>2023-10-22T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://sadin.dev/tags/ocp/</loc>
+    <loc>http://localhost:1313/tags/ocp/</loc>
     <lastmod>2023-10-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://sadin.dev/tags/open-closed-principle/</loc>
+    <loc>http://localhost:1313/tags/open-closed-principle/</loc>
     <lastmod>2023-10-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://sadin.dev/posts/2023-10-20-open-closed-principle/</loc>
+    <loc>http://localhost:1313/posts/2023-10-20-open-closed-principle/</loc>
     <lastmod>2023-10-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://sadin.dev/tags/single-responsibility-principle/</loc>
+    <loc>http://localhost:1313/tags/single-responsibility-principle/</loc>
     <lastmod>2023-10-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://sadin.dev/posts/2023-10-18-single-responsibility-principle/</loc>
+    <loc>http://localhost:1313/posts/2023-10-18-single-responsibility-principle/</loc>
     <lastmod>2023-10-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://sadin.dev/tags/srp/</loc>
+    <loc>http://localhost:1313/tags/srp/</loc>
     <lastmod>2023-10-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://sadin.dev/posts/2023-10-15-mastering-solid-principles-in-csharp/</loc>
+    <loc>http://localhost:1313/posts/2023-10-15-mastering-solid-principles-in-csharp/</loc>
     <lastmod>2023-10-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://sadin.dev/tags/abstract/</loc>
+    <loc>http://localhost:1313/tags/abstract/</loc>
     <lastmod>2023-10-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://sadin.dev/posts/2023-10-06-abstract-and-interface/</loc>
+    <loc>http://localhost:1313/posts/2023-10-06-abstract-and-interface/</loc>
     <lastmod>2023-10-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://sadin.dev/tags/inheritance/</loc>
+    <loc>http://localhost:1313/tags/inheritance/</loc>
     <lastmod>2023-10-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://sadin.dev/tags/interface/</loc>
+    <loc>http://localhost:1313/tags/interface/</loc>
     <lastmod>2023-10-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://sadin.dev/tags/oop/</loc>
+    <loc>http://localhost:1313/tags/oop/</loc>
     <lastmod>2023-10-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://sadin.dev/tags/action/</loc>
+    <loc>http://localhost:1313/tags/action/</loc>
     <lastmod>2023-10-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://sadin.dev/tags/day22/</loc>
+    <loc>http://localhost:1313/tags/day22/</loc>
     <lastmod>2023-10-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://sadin.dev/tags/delegate/</loc>
+    <loc>http://localhost:1313/tags/delegate/</loc>
     <lastmod>2023-10-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://sadin.dev/posts/2023-10-04-delegates-part-2/</loc>
+    <loc>http://localhost:1313/posts/2023-10-04-delegates-part-2/</loc>
     <lastmod>2023-10-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://sadin.dev/tags/func/</loc>
+    <loc>http://localhost:1313/tags/func/</loc>
     <lastmod>2023-10-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://sadin.dev/tags/generic-delegates/</loc>
+    <loc>http://localhost:1313/tags/generic-delegates/</loc>
     <lastmod>2023-10-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://sadin.dev/tags/multicast-delegates/</loc>
+    <loc>http://localhost:1313/tags/multicast-delegates/</loc>
     <lastmod>2023-10-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://sadin.dev/tags/day21/</loc>
+    <loc>http://localhost:1313/tags/day21/</loc>
     <lastmod>2023-10-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://sadin.dev/posts/2023-10-01-delegates-part-1-plugin-methods-with-delegates/</loc>
+    <loc>http://localhost:1313/posts/2023-10-01-delegates-part-1-plugin-methods-with-delegates/</loc>
     <lastmod>2023-10-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://sadin.dev/tags/plug-in-methods/</loc>
+    <loc>http://localhost:1313/tags/plug-in-methods/</loc>
     <lastmod>2023-10-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://sadin.dev/tags/what-is-delegate/</loc>
+    <loc>http://localhost:1313/tags/what-is-delegate/</loc>
     <lastmod>2023-10-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://sadin.dev/posts/2023-09-30-hello-world/</loc>
+    <loc>http://localhost:1313/posts/2023-09-30-hello-world/</loc>
     <lastmod>2023-09-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://sadin.dev/tags/hello-world/</loc>
+    <loc>http://localhost:1313/tags/hello-world/</loc>
     <lastmod>2023-09-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://sadin.dev/tags/roadmap/</loc>
+    <loc>http://localhost:1313/tags/roadmap/</loc>
     <lastmod>2023-09-30T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://sadin.dev/pages/about/</loc>
+    <loc>http://localhost:1313/pages/about/</loc>
   </url>
 </urlset>

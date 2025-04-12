@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Lsp on Kamran Sadin</title>
-    <link>https://sadin.dev/tags/lsp/</link>
+    <link>http://localhost:1313/tags/lsp/</link>
     <description>Recent content in Lsp on Kamran Sadin</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Sun, 22 Oct 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://sadin.dev/tags/lsp/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/lsp/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Liskov Substitution Principle</title>
-      <link>https://sadin.dev/posts/2023-10-22-liskov-substitution-principle/</link>
+      <link>http://localhost:1313/posts/2023-10-22-liskov-substitution-principle/</link>
       <pubDate>Sun, 22 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>https://sadin.dev/posts/2023-10-22-liskov-substitution-principle/</guid>
+      <guid>http://localhost:1313/posts/2023-10-22-liskov-substitution-principle/</guid>
       <description>&lt;p&gt;In the realm of software design, adhering to fundamental principles is essential for creating maintainable, flexible, and scalable codebases. One such crucial principle is the &lt;strong&gt;Liskov Substitution Principle (LSP)&lt;/strong&gt;. LSP is a key element of the SOLID principles, initially introduced by Barbara Liskov. Understanding and applying the Liskov Substitution Principle is fundamental to achieving robust and extensible software systems.&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://sadin.dev/posts/mastering-solid-principles-in-csharp/?&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Introduction&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://sadin.dev/posts/single-responsibility-principle/?&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Single Responsibility Principle&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://sadin.dev/posts/open-closed-principle/?&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Open/Closed Principle&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://sadin.dev/posts/liskov-substitution-principle/?&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Liskov Substitution Principle&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://sadin.dev/posts/interface-segregation-principle/?&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Interface Segregation Principle&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://sadin.dev/posts/dependency-inversion-principle/?&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Dependency Inversion Principle&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;what-is-the-liskov-substitution-principle&#34;&gt;&#xD;&#xA;  What is the Liskov Substitution Principle?&#xD;&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#what-is-the-liskov-substitution-principle&#34;&gt;&#xD;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xD;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xD;&#xA;  &lt;/a&gt;&#xD;&#xA;&lt;/h2&gt;&#xD;&#xA;&lt;p&gt;The Liskov Substitution Principle defines that objects of a derived class should be substitutable for objects of the base class without affecting the correctness of the program. In simpler terms, any instance of a base class should be replaceable with an instance of a derived class without altering the desired properties of the program.&lt;/p&gt;</description>
     </item>
   </channel>

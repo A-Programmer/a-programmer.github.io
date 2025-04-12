@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Roadmap on Kamran Sadin</title>
-    <link>https://sadin.dev/tags/roadmap/</link>
+    <link>http://localhost:1313/tags/roadmap/</link>
     <description>Recent content in Roadmap on Kamran Sadin</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Sat, 30 Sep 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://sadin.dev/tags/roadmap/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/roadmap/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hello World</title>
-      <link>https://sadin.dev/posts/2023-09-30-hello-world/</link>
+      <link>http://localhost:1313/posts/2023-09-30-hello-world/</link>
       <pubDate>Sat, 30 Sep 2023 00:00:00 +0000</pubDate>
-      <guid>https://sadin.dev/posts/2023-09-30-hello-world/</guid>
+      <guid>http://localhost:1313/posts/2023-09-30-hello-world/</guid>
       <description>&lt;h2 id=&#34;introduction&#34;&gt;&#xD;&#xA;  Introduction&#xD;&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#introduction&#34;&gt;&#xD;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xD;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xD;&#xA;  &lt;/a&gt;&#xD;&#xA;&lt;/h2&gt;&#xD;&#xA;&lt;p&gt;I am Kamran Sadin, a Software Engineer .&lt;/p&gt;&#xA;&lt;p&gt;Finally, I decided to use Github Pages and Jekyll to run my blog.&lt;/p&gt;&#xA;&lt;p&gt;In this blog, I am going to share my knowledge as a Software Engineer, my main purpose is to share C# Developer Roadmap content but I will also create other content.&lt;/p&gt;&#xA;&lt;p&gt;For the C# Developer roadmap, you can follow &lt;a href=&#34;https://www.linkedin.com/search/results/all/?keywords=%23100DaysOfCSharp&amp;amp;origin=GLOBAL_SEARCH_HEADER&amp;amp;sid=S%2C1&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;#100DaysOfCSharp&lt;/a&gt; on &lt;a href=&#34;https://www.linkedin.com/in/MrSadin&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;LinkedIn&lt;/a&gt; or the &lt;code&gt;CSharp&lt;/code&gt; category on my blog.&lt;/p&gt;</description>
     </item>
   </channel>

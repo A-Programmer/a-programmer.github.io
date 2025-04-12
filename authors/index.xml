@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Authors on Kamran Sadin</title>
-    <link>https://sadin.dev/authors/</link>
+    <link>http://localhost:1313/authors/</link>
     <description>Recent content in Authors on Kamran Sadin</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 10 Mar 2025 17:18:38 +0330</lastBuildDate>
-    <atom:link href="https://sadin.dev/authors/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 12 Apr 2025 08:37:01 +0330</lastBuildDate>
+    <atom:link href="http://localhost:1313/authors/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Kamran Sadin</title>
-      <link>https://sadin.dev/authors/kamran-sadin/</link>
-      <pubDate>Mon, 10 Mar 2025 17:18:38 +0330</pubDate>
-      <guid>https://sadin.dev/authors/kamran-sadin/</guid>
+      <link>http://localhost:1313/authors/kamran-sadin/</link>
+      <pubDate>Sat, 12 Apr 2025 08:37:01 +0330</pubDate>
+      <guid>http://localhost:1313/authors/kamran-sadin/</guid>
       <description></description>
     </item>
   </channel>

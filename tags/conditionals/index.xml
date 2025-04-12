@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Conditionals on Kamran Sadin</title>
-    <link>https://sadin.dev/tags/conditionals/</link>
+    <link>http://localhost:1313/tags/conditionals/</link>
     <description>Recent content in Conditionals on Kamran Sadin</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Thu, 09 Nov 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://sadin.dev/tags/conditionals/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/conditionals/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>A Complete Guide to Conditionals in C#</title>
-      <link>https://sadin.dev/posts/2023-11-09-a-complete-guide-to-conditionals-in-csharp/</link>
+      <link>http://localhost:1313/posts/2023-11-09-a-complete-guide-to-conditionals-in-csharp/</link>
       <pubDate>Thu, 09 Nov 2023 00:00:00 +0000</pubDate>
-      <guid>https://sadin.dev/posts/2023-11-09-a-complete-guide-to-conditionals-in-csharp/</guid>
+      <guid>http://localhost:1313/posts/2023-11-09-a-complete-guide-to-conditionals-in-csharp/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://sadin.dev/assets/posts/basics/A-Complete-Guide-to-Conditionals.pdf&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Download PDF Version&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;Conditionals in C# are essential for controlling the flow of your program, making decisions, and executing code based on specific conditions. This comprehensive guide will take you from the fundamentals of conditionals to more advanced techniques, ensuring you have a solid understanding of this crucial aspect of C# programming.&lt;/p&gt;&#xA;&lt;h2 id=&#34;table-of-contents&#34;&gt;&#xD;&#xA;  Table of Contents:&#xD;&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#table-of-contents&#34;&gt;&#xD;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xD;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xD;&#xA;  &lt;/a&gt;&#xD;&#xA;&lt;/h2&gt;&#xD;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;Introduction to Conditionals in C#&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;What are Conditionals?&lt;/li&gt;&#xA;&lt;li&gt;The Importance of Conditionals&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;Basic Conditional Statements&lt;/strong&gt;&lt;/p&gt;</description>
     </item>
   </channel>

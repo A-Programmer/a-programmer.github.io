@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Introduction on Kamran Sadin</title>
-    <link>https://sadin.dev/tags/introduction/</link>
+    <link>http://localhost:1313/tags/introduction/</link>
     <description>Recent content in Introduction on Kamran Sadin</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Mon, 10 Mar 2025 17:18:38 +0330</lastBuildDate>
-    <atom:link href="https://sadin.dev/tags/introduction/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/introduction/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Introduction to C#</title>
-      <link>https://sadin.dev/posts/introduction-to-c-sharp/</link>
+      <link>http://localhost:1313/posts/introduction-to-c-sharp/</link>
       <pubDate>Mon, 10 Mar 2025 17:18:38 +0330</pubDate>
-      <guid>https://sadin.dev/posts/introduction-to-c-sharp/</guid>
+      <guid>http://localhost:1313/posts/introduction-to-c-sharp/</guid>
       <description>&lt;h2 id=&#34;what-is-c&#34;&gt;&#xD;&#xA;  What is C#?&#xD;&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#what-is-c&#34;&gt;&#xD;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xD;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xD;&#xA;  &lt;/a&gt;&#xD;&#xA;&lt;/h2&gt;&#xD;&#xA;&lt;p&gt;C# (pronounced &lt;em&gt;&amp;ldquo;C sharp&amp;rdquo;&lt;/em&gt;) is a programming language developed by Microsoft as part of its .NET platform. It is powerful, versatile, and relatively easy to learn. The language draws inspiration from C and C++ while simplifying many of their complexities.&lt;/p&gt;&#xA;&lt;h3 id=&#34;key-features-of-c&#34;&gt;&#xD;&#xA;  Key Features of C#&#xD;&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#key-features-of-c&#34;&gt;&#xD;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xD;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xD;&#xA;  &lt;/a&gt;&#xD;&#xA;&lt;/h3&gt;&#xD;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;General-Purpose:&lt;/strong&gt; C# is not limited to a specific domain; it can be used to build a wide range of applications, including:&lt;/p&gt;</description>
     </item>
   </channel>
