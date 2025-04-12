@@ -2,38 +2,38 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Kamran Sadin</title>
-    <link>http://localhost:1313/categories/</link>
+    <link>https://sadin.dev/categories/</link>
     <description>Recent content in Categories on Kamran Sadin</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Sat, 12 Apr 2025 08:37:01 +0330</lastBuildDate>
-    <atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://sadin.dev/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>CSharp</title>
-      <link>http://localhost:1313/categories/csharp/</link>
+      <link>https://sadin.dev/categories/csharp/</link>
       <pubDate>Sat, 12 Apr 2025 08:37:01 +0330</pubDate>
-      <guid>http://localhost:1313/categories/csharp/</guid>
+      <guid>https://sadin.dev/categories/csharp/</guid>
       <description></description>
     </item>
     <item>
       <title>.NET</title>
-      <link>http://localhost:1313/categories/.net/</link>
+      <link>https://sadin.dev/categories/.net/</link>
       <pubDate>Mon, 03 Mar 2025 07:30:27 +0330</pubDate>
-      <guid>http://localhost:1313/categories/.net/</guid>
+      <guid>https://sadin.dev/categories/.net/</guid>
       <description></description>
     </item>
     <item>
       <title>C#</title>
-      <link>http://localhost:1313/categories/c%23/</link>
+      <link>https://sadin.dev/categories/c%23/</link>
       <pubDate>Mon, 03 Mar 2025 07:30:27 +0330</pubDate>
-      <guid>http://localhost:1313/categories/c%23/</guid>
+      <guid>https://sadin.dev/categories/c%23/</guid>
       <description></description>
     </item>
     <item>
       <title>Event Sourcing</title>
-      <link>http://localhost:1313/categories/event-sourcing/</link>
+      <link>https://sadin.dev/categories/event-sourcing/</link>
       <pubDate>Mon, 03 Mar 2025 07:30:27 +0330</pubDate>
-      <guid>http://localhost:1313/categories/event-sourcing/</guid>
+      <guid>https://sadin.dev/categories/event-sourcing/</guid>
       <description></description>
     </item>
   </channel>

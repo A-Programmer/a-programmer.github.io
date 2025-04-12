@@ -2,45 +2,45 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Basic on Kamran Sadin</title>
-    <link>http://localhost:1313/tags/basic/</link>
+    <link>https://sadin.dev/tags/basic/</link>
     <description>Recent content in Basic on Kamran Sadin</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Fri, 17 Nov 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/basic/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://sadin.dev/tags/basic/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>A Comprehensive Guide to Data Types in C#</title>
-      <link>http://localhost:1313/posts/2023-11-17-a-comprehensive-guide-to-data-types-in-csharp/</link>
+      <link>https://sadin.dev/posts/2023-11-17-a-comprehensive-guide-to-data-types-in-csharp/</link>
       <pubDate>Fri, 17 Nov 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/2023-11-17-a-comprehensive-guide-to-data-types-in-csharp/</guid>
+      <guid>https://sadin.dev/posts/2023-11-17-a-comprehensive-guide-to-data-types-in-csharp/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://sadin.dev/assets/posts/basics/a-comprehensive-guide-to-data-types-in-csharp.pdf&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Download PDF Version&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;Data types in C# define the type of data that a variable can store. Understanding and using the correct data types are crucial for writing efficient and bug-free code. This guide will walk you through the basic and advanced data types in C#, providing examples to illustrate their usage.&lt;/p&gt;&#xA;&lt;h2 id=&#34;table-of-contents&#34;&gt;&#xD;&#xA;  Table of Contents:&#xD;&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#table-of-contents&#34;&gt;&#xD;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xD;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xD;&#xA;  &lt;/a&gt;&#xD;&#xA;&lt;/h2&gt;&#xD;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;Introduction to Data Types in C#&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;What are Data Types?&lt;/li&gt;&#xA;&lt;li&gt;Importance of Choosing the Right Data Type&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;Basic Data Types&lt;/strong&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>A Comprehensive Guide to Fields and Properties in C#</title>
-      <link>http://localhost:1313/posts/2023-11-15-a-complete-guide-to-fields-and-properties-in-csharp/</link>
+      <link>https://sadin.dev/posts/2023-11-15-a-complete-guide-to-fields-and-properties-in-csharp/</link>
       <pubDate>Wed, 15 Nov 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/2023-11-15-a-complete-guide-to-fields-and-properties-in-csharp/</guid>
+      <guid>https://sadin.dev/posts/2023-11-15-a-complete-guide-to-fields-and-properties-in-csharp/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://sadin.dev/assets/posts/basics/A-Complete-Guide-to-Fields-and-Properties.pdf&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Download PDF Version&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;Fields and properties are fundamental elements in C# that allow you to define and access data within classes and structures. This comprehensive guide will take you from the fundamentals of fields and properties to more advanced techniques, ensuring you have a deep understanding of these critical concepts in C#.&lt;/p&gt;&#xA;&lt;h2 id=&#34;table-of-contents&#34;&gt;&#xD;&#xA;  Table of Contents:&#xD;&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#table-of-contents&#34;&gt;&#xD;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xD;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xD;&#xA;  &lt;/a&gt;&#xD;&#xA;&lt;/h2&gt;&#xD;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;Introduction to Fields and Properties in C#&lt;/strong&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>A Comprehensive Guide to Loops in C#</title>
-      <link>http://localhost:1313/posts/2023-11-13-a-complete-guide-to-loops-in-csharp/</link>
+      <link>https://sadin.dev/posts/2023-11-13-a-complete-guide-to-loops-in-csharp/</link>
       <pubDate>Mon, 13 Nov 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/2023-11-13-a-complete-guide-to-loops-in-csharp/</guid>
+      <guid>https://sadin.dev/posts/2023-11-13-a-complete-guide-to-loops-in-csharp/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://sadin.dev/assets/posts/basics/A-Complete-Guide-to-Loops.pdf&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Download PDF Version&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;Loops are a fundamental programming construct that allows you to repeat a block of code multiple times. They are indispensable for automating repetitive tasks, processing collections, and controlling program flow. In this comprehensive guide, we will explore loops in C#, starting with the basics and progressing to more advanced loop techniques.&lt;/p&gt;&#xA;&lt;h2 id=&#34;table-of-contents&#34;&gt;&#xD;&#xA;  Table of Contents:&#xD;&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#table-of-contents&#34;&gt;&#xD;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xD;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xD;&#xA;  &lt;/a&gt;&#xD;&#xA;&lt;/h2&gt;&#xD;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;Introduction to Loops in C#&lt;/strong&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>A Complete Guide to Conditionals in C#</title>
-      <link>http://localhost:1313/posts/2023-11-09-a-complete-guide-to-conditionals-in-csharp/</link>
+      <link>https://sadin.dev/posts/2023-11-09-a-complete-guide-to-conditionals-in-csharp/</link>
       <pubDate>Thu, 09 Nov 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/2023-11-09-a-complete-guide-to-conditionals-in-csharp/</guid>
+      <guid>https://sadin.dev/posts/2023-11-09-a-complete-guide-to-conditionals-in-csharp/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://sadin.dev/assets/posts/basics/A-Complete-Guide-to-Conditionals.pdf&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Download PDF Version&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;Conditionals in C# are essential for controlling the flow of your program, making decisions, and executing code based on specific conditions. This comprehensive guide will take you from the fundamentals of conditionals to more advanced techniques, ensuring you have a solid understanding of this crucial aspect of C# programming.&lt;/p&gt;&#xA;&lt;h2 id=&#34;table-of-contents&#34;&gt;&#xD;&#xA;  Table of Contents:&#xD;&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#table-of-contents&#34;&gt;&#xD;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xD;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xD;&#xA;  &lt;/a&gt;&#xD;&#xA;&lt;/h2&gt;&#xD;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;Introduction to Conditionals in C#&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;What are Conditionals?&lt;/li&gt;&#xA;&lt;li&gt;The Importance of Conditionals&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;Basic Conditional Statements&lt;/strong&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>A Comprehensive Guide to Variables in C#</title>
-      <link>http://localhost:1313/posts/2023-11-07-variables-in-csharp/</link>
+      <link>https://sadin.dev/posts/2023-11-07-variables-in-csharp/</link>
       <pubDate>Tue, 07 Nov 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/2023-11-07-variables-in-csharp/</guid>
+      <guid>https://sadin.dev/posts/2023-11-07-variables-in-csharp/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://sadin.dev/assets/posts/basics/A-Complete-Guid-to-Variables-in-CSharp.pdf&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Download PDF Version&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;Variables are the backbone of any programming language, and C# is no exception. They allow you to store and manage data, enabling your programs to perform tasks and make decisions. In this comprehensive guide, we will explore the world of variables in C#, covering everything from their basic definition to best practices and naming conventions.&lt;/p&gt;&#xA;&lt;h2 id=&#34;1-what-are-variables&#34;&gt;&#xD;&#xA;  1. What Are Variables?&#xD;&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#1-what-are-variables&#34;&gt;&#xD;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xD;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xD;&#xA;  &lt;/a&gt;&#xD;&#xA;&lt;/h2&gt;&#xD;&#xA;&lt;p&gt;At its core, a variable is a container for data. In C#, a variable has a type, a name, and a value. Variables serve the purpose of storing and managing data within your programs. Let&amp;rsquo;s break down the key concepts:&lt;/p&gt;</description>
     </item>
   </channel>

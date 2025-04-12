@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Events on Kamran Sadin</title>
-    <link>http://localhost:1313/tags/events/</link>
+    <link>https://sadin.dev/tags/events/</link>
     <description>Recent content in Events on Kamran Sadin</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Fri, 03 Nov 2023 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/events/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://sadin.dev/tags/events/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Advanced Usages of Events</title>
-      <link>http://localhost:1313/posts/2023-11-03-advanced-usages-of-events/</link>
+      <link>https://sadin.dev/posts/2023-11-03-advanced-usages-of-events/</link>
       <pubDate>Fri, 03 Nov 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/2023-11-03-advanced-usages-of-events/</guid>
+      <guid>https://sadin.dev/posts/2023-11-03-advanced-usages-of-events/</guid>
       <description>&lt;h2 id=&#34;mastering-c-events-advanced-concepts&#34;&gt;&#xD;&#xA;  Mastering C# Events: Advanced Concepts&#xD;&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#mastering-c-events-advanced-concepts&#34;&gt;&#xD;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xD;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xD;&#xA;  &lt;/a&gt;&#xD;&#xA;&lt;/h2&gt;&#xD;&#xA;&lt;p&gt;In this post, we&amp;rsquo;ll explore more advanced concepts and techniques related to C# events. These advanced topics will help you become a proficient event handler and enable you to use events in complex scenarios.&lt;/p&gt;&#xA;&lt;h3 id=&#34;custom-event-arguments&#34;&gt;&#xD;&#xA;  Custom Event Arguments&#xD;&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#custom-event-arguments&#34;&gt;&#xD;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xD;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xD;&#xA;  &lt;/a&gt;&#xD;&#xA;&lt;/h3&gt;&#xD;&#xA;&lt;p&gt;While events typically use the built-in &lt;code&gt;EventArgs&lt;/code&gt; class to convey event information, you can create custom event argument classes to pass additional data to event handlers. Custom event arguments allow you to provide specific context to subscribers. For example, in a file monitoring application, you might create a custom event argument class to include the file name and the type of file change.&lt;/p&gt;</description>
     </item>
     <item>
       <title>EventHandlers and Delegates</title>
-      <link>http://localhost:1313/posts/2023-11-01-eventhandlers-and-delegates/</link>
+      <link>https://sadin.dev/posts/2023-11-01-eventhandlers-and-delegates/</link>
       <pubDate>Wed, 01 Nov 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/2023-11-01-eventhandlers-and-delegates/</guid>
+      <guid>https://sadin.dev/posts/2023-11-01-eventhandlers-and-delegates/</guid>
       <description>&lt;h2 id=&#34;event-handlers-and-delegates&#34;&gt;&#xD;&#xA;  Event Handlers and Delegates&#xD;&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#event-handlers-and-delegates&#34;&gt;&#xD;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xD;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xD;&#xA;  &lt;/a&gt;&#xD;&#xA;&lt;/h2&gt;&#xD;&#xA;&lt;p&gt;In the previous post, we introduced the basic concepts of C# events. Now, let&amp;rsquo;s dive a bit deeper into event handling and delegates, which are fundamental to working with events in C#.&lt;/p&gt;&#xA;&lt;h3 id=&#34;event-handlers&#34;&gt;&#xD;&#xA;  Event Handlers&#xD;&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#event-handlers&#34;&gt;&#xD;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xD;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xD;&#xA;  &lt;/a&gt;&#xD;&#xA;&lt;/h3&gt;&#xD;&#xA;&lt;p&gt;An event handler is a method that gets executed when an event is raised. In C#, event handlers are defined with a specific signature, which typically includes two parameters:&lt;/p&gt;</description>
     </item>
     <item>
       <title>A Guide to Event Handling in C#</title>
-      <link>http://localhost:1313/posts/2023-10-31-events-introduction/</link>
+      <link>https://sadin.dev/posts/2023-10-31-events-introduction/</link>
       <pubDate>Tue, 31 Oct 2023 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/2023-10-31-events-introduction/</guid>
+      <guid>https://sadin.dev/posts/2023-10-31-events-introduction/</guid>
       <description>&lt;h2 id=&#34;introduction&#34;&gt;&#xD;&#xA;  Introduction&#xD;&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#introduction&#34;&gt;&#xD;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xD;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xD;&#xA;  &lt;/a&gt;&#xD;&#xA;&lt;/h2&gt;&#xD;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;Events provide a mechanism for communication between different parts of your code, allowing one component to notify others when a specific action or condition occurs.&#xA;{: .prompt-tip }&lt;/p&gt;&lt;/blockquote&gt;&#xA;&lt;p&gt;Events are a fundamental aspect of C# programming, playing a crucial role in building responsive and interactive applications. They provide a mechanism for communication between different parts of your code, allowing one component to notify others when a specific action or condition occurs. Whether you&amp;rsquo;re a beginner or an experienced C# developer, understanding events is essential for effective software development.&lt;/p&gt;</description>
     </item>
   </channel>

@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Kamran Sadin</title>
-    <link>http://localhost:1313/authors/kamran-sadin/</link>
+    <link>https://sadin.dev/authors/kamran-sadin/</link>
     <description>Recent content on Kamran Sadin</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Sat, 12 Apr 2025 08:37:01 +0330</lastBuildDate>
-    <atom:link href="http://localhost:1313/authors/kamran-sadin/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://sadin.dev/authors/kamran-sadin/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Learn C# from Scratch: A Complete Course for Absolute Beginners</title>
-      <link>http://localhost:1313/posts/csharp-for-absolute-beginners/</link>
+      <link>https://sadin.dev/posts/csharp-for-absolute-beginners/</link>
       <pubDate>Sat, 12 Apr 2025 08:37:01 +0330</pubDate>
-      <guid>http://localhost:1313/posts/csharp-for-absolute-beginners/</guid>
+      <guid>https://sadin.dev/posts/csharp-for-absolute-beginners/</guid>
       <description>&lt;h1 id=&#34;learn-c-from-scratch-a-hands-on-course-for-absolute-beginners&#34;&gt;&#xD;&#xA;  Learn C# from Scratch: A Hands-On Course for Absolute Beginners&#xD;&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#learn-c-from-scratch-a-hands-on-course-for-absolute-beginners&#34;&gt;&#xD;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xD;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xD;&#xA;  &lt;/a&gt;&#xD;&#xA;&lt;/h1&gt;&#xD;&#xA;&lt;p&gt;Ready to start your coding journey? If you’ve never programmed before, this C# course is tailor-made for you. Over about six weeks, with 2-3 sessions per week (1-2 hours each), you’ll transform from a total beginner to someone who can write simple, functional programs in C#. C# is a powerful, beginner-friendly language used in games, apps, and more. With plenty of examples and step-by-step guidance, this course will make coding fun and approachable. Let’s dive in!&lt;/p&gt;</description>
     </item>
     <item>
       <title>Introduction to C#</title>
-      <link>http://localhost:1313/posts/introduction-to-c-sharp/</link>
+      <link>https://sadin.dev/posts/introduction-to-c-sharp/</link>
       <pubDate>Mon, 10 Mar 2025 17:18:38 +0330</pubDate>
-      <guid>http://localhost:1313/posts/introduction-to-c-sharp/</guid>
+      <guid>https://sadin.dev/posts/introduction-to-c-sharp/</guid>
       <description>&lt;h2 id=&#34;what-is-c&#34;&gt;&#xD;&#xA;  What is C#?&#xD;&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#what-is-c&#34;&gt;&#xD;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xD;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xD;&#xA;  &lt;/a&gt;&#xD;&#xA;&lt;/h2&gt;&#xD;&#xA;&lt;p&gt;C# (pronounced &lt;em&gt;&amp;ldquo;C sharp&amp;rdquo;&lt;/em&gt;) is a programming language developed by Microsoft as part of its .NET platform. It is powerful, versatile, and relatively easy to learn. The language draws inspiration from C and C++ while simplifying many of their complexities.&lt;/p&gt;&#xA;&lt;h3 id=&#34;key-features-of-c&#34;&gt;&#xD;&#xA;  Key Features of C#&#xD;&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#key-features-of-c&#34;&gt;&#xD;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xD;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xD;&#xA;  &lt;/a&gt;&#xD;&#xA;&lt;/h3&gt;&#xD;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;General-Purpose:&lt;/strong&gt; C# is not limited to a specific domain; it can be used to build a wide range of applications, including:&lt;/p&gt;</description>
     </item>
     <item>
       <title>Event Sourcing: Turning Your App into a Time Machine</title>
-      <link>http://localhost:1313/posts/event-sourcing-getting-started/</link>
+      <link>https://sadin.dev/posts/event-sourcing-getting-started/</link>
       <pubDate>Mon, 03 Mar 2025 07:30:27 +0330</pubDate>
-      <guid>http://localhost:1313/posts/event-sourcing-getting-started/</guid>
+      <guid>https://sadin.dev/posts/event-sourcing-getting-started/</guid>
       <description>&lt;p&gt;Hey everyone! Kamran here, and today, let&amp;rsquo;s dive deeper into Event Sourcing, especially how we manage snapshots and materialized views. If you&amp;rsquo;ve ever felt like your database only tells you the &amp;ldquo;now&amp;rdquo; and not the &amp;ldquo;how,&amp;rdquo; you&amp;rsquo;re going to love this.&lt;/p&gt;&#xA;&lt;p&gt;Imagine your application&amp;rsquo;s memory as a time machine. Instead of just saving the final result, what if you recorded every single change, every action, as an &amp;ldquo;event&amp;rdquo;? That&amp;rsquo;s event sourcing in a nutshell.&lt;/p&gt;</description>
     </item>
   </channel>
