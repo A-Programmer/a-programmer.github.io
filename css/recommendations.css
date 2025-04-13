@@ -1,0 +1,19 @@
+.recommendation-box {
+    border: 1px solid #e0e0e0;
+    border-left: 4px solid #007acc;
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+    background-color: #0c4024;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  }
+  
+  .recommendation-box h3 {
+    margin-top: 0;
+    color: #007acc;
+  }
+  
+  .recommendation-box p {
+    margin-bottom: 0;
+    font-style: italic;
+  }
