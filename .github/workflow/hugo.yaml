@@ -1,43 +1,61 @@
-baseURL: "https://a-programmer.github.io" # یا اگر repo دیگه‌ای دارید، https://a-programmer.github.io/repo-name/
-languageCode: en-us
-title: "Kamran Sadin - Kevin" # عنوان انگلیسی سایتتون
-theme: PaperMod
+name: Deploy Hugo site to Pages
 
-params:
-  defaultTheme: auto # یا light/dark
-  disableThemeToggle: false # دکمه تغییر تم رو نگه دار
-  ShowBreadCrumbs: true
-  ShowReadingTime: true
-  ShowShareButtons: true
-  ShowPostNavLinks: true
-  displayFullLangName: true
+on:
+  push:
+    branches: [ "main" ]
+  workflow_dispatch:
 
-  # این بخش مهم برای فعال کردن دکمه RTL toggle
-  rtlToggle: true # اضافه کنید (اگر قبلاً نبود)
-  # یا در برخی نسخه‌ها به صورت زیر:
-  # enableRTLToggle: true
 
-  homeInfoParams:
-    Title: "Hi there! Welcome to my blog"
-    Content: "This is my English blog. Use the RTL button to flip the layout if you want."
+permissions:
+  contents: read
+  pages: write
+  id-token: write
 
-  socialIcons:
-  - name: github
-    url: "https://github.com/a-programmer"
-  # بقیه آیکون‌های اجتماعی رو اگر خواستید اضافه کنید
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
 
-menu:
-  main:
-  - identifier: home
-    name: Home
-    url: /
-    weight: 10
-  - identifier: about
-    name: About
-    url: /about/
-    weight: 20
-  - identifier: posts
-    name: Posts
-    url: /posts/
-    weight: 30
-  # اگر archive یا tags خواستید اضافه کنید
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    env:
+      HUGO_VERSION: 0.121.1 # نسخه Hugo رو چک کنید
+    steps:
+    - name: Install Hugo CLI
+      run: |
+        wget -O $$ {{ runner.temp }}/hugo.deb https://github.com/gohugoio/hugo/releases/download/v $${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.deb
+        sudo dpkg -i ${{ runner.temp }}/hugo.deb
+    - name: Checkout
+      uses: actions/checkout@v4
+      with:
+        submodules: recursive
+        fetch-depth: 0
+    - name: Setup Pages
+      id: pages
+      uses: actions/configure-pages@v5
+    - name: Install Node.js dependencies
+      run: "[[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci || true"
+    - name: Build with Hugo
+      env:
+        HUGO_CACHEDIR: ${{ runner.temp }}/hugo_cache
+        HUGO_ENVIRONMENT: production
+      run: |
+        hugo \
+          --gc \
+          --minify \
+          --baseURL "${{ steps.pages.outputs.base_url }}/"
+    - name: Upload artifact
+      uses: actions/upload-pages-artifact@v3
+      with:
+        path: ./public
+
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+    - name: Deploy to GitHub Pages
+      id: deployment
+      uses: actions/deploy-pages@v4
