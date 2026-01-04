@@ -1,0 +1,43 @@
+baseURL: "https://a-programmer.github.io" # یا اگر repo دیگه‌ای دارید، https://a-programmer.github.io/repo-name/
+languageCode: en-us
+title: "Kamran Sadin - Kevin" # عنوان انگلیسی سایتتون
+theme: PaperMod
+
+params:
+  defaultTheme: auto # یا light/dark
+  disableThemeToggle: false # دکمه تغییر تم رو نگه دار
+  ShowBreadCrumbs: true
+  ShowReadingTime: true
+  ShowShareButtons: true
+  ShowPostNavLinks: true
+  displayFullLangName: true
+
+  # این بخش مهم برای فعال کردن دکمه RTL toggle
+  rtlToggle: true # اضافه کنید (اگر قبلاً نبود)
+  # یا در برخی نسخه‌ها به صورت زیر:
+  # enableRTLToggle: true
+
+  homeInfoParams:
+    Title: "Hi there! Welcome to my blog"
+    Content: "This is my English blog. Use the RTL button to flip the layout if you want."
+
+  socialIcons:
+  - name: github
+    url: "https://github.com/a-programmer"
+  # بقیه آیکون‌های اجتماعی رو اگر خواستید اضافه کنید
+
+menu:
+  main:
+  - identifier: home
+    name: Home
+    url: /
+    weight: 10
+  - identifier: about
+    name: About
+    url: /about/
+    weight: 20
+  - identifier: posts
+    name: Posts
+    url: /posts/
+    weight: 30
+  # اگر archive یا tags خواستید اضافه کنید
