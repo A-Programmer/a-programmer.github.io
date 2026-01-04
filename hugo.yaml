@@ -1,4 +1,4 @@
-baseURL: "https://a-programmer.github.io" # یا اگر repo دیگه‌ای دارید، https://a-programmer.github.io/repo-name/
+baseURL: "https://a-programmer.github.io/" # یا اگر repo دیگه‌ای دارید، https://a-programmer.github.io/repo-name/
 languageCode: en-us
 title: "My English Blog" # عنوان انگلیسی سایتتون
 theme: PaperMod
