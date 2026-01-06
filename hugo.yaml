@@ -1,43 +1,138 @@
-baseURL: "https://blog.sadin.dev" # یا اگر repo دیگه‌ای دارید، https://a-programmer.github.io/repo-name/
-languageCode: en-us
-title: "My English Blog" # عنوان انگلیسی سایتتون
+baseURL: "https://blog.sadin.dev"
+title: Kamran Sadin - Kevin
+pagination.pagerSize: 10
 theme: PaperMod
 
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
 params:
-  defaultTheme: auto # یا light/dark
-  disableThemeToggle: false # دکمه تغییر تم رو نگه دار
-  ShowBreadCrumbs: true
+  env: production # to enable google analytics, opengraph, twitter-cards and schema.
+  title: Kamran Sadin - Kevin
+  description: "Kamran Sadin - Kevin description"
+  keywords: [ Blog, CSharp, C_Sharp, DotNET, CleanArchitecture, Clean_Architecture, Domain_Driven_Design, DDD, SOLID, Design)=_Patterns, Software_Engineer, CTO, Tech_Lead, Mentor ]
+  author: Kamran Sadin
+  # author: ["Me", "You"] # multiple authors
+  images: [ "<link or path of image for opengraph, twitter-cards>" ]
+  DateFormat: "January 2, 2006"
+  defaultTheme: auto # dark, light
+  disableThemeToggle: false
+
   ShowReadingTime: true
   ShowShareButtons: true
   ShowPostNavLinks: true
-  displayFullLangName: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: false
+  ShowWordCount: true
+  ShowRssButtonInSectionTermList: true
+  UseHugoToc: true
+  disableSpecial1stPost: false
+  disableScrollToTop: false
+  comments: true
+  hidemeta: false
+  hideSummary: false
+  showtoc: false
+  tocopen: false
 
-  # این بخش مهم برای فعال کردن دکمه RTL toggle
-  rtlToggle: true # اضافه کنید (اگر قبلاً نبود)
-  # یا در برخی نسخه‌ها به صورت زیر:
-  # enableRTLToggle: true
+  assets:
+    # disableHLJS: true # to disable highlight.js
+    # disableFingerprinting: true
+    favicon: "/favicon.ico"
+    # این‌ها را می‌توانید پر کنید یا کامنت کنید چون در extend_head.html وجود دارند
+    favicon16x16: "/favicon-16x16.png"
+    favicon32x32: "/favicon-32x32.png"
+    apple_touch_icon: "/apple-touch-icon.png"
+    safari_pinned_tab: "/safari-pinned-tab.svg"
 
+  label:
+    text: "Home"
+    icon: /apple-touch-icon.png
+    iconHeight: 35
+
+  # profile-mode
+  profileMode:
+    enabled: false # needs to be explicitly set
+    title: Kamran Sadin - Kevin
+    subtitle: "This is subtitle"
+    imageUrl: "<img location>"
+    imageWidth: 120
+    imageHeight: 120
+    imageTitle: my image
+    buttons:
+    - name: Posts
+      url: posts
+    - name: Tags
+      url: tags
+
+  # home-info mode
   homeInfoParams:
-    Title: "Hi there! Welcome to my blog"
-    Content: "This is my English blog. Use the RTL button to flip the layout if you want."
+    Title: "Hi there 👋"
+    Content: Welcome to my blog
 
   socialIcons:
+  - name: x
+    url: "https://x.com/"
+  - name: stackoverflow
+    url: "https://stackoverflow.com"
   - name: github
-    url: "https://github.com/a-programmer"
-  # بقیه آیکون‌های اجتماعی رو اگر خواستید اضافه کنید
+    url: "https://github.com/"
 
+  analytics:
+    google:
+      SiteVerificationTag: "XYZabc"
+    bing:
+      SiteVerificationTag: "XYZabc"
+    yandex:
+      SiteVerificationTag: "XYZabc"
+
+  cover:
+    hidden: true # hide everywhere but not in structured data
+    hiddenInList: true # hide on list pages and home
+    hiddenInSingle: true # hide on single page
+
+  editPost:
+    URL: "https://github.com/<path_to_repo>/content"
+    Text: "Suggest Changes" # edit text
+    appendFilePath: true # to append file path to Edit link
+
+  # for search
+  # https://fusejs.io/api/options.html
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    limit: 10 # refer: https://www.fusejs.io/api/methods.html#search
+    keys: [ "title", "permalink", "summary", "content" ]
 menu:
   main:
-  - identifier: home
-    name: Home
-    url: /
+  - identifier: categories
+    name: categories
+    url: /categories/
     weight: 10
-  - identifier: about
-    name: About
-    url: /about/
+  - identifier: tags
+    name: tags
+    url: /tags/
     weight: 20
-  - identifier: posts
-    name: Posts
-    url: /posts/
+  - identifier: example
+    name: example.org
+    url: https://example.org
     weight: 30
-  # اگر archive یا tags خواستید اضافه کنید
+# Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
+pygmentsUseClasses: true
+markup:
+  highlight:
+    noClasses: false
+    # anchorLineNos: true
+    # codeFences: true
+    # guessSyntax: true
+    # lineNos: true
+    # style: monokai
