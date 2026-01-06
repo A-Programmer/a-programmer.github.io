@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Kamran Sadin - Kevin</title>
-    <link>https://blog.sadin.dev/</link>
-    <description>Recent content on Kamran Sadin - Kevin</description>
+    <title>Delegates on Kamran Sadin - Kevin</title>
+    <link>https://blog.sadin.dev/tags/delegates/</link>
+    <description>Recent content in Delegates on Kamran Sadin - Kevin</description>
     <image>
       <title>Kamran Sadin - Kevin</title>
       <url>https://blog.sadin.dev/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
@@ -12,7 +12,7 @@
     <generator>Hugo -- 0.152.2</generator>
     <language>en</language>
     <lastBuildDate>Sun, 01 Oct 2023 18:06:09 +0330</lastBuildDate>
-    <atom:link href="https://blog.sadin.dev/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://blog.sadin.dev/tags/delegates/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Delegates Part 1 Plugin Methods With Delegates</title>
       <link>https://blog.sadin.dev/posts/2023-10-01-delegates-part-1-plugin-methods-with-delegates/</link>
