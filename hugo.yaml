@@ -20,7 +20,7 @@ params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
   title: Kamran Sadin - Kevin
   description: "Kamran Sadin - Kevin description"
-  keywords: [ Blog, CSharp, C_Sharp, DotNET, CleanArchitecture, Clean_Architecture, Domain_Driven_Design, DDD, SOLID, Design)=_Patterns, Software_Engineer, CTO, Tech_Lead, Mentor ]
+  keywords: [ Blog, CSharp, C_Sharp, DotNET, CleanArchitecture, Clean_Architecture, Domain_Driven_Design, DDD, SOLID, Design_Patterns, Software_Engineer, CTO, Tech_Lead, Mentor ]
   author: Kamran Sadin
   # author: ["Me", "You"] # multiple authors
   images: [ "<link or path of image for opengraph, twitter-cards>" ]
