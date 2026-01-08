@@ -3,33 +3,36 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://blog.sadin.dev/tags/basics/</loc>
-    <lastmod>2023-10-01T18:06:09+03:30</lastmod>
+    <lastmod>2026-01-08T10:04:40+03:30</lastmod>
   </url><url>
     <loc>https://blog.sadin.dev/categories/</loc>
-    <lastmod>2023-10-01T18:06:09+03:30</lastmod>
+    <lastmod>2026-01-08T10:04:40+03:30</lastmod>
   </url><url>
     <loc>https://blog.sadin.dev/categories/csharp/</loc>
-    <lastmod>2023-10-01T18:06:09+03:30</lastmod>
+    <lastmod>2026-01-08T10:04:40+03:30</lastmod>
   </url><url>
     <loc>https://blog.sadin.dev/tags/csharp/</loc>
-    <lastmod>2023-10-01T18:06:09+03:30</lastmod>
+    <lastmod>2026-01-08T10:04:40+03:30</lastmod>
   </url><url>
     <loc>https://blog.sadin.dev/tags/delegates/</loc>
-    <lastmod>2023-10-01T18:06:09+03:30</lastmod>
+    <lastmod>2026-01-08T10:04:40+03:30</lastmod>
   </url><url>
-    <loc>https://blog.sadin.dev/posts/2023-10-01-delegates-part-1-plugin-methods-with-delegates/</loc>
-    <lastmod>2023-10-01T18:06:09+03:30</lastmod>
+    <loc>https://blog.sadin.dev/posts/2023-10-04-delegates-part-2/</loc>
+    <lastmod>2026-01-08T10:04:40+03:30</lastmod>
   </url><url>
     <loc>https://blog.sadin.dev/tags/dotnet/</loc>
-    <lastmod>2023-10-01T18:06:09+03:30</lastmod>
+    <lastmod>2026-01-08T10:04:40+03:30</lastmod>
   </url><url>
     <loc>https://blog.sadin.dev/</loc>
-    <lastmod>2023-10-01T18:06:09+03:30</lastmod>
+    <lastmod>2026-01-08T10:04:40+03:30</lastmod>
   </url><url>
     <loc>https://blog.sadin.dev/posts/</loc>
-    <lastmod>2023-10-01T18:06:09+03:30</lastmod>
+    <lastmod>2026-01-08T10:04:40+03:30</lastmod>
   </url><url>
     <loc>https://blog.sadin.dev/tags/</loc>
+    <lastmod>2026-01-08T10:04:40+03:30</lastmod>
+  </url><url>
+    <loc>https://blog.sadin.dev/posts/2023-10-01-delegates-part-1-plugin-methods-with-delegates/</loc>
     <lastmod>2023-10-01T18:06:09+03:30</lastmod>
   </url>
 </urlset>
