@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Conditionals_in_csharp on Kamran Sadin - Kevin</title>
+    <link>https://blog.sadin.dev/tags/conditionals_in_csharp/</link>
+    <description>Recent content in Conditionals_in_csharp on Kamran Sadin - Kevin</description>
+    <image>
+      <title>Kamran Sadin - Kevin</title>
+      <url>https://blog.sadin.dev/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://blog.sadin.dev/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- 0.152.2</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 09 Nov 2023 11:50:41 +0330</lastBuildDate>
+    <atom:link href="https://blog.sadin.dev/tags/conditionals_in_csharp/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>A Complete Guide to Conditionals in C#</title>
+      <link>https://blog.sadin.dev/posts/2023-11-09-a-complete-guide-to-conditionals-in-csharp/</link>
+      <pubDate>Thu, 09 Nov 2023 11:50:41 +0330</pubDate>
+      <guid>https://blog.sadin.dev/posts/2023-11-09-a-complete-guide-to-conditionals-in-csharp/</guid>
+      <description>Conditionals in C# are essential for controlling the flow of your program, making decisions, and executing code based on specific conditions. This comprehensive guide will take you from the fundamentals of conditionals to more advanced techniques, ensuring you have a solid understanding of this crucial aspect of C# programming.</description>
+    </item>
+  </channel>
+</rss>

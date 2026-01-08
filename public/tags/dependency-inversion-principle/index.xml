@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Dependency Inversion Principle on Kamran Sadin - Kevin</title>
+    <link>http://localhost:1313/tags/dependency-inversion-principle/</link>
+    <description>Recent content in Dependency Inversion Principle on Kamran Sadin - Kevin</description>
+    <image>
+      <title>Kamran Sadin - Kevin</title>
+      <url>http://localhost:1313/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>http://localhost:1313/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- 0.152.2</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 26 Oct 2023 11:49:04 +0330</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/dependency-inversion-principle/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>SOLID - Dependency Inversion Principle</title>
+      <link>http://localhost:1313/posts/2023-10-26-dependency-inversion-principle/</link>
+      <pubDate>Thu, 26 Oct 2023 11:49:04 +0330</pubDate>
+      <guid>http://localhost:1313/posts/2023-10-26-dependency-inversion-principle/</guid>
+      <description>The Interface Segregation Principle advocates that clients should not be forced to depend on interfaces they do not use. In other words, a class should not be forced to implement methods it does not need. Instead of a monolithic interface, classes should have smaller, specific interfaces tailored to their requirements.</description>
+    </item>
+  </channel>
+</rss>

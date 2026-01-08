@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Lsp on Kamran Sadin - Kevin</title>
+    <link>https://blog.sadin.dev/tags/lsp/</link>
+    <description>Recent content in Lsp on Kamran Sadin - Kevin</description>
+    <image>
+      <title>Kamran Sadin - Kevin</title>
+      <url>https://blog.sadin.dev/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://blog.sadin.dev/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- 0.152.2</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 22 Oct 2023 11:48:27 +0330</lastBuildDate>
+    <atom:link href="https://blog.sadin.dev/tags/lsp/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>SOLID - Liskov Substitution Principle</title>
+      <link>https://blog.sadin.dev/posts/2023-10-22-liskov-substitution-principle/</link>
+      <pubDate>Sun, 22 Oct 2023 11:48:27 +0330</pubDate>
+      <guid>https://blog.sadin.dev/posts/2023-10-22-liskov-substitution-principle/</guid>
+      <description>The Liskov Substitution Principle defines that objects of a derived class should be substitutable for objects of the base class without affecting the correctness of the program. In simpler terms, any instance of a base class should be replaceable with an instance of a derived class without altering the desired properties of the program.</description>
+    </item>
+  </channel>
+</rss>

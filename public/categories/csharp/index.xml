@@ -2,64 +2,155 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Csharp on Kamran Sadin - Kevin</title>
-    <link>http://localhost:1313/categories/csharp/</link>
+    <link>https://blog.sadin.dev/categories/csharp/</link>
     <description>Recent content in Csharp on Kamran Sadin - Kevin</description>
     <image>
       <title>Kamran Sadin - Kevin</title>
-      <url>http://localhost:1313/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>http://localhost:1313/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://blog.sadin.dev/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://blog.sadin.dev/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- 0.152.2</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 08 Jan 2026 10:35:52 +0330</lastBuildDate>
-    <atom:link href="http://localhost:1313/categories/csharp/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Abstract and Interface in C#</title>
-      <link>http://localhost:1313/posts/2023-10-06-abstract-and-interface/</link>
-      <pubDate>Thu, 08 Jan 2026 10:35:52 +0330</pubDate>
-      <guid>http://localhost:1313/posts/2023-10-06-abstract-and-interface/</guid>
-      <description>An abstract class in C# is a class marked with the abstract keyword that may contain abstract and non-abstract members (methods, properties, events, etc.).</description>
-    </item>
+    <lastBuildDate>Sat, 12 Apr 2025 11:54:41 +0330</lastBuildDate>
+    <atom:link href="https://blog.sadin.dev/categories/csharp/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Learn C# from Scratch: A Complete Course for Absolute Beginners</title>
-      <link>http://localhost:1313/posts/2025-04-12-csharp-for-absolute-beginners/</link>
+      <link>https://blog.sadin.dev/posts/2025-04-12-csharp-for-absolute-beginners/</link>
       <pubDate>Sat, 12 Apr 2025 11:54:41 +0330</pubDate>
-      <guid>http://localhost:1313/posts/2025-04-12-csharp-for-absolute-beginners/</guid>
+      <guid>https://blog.sadin.dev/posts/2025-04-12-csharp-for-absolute-beginners/</guid>
       <description>Ready to start your coding journey? If you’ve never programmed before, this C# course is tailor-made for you.</description>
     </item>
     <item>
       <title>Introduction to C#</title>
-      <link>http://localhost:1313/posts/2025-03-10-introduction-to-c-sharp/</link>
+      <link>https://blog.sadin.dev/posts/2025-03-10-introduction-to-c-sharp/</link>
       <pubDate>Mon, 10 Mar 2025 11:56:54 +0330</pubDate>
-      <guid>http://localhost:1313/posts/2025-03-10-introduction-to-c-sharp/</guid>
+      <guid>https://blog.sadin.dev/posts/2025-03-10-introduction-to-c-sharp/</guid>
       <description>C# is a **general-purpose, type-safe, object-oriented programming language**. It was designed with **programmer productivity** in mind, providing a modern and efficient way to develop software applications.</description>
     </item>
     <item>
+      <title>Event Sourcing: Turning Your App into a Time Machine</title>
+      <link>https://blog.sadin.dev/posts/2025-03-03-event-sourcing-getting-started/</link>
+      <pubDate>Mon, 03 Mar 2025 11:55:30 +0330</pubDate>
+      <guid>https://blog.sadin.dev/posts/2025-03-03-event-sourcing-getting-started/</guid>
+      <description>Hey everyone! Kamran here, and today, let&amp;#39;s dive deeper into Event Sourcing, especially how we manage snapshots and materialized views.</description>
+    </item>
+    <item>
+      <title>A Comprehensive Guide to Data Types in C#</title>
+      <link>https://blog.sadin.dev/posts/2023-11-17-a-comprehensive-guide-to-data-types-in-csharp/</link>
+      <pubDate>Fri, 17 Nov 2023 11:51:27 +0330</pubDate>
+      <guid>https://blog.sadin.dev/posts/2023-11-17-a-comprehensive-guide-to-data-types-in-csharp/</guid>
+      <description>Data types in C# define the type of data that a variable can store. Understanding and using the correct data types are crucial for writing efficient and bug-free code. This guide will walk you through the basic and advanced data types in C#, providing examples to illustrate their usage.</description>
+    </item>
+    <item>
+      <title>A Comprehensive Guide to Fields and Properties in C#</title>
+      <link>https://blog.sadin.dev/posts/2023-11-15-a-complete-guide-to-fields-and-properties-in-csharp/</link>
+      <pubDate>Wed, 15 Nov 2023 11:51:12 +0330</pubDate>
+      <guid>https://blog.sadin.dev/posts/2023-11-15-a-complete-guide-to-fields-and-properties-in-csharp/</guid>
+      <description>Fields and properties are fundamental elements in C# that allow you to define and access data within classes and structures. This comprehensive guide will take you from the fundamentals of fields and properties to more advanced techniques, ensuring you have a deep understanding of these critical concepts in C#.</description>
+    </item>
+    <item>
+      <title>A Comprehensive Guide to Loops in C#</title>
+      <link>https://blog.sadin.dev/posts/2023-11-13-a-complete-guide-to-loops-in-csharp/</link>
+      <pubDate>Mon, 13 Nov 2023 11:50:58 +0330</pubDate>
+      <guid>https://blog.sadin.dev/posts/2023-11-13-a-complete-guide-to-loops-in-csharp/</guid>
+      <description>Loops are a fundamental programming construct that allows you to repeat a block of code multiple times. They are indispensable for automating repetitive tasks, processing collections, and controlling program flow. In this comprehensive guide, we will explore loops in C#, starting with the basics and progressing to more advanced loop techniques.</description>
+    </item>
+    <item>
+      <title>A Complete Guide to Conditionals in C#</title>
+      <link>https://blog.sadin.dev/posts/2023-11-09-a-complete-guide-to-conditionals-in-csharp/</link>
+      <pubDate>Thu, 09 Nov 2023 11:50:41 +0330</pubDate>
+      <guid>https://blog.sadin.dev/posts/2023-11-09-a-complete-guide-to-conditionals-in-csharp/</guid>
+      <description>Conditionals in C# are essential for controlling the flow of your program, making decisions, and executing code based on specific conditions. This comprehensive guide will take you from the fundamentals of conditionals to more advanced techniques, ensuring you have a solid understanding of this crucial aspect of C# programming.</description>
+    </item>
+    <item>
+      <title>A Comprehensive Guide to Variables in C#</title>
+      <link>https://blog.sadin.dev/posts/2023-11-07-variables-in-csharp/</link>
+      <pubDate>Tue, 07 Nov 2023 11:50:28 +0330</pubDate>
+      <guid>https://blog.sadin.dev/posts/2023-11-07-variables-in-csharp/</guid>
+      <description>Variables are the backbone of any programming language, and C# is no exception. They allow you to store and manage data, enabling your programs to perform tasks and make decisions.</description>
+    </item>
+    <item>
+      <title>Advanced Usages of Events</title>
+      <link>https://blog.sadin.dev/posts/2023-11-03-advanced-usages-of-events/</link>
+      <pubDate>Fri, 03 Nov 2023 11:50:00 +0330</pubDate>
+      <guid>https://blog.sadin.dev/posts/2023-11-03-advanced-usages-of-events/</guid>
+      <description>Events provide a mechanism for communication between different parts of your code, allowing one component to notify others when a specific action or condition occurs.</description>
+    </item>
+    <item>
+      <title>A Guide to EventHandlers and Delegates</title>
+      <link>https://blog.sadin.dev/posts/2023-11-01-eventhandlers-and-delegates/</link>
+      <pubDate>Wed, 01 Nov 2023 11:49:34 +0330</pubDate>
+      <guid>https://blog.sadin.dev/posts/2023-11-01-eventhandlers-and-delegates/</guid>
+      <description>Events provide a mechanism for communication between different parts of your code, allowing one component to notify others when a specific action or condition occurs.</description>
+    </item>
+    <item>
+      <title>A Guide to Event Handling in C#</title>
+      <link>https://blog.sadin.dev/posts/2023-10-31-events-introduction/</link>
+      <pubDate>Tue, 31 Oct 2023 11:49:21 +0330</pubDate>
+      <guid>https://blog.sadin.dev/posts/2023-10-31-events-introduction/</guid>
+      <description>Events provide a mechanism for communication between different parts of your code, allowing one component to notify others when a specific action or condition occurs.</description>
+    </item>
+    <item>
+      <title>SOLID - Dependency Inversion Principle</title>
+      <link>https://blog.sadin.dev/posts/2023-10-26-dependency-inversion-principle/</link>
+      <pubDate>Thu, 26 Oct 2023 11:49:04 +0330</pubDate>
+      <guid>https://blog.sadin.dev/posts/2023-10-26-dependency-inversion-principle/</guid>
+      <description>The Dependency Inversion Principle emphasizes that high-level modules should not depend on low-level modules; both should depend on abstractions. Additionally, abstractions should not depend on details; instead, details should depend on abstractions. This principle encourages the use of interfaces or abstract classes to decouple higher-level and lower-level modules.</description>
+    </item>
+    <item>
+      <title>SOLID - Interface Segregation Principle</title>
+      <link>https://blog.sadin.dev/posts/2023-10-24-interface-segregation-principle/</link>
+      <pubDate>Tue, 24 Oct 2023 11:48:50 +0330</pubDate>
+      <guid>https://blog.sadin.dev/posts/2023-10-24-interface-segregation-principle/</guid>
+      <description>The Interface Segregation Principle advocates that clients should not be forced to depend on interfaces they do not use. In other words, a class should not be forced to implement methods it does not need. Instead of a monolithic interface, classes should have smaller, specific interfaces tailored to their requirements.</description>
+    </item>
+    <item>
+      <title>SOLID - Liskov Substitution Principle</title>
+      <link>https://blog.sadin.dev/posts/2023-10-22-liskov-substitution-principle/</link>
+      <pubDate>Sun, 22 Oct 2023 11:48:27 +0330</pubDate>
+      <guid>https://blog.sadin.dev/posts/2023-10-22-liskov-substitution-principle/</guid>
+      <description>The Liskov Substitution Principle defines that objects of a derived class should be substitutable for objects of the base class without affecting the correctness of the program. In simpler terms, any instance of a base class should be replaceable with an instance of a derived class without altering the desired properties of the program.</description>
+    </item>
+    <item>
+      <title>SOLID - Open Closed Principle</title>
+      <link>https://blog.sadin.dev/posts/2023-10-20-open-closed-principle/</link>
+      <pubDate>Fri, 20 Oct 2023 11:47:52 +0330</pubDate>
+      <guid>https://blog.sadin.dev/posts/2023-10-20-open-closed-principle/</guid>
+      <description>The Open/Closed Principle emphasizes that software entities (classes, modules, functions, etc.) should be open for **extension but closed for modification**. In simpler terms, the behavior of a module can be extended without modifying its source code. This principle promotes the creation of a system that is both adaptable and sustainable over time.</description>
+    </item>
+    <item>
       <title>Single Responsibility Principle</title>
-      <link>http://localhost:1313/posts/2023-10-18-single-responsibility-principle/</link>
+      <link>https://blog.sadin.dev/posts/2023-10-18-single-responsibility-principle/</link>
       <pubDate>Wed, 18 Oct 2023 11:09:23 +0330</pubDate>
-      <guid>http://localhost:1313/posts/2023-10-18-single-responsibility-principle/</guid>
+      <guid>https://blog.sadin.dev/posts/2023-10-18-single-responsibility-principle/</guid>
       <description>At its core, SRP advocates that a class should have a **single reason to change**, meaning it should only have one responsibility. Essentially, a class should encapsulate one aspect of the functionality within the software. By adhering to this principle, the design becomes more modular, maintainable, and easier to extend.</description>
     </item>
     <item>
+      <title>Abstract and Interface in C#</title>
+      <link>https://blog.sadin.dev/posts/2023-10-06-abstract-and-interface/</link>
+      <pubDate>Fri, 06 Oct 2023 10:35:52 +0330</pubDate>
+      <guid>https://blog.sadin.dev/posts/2023-10-06-abstract-and-interface/</guid>
+      <description>An abstract class in C# is a class marked with the abstract keyword that may contain abstract and non-abstract members (methods, properties, events, etc.).</description>
+    </item>
+    <item>
       <title>Mastering SOLID Principles in C#, Building Robust and Maintainable Applications</title>
-      <link>http://localhost:1313/posts/2023-10-15-mastering-solid-principles-in-csharp/</link>
+      <link>https://blog.sadin.dev/posts/2023-10-15-mastering-solid-principles-in-csharp/</link>
       <pubDate>Wed, 04 Oct 2023 11:01:44 +0330</pubDate>
-      <guid>http://localhost:1313/posts/2023-10-15-mastering-solid-principles-in-csharp/</guid>
+      <guid>https://blog.sadin.dev/posts/2023-10-15-mastering-solid-principles-in-csharp/</guid>
       <description>SOLID is an acronym representing five essential design principles introduced by Robert C. Martin to guide software developers in writing maintainable and scalable code. Each principle addresses a specific aspect of software design, focusing on enhancing the maintainability, extensibility, and reusability of the codebase.</description>
     </item>
     <item>
       <title>Delegates Part 2</title>
-      <link>http://localhost:1313/posts/2023-10-04-delegates-part-2/</link>
+      <link>https://blog.sadin.dev/posts/2023-10-04-delegates-part-2/</link>
       <pubDate>Wed, 04 Oct 2023 10:04:40 +0330</pubDate>
-      <guid>http://localhost:1313/posts/2023-10-04-delegates-part-2/</guid>
+      <guid>https://blog.sadin.dev/posts/2023-10-04-delegates-part-2/</guid>
       <description>This post is just to get familiar with Delegates in C#, in the next posts I will talk about delegates in advance. Part 2</description>
     </item>
     <item>
       <title>Delegates Part 1 Plugin Methods With Delegates</title>
-      <link>http://localhost:1313/posts/2023-10-01-delegates-part-1-plugin-methods-with-delegates/</link>
+      <link>https://blog.sadin.dev/posts/2023-10-01-delegates-part-1-plugin-methods-with-delegates/</link>
       <pubDate>Sun, 01 Oct 2023 18:06:09 +0330</pubDate>
-      <guid>http://localhost:1313/posts/2023-10-01-delegates-part-1-plugin-methods-with-delegates/</guid>
+      <guid>https://blog.sadin.dev/posts/2023-10-01-delegates-part-1-plugin-methods-with-delegates/</guid>
       <description>This post is just to get familiar with Delegates in C#, in the next posts I will talk about delegates in advance.</description>
     </item>
   </channel>

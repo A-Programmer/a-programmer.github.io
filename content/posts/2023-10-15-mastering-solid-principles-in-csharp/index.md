@@ -3,7 +3,7 @@ date: '2023-10-04T11:01:44+03:30'
 draft: false
 title: 'Mastering SOLID Principles in C#, Building Robust and Maintainable Applications'
 tags: ["abstract", "csharp", "dotnet", "basics", "solid","principals","oop"]
-categories: ["csharp"]
+categories: ["csharp", "solid"]
 description: "SOLID is an acronym representing five essential design principles introduced by Robert C. Martin to guide software developers in writing maintainable and scalable code. Each principle addresses a specific aspect of software design, focusing on enhancing the maintainability, extensibility, and reusability of the codebase."
 ---
 

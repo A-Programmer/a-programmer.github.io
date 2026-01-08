@@ -2,29 +2,43 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Delegates on Kamran Sadin - Kevin</title>
-    <link>http://localhost:1313/tags/delegates/</link>
+    <link>https://blog.sadin.dev/tags/delegates/</link>
     <description>Recent content in Delegates on Kamran Sadin - Kevin</description>
     <image>
       <title>Kamran Sadin - Kevin</title>
-      <url>http://localhost:1313/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>http://localhost:1313/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://blog.sadin.dev/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://blog.sadin.dev/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- 0.152.2</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 04 Oct 2023 10:04:40 +0330</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/delegates/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 03 Nov 2023 11:50:00 +0330</lastBuildDate>
+    <atom:link href="https://blog.sadin.dev/tags/delegates/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Advanced Usages of Events</title>
+      <link>https://blog.sadin.dev/posts/2023-11-03-advanced-usages-of-events/</link>
+      <pubDate>Fri, 03 Nov 2023 11:50:00 +0330</pubDate>
+      <guid>https://blog.sadin.dev/posts/2023-11-03-advanced-usages-of-events/</guid>
+      <description>Events provide a mechanism for communication between different parts of your code, allowing one component to notify others when a specific action or condition occurs.</description>
+    </item>
+    <item>
+      <title>A Guide to EventHandlers and Delegates</title>
+      <link>https://blog.sadin.dev/posts/2023-11-01-eventhandlers-and-delegates/</link>
+      <pubDate>Wed, 01 Nov 2023 11:49:34 +0330</pubDate>
+      <guid>https://blog.sadin.dev/posts/2023-11-01-eventhandlers-and-delegates/</guid>
+      <description>Events provide a mechanism for communication between different parts of your code, allowing one component to notify others when a specific action or condition occurs.</description>
+    </item>
     <item>
       <title>Delegates Part 2</title>
-      <link>http://localhost:1313/posts/2023-10-04-delegates-part-2/</link>
+      <link>https://blog.sadin.dev/posts/2023-10-04-delegates-part-2/</link>
       <pubDate>Wed, 04 Oct 2023 10:04:40 +0330</pubDate>
-      <guid>http://localhost:1313/posts/2023-10-04-delegates-part-2/</guid>
+      <guid>https://blog.sadin.dev/posts/2023-10-04-delegates-part-2/</guid>
       <description>This post is just to get familiar with Delegates in C#, in the next posts I will talk about delegates in advance. Part 2</description>
     </item>
     <item>
       <title>Delegates Part 1 Plugin Methods With Delegates</title>
-      <link>http://localhost:1313/posts/2023-10-01-delegates-part-1-plugin-methods-with-delegates/</link>
+      <link>https://blog.sadin.dev/posts/2023-10-01-delegates-part-1-plugin-methods-with-delegates/</link>
       <pubDate>Sun, 01 Oct 2023 18:06:09 +0330</pubDate>
-      <guid>http://localhost:1313/posts/2023-10-01-delegates-part-1-plugin-methods-with-delegates/</guid>
+      <guid>https://blog.sadin.dev/posts/2023-10-01-delegates-part-1-plugin-methods-with-delegates/</guid>
       <description>This post is just to get familiar with Delegates in C#, in the next posts I will talk about delegates in advance.</description>
     </item>
   </channel>

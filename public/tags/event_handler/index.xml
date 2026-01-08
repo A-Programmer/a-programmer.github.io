@@ -11,13 +11,27 @@
     </image>
     <generator>Hugo -- 0.152.2</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 18 Oct 2023 11:09:23 +0330</lastBuildDate>
+    <lastBuildDate>Fri, 03 Nov 2023 11:50:00 +0330</lastBuildDate>
     <atom:link href="https://blog.sadin.dev/tags/event_handler/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Advanced Usages of Events</title>
+      <link>https://blog.sadin.dev/posts/2023-11-03-advanced-usages-of-events/</link>
+      <pubDate>Fri, 03 Nov 2023 11:50:00 +0330</pubDate>
+      <guid>https://blog.sadin.dev/posts/2023-11-03-advanced-usages-of-events/</guid>
+      <description>Events provide a mechanism for communication between different parts of your code, allowing one component to notify others when a specific action or condition occurs.</description>
+    </item>
+    <item>
+      <title>A Guide to EventHandlers and Delegates</title>
+      <link>https://blog.sadin.dev/posts/2023-11-01-eventhandlers-and-delegates/</link>
+      <pubDate>Wed, 01 Nov 2023 11:49:34 +0330</pubDate>
+      <guid>https://blog.sadin.dev/posts/2023-11-01-eventhandlers-and-delegates/</guid>
+      <description>Events provide a mechanism for communication between different parts of your code, allowing one component to notify others when a specific action or condition occurs.</description>
+    </item>
+    <item>
       <title>A Guide to Event Handling in C#</title>
-      <link>https://blog.sadin.dev/posts/2023-10-18-single-responsibility-principle/</link>
-      <pubDate>Wed, 18 Oct 2023 11:09:23 +0330</pubDate>
-      <guid>https://blog.sadin.dev/posts/2023-10-18-single-responsibility-principle/</guid>
+      <link>https://blog.sadin.dev/posts/2023-10-31-events-introduction/</link>
+      <pubDate>Tue, 31 Oct 2023 11:49:21 +0330</pubDate>
+      <guid>https://blog.sadin.dev/posts/2023-10-31-events-introduction/</guid>
       <description>Events provide a mechanism for communication between different parts of your code, allowing one component to notify others when a specific action or condition occurs.</description>
     </item>
   </channel>

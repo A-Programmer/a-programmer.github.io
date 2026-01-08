@@ -2,120 +2,337 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Tags on Kamran Sadin - Kevin</title>
-    <link>http://localhost:1313/tags/</link>
+    <link>https://blog.sadin.dev/tags/</link>
     <description>Recent content in Tags on Kamran Sadin - Kevin</description>
     <image>
       <title>Kamran Sadin - Kevin</title>
-      <url>http://localhost:1313/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>http://localhost:1313/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://blog.sadin.dev/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://blog.sadin.dev/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- 0.152.2</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 08 Jan 2026 10:35:52 +0330</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Abstract</title>
-      <link>http://localhost:1313/tags/abstract/</link>
-      <pubDate>Thu, 08 Jan 2026 10:35:52 +0330</pubDate>
-      <guid>http://localhost:1313/tags/abstract/</guid>
-      <description></description>
-    </item>
+    <lastBuildDate>Sat, 12 Apr 2025 11:54:41 +0330</lastBuildDate>
+    <atom:link href="https://blog.sadin.dev/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Basics</title>
-      <link>http://localhost:1313/tags/basics/</link>
-      <pubDate>Thu, 08 Jan 2026 10:35:52 +0330</pubDate>
-      <guid>http://localhost:1313/tags/basics/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Class</title>
-      <link>http://localhost:1313/tags/class/</link>
-      <pubDate>Thu, 08 Jan 2026 10:35:52 +0330</pubDate>
-      <guid>http://localhost:1313/tags/class/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Csharp</title>
-      <link>http://localhost:1313/tags/csharp/</link>
-      <pubDate>Thu, 08 Jan 2026 10:35:52 +0330</pubDate>
-      <guid>http://localhost:1313/tags/csharp/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Dotnet</title>
-      <link>http://localhost:1313/tags/dotnet/</link>
-      <pubDate>Thu, 08 Jan 2026 10:35:52 +0330</pubDate>
-      <guid>http://localhost:1313/tags/dotnet/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Interface</title>
-      <link>http://localhost:1313/tags/interface/</link>
-      <pubDate>Thu, 08 Jan 2026 10:35:52 +0330</pubDate>
-      <guid>http://localhost:1313/tags/interface/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Oop</title>
-      <link>http://localhost:1313/tags/oop/</link>
-      <pubDate>Thu, 08 Jan 2026 10:35:52 +0330</pubDate>
-      <guid>http://localhost:1313/tags/oop/</guid>
+      <link>https://blog.sadin.dev/tags/basics/</link>
+      <pubDate>Sat, 12 Apr 2025 11:54:41 +0330</pubDate>
+      <guid>https://blog.sadin.dev/tags/basics/</guid>
       <description></description>
     </item>
     <item>
       <title>Beginners</title>
-      <link>http://localhost:1313/tags/beginners/</link>
+      <link>https://blog.sadin.dev/tags/beginners/</link>
       <pubDate>Sat, 12 Apr 2025 11:54:41 +0330</pubDate>
-      <guid>http://localhost:1313/tags/beginners/</guid>
+      <guid>https://blog.sadin.dev/tags/beginners/</guid>
       <description></description>
     </item>
     <item>
       <title>C_sharp</title>
-      <link>http://localhost:1313/tags/c_sharp/</link>
+      <link>https://blog.sadin.dev/tags/c_sharp/</link>
       <pubDate>Sat, 12 Apr 2025 11:54:41 +0330</pubDate>
-      <guid>http://localhost:1313/tags/c_sharp/</guid>
+      <guid>https://blog.sadin.dev/tags/c_sharp/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Csharp</title>
+      <link>https://blog.sadin.dev/tags/csharp/</link>
+      <pubDate>Sat, 12 Apr 2025 11:54:41 +0330</pubDate>
+      <guid>https://blog.sadin.dev/tags/csharp/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Dotnet</title>
+      <link>https://blog.sadin.dev/tags/dotnet/</link>
+      <pubDate>Sat, 12 Apr 2025 11:54:41 +0330</pubDate>
+      <guid>https://blog.sadin.dev/tags/dotnet/</guid>
       <description></description>
     </item>
     <item>
       <title>Introduction</title>
-      <link>http://localhost:1313/tags/introduction/</link>
+      <link>https://blog.sadin.dev/tags/introduction/</link>
       <pubDate>Sat, 12 Apr 2025 11:54:41 +0330</pubDate>
-      <guid>http://localhost:1313/tags/introduction/</guid>
+      <guid>https://blog.sadin.dev/tags/introduction/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Oop</title>
+      <link>https://blog.sadin.dev/tags/oop/</link>
+      <pubDate>Sat, 12 Apr 2025 11:54:41 +0330</pubDate>
+      <guid>https://blog.sadin.dev/tags/oop/</guid>
       <description></description>
     </item>
     <item>
       <title>Principals</title>
-      <link>http://localhost:1313/tags/principals/</link>
+      <link>https://blog.sadin.dev/tags/principals/</link>
       <pubDate>Sat, 12 Apr 2025 11:54:41 +0330</pubDate>
-      <guid>http://localhost:1313/tags/principals/</guid>
+      <guid>https://blog.sadin.dev/tags/principals/</guid>
       <description></description>
     </item>
     <item>
-      <title>Single_responsibility</title>
-      <link>http://localhost:1313/tags/single_responsibility/</link>
-      <pubDate>Wed, 18 Oct 2023 11:09:23 +0330</pubDate>
-      <guid>http://localhost:1313/tags/single_responsibility/</guid>
+      <title>Development</title>
+      <link>https://blog.sadin.dev/tags/development/</link>
+      <pubDate>Mon, 03 Mar 2025 11:55:30 +0330</pubDate>
+      <guid>https://blog.sadin.dev/tags/development/</guid>
       <description></description>
     </item>
     <item>
-      <title>Solid</title>
-      <link>http://localhost:1313/tags/solid/</link>
-      <pubDate>Wed, 18 Oct 2023 11:09:23 +0330</pubDate>
-      <guid>http://localhost:1313/tags/solid/</guid>
+      <title>Event_source</title>
+      <link>https://blog.sadin.dev/tags/event_source/</link>
+      <pubDate>Mon, 03 Mar 2025 11:55:30 +0330</pubDate>
+      <guid>https://blog.sadin.dev/tags/event_source/</guid>
       <description></description>
     </item>
     <item>
-      <title>Srp</title>
-      <link>http://localhost:1313/tags/srp/</link>
-      <pubDate>Wed, 18 Oct 2023 11:09:23 +0330</pubDate>
-      <guid>http://localhost:1313/tags/srp/</guid>
+      <title>Event_sourcing</title>
+      <link>https://blog.sadin.dev/tags/event_sourcing/</link>
+      <pubDate>Mon, 03 Mar 2025 11:55:30 +0330</pubDate>
+      <guid>https://blog.sadin.dev/tags/event_sourcing/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Learning</title>
+      <link>https://blog.sadin.dev/tags/learning/</link>
+      <pubDate>Mon, 03 Mar 2025 11:55:30 +0330</pubDate>
+      <guid>https://blog.sadin.dev/tags/learning/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Learning_programming</title>
+      <link>https://blog.sadin.dev/tags/learning_programming/</link>
+      <pubDate>Mon, 03 Mar 2025 11:55:30 +0330</pubDate>
+      <guid>https://blog.sadin.dev/tags/learning_programming/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Programmer</title>
+      <link>https://blog.sadin.dev/tags/programmer/</link>
+      <pubDate>Mon, 03 Mar 2025 11:55:30 +0330</pubDate>
+      <guid>https://blog.sadin.dev/tags/programmer/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Programming</title>
+      <link>https://blog.sadin.dev/tags/programming/</link>
+      <pubDate>Mon, 03 Mar 2025 11:55:30 +0330</pubDate>
+      <guid>https://blog.sadin.dev/tags/programming/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Data_type</title>
+      <link>https://blog.sadin.dev/tags/data_type/</link>
+      <pubDate>Fri, 17 Nov 2023 11:51:27 +0330</pubDate>
+      <guid>https://blog.sadin.dev/tags/data_type/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Types</title>
+      <link>https://blog.sadin.dev/tags/types/</link>
+      <pubDate>Fri, 17 Nov 2023 11:51:27 +0330</pubDate>
+      <guid>https://blog.sadin.dev/tags/types/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Fields</title>
+      <link>https://blog.sadin.dev/tags/fields/</link>
+      <pubDate>Wed, 15 Nov 2023 11:51:12 +0330</pubDate>
+      <guid>https://blog.sadin.dev/tags/fields/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Fields_and_properties</title>
+      <link>https://blog.sadin.dev/tags/fields_and_properties/</link>
+      <pubDate>Wed, 15 Nov 2023 11:51:12 +0330</pubDate>
+      <guid>https://blog.sadin.dev/tags/fields_and_properties/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Properties</title>
+      <link>https://blog.sadin.dev/tags/properties/</link>
+      <pubDate>Wed, 15 Nov 2023 11:51:12 +0330</pubDate>
+      <guid>https://blog.sadin.dev/tags/properties/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Loop</title>
+      <link>https://blog.sadin.dev/tags/loop/</link>
+      <pubDate>Mon, 13 Nov 2023 11:50:58 +0330</pubDate>
+      <guid>https://blog.sadin.dev/tags/loop/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Loops</title>
+      <link>https://blog.sadin.dev/tags/loops/</link>
+      <pubDate>Mon, 13 Nov 2023 11:50:58 +0330</pubDate>
+      <guid>https://blog.sadin.dev/tags/loops/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Loops_in_csharp</title>
+      <link>https://blog.sadin.dev/tags/loops_in_csharp/</link>
+      <pubDate>Mon, 13 Nov 2023 11:50:58 +0330</pubDate>
+      <guid>https://blog.sadin.dev/tags/loops_in_csharp/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Conditionals</title>
+      <link>https://blog.sadin.dev/tags/conditionals/</link>
+      <pubDate>Thu, 09 Nov 2023 11:50:41 +0330</pubDate>
+      <guid>https://blog.sadin.dev/tags/conditionals/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Conditionals_in_csharp</title>
+      <link>https://blog.sadin.dev/tags/conditionals_in_csharp/</link>
+      <pubDate>Thu, 09 Nov 2023 11:50:41 +0330</pubDate>
+      <guid>https://blog.sadin.dev/tags/conditionals_in_csharp/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Variables</title>
+      <link>https://blog.sadin.dev/tags/variables/</link>
+      <pubDate>Thu, 09 Nov 2023 11:50:41 +0330</pubDate>
+      <guid>https://blog.sadin.dev/tags/variables/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Delegate</title>
+      <link>https://blog.sadin.dev/tags/delegate/</link>
+      <pubDate>Fri, 03 Nov 2023 11:50:00 +0330</pubDate>
+      <guid>https://blog.sadin.dev/tags/delegate/</guid>
       <description></description>
     </item>
     <item>
       <title>Delegates</title>
-      <link>http://localhost:1313/tags/delegates/</link>
-      <pubDate>Wed, 04 Oct 2023 10:04:40 +0330</pubDate>
-      <guid>http://localhost:1313/tags/delegates/</guid>
+      <link>https://blog.sadin.dev/tags/delegates/</link>
+      <pubDate>Fri, 03 Nov 2023 11:50:00 +0330</pubDate>
+      <guid>https://blog.sadin.dev/tags/delegates/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Event_handler</title>
+      <link>https://blog.sadin.dev/tags/event_handler/</link>
+      <pubDate>Fri, 03 Nov 2023 11:50:00 +0330</pubDate>
+      <guid>https://blog.sadin.dev/tags/event_handler/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Event_handling</title>
+      <link>https://blog.sadin.dev/tags/event_handling/</link>
+      <pubDate>Fri, 03 Nov 2023 11:50:00 +0330</pubDate>
+      <guid>https://blog.sadin.dev/tags/event_handling/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Eventhandler</title>
+      <link>https://blog.sadin.dev/tags/eventhandler/</link>
+      <pubDate>Fri, 03 Nov 2023 11:50:00 +0330</pubDate>
+      <guid>https://blog.sadin.dev/tags/eventhandler/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Events</title>
+      <link>https://blog.sadin.dev/tags/events/</link>
+      <pubDate>Fri, 03 Nov 2023 11:50:00 +0330</pubDate>
+      <guid>https://blog.sadin.dev/tags/events/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Abstract</title>
+      <link>https://blog.sadin.dev/tags/abstract/</link>
+      <pubDate>Thu, 26 Oct 2023 11:49:04 +0330</pubDate>
+      <guid>https://blog.sadin.dev/tags/abstract/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Dependency_Inversion_Principle</title>
+      <link>https://blog.sadin.dev/tags/dependency_inversion_principle/</link>
+      <pubDate>Thu, 26 Oct 2023 11:49:04 +0330</pubDate>
+      <guid>https://blog.sadin.dev/tags/dependency_inversion_principle/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Dip</title>
+      <link>https://blog.sadin.dev/tags/dip/</link>
+      <pubDate>Thu, 26 Oct 2023 11:49:04 +0330</pubDate>
+      <guid>https://blog.sadin.dev/tags/dip/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Solid</title>
+      <link>https://blog.sadin.dev/tags/solid/</link>
+      <pubDate>Thu, 26 Oct 2023 11:49:04 +0330</pubDate>
+      <guid>https://blog.sadin.dev/tags/solid/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Interface_segregation_principle</title>
+      <link>https://blog.sadin.dev/tags/interface_segregation_principle/</link>
+      <pubDate>Tue, 24 Oct 2023 11:48:50 +0330</pubDate>
+      <guid>https://blog.sadin.dev/tags/interface_segregation_principle/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Isp</title>
+      <link>https://blog.sadin.dev/tags/isp/</link>
+      <pubDate>Tue, 24 Oct 2023 11:48:50 +0330</pubDate>
+      <guid>https://blog.sadin.dev/tags/isp/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Liskov_substitution_principle</title>
+      <link>https://blog.sadin.dev/tags/liskov_substitution_principle/</link>
+      <pubDate>Sun, 22 Oct 2023 11:48:27 +0330</pubDate>
+      <guid>https://blog.sadin.dev/tags/liskov_substitution_principle/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Lsp</title>
+      <link>https://blog.sadin.dev/tags/lsp/</link>
+      <pubDate>Sun, 22 Oct 2023 11:48:27 +0330</pubDate>
+      <guid>https://blog.sadin.dev/tags/lsp/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Ocp</title>
+      <link>https://blog.sadin.dev/tags/ocp/</link>
+      <pubDate>Fri, 20 Oct 2023 11:47:52 +0330</pubDate>
+      <guid>https://blog.sadin.dev/tags/ocp/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Open_closed_principle</title>
+      <link>https://blog.sadin.dev/tags/open_closed_principle/</link>
+      <pubDate>Fri, 20 Oct 2023 11:47:52 +0330</pubDate>
+      <guid>https://blog.sadin.dev/tags/open_closed_principle/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Single_responsibility</title>
+      <link>https://blog.sadin.dev/tags/single_responsibility/</link>
+      <pubDate>Wed, 18 Oct 2023 11:09:23 +0330</pubDate>
+      <guid>https://blog.sadin.dev/tags/single_responsibility/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Srp</title>
+      <link>https://blog.sadin.dev/tags/srp/</link>
+      <pubDate>Wed, 18 Oct 2023 11:09:23 +0330</pubDate>
+      <guid>https://blog.sadin.dev/tags/srp/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Class</title>
+      <link>https://blog.sadin.dev/tags/class/</link>
+      <pubDate>Fri, 06 Oct 2023 10:35:52 +0330</pubDate>
+      <guid>https://blog.sadin.dev/tags/class/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Interface</title>
+      <link>https://blog.sadin.dev/tags/interface/</link>
+      <pubDate>Fri, 06 Oct 2023 10:35:52 +0330</pubDate>
+      <guid>https://blog.sadin.dev/tags/interface/</guid>
       <description></description>
     </item>
   </channel>

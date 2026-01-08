@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Program on Kamran Sadin - Kevin</title>
+    <link>http://localhost:1313/tags/program/</link>
+    <description>Recent content in Program on Kamran Sadin - Kevin</description>
+    <image>
+      <title>Kamran Sadin - Kevin</title>
+      <url>http://localhost:1313/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>http://localhost:1313/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- 0.152.2</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 07 Nov 2023 11:50:28 +0330</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/program/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>A Comprehensive Guide to Variables in C#</title>
+      <link>http://localhost:1313/posts/2023-11-07-variables-in-csharp/</link>
+      <pubDate>Tue, 07 Nov 2023 11:50:28 +0330</pubDate>
+      <guid>http://localhost:1313/posts/2023-11-07-variables-in-csharp/</guid>
+      <description>Variables are the backbone of any programming language, and C# is no exception. They allow you to store and manage data, enabling your programs to perform tasks and make decisions.</description>
+    </item>
+  </channel>
+</rss>

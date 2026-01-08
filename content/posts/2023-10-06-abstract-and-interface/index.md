@@ -1,5 +1,5 @@
 ---
-date: '2026-01-08T10:35:52+03:30'
+date: '2023-10-06T10:35:52+03:30'
 draft: false
 title: 'Abstract and Interface in C#'
 tags: ["abstract", "csharp", "dotnet", "basics", "interface","class","oop",""]

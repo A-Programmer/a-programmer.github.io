@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Open_closed_principle on Kamran Sadin - Kevin</title>
+    <link>https://blog.sadin.dev/tags/open_closed_principle/</link>
+    <description>Recent content in Open_closed_principle on Kamran Sadin - Kevin</description>
+    <image>
+      <title>Kamran Sadin - Kevin</title>
+      <url>https://blog.sadin.dev/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://blog.sadin.dev/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- 0.152.2</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 20 Oct 2023 11:47:52 +0330</lastBuildDate>
+    <atom:link href="https://blog.sadin.dev/tags/open_closed_principle/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>SOLID - Open Closed Principle</title>
+      <link>https://blog.sadin.dev/posts/2023-10-20-open-closed-principle/</link>
+      <pubDate>Fri, 20 Oct 2023 11:47:52 +0330</pubDate>
+      <guid>https://blog.sadin.dev/posts/2023-10-20-open-closed-principle/</guid>
+      <description>The Open/Closed Principle emphasizes that software entities (classes, modules, functions, etc.) should be open for **extension but closed for modification**. In simpler terms, the behavior of a module can be extended without modifying its source code. This principle promotes the creation of a system that is both adaptable and sustainable over time.</description>
+    </item>
+  </channel>
+</rss>
