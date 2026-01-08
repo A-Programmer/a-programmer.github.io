@@ -32,7 +32,11 @@ params:
   ShowShareButtons: true
   ShowPostNavLinks: true
   ShowBreadCrumbs: true
-  ShowCodeCopyButtons: false
+  ShowCodeCopyButtons: true
+  showRelatedPosts: true
+  RelatedPostsCount: 3
+  ShowCategoriesInFooter: true
+  ShowTagsInFooter: true
   ShowWordCount: true
   ShowRssButtonInSectionTermList: true
   UseHugoToc: true
@@ -63,8 +67,8 @@ params:
   profileMode:
     enabled: false # needs to be explicitly set
     title: Kamran Sadin - Kevin
-    subtitle: "This is subtitle"
-    imageUrl: "<img location>"
+    subtitle: "Software Engineer"
+    imageUrl: "/assets/images/avatar.jpg"
     imageWidth: 120
     imageHeight: 120
     imageTitle: my image
