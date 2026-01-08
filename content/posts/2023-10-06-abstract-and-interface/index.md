@@ -1,7 +1,7 @@
 ---
 date: '2026-01-08T10:35:52+03:30'
 draft: false
-title: 'Delegates Part 2 · Kamran Sadin'
+title: 'Abstract and Interface in C#'
 tags: ["abstract", "csharp", "dotnet", "basics", "interface","class","oop",""]
 categories: ["csharp"]
 description: "An abstract class in C# is a class marked with the abstract keyword that may contain abstract and non-abstract members (methods, properties, events, etc.)."

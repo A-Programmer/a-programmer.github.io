@@ -1,7 +1,7 @@
 ---
-date: '2026-01-08T10:04:40+03:30'
+date: '2023-10-04T10:04:40+03:30'
 draft: false
-title: 'Delegates Part 2 · Kamran Sadin'
+title: 'Delegates Part 2'
 description: "This post is just to get familiar with Delegates in C#, in the next posts I will talk about delegates in advance. Part 2"
 tags: ["delegates", "csharp", "dotnet", "basics"]
 categories: ["csharp"]

@@ -11,55 +11,20 @@
     </image>
     <generator>Hugo -- 0.152.2</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 08 Jan 2026 11:01:44 +0330</lastBuildDate>
+    <lastBuildDate>Thu, 08 Jan 2026 10:35:52 +0330</lastBuildDate>
     <atom:link href="https://blog.sadin.dev/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Abstract</title>
       <link>https://blog.sadin.dev/tags/abstract/</link>
-      <pubDate>Thu, 08 Jan 2026 11:01:44 +0330</pubDate>
+      <pubDate>Thu, 08 Jan 2026 10:35:52 +0330</pubDate>
       <guid>https://blog.sadin.dev/tags/abstract/</guid>
       <description></description>
     </item>
     <item>
       <title>Basics</title>
       <link>https://blog.sadin.dev/tags/basics/</link>
-      <pubDate>Thu, 08 Jan 2026 11:01:44 +0330</pubDate>
+      <pubDate>Thu, 08 Jan 2026 10:35:52 +0330</pubDate>
       <guid>https://blog.sadin.dev/tags/basics/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Csharp</title>
-      <link>https://blog.sadin.dev/tags/csharp/</link>
-      <pubDate>Thu, 08 Jan 2026 11:01:44 +0330</pubDate>
-      <guid>https://blog.sadin.dev/tags/csharp/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Dotnet</title>
-      <link>https://blog.sadin.dev/tags/dotnet/</link>
-      <pubDate>Thu, 08 Jan 2026 11:01:44 +0330</pubDate>
-      <guid>https://blog.sadin.dev/tags/dotnet/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Oop</title>
-      <link>https://blog.sadin.dev/tags/oop/</link>
-      <pubDate>Thu, 08 Jan 2026 11:01:44 +0330</pubDate>
-      <guid>https://blog.sadin.dev/tags/oop/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Principals</title>
-      <link>https://blog.sadin.dev/tags/principals/</link>
-      <pubDate>Thu, 08 Jan 2026 11:01:44 +0330</pubDate>
-      <guid>https://blog.sadin.dev/tags/principals/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Solid</title>
-      <link>https://blog.sadin.dev/tags/solid/</link>
-      <pubDate>Thu, 08 Jan 2026 11:01:44 +0330</pubDate>
-      <guid>https://blog.sadin.dev/tags/solid/</guid>
       <description></description>
     </item>
     <item>
@@ -70,6 +35,20 @@
       <description></description>
     </item>
     <item>
+      <title>Csharp</title>
+      <link>https://blog.sadin.dev/tags/csharp/</link>
+      <pubDate>Thu, 08 Jan 2026 10:35:52 +0330</pubDate>
+      <guid>https://blog.sadin.dev/tags/csharp/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Dotnet</title>
+      <link>https://blog.sadin.dev/tags/dotnet/</link>
+      <pubDate>Thu, 08 Jan 2026 10:35:52 +0330</pubDate>
+      <guid>https://blog.sadin.dev/tags/dotnet/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Interface</title>
       <link>https://blog.sadin.dev/tags/interface/</link>
       <pubDate>Thu, 08 Jan 2026 10:35:52 +0330</pubDate>
@@ -77,31 +56,45 @@
       <description></description>
     </item>
     <item>
+      <title>Oop</title>
+      <link>https://blog.sadin.dev/tags/oop/</link>
+      <pubDate>Thu, 08 Jan 2026 10:35:52 +0330</pubDate>
+      <guid>https://blog.sadin.dev/tags/oop/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Principals</title>
+      <link>https://blog.sadin.dev/tags/principals/</link>
+      <pubDate>Wed, 18 Oct 2023 11:09:23 +0330</pubDate>
+      <guid>https://blog.sadin.dev/tags/principals/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Single_responsibility</title>
+      <link>https://blog.sadin.dev/tags/single_responsibility/</link>
+      <pubDate>Wed, 18 Oct 2023 11:09:23 +0330</pubDate>
+      <guid>https://blog.sadin.dev/tags/single_responsibility/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Solid</title>
+      <link>https://blog.sadin.dev/tags/solid/</link>
+      <pubDate>Wed, 18 Oct 2023 11:09:23 +0330</pubDate>
+      <guid>https://blog.sadin.dev/tags/solid/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Srp</title>
+      <link>https://blog.sadin.dev/tags/srp/</link>
+      <pubDate>Wed, 18 Oct 2023 11:09:23 +0330</pubDate>
+      <guid>https://blog.sadin.dev/tags/srp/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Delegates</title>
       <link>https://blog.sadin.dev/tags/delegates/</link>
-      <pubDate>Thu, 08 Jan 2026 10:04:40 +0330</pubDate>
+      <pubDate>Wed, 04 Oct 2023 10:04:40 +0330</pubDate>
       <guid>https://blog.sadin.dev/tags/delegates/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Event</title>
-      <link>https://blog.sadin.dev/tags/event/</link>
-      <pubDate>Wed, 18 Oct 2023 11:09:23 +0330</pubDate>
-      <guid>https://blog.sadin.dev/tags/event/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Event_handler</title>
-      <link>https://blog.sadin.dev/tags/event_handler/</link>
-      <pubDate>Wed, 18 Oct 2023 11:09:23 +0330</pubDate>
-      <guid>https://blog.sadin.dev/tags/event_handler/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Events</title>
-      <link>https://blog.sadin.dev/tags/events/</link>
-      <pubDate>Wed, 18 Oct 2023 11:09:23 +0330</pubDate>
-      <guid>https://blog.sadin.dev/tags/events/</guid>
       <description></description>
     </item>
   </channel>
