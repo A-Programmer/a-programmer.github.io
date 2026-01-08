@@ -11,20 +11,83 @@
     </image>
     <generator>Hugo -- 0.152.2</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 12 Apr 2025 11:54:41 +0330</lastBuildDate>
+    <lastBuildDate>Thu, 08 Jan 2026 18:08:47 +0330</lastBuildDate>
     <atom:link href="https://blog.sadin.dev/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Basics</title>
       <link>https://blog.sadin.dev/tags/basics/</link>
-      <pubDate>Sat, 12 Apr 2025 11:54:41 +0330</pubDate>
+      <pubDate>Thu, 08 Jan 2026 18:08:47 +0330</pubDate>
       <guid>https://blog.sadin.dev/tags/basics/</guid>
       <description></description>
     </item>
     <item>
       <title>Beginners</title>
       <link>https://blog.sadin.dev/tags/beginners/</link>
-      <pubDate>Sat, 12 Apr 2025 11:54:41 +0330</pubDate>
+      <pubDate>Thu, 08 Jan 2026 18:08:47 +0330</pubDate>
       <guid>https://blog.sadin.dev/tags/beginners/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Csharp</title>
+      <link>https://blog.sadin.dev/tags/csharp/</link>
+      <pubDate>Thu, 08 Jan 2026 18:08:47 +0330</pubDate>
+      <guid>https://blog.sadin.dev/tags/csharp/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Development</title>
+      <link>https://blog.sadin.dev/tags/development/</link>
+      <pubDate>Thu, 08 Jan 2026 18:08:47 +0330</pubDate>
+      <guid>https://blog.sadin.dev/tags/development/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Dotnet</title>
+      <link>https://blog.sadin.dev/tags/dotnet/</link>
+      <pubDate>Thu, 08 Jan 2026 18:08:47 +0330</pubDate>
+      <guid>https://blog.sadin.dev/tags/dotnet/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Event_source</title>
+      <link>https://blog.sadin.dev/tags/event_source/</link>
+      <pubDate>Thu, 08 Jan 2026 18:08:47 +0330</pubDate>
+      <guid>https://blog.sadin.dev/tags/event_source/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Event_sourcing</title>
+      <link>https://blog.sadin.dev/tags/event_sourcing/</link>
+      <pubDate>Thu, 08 Jan 2026 18:08:47 +0330</pubDate>
+      <guid>https://blog.sadin.dev/tags/event_sourcing/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Learning</title>
+      <link>https://blog.sadin.dev/tags/learning/</link>
+      <pubDate>Thu, 08 Jan 2026 18:08:47 +0330</pubDate>
+      <guid>https://blog.sadin.dev/tags/learning/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Learning_programming</title>
+      <link>https://blog.sadin.dev/tags/learning_programming/</link>
+      <pubDate>Thu, 08 Jan 2026 18:08:47 +0330</pubDate>
+      <guid>https://blog.sadin.dev/tags/learning_programming/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Programmer</title>
+      <link>https://blog.sadin.dev/tags/programmer/</link>
+      <pubDate>Thu, 08 Jan 2026 18:08:47 +0330</pubDate>
+      <guid>https://blog.sadin.dev/tags/programmer/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Programming</title>
+      <link>https://blog.sadin.dev/tags/programming/</link>
+      <pubDate>Thu, 08 Jan 2026 18:08:47 +0330</pubDate>
+      <guid>https://blog.sadin.dev/tags/programming/</guid>
       <description></description>
     </item>
     <item>
@@ -32,20 +95,6 @@
       <link>https://blog.sadin.dev/tags/c_sharp/</link>
       <pubDate>Sat, 12 Apr 2025 11:54:41 +0330</pubDate>
       <guid>https://blog.sadin.dev/tags/c_sharp/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Csharp</title>
-      <link>https://blog.sadin.dev/tags/csharp/</link>
-      <pubDate>Sat, 12 Apr 2025 11:54:41 +0330</pubDate>
-      <guid>https://blog.sadin.dev/tags/csharp/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Dotnet</title>
-      <link>https://blog.sadin.dev/tags/dotnet/</link>
-      <pubDate>Sat, 12 Apr 2025 11:54:41 +0330</pubDate>
-      <guid>https://blog.sadin.dev/tags/dotnet/</guid>
       <description></description>
     </item>
     <item>
@@ -67,55 +116,6 @@
       <link>https://blog.sadin.dev/tags/principals/</link>
       <pubDate>Sat, 12 Apr 2025 11:54:41 +0330</pubDate>
       <guid>https://blog.sadin.dev/tags/principals/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Development</title>
-      <link>https://blog.sadin.dev/tags/development/</link>
-      <pubDate>Mon, 03 Mar 2025 11:55:30 +0330</pubDate>
-      <guid>https://blog.sadin.dev/tags/development/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Event_source</title>
-      <link>https://blog.sadin.dev/tags/event_source/</link>
-      <pubDate>Mon, 03 Mar 2025 11:55:30 +0330</pubDate>
-      <guid>https://blog.sadin.dev/tags/event_source/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Event_sourcing</title>
-      <link>https://blog.sadin.dev/tags/event_sourcing/</link>
-      <pubDate>Mon, 03 Mar 2025 11:55:30 +0330</pubDate>
-      <guid>https://blog.sadin.dev/tags/event_sourcing/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Learning</title>
-      <link>https://blog.sadin.dev/tags/learning/</link>
-      <pubDate>Mon, 03 Mar 2025 11:55:30 +0330</pubDate>
-      <guid>https://blog.sadin.dev/tags/learning/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Learning_programming</title>
-      <link>https://blog.sadin.dev/tags/learning_programming/</link>
-      <pubDate>Mon, 03 Mar 2025 11:55:30 +0330</pubDate>
-      <guid>https://blog.sadin.dev/tags/learning_programming/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Programmer</title>
-      <link>https://blog.sadin.dev/tags/programmer/</link>
-      <pubDate>Mon, 03 Mar 2025 11:55:30 +0330</pubDate>
-      <guid>https://blog.sadin.dev/tags/programmer/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Programming</title>
-      <link>https://blog.sadin.dev/tags/programming/</link>
-      <pubDate>Mon, 03 Mar 2025 11:55:30 +0330</pubDate>
-      <guid>https://blog.sadin.dev/tags/programming/</guid>
       <description></description>
     </item>
     <item>

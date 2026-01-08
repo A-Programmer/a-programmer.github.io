@@ -3,30 +3,63 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://blog.sadin.dev/tags/basics/</loc>
-    <lastmod>2025-04-12T11:54:41+03:30</lastmod>
+    <lastmod>2026-01-08T18:08:47+03:30</lastmod>
   </url><url>
     <loc>https://blog.sadin.dev/tags/beginners/</loc>
-    <lastmod>2025-04-12T11:54:41+03:30</lastmod>
-  </url><url>
-    <loc>https://blog.sadin.dev/tags/c_sharp/</loc>
-    <lastmod>2025-04-12T11:54:41+03:30</lastmod>
+    <lastmod>2026-01-08T18:08:47+03:30</lastmod>
   </url><url>
     <loc>https://blog.sadin.dev/categories/</loc>
+    <lastmod>2026-01-08T18:08:47+03:30</lastmod>
+  </url><url>
+    <loc>https://blog.sadin.dev/tags/csharp/</loc>
+    <lastmod>2026-01-08T18:08:47+03:30</lastmod>
+  </url><url>
+    <loc>https://blog.sadin.dev/tags/development/</loc>
+    <lastmod>2026-01-08T18:08:47+03:30</lastmod>
+  </url><url>
+    <loc>https://blog.sadin.dev/categories/dotnet/</loc>
+    <lastmod>2026-01-08T18:08:47+03:30</lastmod>
+  </url><url>
+    <loc>https://blog.sadin.dev/tags/dotnet/</loc>
+    <lastmod>2026-01-08T18:08:47+03:30</lastmod>
+  </url><url>
+    <loc>https://blog.sadin.dev/tags/event_source/</loc>
+    <lastmod>2026-01-08T18:08:47+03:30</lastmod>
+  </url><url>
+    <loc>https://blog.sadin.dev/tags/event_sourcing/</loc>
+    <lastmod>2026-01-08T18:08:47+03:30</lastmod>
+  </url><url>
+    <loc>https://blog.sadin.dev/posts/2026-01-08-how-kestrel-handles-http-requests/</loc>
+    <lastmod>2026-01-08T18:08:47+03:30</lastmod>
+  </url><url>
+    <loc>https://blog.sadin.dev/</loc>
+    <lastmod>2026-01-08T18:08:47+03:30</lastmod>
+  </url><url>
+    <loc>https://blog.sadin.dev/tags/learning/</loc>
+    <lastmod>2026-01-08T18:08:47+03:30</lastmod>
+  </url><url>
+    <loc>https://blog.sadin.dev/tags/learning_programming/</loc>
+    <lastmod>2026-01-08T18:08:47+03:30</lastmod>
+  </url><url>
+    <loc>https://blog.sadin.dev/posts/</loc>
+    <lastmod>2026-01-08T18:08:47+03:30</lastmod>
+  </url><url>
+    <loc>https://blog.sadin.dev/tags/programmer/</loc>
+    <lastmod>2026-01-08T18:08:47+03:30</lastmod>
+  </url><url>
+    <loc>https://blog.sadin.dev/tags/programming/</loc>
+    <lastmod>2026-01-08T18:08:47+03:30</lastmod>
+  </url><url>
+    <loc>https://blog.sadin.dev/tags/</loc>
+    <lastmod>2026-01-08T18:08:47+03:30</lastmod>
+  </url><url>
+    <loc>https://blog.sadin.dev/tags/c_sharp/</loc>
     <lastmod>2025-04-12T11:54:41+03:30</lastmod>
   </url><url>
     <loc>https://blog.sadin.dev/categories/csharp/</loc>
     <lastmod>2025-04-12T11:54:41+03:30</lastmod>
   </url><url>
-    <loc>https://blog.sadin.dev/tags/csharp/</loc>
-    <lastmod>2025-04-12T11:54:41+03:30</lastmod>
-  </url><url>
-    <loc>https://blog.sadin.dev/tags/dotnet/</loc>
-    <lastmod>2025-04-12T11:54:41+03:30</lastmod>
-  </url><url>
     <loc>https://blog.sadin.dev/tags/introduction/</loc>
-    <lastmod>2025-04-12T11:54:41+03:30</lastmod>
-  </url><url>
-    <loc>https://blog.sadin.dev/</loc>
     <lastmod>2025-04-12T11:54:41+03:30</lastmod>
   </url><url>
     <loc>https://blog.sadin.dev/posts/2025-04-12-csharp-for-absolute-beginners/</loc>
@@ -35,40 +68,13 @@
     <loc>https://blog.sadin.dev/tags/oop/</loc>
     <lastmod>2025-04-12T11:54:41+03:30</lastmod>
   </url><url>
-    <loc>https://blog.sadin.dev/posts/</loc>
-    <lastmod>2025-04-12T11:54:41+03:30</lastmod>
-  </url><url>
     <loc>https://blog.sadin.dev/tags/principals/</loc>
-    <lastmod>2025-04-12T11:54:41+03:30</lastmod>
-  </url><url>
-    <loc>https://blog.sadin.dev/tags/</loc>
     <lastmod>2025-04-12T11:54:41+03:30</lastmod>
   </url><url>
     <loc>https://blog.sadin.dev/posts/2025-03-10-introduction-to-c-sharp/</loc>
     <lastmod>2025-03-10T11:56:54+03:30</lastmod>
   </url><url>
-    <loc>https://blog.sadin.dev/tags/development/</loc>
-    <lastmod>2025-03-03T11:55:30+03:30</lastmod>
-  </url><url>
     <loc>https://blog.sadin.dev/posts/2025-03-03-event-sourcing-getting-started/</loc>
-    <lastmod>2025-03-03T11:55:30+03:30</lastmod>
-  </url><url>
-    <loc>https://blog.sadin.dev/tags/event_source/</loc>
-    <lastmod>2025-03-03T11:55:30+03:30</lastmod>
-  </url><url>
-    <loc>https://blog.sadin.dev/tags/event_sourcing/</loc>
-    <lastmod>2025-03-03T11:55:30+03:30</lastmod>
-  </url><url>
-    <loc>https://blog.sadin.dev/tags/learning/</loc>
-    <lastmod>2025-03-03T11:55:30+03:30</lastmod>
-  </url><url>
-    <loc>https://blog.sadin.dev/tags/learning_programming/</loc>
-    <lastmod>2025-03-03T11:55:30+03:30</lastmod>
-  </url><url>
-    <loc>https://blog.sadin.dev/tags/programmer/</loc>
-    <lastmod>2025-03-03T11:55:30+03:30</lastmod>
-  </url><url>
-    <loc>https://blog.sadin.dev/tags/programming/</loc>
     <lastmod>2025-03-03T11:55:30+03:30</lastmod>
   </url><url>
     <loc>https://blog.sadin.dev/posts/2023-11-17-a-comprehensive-guide-to-data-types-in-csharp/</loc>
