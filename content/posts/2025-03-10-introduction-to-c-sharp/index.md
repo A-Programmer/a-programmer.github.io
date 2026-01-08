@@ -81,5 +81,5 @@ The foundation of my approach is **C# \[Version\] in a Nutshell**, but my goal i
 
 *   [Telegram Group](https://t.me/sadinco_csharp)
 *   [LinkedIn](https://linkedin.com/in/MrSadin)
-*   [Blog](https://sadin.dev)
+*   [Blog](https://blog.sadin.dev)
 *   [YouTube](https://youtube.com/c/EnKamran)

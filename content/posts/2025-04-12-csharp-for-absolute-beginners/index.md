@@ -567,5 +567,5 @@ You’ll submit your capstone project—a real program you created! There’s no
 
 *   [Telegram Group](https://t.me/sadinco_csharp)
 *   [LinkedIn](https://linkedin.com/in/MrSadin)
-*   [Blog](https://sadin.dev)
+*   [Blog](https://blog.sadin.dev)
 *   [YouTube](https://youtube.com/c/EnKamran)
