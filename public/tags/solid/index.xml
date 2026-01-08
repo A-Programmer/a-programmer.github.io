@@ -2,29 +2,29 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Solid on Kamran Sadin - Kevin</title>
-    <link>https://blog.sadin.dev/tags/solid/</link>
+    <link>http://localhost:1313/tags/solid/</link>
     <description>Recent content in Solid on Kamran Sadin - Kevin</description>
     <image>
       <title>Kamran Sadin - Kevin</title>
-      <url>https://blog.sadin.dev/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://blog.sadin.dev/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>http://localhost:1313/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>http://localhost:1313/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- 0.152.2</generator>
     <language>en</language>
     <lastBuildDate>Wed, 18 Oct 2023 11:09:23 +0330</lastBuildDate>
-    <atom:link href="https://blog.sadin.dev/tags/solid/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/solid/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Single Responsibility Principle</title>
-      <link>https://blog.sadin.dev/posts/2023-10-18-single-responsibility-principle/</link>
+      <link>http://localhost:1313/posts/2023-10-18-single-responsibility-principle/</link>
       <pubDate>Wed, 18 Oct 2023 11:09:23 +0330</pubDate>
-      <guid>https://blog.sadin.dev/posts/2023-10-18-single-responsibility-principle/</guid>
+      <guid>http://localhost:1313/posts/2023-10-18-single-responsibility-principle/</guid>
       <description>At its core, SRP advocates that a class should have a **single reason to change**, meaning it should only have one responsibility. Essentially, a class should encapsulate one aspect of the functionality within the software. By adhering to this principle, the design becomes more modular, maintainable, and easier to extend.</description>
     </item>
     <item>
       <title>Mastering SOLID Principles in C#, Building Robust and Maintainable Applications</title>
-      <link>https://blog.sadin.dev/posts/2023-10-15-mastering-solid-principles-in-csharp/</link>
+      <link>http://localhost:1313/posts/2023-10-15-mastering-solid-principles-in-csharp/</link>
       <pubDate>Wed, 04 Oct 2023 11:01:44 +0330</pubDate>
-      <guid>https://blog.sadin.dev/posts/2023-10-15-mastering-solid-principles-in-csharp/</guid>
+      <guid>http://localhost:1313/posts/2023-10-15-mastering-solid-principles-in-csharp/</guid>
       <description>SOLID is an acronym representing five essential design principles introduced by Robert C. Martin to guide software developers in writing maintainable and scalable code. Each principle addresses a specific aspect of software design, focusing on enhancing the maintainability, extensibility, and reusability of the codebase.</description>
     </item>
   </channel>

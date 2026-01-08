@@ -2,70 +2,85 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://blog.sadin.dev/tags/abstract/</loc>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2026-01-08T11:55:30+03:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/</loc>
+    <lastmod>2026-01-08T11:55:30+03:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/abstract/</loc>
     <lastmod>2026-01-08T10:35:52+03:30</lastmod>
   </url><url>
-    <loc>https://blog.sadin.dev/posts/2023-10-06-abstract-and-interface/</loc>
+    <loc>http://localhost:1313/posts/2023-10-06-abstract-and-interface/</loc>
     <lastmod>2026-01-08T10:35:52+03:30</lastmod>
   </url><url>
-    <loc>https://blog.sadin.dev/tags/basics/</loc>
+    <loc>http://localhost:1313/tags/basics/</loc>
     <lastmod>2026-01-08T10:35:52+03:30</lastmod>
   </url><url>
-    <loc>https://blog.sadin.dev/categories/</loc>
+    <loc>http://localhost:1313/categories/</loc>
     <lastmod>2026-01-08T10:35:52+03:30</lastmod>
   </url><url>
-    <loc>https://blog.sadin.dev/tags/class/</loc>
+    <loc>http://localhost:1313/tags/class/</loc>
     <lastmod>2026-01-08T10:35:52+03:30</lastmod>
   </url><url>
-    <loc>https://blog.sadin.dev/categories/csharp/</loc>
+    <loc>http://localhost:1313/categories/csharp/</loc>
     <lastmod>2026-01-08T10:35:52+03:30</lastmod>
   </url><url>
-    <loc>https://blog.sadin.dev/tags/csharp/</loc>
+    <loc>http://localhost:1313/tags/csharp/</loc>
     <lastmod>2026-01-08T10:35:52+03:30</lastmod>
   </url><url>
-    <loc>https://blog.sadin.dev/tags/dotnet/</loc>
+    <loc>http://localhost:1313/tags/dotnet/</loc>
     <lastmod>2026-01-08T10:35:52+03:30</lastmod>
   </url><url>
-    <loc>https://blog.sadin.dev/tags/interface/</loc>
+    <loc>http://localhost:1313/tags/interface/</loc>
     <lastmod>2026-01-08T10:35:52+03:30</lastmod>
   </url><url>
-    <loc>https://blog.sadin.dev/</loc>
+    <loc>http://localhost:1313/tags/oop/</loc>
     <lastmod>2026-01-08T10:35:52+03:30</lastmod>
   </url><url>
-    <loc>https://blog.sadin.dev/tags/oop/</loc>
+    <loc>http://localhost:1313/tags/</loc>
     <lastmod>2026-01-08T10:35:52+03:30</lastmod>
   </url><url>
-    <loc>https://blog.sadin.dev/posts/</loc>
-    <lastmod>2026-01-08T10:35:52+03:30</lastmod>
+    <loc>http://localhost:1313/tags/beginners/</loc>
+    <lastmod>2025-04-12T11:54:41+03:30</lastmod>
   </url><url>
-    <loc>https://blog.sadin.dev/tags/</loc>
-    <lastmod>2026-01-08T10:35:52+03:30</lastmod>
+    <loc>http://localhost:1313/tags/c_sharp/</loc>
+    <lastmod>2025-04-12T11:54:41+03:30</lastmod>
   </url><url>
-    <loc>https://blog.sadin.dev/tags/principals/</loc>
+    <loc>http://localhost:1313/tags/introduction/</loc>
+    <lastmod>2025-04-12T11:54:41+03:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/2025-04-12-csharp-for-absolute-beginners/</loc>
+    <lastmod>2025-04-12T11:54:41+03:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/principals/</loc>
+    <lastmod>2025-04-12T11:54:41+03:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/2025-03-10-introduction-to-c-sharp/</loc>
+    <lastmod>2025-03-10T11:56:54+03:30</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/2023-10-18-single-responsibility-principle/</loc>
     <lastmod>2023-10-18T11:09:23+03:30</lastmod>
   </url><url>
-    <loc>https://blog.sadin.dev/posts/2023-10-18-single-responsibility-principle/</loc>
+    <loc>http://localhost:1313/tags/single_responsibility/</loc>
     <lastmod>2023-10-18T11:09:23+03:30</lastmod>
   </url><url>
-    <loc>https://blog.sadin.dev/tags/single_responsibility/</loc>
+    <loc>http://localhost:1313/tags/solid/</loc>
     <lastmod>2023-10-18T11:09:23+03:30</lastmod>
   </url><url>
-    <loc>https://blog.sadin.dev/tags/solid/</loc>
+    <loc>http://localhost:1313/tags/srp/</loc>
     <lastmod>2023-10-18T11:09:23+03:30</lastmod>
   </url><url>
-    <loc>https://blog.sadin.dev/tags/srp/</loc>
-    <lastmod>2023-10-18T11:09:23+03:30</lastmod>
-  </url><url>
-    <loc>https://blog.sadin.dev/posts/2023-10-15-mastering-solid-principles-in-csharp/</loc>
+    <loc>http://localhost:1313/posts/2023-10-15-mastering-solid-principles-in-csharp/</loc>
     <lastmod>2023-10-04T11:01:44+03:30</lastmod>
   </url><url>
-    <loc>https://blog.sadin.dev/tags/delegates/</loc>
+    <loc>http://localhost:1313/tags/delegates/</loc>
     <lastmod>2023-10-04T10:04:40+03:30</lastmod>
   </url><url>
-    <loc>https://blog.sadin.dev/posts/2023-10-04-delegates-part-2/</loc>
+    <loc>http://localhost:1313/posts/2023-10-04-delegates-part-2/</loc>
     <lastmod>2023-10-04T10:04:40+03:30</lastmod>
   </url><url>
-    <loc>https://blog.sadin.dev/posts/2023-10-01-delegates-part-1-plugin-methods-with-delegates/</loc>
+    <loc>http://localhost:1313/posts/2023-10-01-delegates-part-1-plugin-methods-with-delegates/</loc>
     <lastmod>2023-10-01T18:06:09+03:30</lastmod>
   </url>
 </urlset>
