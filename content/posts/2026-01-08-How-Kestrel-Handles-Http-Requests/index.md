@@ -2,9 +2,9 @@
 date: '2026-01-08T18:08:47+03:30'
 draft: false
 title: 'How Kestrel Handles Http Requests'
-tags: ["event_sourcing", "csharp", "dotnet", "basics", "beginners","programmer","programming", "learning", "learning_programming", "development", "event_source"]
+tags: ["kestrel", "csharp", "dotnet", "basics", "beginners","programmer","programming", "learning", "learning_programming", "development", "web_server"]
 categories: ["dotnet"]
-description: "Hey everyone! Kamran here, and today, let's dive deeper into Event Sourcing, especially how we manage snapshots and materialized views."
+description: "In the world of web development, performance is key—especially when dealing with high-concurrency scenarios. Kestrel, the default web server in ASP.NET Core, stands out for its asynchronous, non-blocking I/O model."
 ---
 ## A Deep Dive into Asynchronous Request Handling in Kestrel: How It Powers Efficient Web Servers
 
