@@ -10,7 +10,7 @@ categories: ["csharp"]
 
 **This post is just to get familiar with Delegates in C#, in the next posts I will talk about delegates in advance.**
 
-What is Delegate [Link to heading](#what-is-delegate)
+What is Delegate 
 -----------------------------------------------------
 
 > A delegate is an object that knows how to call a method. {: .prompt-tip }
@@ -19,7 +19,7 @@ You know variables in C#, right? A delegate is a reference type variable that ho
 Delegates are usually used for implementing events and the call-back methods (We will get back to this soon).  
 Before getting started, let’s see the syntax of a delegate:
 
-Syntax [Link to heading](#syntax)
+Syntax 
 ---------------------------------
 
     delegate int Transformer(int x);
@@ -62,7 +62,7 @@ In simple word, by delegates we define a rule or agreement for special variables
 
 **I could call the Square method everywhere, so why do I need to use delegate!?** By using a delegate, you are decoupling the caller from the target method.
 
-Plug-in methods with Delegates [Link to heading](#plug-in-methods-with-delegates)
+Plug-in methods with Delegates 
 ---------------------------------------------------------------------------------
 
 A delegate variable is assigned a method at runtime! By using this feature, you can write plug-in methods. Using delegates for plug-in methods in C# is a great way to create a flexible and extensible system where you can dynamically add and use different functionalities without modifying the core code. Let’s create a simple example to demonstrate this concept:
